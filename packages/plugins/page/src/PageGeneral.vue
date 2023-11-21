@@ -1,16 +1,10 @@
+<!-- eslint-disable vue/no-unused-components -->
+<!-- eslint-disable no-console -->
 <template>
   <div class="general-config">
-    <tiny-form
-      ref="generalForm"
-      :model="pageSettingState.currentPageData"
-      :rules="isFolder ? folderRules : pageRules"
-      label-width="120px"
-      validate-type="text"
-      :inline-message="true"
-      :label-align="true"
-      label-position="left"
-      class="general-config-form"
-    >
+    <tiny-form ref="generalForm" :model="pageSettingState.currentPageData" :rules="isFolder ? folderRules : pageRules"
+      label-width="120px" validate-type="text" :inline-message="true" :label-align="true" label-position="left"
+      class="general-config-form">
       <tiny-form-item v-if="!isFolder" prop="group" label="选择页面类型" class="form-item-page-type">
         <tiny-radio v-model="pageSettingState.currentPageData.group" class="page-type-radio" label="staticPages">
           静态页面
@@ -20,30 +14,17 @@
         </tiny-radio>
       </tiny-form-item>
       <tiny-form-item prop="name" :label="`${isFolder ? '文件夹' : '页面'}ID`">
-        <tiny-input
-          v-model="pageSettingState.currentPageData.name"
-          :placeholder="`请设置${isFolder ? '文件夹' : '页面'}ID`"
-        ></tiny-input>
+        <tiny-input v-model="pageSettingState.currentPageData.name"
+          :placeholder="`请设置${isFolder ? '文件夹' : '页面'}ID`"></tiny-input>
       </tiny-form-item>
 
-      <tiny-form-item
-        v-if="pageSettingState.currentPageData.group !== 'publicPages'"
-        label="选择父文件夹"
-        prop="parentId"
-      >
-        <tiny-select
-          v-model="pageSettingState.currentPageData.parentId"
-          value-field="id"
-          render-type="tree"
-          :tree-op="treeFolderOp"
-          text-field="name"
-          placeholder="请选择父文件夹"
-          popper-class="parent-fold-select-dropdown"
-          @change="changeParentForderId"
-        ></tiny-select>
+      <tiny-form-item v-if="pageSettingState.currentPageData.group !== 'publicPages'" label="选择父文件夹" prop="parentId">
+        <tiny-select v-model="pageSettingState.currentPageData.parentId" value-field="id" render-type="tree"
+          :tree-op="treeFolderOp" text-field="name" placeholder="请选择父文件夹" popper-class="parent-fold-select-dropdown"
+          @change="changeParentForderId"></tiny-select>
       </tiny-form-item>
 
-      <tiny-form-item label="路由" prop="route">
+      <!-- <tiny-form-item label="路由" prop="route">
         <tiny-input v-model="pageSettingState.currentPageData.route" placeholder="请设置路由">
           <template #prepend><span class="input-head">website.com</span></template>
         </tiny-input>
@@ -55,21 +36,35 @@
             <span class="text-dim">{{ currentRoute }}</span>
           </span>
         </div>
+      </tiny-form-item> -->
+
+      <tiny-form-item label="业务表" prop="table">
+        <tiny-select v-model="pageSettingState.currentPageData.route" :searchable="true" placeholder="请选择业务表"
+          @change="changeTable" clearable>
+          <tiny-option v-for="item in tableList" :key="item.table_name" :label="item.table_common" :value="item.table_name"> </tiny-option>
+        </tiny-select>
+
       </tiny-form-item>
+
     </tiny-form>
     <page-home
-      v-if="!isFolder && !pageSettingState.isNew && pageSettingState.currentPageData.group !== 'public'"
-    ></page-home>
+      v-if="!isFolder && !pageSettingState.isNew && pageSettingState.currentPageData.group !== 'public'"></page-home>
   </div>
 </template>
 
 <script lang="jsx">
+
 import { ref, computed, watchEffect } from 'vue'
-import { Form, FormItem, Input, Select, Radio } from '@opentiny/vue'
+import { Form, FormItem, Input, Select, Radio, Option  } from '@opentiny/vue'
 import { usePage } from '@opentiny/tiny-engine-controller'
 import { REGEXP_PAGE_NAME, REGEXP_FOLDER_NAME, REGEXP_ROUTE } from '@opentiny/tiny-engine-common/js/verification'
 import { SvgButton } from '@opentiny/tiny-engine-common'
 import PageHome from './PageHome.vue'
+
+import {
+  request,
+  METHOD
+} from './request'
 
 export default {
   components: {
@@ -79,7 +74,8 @@ export default {
     TinyInput: Input,
     TinySelect: Select,
     PageHome,
-    TinyRadio: Radio
+    TinyRadio: Radio,
+    TinyOption: Option
   },
   props: {
     modelValue: {
@@ -160,7 +156,8 @@ export default {
           message: '只允许包含英文字母、数字、下横线_、中横线-、正斜杠/, 且以英文字母开头'
         }
       ],
-      group: [{ required: true, message: '必须选择页面类型' }]
+      group: [{ required: true, message: '必须选择页面类型' }],
+      table: [{ required: true, message: '必须选择业务表' }]
     }
 
     const getFolders = (pages) => {
@@ -203,6 +200,9 @@ export default {
       return options
     })
 
+    const tableList =  [];
+
+
     const generalForm = ref(null)
 
     const validGeneralForm = () => {
@@ -222,6 +222,10 @@ export default {
       oldParentId.value = value.id
     }
 
+    const changeTable = (value) => {
+      console.log(value);
+    }
+
     return {
       pageRules,
       folderRules,
@@ -230,8 +234,15 @@ export default {
       validGeneralForm,
       treeFolderOp,
       currentRoute,
-      changeParentForderId
+      changeParentForderId,
+      tableList,
+      changeTable
     }
+  },
+  mounted() {
+    request('/System/QueryTableList', METHOD.POST).then(result => {      
+      this.tableList = result.data;
+    })
   }
 }
 </script>
@@ -244,38 +255,47 @@ export default {
     .input-head {
       color: var(--ti-lowcode-page-manage-input-head-text-color);
     }
+
     :deep(.tiny-form-item) {
       padding: 0 12px;
+
       .tiny-input-group__prepend {
         border: 1px solid var(--ti-lowcode-page-manage-input-group-border-color);
         background: var(--ti-lowcode-page-manage-input-group-color);
         border-right: 1px solid var(--ti-lowcode-page-manage-input-group-border-right-color);
       }
+
       .page-type-radio {
         color: var(--ti-lowcode-page-manage-title-background-text-color);
       }
+
       .tiny-form-item__label {
         font-size: 14px;
         color: var(--ti-lowcode-page-manage-text-color);
       }
+
       .tiny-form-item__error {
         font-size: 14px;
         color: var(--ti-lowcode-page-manage-error-color);
       }
     }
   }
+
   .tip {
     color: var(--ti-lowcode-page-manage-tip-border-color);
     font-size: 14px;
     border-radius: 3px;
     display: flex;
     align-items: center;
+
     .icon {
       color: var(--ti-lowcode-page-manage-icon-text-color);
     }
+
     .text {
       color: var(--ti-lowcode-page-manage-btn-text-color);
     }
+
     .text-dim {
       color: var(--ti-lowcode-page-manage-btn-text-color);
     }
