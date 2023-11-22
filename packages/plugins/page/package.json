@@ -30,6 +30,7 @@
     "@opentiny/tiny-engine-utils": "workspace:^1.0.0",
     "@opentiny/vue": "~3.10.0",
     "@opentiny/vue-renderless": "~3.10.0",
+    "axios": "1.6.2",
     "vue": "3.2.45"
   },
   "devDependencies": {
