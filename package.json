@@ -21,7 +21,7 @@
     "pub:prerelease": "pnpm run build:plugin && pnpm run build:alpha && pnpm lerna version prerelease --preid beta --no-push --yes && lerna publish from-package --pre-dist-tag beta --yes",
     "setup": "node ./scripts/setup.js"
   },
-  "devDependencies": {
+  "devDependencies": {    
     "@babel/eslint-parser": "^7.21.3",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",

@@ -6978,7 +6978,7 @@
             "exportName": "Subtable",
             "script": "//unpkg.com/shqy-components",
             "version": "",
-            "destructuring": null
+            "destructuring": true
           },
           "group": "component",
           "priority": 2,
