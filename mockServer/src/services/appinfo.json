@@ -1034,14 +1034,15 @@
     },
     {
       "id": 102,
-      "name": "Pager",
+      "name": "shqy",
       "type": "npm",
       "content": {
-        "package": "@opentiny/vue",
+        "package": "shqy-components",
         "version": "",
-        "exportName": "Pager",
+        "exportName": "shqy",
         "subName": "",
-        "destructuring": true,
+        "cdnLink": "//unpkg.com/shqy-components",
+        "destructuring": false,
         "main": ""
       },
       "app": 918,
@@ -1068,11 +1069,11 @@
     },
     {
       "id": 97,
-      "name": "util",
+      "name": "mapOptions",
       "type": "function",
       "content": {
         "type": "JSFunction",
-        "value": "function util () {\r\n  console.log(321)\r\n}"
+        "value": "function util (data) { data.forEach(p => { p.value = p.Value; p.title = p.Key; p.label = p.Key; }); return data; }"
       },
       "app": 918,
       "category": "utils",
