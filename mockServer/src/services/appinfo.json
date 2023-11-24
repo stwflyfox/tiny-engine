@@ -10359,7 +10359,7 @@
                 "package": "shqy-components",
                 "exportName": "Subtable",
                 "script": "//unpkg.com/shqy-components",
-                "version": "1.0.3",
+                "version": "",
                 "destructuring": null
               },
               "group": "component",
