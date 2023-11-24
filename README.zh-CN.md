@@ -53,7 +53,7 @@ pnpm run build:plugin
 
 # 构建设计器
 pnpm run build:alpha  或 build:prod
-
+pnpm run build:prod
 ```
 
 ## 里程碑

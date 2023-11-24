@@ -103,7 +103,7 @@
     {
       "id": 230,
       "key": "lowcode.f53187a0",
-      "content": "test",
+      "content": "http",
       "host": 918,
       "host_type": "app",
       "lang": {
@@ -1053,11 +1053,11 @@
     },
     {
       "id": 106,
-      "name": "test",
+      "name": "http",
       "type": "function",
       "content": {
         "type": "JSFunction",
-        "value": "function util() {\r\n  console.log(3211)\r\n}"
+        "value": "async function util(url,data) { axios.interceptors.response.use(function (response) { return response.data}, function (error) { return Promise.reject(error)  }); var BASE_URL = location.href.toLowerCase().indexOf('localhost') >= 0 || location.href.indexOf('127.0.') >= 0 ? 'http://localhost:5005' : ''; BASE_URL='http://localhost:5005'; try{ return axios.post(BASE_URL + url,data,{ headers: { 'Content-Type':'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJDb21wYW55IjoiaHl0ZXN0IiwiQWNjb3VudCI6ImFkbWluaXN0cmF0b3IiLCJpc3MiOiI5MXpkLmNuIiwiYXVkIjoiOTF6ZC5jbiJ9.Q3bsUxhndge9evJrpcUJqO3ZGF2Yj2swnDlwYbuejeY' } }) } catch(ex) { console.log(ex) } }"
       },
       "app": 918,
       "category": "utils",

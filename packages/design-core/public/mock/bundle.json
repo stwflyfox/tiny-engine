@@ -3361,7 +3361,7 @@
                       "zh_CN": ""
                     }
                   },
-               
+
                   {
                     "property": "disabled",
                     "label": {
@@ -9959,7 +9959,7 @@
                 "componentName": "TinyForm",
                 "props": {
                   "labelWidth": "80px",
-                  "labelPosition": "top"
+                  "labelPosition": "left"
                 },
                 "children": [
                   {
@@ -10154,10 +10154,7 @@
                     },
                     "children": [
                       {
-                        "componentName": "div",
-                        "props": {
-                          "style": "margin:10px 0 0 30px"
-                        }
+                        "componentName": "div"
                       }
                     ]
                   },
@@ -10169,10 +10166,7 @@
                     },
                     "children": [
                       {
-                        "componentName": "div",
-                        "props": {
-                          "style": "margin:10px 0 0 30px"
-                        }
+                        "componentName": "div"
                       }
                     ]
                   }
@@ -10189,7 +10183,7 @@
               "schema": {
                 "componentName": "TinyCollapse",
                 "props": {
-                  "modelValue": "collapse1"
+                  "modelValue": ["collapse1", "collapse2", "collapse3"]
                 },
                 "children": [
                   {
