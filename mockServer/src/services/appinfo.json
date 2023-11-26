@@ -1054,11 +1054,11 @@
     },
     {
       "id": 106,
-      "name": "test",
+      "name": "mapDictionary",
       "type": "function",
       "content": {
         "type": "JSFunction",
-        "value": "function util(url,data) { }"
+        "value":"function util (data) { data.forEach(p => { p.value = p.Code; p.title = p.Name; p.label = p.Name; }); return data; }"
       },
       "app": 918,
       "category": "utils",
