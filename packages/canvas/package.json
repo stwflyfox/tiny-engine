@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^1.6.2",
     "@babel/core": "7.18.13",
+    "@opentiny/tiny-engine-builtin-component": "workspace:^0.1.0",
     "@opentiny/tiny-engine-common": "workspace:^1.0.0",
     "@opentiny/tiny-engine-controller": "workspace:^1.0.0",
     "@opentiny/tiny-engine-i18n-host": "workspace:^1.0.0",
