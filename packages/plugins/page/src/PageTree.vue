@@ -153,6 +153,7 @@ export default {
     }
 
     const updateUrlPageId = (id) => {
+      sessionStorage.setItem('TableName',state.currentNodeData.route)
       const url = new URL(window.location)
 
       url.searchParams.delete('blockid')

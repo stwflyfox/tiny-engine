@@ -3651,7 +3651,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaBindI18n",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -4103,7 +4103,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -4305,7 +4305,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -4722,7 +4722,7 @@
                     "labelPosition": "left"
                   },
                   {
-                    "property": "modelValue",
+                    "property": "MetaField",
                     "label": {
                       "text": {
                         "zh_CN": "绑定值"
@@ -4915,7 +4915,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -5194,7 +5194,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -5453,7 +5453,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -5644,7 +5644,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {
                         "dataType": "Array"
                       }
@@ -6177,7 +6177,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -6762,7 +6762,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -6978,7 +6978,7 @@
             "exportName": "Subtable",
             "script": "//unpkg.com/shqy-components",
             "version": "",
-            "destructuring": true
+            "destructuring": false
           },
           "group": "component",
           "priority": 2,
@@ -8169,7 +8169,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {

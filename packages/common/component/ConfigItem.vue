@@ -48,8 +48,7 @@
           <div v-if="showBindState" class="binding-state text-ellipsis-multiple">
             {{ '已绑定：' + widget.props.modelValue?.value }}
           </div>
-          <component
-            v-else
+          <component            
             :is="component"
             v-show="!hidden"
             v-bind="widget.props"

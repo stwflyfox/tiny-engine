@@ -222,8 +222,8 @@ export default {
       oldParentId.value = value.id
     }
 
-    const changeTable = (value) => {
-      console.log(value);
+    const changeTable = (value) => {      
+      sessionStorage.setItem('TableName',value);
     }
 
     return {
@@ -240,8 +240,8 @@ export default {
     }
   },
   mounted() {
-    request('/System/QueryTableList', METHOD.POST).then(result => {      
-      this.tableList = result.data;
+    request('/System/QueryTableList', METHOD.POST).then(result => {     
+      this.tableList = result;
     })
   }
 }

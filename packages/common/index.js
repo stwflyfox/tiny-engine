@@ -18,7 +18,7 @@ import ConfigCollapse from './component/ConfigCollapse.vue'
 import ConfigGroup from './component/ConfigGroup.vue'
 import ConfigItem from './component/ConfigItem.vue'
 import ConfigRender from './component/ConfigRender.vue'
-
+import MetaField from './component/MetaField.vue'
 import MetaArrayItem from './component/MetaArrayItem.vue'
 import MetaBindI18n from './component/MetaBindI18n.vue'
 import MetaBindVariable from './component/MetaBindVariable.vue'
@@ -78,6 +78,7 @@ import BlockDeployDialog from './component/BlockDeployDialog.vue'
 import ProgressBar from './component/ProgressBar.vue'
 import MetaButtonGroup from './component/MetaButtonGroup.vue'
 
+
 import i18n, { i18nKeyMaps } from './js/i18n.js'
 
 import enUs from './i18n/en-us.json'
@@ -89,6 +90,7 @@ mergeLocaleMessage(i18nKeyMaps.enUS, enUs)
 mergeLocaleMessage(i18nKeyMaps.zhCN, zhCn)
 
 export const MetaComponents = {
+  MetaField,
   MetaArrayItem,
   MetaBindI18n,
   MetaBindVariable,

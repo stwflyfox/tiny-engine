@@ -16,14 +16,14 @@ axios.defaults.xsrfCookieName = xsrfHeaderName
 
 axios.interceptors.request.use(function (config) {
   const cryptLoginInfo = sessionStorage.getItem("WMS3LoginInfo")
- 
+
 
   var token = getAuthorization();
 
 
   if (token != undefined) {
     config.headers[xsrfHeaderName] = token;
-    
+
     if (cryptLoginInfo != undefined) {
       config.headers['LoginInfo'] = cryptLoginInfo;
     }
@@ -32,16 +32,16 @@ axios.interceptors.request.use(function (config) {
 
 
 
-  var showWaiting = true;
+  var showWaiting = false;
 
-  
+
   // 
 
   //不显示提示
   try {
     if (config.data != undefined) {
-      if (config.data.ShowWaiting != undefined && config.data.ShowWaiting == false) {
-        showWaiting = false;
+      if (config.data.ShowWaiting != undefined && config.data.ShowWaiting == true) {
+        showWaiting = true;
       }
     }
   } catch (err) { console.log(err) }
@@ -76,7 +76,7 @@ axios.interceptors.request.use(function (config) {
   return config
 }, function (error) {
   layer.closeAll('loading'); //关闭加载层
-  
+
   if (error.response != undefined) {
     if (error.response.status == 401) {
       layer.alert(error.response.data.message, {
@@ -102,11 +102,23 @@ axios.interceptors.request.use(function (config) {
 
 axios.interceptors.response.use(function (response) {
   layer.closeAll('loading'); //关闭加载层
-  return response.data
+
+  if (response.data && response.data.data)
+  {
+    return response.data.data;
+  }
+  else if (response.data)
+  {
+    return response.data;
+  }
+  else
+  {
+    return response 
+  } 
 }, function (error) {
   layer.closeAll('loading'); //关闭加载层
 
-  if (error.response != undefined ) {
+  if (error.response != undefined) {
     if (error.response.status == 401) {
       if (error.response.data.message != undefined) {
         layer.alert(error.response.data.message, {
@@ -116,10 +128,9 @@ axios.interceptors.response.use(function (response) {
           logout();
         });
       }
-      else
-      {
-        layer.alert("接口未授权，将返回登录页!"+ " " + error.config.url, {
-          title: '发生异常' ,
+      else {
+        layer.alert("接口未授权，将返回登录页!" + " " + error.config.url, {
+          title: '发生异常',
           skin: 'layui-layer-molv'
         }, function () {
           logout();
@@ -171,7 +182,10 @@ async function request(url, method, params) {
         params
       })
     case METHOD.POST:
-      return axios.post(BASE_URL + url, params)
+      if (params)
+        return axios.post(BASE_URL + url, params)
+      else
+        return axios.post(BASE_URL + url)
     default:
       return axios.get(BASE_URL + url, {
         params
