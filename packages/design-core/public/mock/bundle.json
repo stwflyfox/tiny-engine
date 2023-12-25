@@ -2340,6 +2340,40 @@
                     "description": {
                       "zh_CN": "表单中标签的布局位置"
                     }
+                  },
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "组件大小"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
                   }
                 ]
               },
@@ -3300,309 +3334,7 @@
               "disable": ["copy", "remove"]
             }
           }
-        },
-        {
-          "name": {
-            "zh_CN": "EL按钮"
-          },
-          "component": "ElInput",
-          "icon": "button",
-          "description": "常用的操作按钮，提供包括默认按钮、图标按钮、图片按钮、下拉按钮等类型",
-          "docUrl": "",
-          "screenshot": "",
-          "tags": "",
-          "keywords": "",
-          "devMode": "proCode",
-          "npm": {
-            "package": "element-plus",
-            "version": "2.3.8",
-            "script": "https://unpkg.com/element-plus@2.3.8/dist/index.full.mjs",
-            "css": "https://unpkg.com/element-plus@2.3.8/dist/index.css",
-            "dependencies": null,
-            "exportName": "ElInput"
-          },
-          "group": "component",
-          "priority": 2,
-          "schema": {
-            "properties": [
-              {
-                "label": {
-                  "zh_CN": "基础信息"
-                },
-                "description": {
-                  "zh_CN": "基础信息"
-                },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
-                "content": [
-                  {
-                    "property": "placeholder",
-                    "type": "string",
-                    "defaultValue": "请输入",
-                    "label": {
-                      "text": {
-                        "zh_CN": "请输入"
-                      }
-                    },
-                    "cols": 12,
-                    "hidden": false,
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "widget": {
-                      "component": "MetaBindI18n",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": ""
-                    }
-                  },
-
-                  {
-                    "property": "disabled",
-                    "label": {
-                      "text": {
-                        "zh_CN": "禁用"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "是否被禁用"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
-                    "property": "type",
-                    "label": {
-                      "text": {
-                        "zh_CN": "类型"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSelect",
-                      "props": {
-                        "options": [
-                          {
-                            "label": "primary",
-                            "value": "primary"
-                          },
-                          {
-                            "label": "success",
-                            "value": "success"
-                          },
-                          {
-                            "label": "info",
-                            "value": "info"
-                          },
-                          {
-                            "label": "warning",
-                            "value": "warning"
-                          },
-                          {
-                            "label": "danger",
-                            "value": "danger"
-                          },
-                          {
-                            "label": "text",
-                            "value": "text"
-                          }
-                        ]
-                      }
-                    },
-                    "description": {
-                      "zh_CN": "设置不同的主题样式"
-                    },
-                    "labelPosition": "left"
-                  }
-                ]
-              },
-              {
-                "name": "1",
-                "label": {
-                  "zh_CN": "其他"
-                },
-                "content": [
-                  {
-                    "property": "round",
-                    "label": {
-                      "text": {
-                        "zh_CN": "圆角"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "是否圆角按钮"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
-                    "property": "plain",
-                    "label": {
-                      "text": {
-                        "zh_CN": "朴素按钮"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "是否为朴素按钮"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
-                    "property": "reset-time",
-                    "label": {
-                      "text": {
-                        "zh_CN": "禁用时间"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaNumber",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "设置禁用时间，防止重复提交，单位毫秒"
-                    }
-                  },
-                  {
-                    "property": "circle",
-                    "label": {
-                      "text": {
-                        "zh_CN": "圆角"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "是否圆形按钮"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
-                    "property": "autofocus",
-                    "label": {
-                      "text": {
-                        "zh_CN": "聚焦"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "是否默认聚焦"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
-                    "property": "loading",
-                    "label": {
-                      "text": {
-                        "zh_CN": "加载中"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "是否展示位加载中样式"
-                    },
-                    "labelPosition": "left"
-                  }
-                ],
-                "description": {
-                  "zh_CN": ""
-                }
-              }
-            ],
-            "events": {
-              "onClick": {
-                "label": {
-                  "zh_CN": "点击事件"
-                },
-                "description": {
-                  "zh_CN": "按钮被点击时触发的回调函数"
-                },
-                "type": "event",
-                "functionInfo": {
-                  "params": [],
-                  "returns": {}
-                },
-                "defaultValue": ""
-              }
-            }
-          },
-          "configure": {
-            "loop": true,
-            "condition": true,
-            "styles": true,
-            "isContainer": true,
-            "isModal": false,
-            "nestingRule": {
-              "childWhitelist": "",
-              "parentWhitelist": "",
-              "descendantBlacklist": "",
-              "ancestorWhitelist": ""
-            },
-            "isNullNode": false,
-            "isLayout": false,
-            "rootSelector": "",
-            "shortcuts": {
-              "properties": ["text", "size"]
-            },
-            "contextMenu": {
-              "actions": ["create symbol"],
-              "disable": ["copy", "remove"]
-            }
-          }
-        },
+        },     
         {
           "name": {
             "zh_CN": "输入框"
@@ -5904,6 +5636,26 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "top",
+                    "label": {
+                      "text": {
+                        "zh_CN": "设置弹出框距离窗口顶部的高度，默认为屏高的 15%"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置弹出框距离窗口顶部的高度，默认为屏高的 15%"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "draggable",
                     "label": {
                       "text": {
@@ -5939,6 +5691,46 @@
                     },
                     "description": {
                       "zh_CN": "弹出框的头部与底部内容会自动居中"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "close-on-click-modal",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否可以通过点击遮罩层关闭弹窗"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否可以通过点击遮罩层关闭弹窗"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "close-on-press-escape",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否可以通过 ESC 键关闭遮罩层"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否可以通过 ESC 键关闭遮罩层"
                     },
                     "labelPosition": "left"
                   },
@@ -6255,6 +6047,40 @@
                       "zh_CN": "标签页样式"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "组件大小"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
                   }
                 ]
               }
@@ -6962,12 +6788,12 @@
           }
         },
         {
-          "icon": "grid",
           "name": {
-            "zh_CN": "子表"
+            "zh_CN": "应用程序"
           },
-          "component": "Subtable",
-          "description": "提供了非常强大数据表格功能，可以展示数据列表，可以对数据列表进行选择、编辑等",
+          "component": "Program",
+          "icon": "input",
+          "description": "应用程序",
           "docUrl": "",
           "screenshot": "",
           "tags": "",
@@ -6975,10 +6801,160 @@
           "devMode": "proCode",
           "npm": {
             "package": "shqy-components",
-            "exportName": "Subtable",
-            "script": "//unpkg.com/shqy-components",
+            "exportName": "ProgramBuild",
+            "script": "https://unpkg.com/shqy-components",
             "version": "",
             "destructuring": false
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "config",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置项"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "配置项(ProgramCode:应用程序编码， param:默认查询条件, hightColumns:要高亮显示的列，多列时以逗号分隔 ; hideColumns:要隐藏的字段;showColumns:要显示的字段)"
+                    },
+                    "labelPosition": "left"
+                  },
+                  
+                 
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "尺寸"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  }
+                ]
+              }
+              
+            ],
+            "events": {
+             
+              "onButtonClick": {
+                "label": {
+                  "zh_CN": "点击按钮时触发"
+                },
+                "description": {
+                  "zh_CN": "点击按钮时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "event",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "原生 event"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+              
+            }            
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": true,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": ["value", "disabled"]
+            },
+            "contextMenu": {
+              "actions": ["create symbol"],
+              "disable": ["copy", "remove"]
+            }
+          }
+        },
+        {
+          "icon": "grid",
+          "name": {
+            "zh_CN": "子表"
+          },
+          "component": "TinyGrid",
+          "description": "提供了非常强大数据表格功能，可以展示数据列表，可以对数据列表进行选择、编辑等",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "Grid",
+            "version": "",
+            "destructuring": true
           },
           "group": "component",
           "priority": 2,
@@ -6997,7 +6973,28 @@
                     "zh_CN": "显示更多"
                   }
                 },
-                "content": [
+                "content": [                 
+                  {
+                    "property": "tableName",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定业务表"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaTables",
+                      "props": {}
+                    },
+                    "onChange": "",
+                    "description": {
+                      "zh_CN": "绑定业务表"
+                    },
+                    "labelPosition": "left"
+                  },
                   {
                     "property": "data",
                     "label": {
@@ -7010,16 +7007,15 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaCodeEditor",
-                      "props": {
-                        "language": "json"
-                      }
+                      "component": "MetaField",
+                      "props": {}
                     },
                     "onChange": "this.delProp('fetchData')",
                     "description": {
                       "zh_CN": "设置表格的数据"
                     }
                   },
+                 
                   {
                     "property": "columns",
                     "label": {
@@ -7061,8 +7057,11 @@
                               }
                             },
                             "widget": {
-                              "component": "MetaInput",
-                              "props": {}
+                              "component": "MetaSelect",
+                              "props": {
+                                "searchable": true,
+                                "options": []
+                              }
                             }
                           },
                           {
@@ -7852,6 +7851,22 @@
                 "defaultValue": ""
               }
             },
+            "slots": {
+              "toolbar": {
+                "label": {
+                  "zh_CN": "工具栏"
+                },
+                "description": {
+                  "zh_CN": "工具栏"
+                },
+                "widget": {
+                  "component": "MetaCodeEditor",
+                  "props": {
+                    "dataType": "JSFunction"
+                  }
+                }
+              }
+            },
             "shortcuts": {
               "properties": ["sortable", "columns"]
             },
@@ -8123,9 +8138,9 @@
         },
         {
           "name": {
-            "zh_CN": "弹出编辑"
+            "zh_CN": "弹出选择"
           },
-          "component": "TinyPopeditor",
+          "component": "PopSelect",
           "icon": "popEditor",
           "description": "该组件只能在弹出的面板中选择数据，不能手动输入数据；弹出面板中显示为 Tree 组件或者 Grid 组件",
           "docUrl": "",
@@ -8134,10 +8149,11 @@
           "keywords": "",
           "devMode": "proCode",
           "npm": {
-            "package": "@opentiny/vue",
-            "exportName": "PopEditor",
+            "package": "shqy-components",
+            "exportName": "PopSelect",
+            "script": "https://unpkg.com/shqy-components",
             "version": "",
-            "destructuring": true
+            "destructuring": false
           },
           "group": "component",
           "priority": 6,
@@ -8198,10 +8214,10 @@
                     "labelPosition": "left"
                   },
                   {
-                    "property": "show-clear-btn",
+                    "property": "programId",
                     "label": {
                       "text": {
-                        "zh_CN": "清除按钮"
+                        "zh_CN": "应用程序"
                       }
                     },
                     "required": true,
@@ -8209,11 +8225,31 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaInput",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否显示清除按钮"
+                      "zh_CN": "应用程序"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "textField",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示字段"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "显示字段"
                     },
                     "labelPosition": "left"
                   },
@@ -8283,47 +8319,8 @@
                       "zh_CN": "当弹出面板配置的是表格时，设置弹出面板中的过滤条件"
                     },
                     "labelPosition": "left"
-                  },
-                  {
-                    "property": "grid-op",
-                    "label": {
-                      "text": {
-                        "zh_CN": "表格配置"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaCodeEditor",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "设置弹出面板中表格组件的配置信息"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
-                    "property": "pager-op",
-                    "label": {
-                      "text": {
-                        "zh_CN": "分页配置"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaCodeEditor",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "设置弹出编辑框中分页配置"
-                    },
-                    "labelPosition": "left"
-                  },
+                  },                  
+                  
                   {
                     "property": "multi",
                     "label": {
@@ -8343,26 +8340,8 @@
                       "zh_CN": "设置弹出面板中的数据是否可多选"
                     },
                     "labelPosition": "left"
-                  },
-                  {
-                    "property": "show-pager",
-                    "label": {
-                      "text": {
-                        "zh_CN": "启用分页"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSwitch",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "当 popseletor 为 grid 时才能生效，配置为 true 后还需配置 pagerOp 属性"
-                    }
                   }
+                  
                 ],
                 "description": {
                   "zh_CN": ""
@@ -10121,6 +10100,10 @@
               "schema": {
                 "componentName": "TinyDialogBox",
                 "props": {
+                  "draggable": true,
+                  "lock-scroll": false,
+                  "close-on-click-modal": false,
+                  "close-on-press-escape": false,
                   "visible": true,
                   "show-close": true,
                   "title": "dialogBox title"
@@ -10231,13 +10214,16 @@
               },
               "icon": "grid",
               "screenshot": "",
-              "snippetName": "Subtable",
+              "snippetName": "TinyGrid",
               "schema": {
-                "componentName": "Subtable",
+                "componentName": "TinyGrid",
                 "props": {
+                  "tableName": "",   
+                  "border": true,
                   "editConfig": {
                     "trigger": "click",
-                    "mode": "cell",
+                    "mode": "row",
+                    "markInsert": true,
                     "showStatus": true
                   },
                   "columns": [
@@ -10262,101 +10248,24 @@
                       "title": "城市"
                     }
                   ],
-                  "data": [
-                    {
-                      "id": "1",
-                      "name": "GFD科技有限公司",
-                      "city": "福州",
-                      "employees": 800,
-                      "created_date": "2014-04-30 00:56:00",
-                      "boole": false
-                    },
-                    {
-                      "id": "2",
-                      "name": "WWW科技有限公司",
-                      "city": "深圳",
-                      "employees": 300,
-                      "created_date": "2016-07-08 12:36:22",
-                      "boole": true
-                    }
-                  ]
+                  "data": []
                 }
               }
             },
             {
               "name": {
-                "zh_CN": "弹出编辑"
+                "zh_CN": "弹出选择"
               },
               "icon": "popeditor",
               "screenshot": "",
-              "snippetName": "TinyPopeditor",
+              "snippetName": "PopSelect",
               "schema": {
-                "componentName": "TinyPopeditor",
+                "componentName": "PopSelect",
                 "props": {
                   "modelValue": "",
-                  "placeholder": "请选择",
-                  "gridOp": {
-                    "columns": [
-                      {
-                        "field": "id",
-                        "title": "ID",
-                        "width": 40
-                      },
-                      {
-                        "field": "name",
-                        "title": "名称",
-                        "showOverflow": "tooltip"
-                      },
-                      {
-                        "field": "province",
-                        "title": "省份",
-                        "width": 80
-                      },
-                      {
-                        "field": "city",
-                        "title": "城市",
-                        "width": 80
-                      }
-                    ],
-                    "data": [
-                      {
-                        "id": "1",
-                        "name": "GFD科技有限公司GFD科技有限公司GFD科技有限公司GFD科技有限公司GFD科技有限公司GFD科技有限公司GFD科技有限公司",
-                        "city": "福州",
-                        "province": "福建"
-                      },
-                      {
-                        "id": "2",
-                        "name": "WWW科技有限公司",
-                        "city": "深圳",
-                        "province": "广东"
-                      },
-                      {
-                        "id": "3",
-                        "name": "RFV有限责任公司",
-                        "city": "中山",
-                        "province": "广东"
-                      },
-                      {
-                        "id": "4",
-                        "name": "TGB科技有限公司",
-                        "city": "龙岩",
-                        "province": "福建"
-                      },
-                      {
-                        "id": "5",
-                        "name": "YHN科技有限公司",
-                        "city": "韶关",
-                        "province": "广东"
-                      },
-                      {
-                        "id": "6",
-                        "name": "WSX科技有限公司",
-                        "city": "黄冈",
-                        "province": "武汉"
-                      }
-                    ]
-                  }
+                  "programId": "6846846402496122898",
+                  "textField": "SupName",
+                  "placeholder": "请选择"                 
                 }
               }
             },
@@ -10622,20 +10531,7 @@
                 }
               }
             },
-            {
-              "name": {
-                "zh_CN": "EL输入框"
-              },
-              "icon": "button",
-              "screenshot": "",
-              "snippetName": "ElInput",
-              "schema": {
-                "componentName": "ElInput",
-                "props": {
-                  "placeholder": "请输入"
-                }
-              }
-            },
+           
             {
               "name": {
                 "zh_CN": "按钮组"
@@ -10718,6 +10614,20 @@
                 "props": {
                   "placeholder": "请输入",
                   "modelValue": ""
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "应用程序"
+              },
+              "icon": "input",
+              "screenshot": "",
+              "snippetName": "Program",
+              "schema": {
+                "componentName": "Program",
+                "props": {                 
+                  "config": "{\"ProgramCode\":\"\"}"
                 }
               }
             },

@@ -1,7 +1,7 @@
 <template>
   <div class="advanced-config-container">
     <div class="advnce-config">
-      <label class="text-ellipsis-multiple">是否渲染</label>
+      <label class="text-ellipsis-multiple">是否显示</label>
       <div class="advanced-config-form-item">
         <meta-switch v-if="!isBind" :modelValue="condition" @update:modelValue="setConfig"> </meta-switch>
         <div v-else class="binding-state">已绑定：{{ condition.value }}</div>

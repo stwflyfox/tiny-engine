@@ -4,7 +4,8 @@
     :multiple="multi"
     :is-drop-inherit-width="true"
     :show-alloption="false"
-    :clearable="true"
+    :clearable="true"    
+    :searchable="searchable"
     @change="handleChange"
   >
     <template v-if="groups?.length">
@@ -60,6 +61,10 @@ export default {
       default: () => ''
     },
     multi: {
+      type: Boolean,
+      default: false
+    },
+    searchable: {
       type: Boolean,
       default: false
     },

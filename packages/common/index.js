@@ -18,6 +18,7 @@ import ConfigCollapse from './component/ConfigCollapse.vue'
 import ConfigGroup from './component/ConfigGroup.vue'
 import ConfigItem from './component/ConfigItem.vue'
 import ConfigRender from './component/ConfigRender.vue'
+import MetaTables from './component/MetaTables.vue'
 import MetaField from './component/MetaField.vue'
 import MetaArrayItem from './component/MetaArrayItem.vue'
 import MetaBindI18n from './component/MetaBindI18n.vue'
@@ -90,6 +91,7 @@ mergeLocaleMessage(i18nKeyMaps.enUS, enUs)
 mergeLocaleMessage(i18nKeyMaps.zhCN, zhCn)
 
 export const MetaComponents = {
+  MetaTables,
   MetaField,
   MetaArrayItem,
   MetaBindI18n,

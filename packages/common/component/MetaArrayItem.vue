@@ -8,34 +8,17 @@
         <meta-list-actions v-bind="actionsOptions" @actionEvents="actionEvents"></meta-list-actions>
       </template>
       <template #items>
-        <vue-draggable-next
-          :list="itemsOptions.optionsList"
-          :disabled="disableDrag"
-          handle=".tiny-svg-size"
-          @change="dragEnd"
-        >
+        <vue-draggable-next :list="itemsOptions.optionsList" :disabled="disableDrag" handle=".tiny-svg-size"
+          @change="dragEnd">
           <div v-for="(item, index) in itemsOptions.optionsList" :key="index">
-            <meta-list-item
-              :item="item"
-              :index="index"
-              :dataScource="itemsOptions"
-              :currentIndex="state.currentIndex"
-              :expand="expand"
-              @changeItem="changeItem"
-              @deleteItem="deleteItem"
-              @editItem="editItem"
-            >
+            <meta-list-item :item="item" :index="index" :dataScource="itemsOptions" :currentIndex="state.currentIndex"
+              :expand="expand" @changeItem="changeItem" @deleteItem="deleteItem" @editItem="editItem">
               <template #content>
                 <span>{{ translate(item[itemsOptions.textField]) || item.type }}</span>
               </template>
               <template #metaForm>
-                <meta-child-item
-                  type="array"
-                  :meta="meta"
-                  :index="index"
-                  :arrayIndex="state.currentIndex"
-                  @update:modelValue="onValueChange(index, $event)"
-                ></meta-child-item>
+                <meta-child-item type="array" :meta="meta" :index="index" :arrayIndex="state.currentIndex"
+                  @update:modelValue="onValueChange(index, $event)"></meta-child-item>
               </template>
             </meta-list-item>
           </div>
@@ -54,6 +37,12 @@ import MetaListItem from './MetaListItem.vue'
 import MetaChildItem from './MetaChildItem.vue'
 import { useTranslate } from '@opentiny/tiny-engine-controller'
 import { VueDraggableNext } from 'vue-draggable-next'
+import { useProperties } from '@opentiny/tiny-engine-controller'
+
+import {
+  request,
+  METHOD
+} from './request'
 
 export default {
   name: 'MetaArrayItem',
@@ -68,7 +57,7 @@ export default {
   props: {
     meta: {
       type: Object,
-      default: () => {}
+      default: () => { }
     },
     expand: {
       type: Boolean,
@@ -131,7 +120,22 @@ export default {
     })
 
     const editItem = (data) => {
-      state.currentIndex = data.index
+      
+      const { getProp } = useProperties();
+      let tableName = getProp('tableName').value;
+      
+      if (tableName) {
+        
+        request('/System/GetTableFieldsByName', METHOD.POST, { TableName: tableName }).then(result => {
+          props.meta.properties[0].content.find(p => p.property == 'field').widget.props.options = [];
+          result.forEach(p => {
+            props.meta.properties[0].content.find(p => p.property == 'field').widget.props.options.push({ label: p.field_common, value: p.field_name })
+          })
+        })
+      }
+      state.currentIndex = data.index;
+
+
     }
 
     const addItem = () => {
