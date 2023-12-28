@@ -1,18 +1,19 @@
 /**
-* Copyright (c) 2023 - present TinyEngine Authors.
-* Copyright (c) 2023 - present Huawei Cloud Computing Technologies Co., Ltd.
-*
-* Use of this source code is governed by an MIT-style license.
-*
-* THE OPEN SOURCE SOFTWARE IN THIS PRODUCT IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL,
-* BUT WITHOUT ANY WARRANTY, WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR
-* A PARTICULAR PURPOSE. SEE THE APPLICABLE LICENSES FOR MORE DETAILS.
-*
-*/
+ * Copyright (c) 2023 - present TinyEngine Authors.
+ * Copyright (c) 2023 - present Huawei Cloud Computing Technologies Co., Ltd.
+ *
+ * Use of this source code is governed by an MIT-style license.
+ *
+ * THE OPEN SOURCE SOFTWARE IN THIS PRODUCT IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL,
+ * BUT WITHOUT ANY WARRANTY, WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR
+ * A PARTICULAR PURPOSE. SEE THE APPLICABLE LICENSES FOR MORE DETAILS.
+ *
+ */
 
 import PluginSetting from './component/PluginSetting.vue'
 import PluginPanel from './component/PluginPanel.vue'
 import SvgButton from './component/SvgButton.vue'
+import LinkButton from './component/LinkButton.vue'
 
 import ConfigCollapse from './component/ConfigCollapse.vue'
 import ConfigGroup from './component/ConfigGroup.vue'
@@ -78,6 +79,7 @@ import MetaRelatedColumns from './component/MetaRelatedColumns.vue'
 import BlockDeployDialog from './component/BlockDeployDialog.vue'
 import ProgressBar from './component/ProgressBar.vue'
 import MetaButtonGroup from './component/MetaButtonGroup.vue'
+import MetaTableColumns from './component/MetaTableColumns.vue'
 
 
 import i18n, { i18nKeyMaps } from './js/i18n.js'
@@ -132,8 +134,8 @@ export const MetaComponents = {
   MetaCheckboxGroup,
   MetaIpSection,
   MetaRelatedEditor,
-  MetaRelatedColumns
-  
+  MetaRelatedColumns,
+  MetaTableColumns
 }
 
 export {
@@ -172,6 +174,7 @@ export {
   PluginPanel,
   VideoGuide,
   SvgButton,
+  LinkButton,
   BlockHistoryList,
   BlockHistoryTemplate,
   BlockLinkField,
@@ -192,5 +195,6 @@ export {
   SaveNewBlock,
   BindI18n,
   BlockDeployDialog,
-  ProgressBar
+  ProgressBar,
+  MetaTableColumns
 }
