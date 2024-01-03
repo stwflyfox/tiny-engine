@@ -12,7 +12,7 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { importmapPlugin } from './scripts/externalDeps'
 import visualizer from 'rollup-plugin-visualizer'
 
-const origin = 'http://localhost:9090/'
+const origin = 'http://localhost:7011/'
 
 const config = {
   base: './',
