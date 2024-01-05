@@ -14074,55 +14074,6 @@
     "description": "2023.3.9",
     "components": [
       {
-        "component": "a",
-        "npm": {}
-      },
-      {
-        "component": "button",
-        "npm": {}
-      },
-      {
-        "component": "form",
-        "npm": {}
-      },
-      {
-        "component": [
-          "h1",
-          "h2",
-          "h3",
-          "h4",
-          "h5",
-          "h6"
-        ],
-        "npm": {}
-      },
-      {
-        "component": "Img",
-        "npm": {}
-      },
-      {
-        "component": "input",
-        "npm": {}
-      },
-      {
-        "component": "label",
-        "npm": {}
-      },
-      {
-        "component": "p",
-        "npm": {}
-      },
-      {
-        "component": "PopSelect",
-        "npm": {
-          "package": "shqy-components",
-          "exportName": "PopSelect",
-          "script": "https://unpkg.com/shqy-components",
-          "version": "",
-          "destructuring": false
-        }
-      },
-      {
         "component": "Program",
         "npm": {
           "package": "shqy-components",
@@ -14131,14 +14082,6 @@
           "version": "",
           "destructuring": false
         }
-      },
-      {
-        "component": "table",
-        "npm": {}
-      },
-      {
-        "component": "td",
-        "npm": {}
       },
       {
         "component": "TinyBreadcrumb",
