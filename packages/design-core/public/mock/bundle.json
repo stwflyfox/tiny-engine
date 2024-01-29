@@ -18,7 +18,8 @@
           "npm": {
             "package": "shqy-components",
             "exportName": "ProgramBuild",
-            "script": "https://unpkg.com/shqy-components",
+            "script": "https://npm.onmicrosoft.cn/shqy-components",
+            "css": "https://npm.onmicrosoft.cn/shqy-components",
             "version": "",
             "destructuring": false
           },

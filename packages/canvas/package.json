@@ -1,6 +1,6 @@
 {
   "name": "@opentiny/tiny-engine-canvas",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -28,12 +28,12 @@
   "dependencies": {
     "axios": "^1.6.2",
     "@babel/core": "7.18.13",
-    "@opentiny/tiny-engine-builtin-component": "workspace:^0.1.0",
-    "@opentiny/tiny-engine-common": "workspace:^1.0.0",
-    "@opentiny/tiny-engine-controller": "workspace:^1.0.0",
-    "@opentiny/tiny-engine-i18n-host": "workspace:^1.0.0",
-    "@opentiny/tiny-engine-utils": "workspace:^1.0.0",
-    "@opentiny/tiny-engine-webcomponent-core": "workspace:^1.0.0",
+    "@opentiny/tiny-engine-builtin-component": "workspace:*",
+    "@opentiny/tiny-engine-common": "workspace:*",
+    "@opentiny/tiny-engine-controller": "workspace:*",
+    "@opentiny/tiny-engine-i18n-host": "workspace:*",
+    "@opentiny/tiny-engine-utils": "workspace:*",
+    "@opentiny/tiny-engine-webcomponent-core": "workspace:*",
     "@opentiny/vue": "~3.10.0",
     "@opentiny/vue-icon": "~3.10.0",
     "@opentiny/vue-renderless": "~3.10.0",
