@@ -18,8 +18,8 @@
           "npm": {
             "package": "shqy-components",
             "exportName": "ProgramBuild",
-            "script": "https://npm.onmicrosoft.cn/shqy-components",
-            "css": "https://npm.onmicrosoft.cn/shqy-components",
+            "script": "https://unpkg.com/shqy-components",
+            "css": "https://unpkg.com/shqy-components/style.css",
             "version": "",
             "destructuring": false
           },
@@ -8391,7 +8391,7 @@
               "schema": {
                 "componentName": "Program",
                 "props": {
-                  "config": "{\"ProgramCode\":\"\"}"
+                  "config": ""
                 }
               }
             },
