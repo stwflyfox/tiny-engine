@@ -7212,7 +7212,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaField",
+                      "component": "MetaInput",
                       "props": {}
                     },
                     "description": {
@@ -8716,14 +8716,14 @@
               "schema": {
                 "componentName": "TinyTabs",
                 "props": {
-                  "modelValue": "first"
+                  "modelValue": "tab1"
                 },
                 "children": [
                   {
                     "componentName": "TinyTabItem",
                     "props": {
                       "title": "标签页1",
-                      "name": "first"
+                      "name": "tab1"
                     },
                     "children": [
                       {
@@ -8735,7 +8735,43 @@
                     "componentName": "TinyTabItem",
                     "props": {
                       "title": "标签页2",
-                      "name": "second"
+                      "name": "tab2"
+                    },
+                    "children": [
+                      {
+                        "componentName": "div"
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyTabItem",
+                    "props": {
+                      "title": "标签页3",
+                      "name": "tab3"
+                    },
+                    "children": [
+                      {
+                        "componentName": "div"
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyTabItem",
+                    "props": {
+                      "title": "标签页4",
+                      "name": "tab4"
+                    },
+                    "children": [
+                      {
+                        "componentName": "div"
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyTabItem",
+                    "props": {
+                      "title": "标签页5",
+                      "name": "tab5"
                     },
                     "children": [
                       {
