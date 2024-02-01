@@ -10,26 +10,7 @@
  *
  */
 
-const getBaseUrl = () => 'https://opentiny.design/tiny-engine#/help-center/course/engine/'
-
-const helpState = {
-  docsUrl: {
-    block: 3,
-    bridge: 13,
-    data: 7,
-    datasource: 11,
-    i18n: 12,
-    page: 2,
-    script: 8,
-    stylePanel: 6
-  }
+module.exports = {
+  port: process.env.MOCK_PORT || 9090,
+  env: process.env.NODE_ENV || 'development' // Current mode
 }
-
-const getDocsUrl = (plugin) => {
-  return `${getBaseUrl()}${helpState.docsUrl[plugin]}`
-}
-
-export default () => ({
-  getBaseUrl,
-  getDocsUrl
-})

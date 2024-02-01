@@ -50,6 +50,7 @@
         </div>
       </li>
       <li
+        v-if="state.independence"
         :key="state.bottomNavLists.length + 1"
         :class="['list-item']"
         :title="state.independence.title"
@@ -221,7 +222,7 @@ export default {
 
 <style lang="less" scoped>
 #tiny-engine-left-panel {
-  width: var(--base-left-panel-width, 268px);
+  width: var(--base-left-panel-width);
   height: calc(100vh - var(--base-top-panel-height));
   border-right: 1px solid var(--ti-lowcode-plugin-panel-border-right-color);
   background: var(--ti-lowcode-common-component-bg);

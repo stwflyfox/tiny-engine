@@ -14079,6 +14079,7 @@
           "package": "shqy-components",
           "exportName": "ProgramBuild",
           "script": "https://unpkg.com/shqy-components",
+          "css": "https://unpkg.com/shqy-components/style.css",
           "version": "",
           "destructuring": false
         }
