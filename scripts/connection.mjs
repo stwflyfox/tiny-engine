@@ -20,7 +20,7 @@ const componentsTableName = 'user_components'
 const materialHistoryId = 639
 // 数据库配置
 const mysqlConfig = {
-  host: '123.60.52.74', // 主机名（服务器地址）
+  host: '60.204.187.130', // 主机名（服务器地址）
   port: '3306', // 端口号
   user: 'root', // 用户名
   password: 'Akcw2019!@#', // 密码

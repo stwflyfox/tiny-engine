@@ -15,6 +15,12 @@ import initSvgs from '@opentiny/tiny-engine-svgs'
 import App from './App.vue'
 import 'virtual:svg-icons-register'
 
+import TinyThemeTool from '@opentiny/vue-theme/theme-tool'
+import { tinyAuroraTheme } from '@opentiny/vue-theme/theme' // SMB 主题
+
+// eslint-disable-next-line no-new
+new TinyThemeTool(tinyAuroraTheme, 'tinyStyleSheetId') // 初始化主题
+
 const app = createApp(App)
 
 initSvgs(app)

@@ -1,5 +1,6 @@
 <template>
   <div class="toolbar-wrap">
+    <tiny-button type="primary" > 主要按钮 </tiny-button>
     <div class="toolbar-left">
       <component :is="Breadcrumb"></component>
     </div>
@@ -18,6 +19,7 @@ import { useBreadcrumb } from '@opentiny/tiny-engine-controller'
 import { getSearchParams } from './preview/http'
 import { BROADCAST_CHANNEL } from '../src/preview/srcFiles/constant'
 import addons from '@opentiny/tiny-engine-app-addons'
+import { Button } from '@opentiny/vue'
 
 const getToolbars = (pluginId) => {
   return defineAsyncComponent(() =>
@@ -26,6 +28,9 @@ const getToolbars = (pluginId) => {
 }
 
 export default {
+  components: {
+    TinyButton: Button
+  },
   setup() {
     const tools = ['breadcrumb', 'lang', 'media']
     const [Breadcrumb, ChangeLang, ToolbarMedia] = tools.map(getToolbars)
