@@ -18,8 +18,8 @@
           "npm": {
             "package": "shqy-components",
             "exportName": "ProgramBuild",
-            "script": "https://unpkg.com/shqy-components",
-            "css": "https://unpkg.com/shqy-components/style.css",
+            "script": "https://npm.onmicrosoft.cn/shqy-components",
+            "css": "https://npm.onmicrosoft.cn/shqy-components/style.css",
             "version": "",
             "destructuring": false
           },
@@ -42,10 +42,10 @@
                 },
                 "content": [
                   {
-                    "property": "config",
+                    "property": "ProgramCode",
                     "label": {
                       "text": {
-                        "zh_CN": "配置项"
+                        "zh_CN": "应用程序编码"
                       }
                     },
                     "required": true,
@@ -53,13 +53,11 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaCodeEditor",
-                      "props": {
-                        "language": "json"
-                      }
+                      "component": "MetaInput",
+                      "props": {}
                     },
                     "description": {
-                      "zh_CN": "配置项(ProgramCode:应用程序编码， param:默认查询条件, hightColumns:要高亮显示的列，多列时以逗号分隔 ; hideColumns:要隐藏的字段;showColumns:要显示的字段)"
+                      "zh_CN": "应用程序编码"
                     },
                     "labelPosition": "left"
                   },
@@ -7212,7 +7210,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaField",
+                      "component": "MetaInput",
                       "props": {}
                     },
                     "description": {
@@ -8391,7 +8389,7 @@
               "schema": {
                 "componentName": "Program",
                 "props": {
-                  "config": ""
+                  "ProgramCode": ""
                 }
               }
             },
@@ -8716,14 +8714,14 @@
               "schema": {
                 "componentName": "TinyTabs",
                 "props": {
-                  "modelValue": "first"
+                  "modelValue": "tab1"
                 },
                 "children": [
                   {
                     "componentName": "TinyTabItem",
                     "props": {
                       "title": "标签页1",
-                      "name": "first"
+                      "name": "tab1"
                     },
                     "children": [
                       {
@@ -8735,7 +8733,43 @@
                     "componentName": "TinyTabItem",
                     "props": {
                       "title": "标签页2",
-                      "name": "second"
+                      "name": "tab2"
+                    },
+                    "children": [
+                      {
+                        "componentName": "div"
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyTabItem",
+                    "props": {
+                      "title": "标签页3",
+                      "name": "tab3"
+                    },
+                    "children": [
+                      {
+                        "componentName": "div"
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyTabItem",
+                    "props": {
+                      "title": "标签页4",
+                      "name": "tab4"
+                    },
+                    "children": [
+                      {
+                        "componentName": "div"
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyTabItem",
+                    "props": {
+                      "title": "标签页5",
+                      "name": "tab5"
                     },
                     "children": [
                       {
