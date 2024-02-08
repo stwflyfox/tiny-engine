@@ -17,7 +17,7 @@
     "destructuring": true
   },
   "group": "component",
-  "priority": 1,
+  "priority": 21,
   "schema": {
     "properties": [
       {

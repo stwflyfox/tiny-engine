@@ -1,10 +1,10 @@
 {
-  "icon": "form",
   "name": {
-    "zh_CN": "表单"
+    "zh_CN": "日期选择"
   },
-  "component": "TinyForm",
-  "description": "由按钮、输入框、选择器、单选框、多选框等控件组成，用以收集、校验、提交数据",
+  "component": "TinyDatePicker",
+  "icon": "datepick",
+  "description": "用于输入或选择日期",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
@@ -12,12 +12,12 @@
   "devMode": "proCode",
   "npm": {
     "package": "@opentiny/vue",
-    "exportName": "Form",
+    "exportName": "DatePicker",
     "version": "",
     "destructuring": true
   },
   "group": "component",
-  "priority": 5,
+  "priority": 1,
   "schema": {
     "properties": [
       {
@@ -34,6 +34,104 @@
           }
         },
         "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "type",
+            "label": {
+              "text": {
+                "zh_CN": "类型"
+              }
+            },
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "日期",
+                    "value": "date"
+                  },
+                  {
+                    "label": "日期时间",
+                    "value": "datetime"
+                  },
+                  {
+                    "label": "周",
+                    "value": "week"
+                  },
+                  {
+                    "label": "月份",
+                    "value": "month"
+                  },
+                  {
+                    "label": "年份",
+                    "value": "year"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置日期框的type属性"
+            }
+          },         
+          {
+            "property": "placeholder",
+            "label": {
+              "text": {
+                "zh_CN": "占位文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "输入框占位文本"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "clearable",
+            "label": {
+              "text": {
+                "zh_CN": "清除按钮"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示清除按钮"
+            },
+            "labelPosition": "left"
+          },
           {
             "property": "disabled",
             "label": {
@@ -54,30 +152,10 @@
             }
           },
           {
-            "property": "label-width",
+            "property": "readonly",
             "label": {
               "text": {
-                "zh_CN": "标签宽度"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaInput",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "表单中标签占位宽度，默认为 80px"
-            },
-            "labelPosition": "left"
-          },
-          {
-            "property": "inline",
-            "label": {
-              "text": {
-                "zh_CN": "行内布局"
+                "zh_CN": "是否只读"
               }
             },
             "required": true,
@@ -89,87 +167,14 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "行内布局模式，默认为 false"
-            }
-          },
-          {
-            "property": "label-align",
-            "label": {
-              "text": {
-                "zh_CN": "必填标识是否占位"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSwitch",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "必填标识 * 是否占位"
-            },
-            "labelPosition": "left"
-          },
-          {
-            "property": "label-suffix",
-            "label": {
-              "text": {
-                "zh_CN": "标签后缀"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaInput",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "表单中标签后缀"
-            }
-          },
-          {
-            "property": "label-position",
-            "label": {
-              "text": {
-                "zh_CN": "标签位置"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSelect",
-              "props": {
-                "options": [
-                  {
-                    "label": "right",
-                    "value": "right"
-                  },
-                  {
-                    "label": "left ",
-                    "value": "left "
-                  },
-                  {
-                    "label": "top",
-                    "value": "top"
-                  }
-                ]
-              }
-            },
-            "description": {
-              "zh_CN": "表单中标签的布局位置"
+              "zh_CN": ""
             }
           },
           {
             "property": "size",
             "label": {
               "text": {
-                "zh_CN": "组件大小"
+                "zh_CN": "尺寸"
               }
             },
             "required": true,
@@ -181,22 +186,22 @@
               "props": {
                 "options": [
                   {
-                    "label": "mini",
-                    "value": "mini"
+                    "label": "medium",
+                    "value": "medium"
                   },
                   {
                     "label": "small",
                     "value": "small"
                   },
                   {
-                    "label": "medium",
-                    "value": "medium"
+                    "label": "mini",
+                    "value": "mini"
                   }
                 ]
               }
             },
             "description": {
-              "zh_CN": ""
+              "zh_CN": "日期框尺寸。该属性的可选值为 medium / small / mini"
             }
           }
         ]
@@ -204,14 +209,14 @@
       {
         "name": "1",
         "label": {
-          "zh_CN": "校验属性"
+          "zh_CN": "其他"
         },
         "content": [
           {
-            "property": "model",
+            "property": "maxlength",
             "label": {
               "text": {
-                "zh_CN": "表单校验对象"
+                "zh_CN": "最大长度"
               }
             },
             "required": true,
@@ -219,19 +224,19 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaCodeEditor",
+              "component": "MetaNumber",
               "props": {}
             },
             "description": {
-              "zh_CN": "表单数据对象"
+              "zh_CN": "设置 input 框的maxLength"
             },
             "labelPosition": "left"
           },
           {
-            "property": "rules",
+            "property": "autofocus",
             "label": {
               "text": {
-                "zh_CN": "校验规则"
+                "zh_CN": "聚焦"
               }
             },
             "required": true,
@@ -239,12 +244,13 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaCodeEditor",
+              "component": "MetaSwitch",
               "props": {}
             },
             "description": {
-              "zh_CN": "表单验证规则"
-            }
+              "zh_CN": "自动获取焦点"
+            },
+            "labelPosition": "left"
           }
         ],
         "description": {
@@ -253,22 +259,22 @@
       }
     ],
     "events": {
-      "onValidate": {
+      "onChange": {
         "label": {
-          "zh_CN": "表单项被校验后触发"
+          "zh_CN": "值改变时触发"
         },
         "description": {
-          "zh_CN": "表单项被校验后触发"
+          "zh_CN": "在 Input 值改变时触发"
         },
         "type": "event",
         "functionInfo": {
           "params": [
             {
-              "name": "function",
-              "type": "Function",
-              "defaultValue": "(valid) => {}",
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
               "description": {
-                "zh_CN": "校验回调函数"
+                "zh_CN": "输入框改变后的值"
               }
             }
           ],
@@ -292,6 +298,29 @@
               "defaultValue": "",
               "description": {
                 "zh_CN": "输入框输入的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
               }
             }
           ],
@@ -359,16 +388,28 @@
         },
         "defaultValue": ""
       }
+    },
+    "slots": {
+      "prefix": {
+        "label": {
+          "zh_CN": "前置内容"
+        }
+      },
+      "suffix": {
+        "label": {
+          "zh_CN": "后置内容"
+        }
+      }
     }
   },
   "configure": {
     "loop": true,
     "condition": true,
     "styles": true,
-    "isContainer": false,
+    "isContainer": true,
     "isModal": false,
     "nestingRule": {
-      "childWhitelist": [],
+      "childWhitelist": "",
       "parentWhitelist": "",
       "descendantBlacklist": "",
       "ancestorWhitelist": ""
@@ -378,7 +419,7 @@
     "rootSelector": "",
     "shortcuts": {
       "properties": [
-        "label-width",
+        "value",
         "disabled"
       ]
     },
@@ -395,74 +436,18 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "表单"
+        "zh_CN": "日期选择"
       },
+      "icon": "datepick",
       "screenshot": "",
-      "snippetName": "tiny-form",
-      "icon": "form",
+      "snippetName": "TinyDatePicker",
       "schema": {
-        "componentName": "TinyForm",
+        "componentName": "TinyDatePicker",
         "props": {
-          "labelWidth": "80px",
-          "labelPosition": "left",
+          "placeholder": "请输入",
+          "modelValue": "",
           "size": "mini"
-        },
-        "children": [
-          {
-            "componentName": "TinyFormItem",
-            "props": {
-              "label": "人员"
-            },
-            "children": [
-              {
-                "componentName": "TinyInput",
-                "props": {
-                  "placeholder": "请输入",
-                  "modelValue": ""
-                }
-              }
-            ]
-          },
-          {
-            "componentName": "TinyFormItem",
-            "props": {
-              "label": "密码"
-            },
-            "children": [
-              {
-                "componentName": "TinyInput",
-                "props": {
-                  "placeholder": "请输入",
-                  "modelValue": "",
-                  "type": "password"
-                }
-              }
-            ]
-          },
-          {
-            "componentName": "TinyFormItem",
-            "props": {
-              "label": ""
-            },
-            "children": [
-              {
-                "componentName": "TinyButton",
-                "props": {
-                  "text": "提交",
-                  "type": "primary",
-                  "style": "margin-right: 10px"
-                }
-              },
-              {
-                "componentName": "TinyButton",
-                "props": {
-                  "text": "重置",
-                  "type": "primary"
-                }
-              }
-            ]
-          }
-        ]
+        }
       }
     }
   ],
