@@ -256,7 +256,8 @@
         "componentName": "TinyRadio",
         "props": {
           "label": "1",
-          "text": "单选文本"
+          "text": "单选文本",
+          "size": "mini"
         }
       }
     }

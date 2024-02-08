@@ -181,18 +181,10 @@
             "widget": {
               "component": "MetaSelect",
               "props": {
-                "options": [
-                  {
-                    "label": "mini",
-                    "value": "mini"
-                  },
+                "options": [                
                   {
                     "label": "small",
                     "value": "small"
-                  },
-                  {
-                    "label": "medium",
-                    "value": "medium"
                   }
                 ]
               }
@@ -338,7 +330,8 @@
       "schema": {
         "componentName": "TinyTabs",
         "props": {
-          "modelValue": "tab1"
+          "modelValue": "tab1",
+          "size": "small"
         },
         "children": [
           {

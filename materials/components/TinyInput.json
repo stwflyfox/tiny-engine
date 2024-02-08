@@ -432,7 +432,8 @@
         "componentName": "TinyInput",
         "props": {
           "placeholder": "请输入",
-          "modelValue": ""
+          "modelValue": "",
+          "size": "mini"
         }
       }
     }

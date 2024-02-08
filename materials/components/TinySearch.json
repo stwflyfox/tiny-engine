@@ -296,7 +296,8 @@
         "componentName": "TinySearch",
         "props": {
           "modelValue": "",
-          "placeholder": "输入关键词"
+          "placeholder": "输入关键词",
+          "size": "mini"
         }
       }
     }
