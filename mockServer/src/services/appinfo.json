@@ -14074,17 +14074,6 @@
     "description": "2023.3.9",
     "components": [
       {
-        "component": "PopSelect",
-        "npm": {
-          "package": "shqy-components",
-          "exportName": "PopSelect",
-          "script": "https://npm.onmicrosoft.cn/shqy-components",
-          "css": "https://npm.onmicrosoft.cn/shqy-components/style.css",
-          "version": "",
-          "destructuring": false
-        }
-      },
-      {
         "component": "Program",
         "npm": {
           "package": "shqy-components",
