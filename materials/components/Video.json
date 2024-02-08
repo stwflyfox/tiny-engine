@@ -1,0 +1,195 @@
+{
+  "name": {
+    "zh_CN": "视频"
+  },
+  "component": "video",
+  "icon": "video",
+  "description": "视频",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {},
+  "group": "component",
+  "priority": 50,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 10,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "src",
+            "label": {
+              "text": {
+                "zh_CN": "视频的 URL"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "width",
+            "label": {
+              "text": {
+                "zh_CN": "视频播放器的宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "height",
+            "label": {
+              "text": {
+                "zh_CN": "视频播放器的高度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "controls",
+            "label": {
+              "text": {
+                "zh_CN": "是否显示控件"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "autoplay",
+            "label": {
+              "text": {
+                "zh_CN": "是否马上播放"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "attributes3",
+            "label": {
+              "text": {
+                "zh_CN": "原生属性"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaHtmlAttributes",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            },
+            "labelPosition": "none"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": [],
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [],
+      "disable": []
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "视频"
+      },
+      "icon": "video",
+      "screenshot": "",
+      "snippetName": "video",
+      "schema": {
+        "componentName": "video",
+        "props": {
+          "src": "img/webNova.jpg",
+          "width": "200",
+          "height": "100",
+          "style": "border:1px solid #ccc"
+        }
+      }
+    }
+  ],
+  "category": "html"
+}

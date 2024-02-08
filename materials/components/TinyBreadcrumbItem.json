@@ -1,0 +1,102 @@
+{
+  "icon": "breadcrumb",
+  "name": {
+    "zh_CN": "面包屑项"
+  },
+  "component": "TinyBreadcrumbItem",
+  "description": "",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "TinyBreadcrumbItem",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "to",
+            "label": {
+              "text": {
+                "zh_CN": "路由路径"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "面包屑项"
+            }
+          }
+        ]
+      }
+    ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "面包屑项标签"
+        },
+        "description": {
+          "zh_CN": "面包屑项"
+        }
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": [
+        "TinyBreadcrumb"
+      ],
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "to"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  }
+}

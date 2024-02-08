@@ -42,26 +42,6 @@
                 },
                 "content": [
                   {
-                    "property": "ProgramCode",
-                    "label": {
-                      "text": {
-                        "zh_CN": "应用程序编码"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaInput",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "应用程序编码"
-                    },
-                    "labelPosition": "left"
-                  },
-                  {
                     "property": "size",
                     "label": {
                       "text": {
@@ -8389,7 +8369,8 @@
               "schema": {
                 "componentName": "Program",
                 "props": {
-                  "ProgramCode": ""
+                  "ref": "program",
+                  "size": "mini"
                 }
               }
             },

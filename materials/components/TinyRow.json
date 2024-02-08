@@ -1,0 +1,199 @@
+{
+  "icon": "row",
+  "name": {
+    "zh_CN": "row"
+  },
+  "component": "TinyRow",
+  "description": "定义 Layout 的行配置信息",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Row",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 5,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "layout",
+            "label": {
+              "text": {
+                "zh_CN": "layout"
+              }
+            },
+            "cols": 12,
+            "widget": {
+              "component": "MetaLayoutGrid",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "layout"
+            },
+            "labelPosition": "none"
+          },
+          {
+            "property": "align",
+            "label": {
+              "text": {
+                "zh_CN": "align"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "top",
+                    "value": "top"
+                  },
+                  {
+                    "label": "middle",
+                    "value": "middle"
+                  },
+                  {
+                    "label": "bottom",
+                    "value": "bottom"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "flex",
+            "label": {
+              "text": {
+                "zh_CN": "flex"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            }
+          },
+          {
+            "property": "gutter",
+            "label": {
+              "text": {
+                "zh_CN": "gutter"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": [],
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "label-width",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "行"
+      },
+      "icon": "row",
+      "screenshot": "",
+      "snippetName": "TinyRow",
+      "schema": {
+        "componentName": "TinyRow",
+        "props": {},
+        "children": [
+          {
+            "componentName": "TinyCol",
+            "props": {
+              "span": 3
+            }
+          },
+          {
+            "componentName": "TinyCol",
+            "props": {
+              "span": 3
+            }
+          },
+          {
+            "componentName": "TinyCol",
+            "props": {
+              "span": 3
+            }
+          },
+          {
+            "componentName": "TinyCol",
+            "props": {
+              "span": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "category": "容器组件"
+}
