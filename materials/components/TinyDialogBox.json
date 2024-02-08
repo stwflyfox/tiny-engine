@@ -115,10 +115,10 @@
             "labelPosition": "left"
           },
           {
-            "property": "draggable",
+            "property": "modal",
             "label": {
               "text": {
-                "zh_CN": "可拖拽"
+                "zh_CN": "启用遮罩层"
               }
             },
             "required": true,
@@ -130,7 +130,7 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "是否开启弹窗的拖拽功能，默认值为 false 。"
+              "zh_CN": "是否启用遮罩层，默认值为 true 。"
             }
           },
           {
@@ -357,6 +357,7 @@
         "componentName": "TinyDialogBox",
         "props": {
           "draggable": true,
+          "modal": true,
           "lock-scroll": false,
           "close-on-click-modal": false,
           "close-on-press-escape": false,
