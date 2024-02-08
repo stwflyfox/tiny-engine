@@ -404,7 +404,8 @@
         "componentName": "TinyForm",
         "props": {
           "labelWidth": "80px",
-          "labelPosition": "left"
+          "labelPosition": "left",
+          "size": "mini"
         },
         "children": [
           {
