@@ -14078,8 +14078,8 @@
         "npm": {
           "package": "shqy-components",
           "exportName": "ProgramBuild",
-          "script": "https://npm.onmicrosoft.cn/shqy-components",
-          "css": "https://npm.onmicrosoft.cn/shqy-components/style.css",
+          "script": "https://ssrm.91zd.cn/shqy-components.es.js",
+          "css": "https://ssrm.91zd.cn/style.css",
           "version": "",
           "destructuring": false
         }

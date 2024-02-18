@@ -28,7 +28,7 @@ const config = {
           vue: 'Vue',
           'vue-i18n': 'VueI18n',
           '@opentiny/tiny-engine-i18n-host': 'TinyI18nHost',
-          '@opentiny/tiny-engine-webcomponent-core': 'TinyWebcomponentCore',
+          '@opentiny/tiny-engine-webcomponnpm.onmicrosoft.cnent-core': 'TinyWebcomponentCore',
           '@opentiny/vue': 'TinyVue',
           '@opentiny/vue-icon': 'TinyVueIcon'
         }

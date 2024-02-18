@@ -1,6 +1,5 @@
 <template>
-  <div class="toolbar-wrap">
-    <tiny-button type="primary" > 主要按钮 </tiny-button>
+  <div class="toolbar-wrap">  
     <div class="toolbar-left">
       <component :is="Breadcrumb"></component>
     </div>
