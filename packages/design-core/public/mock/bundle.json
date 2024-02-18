@@ -18,8 +18,8 @@
           "npm": {
             "package": "shqy-components",
             "exportName": "ProgramBuild",
-            "script": "https://npm.onmicrosoft.cn/shqy-components",
-            "css": "https://npm.onmicrosoft.cn/shqy-components/style.css",
+            "script": "https://ssrm.91zd.cn/shqy-components.es.js",
+            "css": "https://ssrm.91zd.cn/style.css",
             "version": "",
             "destructuring": false
           },
@@ -73,6 +73,24 @@
                     },
                     "description": {
                       "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  },
+                  {
+                    "property": "ProgramCode",
+                    "label": {
+                      "text": {
+                        "zh_CN": "应用程序编码"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput"
+                    },
+                    "description": {
+                      "zh_CN": "应用程序编码"
                     }
                   }
                 ]
@@ -7721,16 +7739,8 @@
                       "props": {
                         "options": [
                           {
-                            "label": "mini",
-                            "value": "mini"
-                          },
-                          {
                             "label": "small",
                             "value": "small"
-                          },
-                          {
-                            "label": "medium",
-                            "value": "medium"
                           }
                         ]
                       }
@@ -9132,7 +9142,8 @@
               "schema": {
                 "componentName": "TinyTabs",
                 "props": {
-                  "modelValue": "tab1"
+                  "modelValue": "tab1",
+                  "size": "small"
                 },
                 "children": [
                   {
@@ -9486,7 +9497,8 @@
                 "componentName": "TinyInput",
                 "props": {
                   "placeholder": "请输入",
-                  "modelValue": ""
+                  "modelValue": "",
+                  "size": "mini"
                 }
               }
             },
@@ -9501,7 +9513,8 @@
                 "componentName": "TinyRadio",
                 "props": {
                   "label": "1",
-                  "text": "单选文本"
+                  "text": "单选文本",
+                  "size": "mini"
                 }
               }
             },
@@ -9516,7 +9529,8 @@
                 "componentName": "TinySearch",
                 "props": {
                   "modelValue": "",
-                  "placeholder": "输入关键词"
+                  "placeholder": "输入关键词",
+                  "size": "mini"
                 }
               }
             },
@@ -9541,7 +9555,8 @@
                       "value": "2",
                       "label": "双皮奶"
                     }
-                  ]
+                  ],
+                  "size": "mini"
                 }
               }
             },
