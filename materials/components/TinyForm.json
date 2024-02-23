@@ -411,7 +411,7 @@
           {
             "componentName": "TinyFormItem",
             "props": {
-              "label": "人员"
+              "label": "人员"              
             },
             "children": [
               {

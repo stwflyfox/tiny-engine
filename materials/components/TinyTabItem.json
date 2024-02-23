@@ -12,7 +12,7 @@
   "devMode": "proCode",
   "npm": {
     "package": "@opentiny/vue",
-    "exportName": "TinyTabItem",
+    "exportName": "TabItem",
     "version": "",
     "destructuring": true
   },

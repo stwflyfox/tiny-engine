@@ -67,7 +67,7 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaInput",
+              "component": "MetaField", 
               "props": {}
             },
             "description": {
@@ -141,5 +141,31 @@
         "remove"
       ]
     }
-  }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "表单项"
+      },
+      "icon": "formitem",
+      "screenshot": "",
+      "snippetName": "TinyFormItem",
+      "schema": {
+        "componentName": "TinyFormItem",
+        "props": {
+          "label": "人员"          
+        }, 
+        "children": [
+          {
+            "componentName": "TinyInput",
+            "props": {
+              "placeholder": "请输入",
+              "modelValue": ""
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "category": "表单组件"
 }

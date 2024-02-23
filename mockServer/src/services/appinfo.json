@@ -14274,6 +14274,15 @@
         }
       },
       {
+        "component": "TinyRadioGroup",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "RadioGroup",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyRow",
         "npm": {
           "package": "@opentiny/vue",
@@ -14313,7 +14322,7 @@
         "component": "TinyTabItem",
         "npm": {
           "package": "@opentiny/vue",
-          "exportName": "TinyTabItem",
+          "exportName": "TabItem",
           "version": "",
           "destructuring": true
         }

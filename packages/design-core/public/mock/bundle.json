@@ -3899,7 +3899,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
@@ -6265,8 +6265,297 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "name",
+                    "label": {
+                      "text": {
+                        "zh_CN": "原生 name 属性"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
                       "component": "MetaInput",
                       "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onChange": {
+                "label": {
+                  "zh_CN": "值变化事件"
+                },
+                "description": {
+                  "zh_CN": "绑定值变化时触发的事件"
+                }
+              },
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "当前选中的值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的当前选中值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "visible",
+                "width"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "icon": "radio",
+          "name": {
+            "zh_CN": "单选组"
+          },
+          "component": "TinyRadioGroup",
+          "description": "通过 options 配置式渲染单选组",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "RadioGroup",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 4,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "options",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置式单选组设置列表"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "type",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置式单选组的展示形式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "radio",
+                            "value": "radio"
+                          },
+                          {
+                            "label": "button",
+                            "value": "button"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "modelValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "双向绑定的当前选中值"
+                    }
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "label": {
+                  "zh_CN": "其他"
+                },
+                "description": {
+                  "zh_CN": ""
+                },
+                "content": [
+                  {
+                    "property": "border",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示边框"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "单选框的尺寸"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
                     },
                     "description": {
                       "zh_CN": ""
@@ -7445,7 +7734,7 @@
           "devMode": "proCode",
           "npm": {
             "package": "@opentiny/vue",
-            "exportName": "TinyTabItem",
+            "exportName": "TabItem",
             "version": "",
             "destructuring": true
           },
@@ -9488,6 +9777,29 @@
             },
             {
               "name": {
+                "zh_CN": "表单项"
+              },
+              "icon": "formitem",
+              "screenshot": "",
+              "snippetName": "TinyFormItem",
+              "schema": {
+                "componentName": "TinyFormItem",
+                "props": {
+                  "label": "人员"
+                },
+                "children": [
+                  {
+                    "componentName": "TinyInput",
+                    "props": {
+                      "placeholder": "请输入",
+                      "modelValue": ""
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
                 "zh_CN": "输入框"
               },
               "icon": "input",
@@ -9514,6 +9826,21 @@
                 "props": {
                   "label": "1",
                   "text": "单选文本",
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "单选组"
+              },
+              "icon": "radio",
+              "screenshot": "",
+              "snippetName": "TinyRadioGroup",
+              "schema": {
+                "componentName": "TinyRadioGroup",
+                "props": {
+                  "type": "radio",
                   "size": "mini"
                 }
               }

@@ -150,8 +150,23 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaInput",
-              "props": {}
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
             },
             "description": {
               "zh_CN": ""
