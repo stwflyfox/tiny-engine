@@ -120,16 +120,16 @@ export default {
     })
 
     const editItem = (data) => {
-      
+
       const { getProp } = useProperties();
       let tableName = getProp('tableName').value;
-      
+
       if (tableName) {
-        
+
         request('/System/GetTableFieldsByName', METHOD.POST, { TableName: tableName }).then(result => {
           props.meta.properties[0].content.find(p => p.property == 'field').widget.props.options = [];
           result.forEach(p => {
-            props.meta.properties[0].content.find(p => p.property == 'field').widget.props.options.push({ label: p.field_common, value: p.field_name })
+            props.meta.properties[0].content.find(p => p.property == 'field').widget.props.options.push({ label: p.field_common+'('+ p.field_name+')', value: p.field_name })
           })
         })
       }

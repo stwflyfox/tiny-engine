@@ -2166,6 +2166,10 @@
                             "value": 3
                           },
                           {
+                            "label": "2格",
+                            "value": 2
+                          },
+                          {
                             "label": "1格",
                             "value": 1
                           }
@@ -4997,7 +5001,6 @@
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
-                    "cols": 12,
                     "widget": {
                       "component": "MetaField",
                       "props": {}
@@ -7268,6 +7271,46 @@
                     },
                     "description": {
                       "zh_CN": "是否允许输入框输入或选择多个项"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "textField",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示值字段"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "输入显示值字段"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "valueField",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值字段"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "输入绑定值字段"
                     },
                     "labelPosition": "left"
                   }

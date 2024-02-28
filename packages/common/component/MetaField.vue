@@ -79,7 +79,7 @@ export default {
       this.state.options = [];
     
       result.forEach(p=>{
-        this.state.options.push({ label: p.field_common, value: 'this.state.formData.' + p.field_name })
+        this.state.options.push({ label:  p.field_common+'('+ p.field_name+')', value: 'this.state.formData.' + p.field_name })
        })
        
     })

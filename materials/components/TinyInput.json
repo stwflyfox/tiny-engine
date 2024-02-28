@@ -43,8 +43,7 @@
             },
             "required": true,
             "readOnly": false,
-            "disabled": false,
-            "cols": 12,
+            "disabled": false,            
             "widget": {
               "component": "MetaField",
               "props": {}

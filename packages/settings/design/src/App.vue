@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
   --base-left-panel-width: 280px;
-  --base-right-panel-width: 280px;
+  --base-right-panel-width: 320px;
   --base-top-panel-height: 35px;
   --base-bottom-panel-height: 30px;
   --base-nav-panel-width: 40px;
