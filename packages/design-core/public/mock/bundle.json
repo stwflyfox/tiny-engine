@@ -5,6 +5,354 @@
       "components": [
         {
           "name": {
+            "zh_CN": "弹出选择"
+          },
+          "component": "PopSelect",
+          "icon": "popEditor",
+          "description": "该组件只能在弹出的面板中选择数据，不能手动输入数据；",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "shqy-components",
+            "exportName": "PopSelect",
+            "script": "https://ssrm.91zd.cn/shqy-components.es.js",
+            "css": "https://ssrm.91zd.cn/style.css",
+            "version": "",
+            "destructuring": false
+          },
+          "group": "component",
+          "priority": 10,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "value",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值字段"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "绑定值字段"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "text",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定文本字段"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "绑定文本字段"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "placeholder",
+                    "label": {
+                      "text": {
+                        "zh_CN": "占位文本"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "输入框占位文本"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "programCode",
+                    "label": {
+                      "text": {
+                        "zh_CN": "弹出应用程序"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "弹出应用程序"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "valueField",
+                    "label": {
+                      "text": {
+                        "zh_CN": "返回值字段"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "返回值字段"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "textField",
+                    "label": {
+                      "text": {
+                        "zh_CN": "返回文本字段"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "返回文本字段"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否禁用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "1",
+                "label": {
+                  "zh_CN": "其他"
+                },
+                "content": [
+                  {
+                    "property": "width",
+                    "label": {
+                      "text": {
+                        "zh_CN": "文本框宽度"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置文本框的宽度（单位像素）"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "尺寸"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "文本框尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  },
+                  {
+                    "property": "dialogWidth",
+                    "label": {
+                      "text": {
+                        "zh_CN": "弹出面板宽度"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置弹出面板的宽度（单位像素或百分比）"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "multi",
+                    "label": {
+                      "text": {
+                        "zh_CN": "多选"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置弹出面板中的数据是否可多选"
+                    },
+                    "labelPosition": "left"
+                  }
+                ],
+                "description": {
+                  "zh_CN": ""
+                }
+              }
+            ],
+            "events": {
+              "onClear": {
+                "label": {
+                  "zh_CN": "清除已选项时触发的事件"
+                },
+                "description": {
+                  "zh_CN": "清除已选项时触发的事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onSelect": {
+                "label": {
+                  "zh_CN": "弹框已选择时触发的事件"
+                },
+                "description": {
+                  "zh_CN": "弹框已选择时触发的事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "modelValue",
+                "disabled"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": {
             "zh_CN": "应用程序"
           },
           "component": "Program",
@@ -2154,8 +2502,32 @@
                             "value": 12
                           },
                           {
+                            "label": "11格",
+                            "value": 11
+                          },
+                          {
+                            "label": "10格",
+                            "value": 10
+                          },
+                          {
+                            "label": "9格",
+                            "value": 9
+                          },
+                          {
+                            "label": "8格",
+                            "value": 8
+                          },
+                          {
+                            "label": "7格",
+                            "value": 7
+                          },
+                          {
                             "label": "6格",
                             "value": 6
+                          },
+                          {
+                            "label": "5格",
+                            "value": 5
                           },
                           {
                             "label": "4格",
@@ -4186,6 +4558,64 @@
                             }
                           },
                           {
+                            "property": "align",
+                            "type": "string",
+                            "defaultValue": "",
+                            "label": {
+                              "text": {
+                                "zh_CN": "列对其方式"
+                              }
+                            },
+                            "widget": {
+                              "component": "MetaSelect",
+                              "props": {
+                                "options": [
+                                  {
+                                    "label": "靠左",
+                                    "value": "left"
+                                  },
+                                  {
+                                    "label": "居中",
+                                    "value": "center"
+                                  },
+                                  {
+                                    "label": "靠右",
+                                    "value": "right"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "property": "headerAlign",
+                            "type": "string",
+                            "defaultValue": "",
+                            "label": {
+                              "text": {
+                                "zh_CN": "表头对其方式"
+                              }
+                            },
+                            "widget": {
+                              "component": "MetaSelect",
+                              "props": {
+                                "options": [
+                                  {
+                                    "label": "靠左",
+                                    "value": "left"
+                                  },
+                                  {
+                                    "label": "居中",
+                                    "value": "center"
+                                  },
+                                  {
+                                    "label": "靠右",
+                                    "value": "right"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
                             "property": "renderer",
                             "type": "object",
                             "defaultValue": "",
@@ -5101,7 +5531,26 @@
                         "zh_CN": "是否禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "readonly",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否只读"
+                      }
+                    },
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
@@ -6759,7 +7208,7 @@
                     "property": "gutter",
                     "label": {
                       "text": {
-                        "zh_CN": "gutter"
+                        "zh_CN": "子项的间隔的像素"
                       }
                     },
                     "required": true,
@@ -6771,7 +7220,26 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "子项的间隔的像素"
+                    }
+                  },
+                  {
+                    "property": "noSpace",
+                    "label": {
+                      "text": {
+                        "zh_CN": "子项没有间隔，相当于强制gutter=0的情况"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "子项没有间隔，相当于强制gutter=0的情况"
                     }
                   }
                 ]
@@ -9135,6 +9603,357 @@
       "blocks": [],
       "snippets": [
         {
+          "group": "表单组件",
+          "children": [
+            {
+              "name": {
+                "zh_CN": "弹出选择"
+              },
+              "icon": "popeditor",
+              "screenshot": "",
+              "snippetName": "PopSelect",
+              "schema": {
+                "componentName": "PopSelect",
+                "props": {
+                  "value": "",
+                  "text": "",
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "按钮"
+              },
+              "icon": "button",
+              "screenshot": "",
+              "snippetName": "TinyButton",
+              "schema": {
+                "componentName": "TinyButton",
+                "props": {
+                  "text": "按钮文案",
+                  "size": "mini",
+                  "type": "primary"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "互斥按钮组"
+              },
+              "icon": "buttons",
+              "snippetName": "TinyButtonGroup",
+              "screenshot": "",
+              "schema": {
+                "componentName": "TinyButtonGroup",
+                "props": {
+                  "data": [
+                    {
+                      "text": "Button1",
+                      "value": "1"
+                    },
+                    {
+                      "text": "Button2",
+                      "value": "2"
+                    },
+                    {
+                      "text": "Button3",
+                      "value": "3"
+                    }
+                  ],
+                  "modelValue": "1"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "复选框"
+              },
+              "icon": "checkbox",
+              "screenshot": "",
+              "snippetName": "TinyCheckbox",
+              "schema": {
+                "componentName": "TinyCheckbox",
+                "props": {
+                  "text": "复选框文案"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "复选框组"
+              },
+              "icon": "checkboxs",
+              "screenshot": "",
+              "snippetName": "TinyCheckboxGroup",
+              "schema": {
+                "componentName": "TinyCheckboxGroup",
+                "props": {
+                  "modelValue": [
+                    "name1",
+                    "name2"
+                  ],
+                  "type": "checkbox",
+                  "options": [
+                    {
+                      "text": "复选框1",
+                      "label": "name1"
+                    },
+                    {
+                      "text": "复选框2",
+                      "label": "name2"
+                    },
+                    {
+                      "text": "复选框3",
+                      "label": "name3"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "日期选择"
+              },
+              "icon": "datepick",
+              "screenshot": "",
+              "snippetName": "TinyDatePicker",
+              "schema": {
+                "componentName": "TinyDatePicker",
+                "props": {
+                  "placeholder": "请输入",
+                  "modelValue": "",
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "表单"
+              },
+              "screenshot": "",
+              "snippetName": "tiny-form",
+              "icon": "form",
+              "schema": {
+                "componentName": "TinyForm",
+                "props": {
+                  "labelWidth": "80px",
+                  "labelPosition": "left",
+                  "size": "mini"
+                },
+                "children": [
+                  {
+                    "componentName": "TinyFormItem",
+                    "props": {
+                      "label": "人员"
+                    },
+                    "children": [
+                      {
+                        "componentName": "TinyInput",
+                        "props": {
+                          "placeholder": "请输入",
+                          "modelValue": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyFormItem",
+                    "props": {
+                      "label": "密码"
+                    },
+                    "children": [
+                      {
+                        "componentName": "TinyInput",
+                        "props": {
+                          "placeholder": "请输入",
+                          "modelValue": "",
+                          "type": "password"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "TinyFormItem",
+                    "props": {
+                      "label": ""
+                    },
+                    "children": [
+                      {
+                        "componentName": "TinyButton",
+                        "props": {
+                          "text": "提交",
+                          "type": "primary",
+                          "style": "margin-right: 10px"
+                        }
+                      },
+                      {
+                        "componentName": "TinyButton",
+                        "props": {
+                          "text": "重置",
+                          "type": "primary"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "表单项"
+              },
+              "icon": "formitem",
+              "screenshot": "",
+              "snippetName": "TinyFormItem",
+              "schema": {
+                "componentName": "TinyFormItem",
+                "props": {
+                  "label": "人员"
+                },
+                "children": [
+                  {
+                    "componentName": "TinyInput",
+                    "props": {
+                      "placeholder": "请输入",
+                      "modelValue": ""
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "输入框"
+              },
+              "icon": "input",
+              "screenshot": "",
+              "snippetName": "TinyInput",
+              "schema": {
+                "componentName": "TinyInput",
+                "props": {
+                  "placeholder": "请输入",
+                  "modelValue": "",
+                  "clearable": true,
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "单选"
+              },
+              "icon": "radio",
+              "screenshot": "",
+              "snippetName": "TinyRadio",
+              "schema": {
+                "componentName": "TinyRadio",
+                "props": {
+                  "label": "1",
+                  "text": "单选文本",
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "单选组"
+              },
+              "icon": "radio",
+              "screenshot": "",
+              "snippetName": "TinyRadioGroup",
+              "schema": {
+                "componentName": "TinyRadioGroup",
+                "props": {
+                  "type": "radio",
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "搜索框"
+              },
+              "icon": "search",
+              "screenshot": "",
+              "snippetName": "TinySearch",
+              "schema": {
+                "componentName": "TinySearch",
+                "props": {
+                  "modelValue": "",
+                  "placeholder": "输入关键词",
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "下拉框"
+              },
+              "icon": "select",
+              "screenshot": "",
+              "snippetName": "TinySelect",
+              "schema": {
+                "componentName": "TinySelect",
+                "props": {
+                  "modelValue": "",
+                  "placeholder": "请选择",
+                  "options": [
+                    {
+                      "value": "1",
+                      "label": "黄金糕"
+                    },
+                    {
+                      "value": "2",
+                      "label": "双皮奶"
+                    }
+                  ],
+                  "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "开关"
+              },
+              "icon": "switch",
+              "screenshot": "",
+              "snippetName": "TinySwitch",
+              "schema": {
+                "componentName": "TinySwitch",
+                "props": {
+                  "modelValue": ""
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "时间线"
+              },
+              "icon": "timeline",
+              "screenshot": "",
+              "snippetName": "TinyTimeLine",
+              "schema": {
+                "componentName": "TinyTimeLine",
+                "props": {
+                  "active": "2",
+                  "data": [
+                    {
+                      "name": "已下单"
+                    },
+                    {
+                      "name": "运输中"
+                    },
+                    {
+                      "name": "已签收"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
           "group": "容器组件",
           "children": [
             {
@@ -9357,7 +10176,24 @@
                       "title": "城市"
                     }
                   ],
-                  "data": []
+                  "data": [
+                    {
+                      "id": "1",
+                      "name": "GFD科技有限公司",
+                      "city": "福州",
+                      "employees": 800,
+                      "created_date": "2014-04-30 00:56:00",
+                      "boole": false
+                    },
+                    {
+                      "id": "2",
+                      "name": "WWW科技有限公司",
+                      "city": "深圳",
+                      "employees": 300,
+                      "created_date": "2016-07-08 12:36:22",
+                      "boole": true
+                    }
+                  ]
                 }
               }
             },
@@ -9632,340 +10468,6 @@
                           ]
                         }
                       ]
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        },
-        {
-          "group": "表单组件",
-          "children": [
-            {
-              "name": {
-                "zh_CN": "按钮"
-              },
-              "icon": "button",
-              "screenshot": "",
-              "snippetName": "TinyButton",
-              "schema": {
-                "componentName": "TinyButton",
-                "props": {
-                  "text": "按钮文案",
-                  "size": "mini",
-                  "type": "primary"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "互斥按钮组"
-              },
-              "icon": "buttons",
-              "snippetName": "TinyButtonGroup",
-              "screenshot": "",
-              "schema": {
-                "componentName": "TinyButtonGroup",
-                "props": {
-                  "data": [
-                    {
-                      "text": "Button1",
-                      "value": "1"
-                    },
-                    {
-                      "text": "Button2",
-                      "value": "2"
-                    },
-                    {
-                      "text": "Button3",
-                      "value": "3"
-                    }
-                  ],
-                  "modelValue": "1"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "复选框"
-              },
-              "icon": "checkbox",
-              "screenshot": "",
-              "snippetName": "TinyCheckbox",
-              "schema": {
-                "componentName": "TinyCheckbox",
-                "props": {
-                  "text": "复选框文案"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "复选框组"
-              },
-              "icon": "checkboxs",
-              "screenshot": "",
-              "snippetName": "TinyCheckboxGroup",
-              "schema": {
-                "componentName": "TinyCheckboxGroup",
-                "props": {
-                  "modelValue": [
-                    "name1",
-                    "name2"
-                  ],
-                  "type": "checkbox",
-                  "options": [
-                    {
-                      "text": "复选框1",
-                      "label": "name1"
-                    },
-                    {
-                      "text": "复选框2",
-                      "label": "name2"
-                    },
-                    {
-                      "text": "复选框3",
-                      "label": "name3"
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "日期选择"
-              },
-              "icon": "datepick",
-              "screenshot": "",
-              "snippetName": "TinyDatePicker",
-              "schema": {
-                "componentName": "TinyDatePicker",
-                "props": {
-                  "placeholder": "请输入",
-                  "modelValue": "",
-                  "size": "mini"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "表单"
-              },
-              "screenshot": "",
-              "snippetName": "tiny-form",
-              "icon": "form",
-              "schema": {
-                "componentName": "TinyForm",
-                "props": {
-                  "labelWidth": "80px",
-                  "labelPosition": "left",
-                  "size": "mini"
-                },
-                "children": [
-                  {
-                    "componentName": "TinyFormItem",
-                    "props": {
-                      "label": "人员"
-                    },
-                    "children": [
-                      {
-                        "componentName": "TinyInput",
-                        "props": {
-                          "placeholder": "请输入",
-                          "modelValue": ""
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "componentName": "TinyFormItem",
-                    "props": {
-                      "label": "密码"
-                    },
-                    "children": [
-                      {
-                        "componentName": "TinyInput",
-                        "props": {
-                          "placeholder": "请输入",
-                          "modelValue": "",
-                          "type": "password"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "componentName": "TinyFormItem",
-                    "props": {
-                      "label": ""
-                    },
-                    "children": [
-                      {
-                        "componentName": "TinyButton",
-                        "props": {
-                          "text": "提交",
-                          "type": "primary",
-                          "style": "margin-right: 10px"
-                        }
-                      },
-                      {
-                        "componentName": "TinyButton",
-                        "props": {
-                          "text": "重置",
-                          "type": "primary"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "表单项"
-              },
-              "icon": "formitem",
-              "screenshot": "",
-              "snippetName": "TinyFormItem",
-              "schema": {
-                "componentName": "TinyFormItem",
-                "props": {
-                  "label": "人员"
-                },
-                "children": [
-                  {
-                    "componentName": "TinyInput",
-                    "props": {
-                      "placeholder": "请输入",
-                      "modelValue": ""
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "输入框"
-              },
-              "icon": "input",
-              "screenshot": "",
-              "snippetName": "TinyInput",
-              "schema": {
-                "componentName": "TinyInput",
-                "props": {
-                  "placeholder": "请输入",
-                  "modelValue": "",
-                  "size": "mini"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "单选"
-              },
-              "icon": "radio",
-              "screenshot": "",
-              "snippetName": "TinyRadio",
-              "schema": {
-                "componentName": "TinyRadio",
-                "props": {
-                  "label": "1",
-                  "text": "单选文本",
-                  "size": "mini"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "单选组"
-              },
-              "icon": "radio",
-              "screenshot": "",
-              "snippetName": "TinyRadioGroup",
-              "schema": {
-                "componentName": "TinyRadioGroup",
-                "props": {
-                  "type": "radio",
-                  "size": "mini"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "搜索框"
-              },
-              "icon": "search",
-              "screenshot": "",
-              "snippetName": "TinySearch",
-              "schema": {
-                "componentName": "TinySearch",
-                "props": {
-                  "modelValue": "",
-                  "placeholder": "输入关键词",
-                  "size": "mini"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "下拉框"
-              },
-              "icon": "select",
-              "screenshot": "",
-              "snippetName": "TinySelect",
-              "schema": {
-                "componentName": "TinySelect",
-                "props": {
-                  "modelValue": "",
-                  "placeholder": "请选择",
-                  "options": [
-                    {
-                      "value": "1",
-                      "label": "黄金糕"
-                    },
-                    {
-                      "value": "2",
-                      "label": "双皮奶"
-                    }
-                  ],
-                  "size": "mini"
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "开关"
-              },
-              "icon": "switch",
-              "screenshot": "",
-              "snippetName": "TinySwitch",
-              "schema": {
-                "componentName": "TinySwitch",
-                "props": {
-                  "modelValue": ""
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "时间线"
-              },
-              "icon": "timeline",
-              "screenshot": "",
-              "snippetName": "TinyTimeLine",
-              "schema": {
-                "componentName": "TinyTimeLine",
-                "props": {
-                  "active": "2",
-                  "data": [
-                    {
-                      "name": "已下单"
-                    },
-                    {
-                      "name": "运输中"
-                    },
-                    {
-                      "name": "已签收"
                     }
                   ]
                 }

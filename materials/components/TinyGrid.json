@@ -205,6 +205,64 @@
                     }
                   },
                   {
+                    "property": "align",
+                    "type": "string",
+                    "defaultValue": "",
+                    "label": {
+                      "text": {
+                        "zh_CN": "列对其方式"
+                      }
+                    },
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "靠左",
+                            "value": "left"
+                          },
+                          {
+                            "label": "居中",
+                            "value": "center"
+                          },
+                          {
+                            "label": "靠右",
+                            "value": "right"
+                          }                          
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "property": "headerAlign",
+                    "type": "string",
+                    "defaultValue": "",
+                    "label": {
+                      "text": {
+                        "zh_CN": "表头对其方式"
+                      }
+                    },
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "靠左",
+                            "value": "left"
+                          },
+                          {
+                            "label": "居中",
+                            "value": "center"
+                          },
+                          {
+                            "label": "靠右",
+                            "value": "right"
+                          }                          
+                        ]
+                      }
+                    }
+                  },
+                  {
                     "property": "renderer",
                     "type": "object",
                     "defaultValue": "",
@@ -1014,7 +1072,24 @@
               "title": "城市"
             }
           ],
-          "data": []
+          "data": [
+            {
+              "id": "1",
+              "name": "GFD科技有限公司",
+              "city": "福州",
+              "employees": 800,
+              "created_date": "2014-04-30 00:56:00",
+              "boole": false
+            },
+            {
+              "id": "2",
+              "name": "WWW科技有限公司",
+              "city": "深圳",
+              "employees": 300,
+              "created_date": "2016-07-08 12:36:22",
+              "boole": true
+            }
+          ]
         }
       }
     }

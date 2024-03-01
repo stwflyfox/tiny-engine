@@ -54,8 +54,32 @@
                     "value": 12
                   },
                   {
+                    "label": "11格",
+                    "value": 11
+                  },
+                  {
+                    "label": "10格",
+                    "value": 10
+                  },
+                  {
+                    "label": "9格",
+                    "value": 9
+                  },
+                  {
+                    "label": "8格",
+                    "value": 8
+                  },
+                  {
+                    "label": "7格",
+                    "value": 7
+                  },
+                  {
                     "label": "6格",
                     "value": 6
+                  },
+                  {
+                    "label": "5格",
+                    "value": 5
                   },
                   {
                     "label": "4格",

@@ -105,7 +105,7 @@
             "property": "gutter",
             "label": {
               "text": {
-                "zh_CN": "gutter"
+                "zh_CN": "子项的间隔的像素"
               }
             },
             "required": true,
@@ -117,8 +117,27 @@
               "props": {}
             },
             "description": {
-              "zh_CN": ""
+              "zh_CN": "子项的间隔的像素"
             }
+          },
+          {
+            "property": "noSpace",
+            "label": {
+              "text": {
+                "zh_CN": "子项没有间隔，相当于强制gutter=0的情况"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "子项没有间隔，相当于强制gutter=0的情况"
+            }            
           }
         ]
       }

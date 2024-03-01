@@ -14074,6 +14074,17 @@
     "description": "2023.3.9",
     "components": [
       {
+        "component": "PopSelect",
+        "npm": {
+          "package": "shqy-components",
+          "exportName": "PopSelect",
+          "script": "https://ssrm.91zd.cn/shqy-components.es.js",
+          "css": "https://ssrm.91zd.cn/style.css",
+          "version": "",
+          "destructuring": false
+        }
+      },
+      {
         "component": "Program",
         "npm": {
           "package": "shqy-components",

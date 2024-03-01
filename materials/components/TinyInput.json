@@ -144,7 +144,7 @@
                 "zh_CN": "是否禁用"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
@@ -156,6 +156,26 @@
               "zh_CN": ""
             }
           },
+          {
+            "property": "readonly",
+            "label": {
+              "text": {
+                "zh_CN": "是否只读"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          
           {
             "property": "size",
             "label": {
@@ -432,6 +452,7 @@
         "props": {
           "placeholder": "请输入",
           "modelValue": "",
+          "clearable": true,
           "size": "mini"
         }
       }
