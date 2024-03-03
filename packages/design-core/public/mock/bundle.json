@@ -122,10 +122,10 @@
                     "labelPosition": "left"
                   },
                   {
-                    "property": "valueField",
+                    "property": "programParams",
                     "label": {
                       "text": {
-                        "zh_CN": "返回值字段"
+                        "zh_CN": "应用程序传参"
                       }
                     },
                     "required": true,
@@ -137,7 +137,7 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "返回值字段"
+                      "zh_CN": "应用程序传参"
                     },
                     "labelPosition": "left"
                   },
