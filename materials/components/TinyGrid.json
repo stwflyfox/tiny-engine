@@ -228,7 +228,7 @@
                           {
                             "label": "靠右",
                             "value": "right"
-                          }                          
+                          }
                         ]
                       }
                     }
@@ -257,7 +257,7 @@
                           {
                             "label": "靠右",
                             "value": "right"
-                          }                          
+                          }
                         ]
                       }
                     }
@@ -590,6 +590,25 @@
             }
           },
           {
+            "property": "keyboard-config",
+            "label": {
+              "text": {
+                "zh_CN": "键盘配置项"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "表格键盘配置项"
+            }
+          },
+          {
             "property": "expand-config",
             "label": {
               "text": {
@@ -645,6 +664,40 @@
           }
         },
         "content": [
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "表格尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
           {
             "property": "auto-resize",
             "label": {
@@ -1043,12 +1096,20 @@
         "componentName": "TinyGrid",
         "props": {
           "tableName": "",
+          "size" : "mini",
           "border": true,
+          "resizable": true,
           "editConfig": {
             "trigger": "click",
             "mode": "row",
             "markInsert": true,
             "showStatus": true
+          },
+          "keyboardConfig": { 
+            "isArrow": true, 
+            "isDel": true, 
+            "isTab": true, 
+            "isEdit": true
           },
           "columns": [
             {

@@ -1,15 +1,8 @@
 <template>
 
-  <tiny-select
-    v-model="state.selected"
-    :multiple="multi"
-    :is-drop-inherit-width="true"
-    :show-alloption="false"
-    :clearable="true"
-    :searchable="true"
-    @change="handleChange"
-  >        
-      <tiny-option v-for="item in state.options" :key="item.value" :label="item.label" :value="item.value"> </tiny-option>     
+  <tiny-select v-model="state.selected" :multiple="multi" :is-drop-inherit-width="true" :show-alloption="false"
+    :clearable="true" :searchable="true" @change="handleChange">
+    <tiny-option v-for="item in state.options" :key="item.value" :label="item.label" :value="item.value"> </tiny-option>
   </tiny-select>
 </template>
 
@@ -24,45 +17,45 @@ import {
 } from './request'
 
 export default {
-  components: {  
+  components: {
     TinySelect: Select,
     TinyOption: Option,
   },
-  props: {   
+  props: {
     modelValue: {
       type: Object,
-      default: () => {}
+      default: () => { }
     },
     multi: {
       type: Boolean,
       default: false
-    }   
+    }
   },
   emits: ['update:modelValue'],
   data() {
     return {
-         
+
     }
   },
   setup(props, { emit }) {
     const { locale } = i18n.global
-    const state = reactive({          
+    const state = reactive({
       selected: props.modelValue && props.modelValue.value ? props.modelValue.value : '',
-      options: []  
+      options: []
     })
 
 
 
     const handleChange = (arg) => {
- 
+
       emit('update:modelValue', {
-          type: 'JSExpression',
-          value: arg 
-        })
+        type: 'JSExpression',
+        value: arg
+      })
     }
 
     watchEffect(() => {
-      state.selected =  props.modelValue && props.modelValue.value ? props.modelValue.value : ''
+      state.selected = props.modelValue && props.modelValue.value ? props.modelValue.value : ''
     })
 
     return {
@@ -72,17 +65,19 @@ export default {
     }
   },
   mounted() {
-    var TableName = sessionStorage.getItem('TableName');    
-    
-    request('/System/GetTableFieldsByName', METHOD.POST, {TableName:TableName}).then(result => {       
-      
-      this.state.options = [];
-    
-      result.forEach(p=>{
-        this.state.options.push({ label:  p.field_common+'('+ p.field_name+')', value: 'this.state.formData.' + p.field_name })
-       })
-       
-    })
+    var TableName = sessionStorage.getItem('TableName');
+
+    if (TableName != null && TableName != '') {
+      request('/System/GetTableFieldsByName', METHOD.POST, { TableName: TableName }).then(result => {
+
+        this.state.options = [];
+
+        result.forEach(p => {
+          this.state.options.push({ label: p.field_common + '(' + p.field_name + ')', value: 'this.state.formData.' + p.field_name })
+        })
+
+      })
+    }
   }
 }
 </script>
