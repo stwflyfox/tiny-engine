@@ -14222,6 +14222,15 @@
         }
       },
       {
+        "component": "TinyDrawer",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Drawer",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyForm",
         "npm": {
           "package": "@opentiny/vue",
@@ -14316,6 +14325,15 @@
         "npm": {
           "package": "@opentiny/vue",
           "exportName": "Select",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "TinySplit",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Split",
           "version": "",
           "destructuring": true
         }

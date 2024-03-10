@@ -1,0 +1,215 @@
+{
+  "icon": "border-right",
+  "name": {
+    "zh_CN": "抽屉面板"
+  },
+  "component": "TinyDrawer",
+  "description": "抽屉面板",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Drawer",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 4,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "visible",
+            "label": {
+              "text": {
+                "zh_CN": "控制抽屉显示与关闭"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "控制抽屉显示与关闭"
+            }
+          },
+          {
+            "property": "width",
+            "label": {
+              "text": {
+                "zh_CN": "设置抽屉的宽度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置抽屉的宽度"
+            }
+          },
+          {
+            "property": "title",
+            "label": {
+              "text": {
+                "zh_CN": "设置抽屉的标题"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置抽屉的标题"
+            }
+          },
+          {
+            "property": "show-close",
+            "label": {
+              "text": {
+                "zh_CN": "控制关闭图标显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "控制关闭图标显示"
+            }
+          },
+          {
+            "property": "show-footer",
+            "label": {
+              "text": {
+                "zh_CN": "控制底部显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "控制底部显示"
+            }
+          },
+          {
+            "property": "show-header",
+            "label": {
+              "text": {
+                "zh_CN": "控制头部显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "控制头部显示"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "label",
+        "rules"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "抽屉面板"
+      },
+      "icon": "border-right",
+      "screenshot": "",
+      "snippetName": "TinyDrawer",
+      "schema": {
+        "componentName": "TinyDrawer",
+        "props": {
+            "title": "标题",
+            "show-close" : true,
+            "show-footer" : false,
+            "show-header" : true
+        },
+        "children": [
+          {
+            "componentName": "div",
+            "props": {
+              
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "category": "容器组件"
+}

@@ -3812,6 +3812,193 @@
           }
         },
         {
+          "icon": "border-right",
+          "name": {
+            "zh_CN": "抽屉面板"
+          },
+          "component": "TinyDrawer",
+          "description": "抽屉面板",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "Drawer",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 4,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "visible",
+                    "label": {
+                      "text": {
+                        "zh_CN": "控制抽屉显示与关闭"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "控制抽屉显示与关闭"
+                    }
+                  },
+                  {
+                    "property": "width",
+                    "label": {
+                      "text": {
+                        "zh_CN": "设置抽屉的宽度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置抽屉的宽度"
+                    }
+                  },
+                  {
+                    "property": "title",
+                    "label": {
+                      "text": {
+                        "zh_CN": "设置抽屉的标题"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置抽屉的标题"
+                    }
+                  },
+                  {
+                    "property": "show-close",
+                    "label": {
+                      "text": {
+                        "zh_CN": "控制关闭图标显示"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "控制关闭图标显示"
+                    }
+                  },
+                  {
+                    "property": "show-footer",
+                    "label": {
+                      "text": {
+                        "zh_CN": "控制底部显示"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "控制底部显示"
+                    }
+                  },
+                  {
+                    "property": "show-header",
+                    "label": {
+                      "text": {
+                        "zh_CN": "控制头部显示"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "控制头部显示"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {}
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": true,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "label",
+                "rules"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
           "icon": "form",
           "name": {
             "zh_CN": "表单"
@@ -8022,6 +8209,242 @@
           }
         },
         {
+          "icon": "display-flex",
+          "name": {
+            "zh_CN": "分割面板"
+          },
+          "component": "TinySplit",
+          "description": "分割面板",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "Split",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 4,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "mode",
+                    "label": {
+                      "text": {
+                        "zh_CN": "分割方式"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "横向",
+                            "value": "horizontal"
+                          },
+                          {
+                            "label": "纵向",
+                            "value": "vertical"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "分割方式"
+                    }
+                  },
+                  {
+                    "property": "triggerSimple",
+                    "label": {
+                      "text": {
+                        "zh_CN": "简易模式"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "简易模式"
+                    }
+                  },
+                  {
+                    "property": "collapseLeftTop",
+                    "label": {
+                      "text": {
+                        "zh_CN": "简易模式启用左/上展开收起按钮"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "简易模式启用左/上展开收起按钮"
+                    }
+                  },
+                  {
+                    "property": "collapseRightBottom",
+                    "label": {
+                      "text": {
+                        "zh_CN": "简易模式启用右/下展开收起按钮"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "简易模式启用右/下展开收起按钮"
+                    }
+                  },
+                  {
+                    "property": "modelValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "分割面板的位置"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "分割面板的位置"
+                    }
+                  },
+                  {
+                    "property": "leftTopMin",
+                    "label": {
+                      "text": {
+                        "zh_CN": "左面板/上面板最小阈值"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "左面板/上面板最小阈值"
+                    }
+                  },
+                  {
+                    "property": "threeAreas",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置3个区块"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "配置3个区块"
+                    }
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "分割线是否禁用拖拽"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "分割线是否禁用拖拽"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {}
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": true,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "label",
+                "rules"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
           "icon": "switch",
           "name": {
             "zh_CN": "开关"
@@ -10138,6 +10561,29 @@
             },
             {
               "name": {
+                "zh_CN": "抽屉面板"
+              },
+              "icon": "border-right",
+              "screenshot": "",
+              "snippetName": "TinyDrawer",
+              "schema": {
+                "componentName": "TinyDrawer",
+                "props": {
+                  "title": "标题",
+                  "show-close": true,
+                  "show-footer": false,
+                  "show-header": true
+                },
+                "children": [
+                  {
+                    "componentName": "div",
+                    "props": {}
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
                 "zh_CN": "子表"
               },
               "icon": "grid",
@@ -10297,6 +10743,20 @@
                     }
                   }
                 ]
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "分割面板"
+              },
+              "icon": "display-flex",
+              "screenshot": "",
+              "snippetName": "TinySplit",
+              "schema": {
+                "componentName": "TinySplit",
+                "props": {
+                  "triggerSimple": true
+                }
               }
             },
             {
