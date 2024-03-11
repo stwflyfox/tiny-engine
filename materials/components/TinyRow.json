@@ -108,7 +108,7 @@
                 "zh_CN": "子项的间隔的像素"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
