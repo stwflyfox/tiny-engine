@@ -14222,6 +14222,15 @@
         }
       },
       {
+        "component": "TinyDivider",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Divider",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyDrawer",
         "npm": {
           "package": "@opentiny/vue",

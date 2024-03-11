@@ -1,0 +1,178 @@
+{
+  "name": {
+    "zh_CN": "分隔线"
+  },
+  "component": "TinyDivider",
+  "icon": "border-style-solid",
+  "description": "分隔线组件，用于对不同内容的分隔",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Divider",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [      
+          {
+            "property": "direction",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "分隔线的方向"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "横向",
+                    "value": "horizontal"
+                  },
+                  {
+                    "label": "竖向",
+                    "value": "vertical"
+                  }                 
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "border-style",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "分隔线的样式"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "直线",
+                    "value": "solid"
+                  },
+                  {
+                    "label": "断点",
+                    "value": "dashed"
+                  }                 
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "color",
+            "label": {
+              "text": {
+                "zh_CN": "分隔线颜色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "分隔线颜色"
+            },
+            "labelPosition": "left"
+          }
+          
+        ]
+      }    
+    ],
+    "events": {     
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "text",
+        "size"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "分隔线"
+      },
+      "icon": "border-style-solid",
+      "screenshot": "",
+      "snippetName": "TinyDivider",
+      "schema": {
+        "componentName": "TinyDivider",
+        "props": {
+       
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}

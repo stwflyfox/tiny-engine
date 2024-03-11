@@ -2,10 +2,14 @@ nvm use 20.10.0
 npm install -g pnpm
 安装data-center:
     git 克隆 ： https://github.com/stwflyfox/tiny-engine-data-center.git , 
-    进入克隆后的目录，运行 pnpm install
+    进入克隆后的目录，
+          npm install -g yarn
+          yarn install --ignore-engines
+          npm run build
 安装 webservice:
     git 克隆： https://github.com/stwflyfox/tiny-engine-webservice.git , 
-    进入克隆后的目录，运行 pnpm install
+    进入克隆后的目录
+          yarn install --ignore-engines
     设置windows环境变量：
          MYSQL_HOST  ： 60.204.187.130
          MYSQL_PORT  ： 3306
