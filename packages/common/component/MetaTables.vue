@@ -9,7 +9,7 @@
 <script>
 import { reactive, watchEffect } from 'vue'
 import { Select, Option } from '@opentiny/vue'
-import i18n from '../js/i18n'
+import i18n from '@opentiny/tiny-engine-controller/js/i18n'
 import { useProperties } from '@opentiny/tiny-engine-controller'
 import {
   request,
