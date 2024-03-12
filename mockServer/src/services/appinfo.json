@@ -14276,6 +14276,15 @@
         }
       },
       {
+        "component": "TinyNumeric",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Numeric",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyPager",
         "npm": {
           "package": "@opentiny/vue",
