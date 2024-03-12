@@ -10817,7 +10817,7 @@
                 "componentName": "TinyGrid",
                 "props": {
                   "tableName": "",
-                  "size": "mini",
+                  "size": "small",
                   "border": true,
                   "resizable": true,
                   "editConfig": {
