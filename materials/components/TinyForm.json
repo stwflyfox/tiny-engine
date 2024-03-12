@@ -409,55 +409,31 @@
         },
         "children": [
           {
-            "componentName": "TinyFormItem",
-            "props": {
-              "label": "人员"              
-            },
+            "componentName": "TinyRow",
+            "props": {},
             "children": [
               {
-                "componentName": "TinyInput",
+                "componentName": "TinyCol",
                 "props": {
-                  "placeholder": "请输入",
-                  "modelValue": ""
-                }
-              }
-            ]
-          },
-          {
-            "componentName": "TinyFormItem",
-            "props": {
-              "label": "密码"
-            },
-            "children": [
-              {
-                "componentName": "TinyInput",
-                "props": {
-                  "placeholder": "请输入",
-                  "modelValue": "",
-                  "type": "password"
-                }
-              }
-            ]
-          },
-          {
-            "componentName": "TinyFormItem",
-            "props": {
-              "label": ""
-            },
-            "children": [
-              {
-                "componentName": "TinyButton",
-                "props": {
-                  "text": "提交",
-                  "type": "primary",
-                  "style": "margin-right: 10px"
+                  "span": 3
                 }
               },
               {
-                "componentName": "TinyButton",
+                "componentName": "TinyCol",
                 "props": {
-                  "text": "重置",
-                  "type": "primary"
+                  "span": 3
+                }
+              },
+              {
+                "componentName": "TinyCol",
+                "props": {
+                  "span": 3
+                }
+              },
+              {
+                "componentName": "TinyCol",
+                "props": {
+                  "span": 3
                 }
               }
             ]
