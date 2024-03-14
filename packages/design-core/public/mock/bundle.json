@@ -18,8 +18,8 @@
           "npm": {
             "package": "shqy-components",
             "exportName": "PopSelect",
-            "script": "http://106.15.72.197:8088/@shqy/components",
-            "css": "http://106.15.72.197:8088/@shqy/components/style.css",
+            "script": "https://unpkg.91zd.cn/@shqy/components",
+            "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
             "version": "",
             "destructuring": false
           },
@@ -366,8 +366,8 @@
           "npm": {
             "package": "shqy-components",
             "exportName": "ProgramBuild",
-            "script": "http://106.15.72.197:8088/@shqy/components",
-            "css": "http://106.15.72.197:8088/@shqy/components/style.css",
+            "script": "https://unpkg.91zd.cn/@shqy/components",
+            "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
             "version": "",
             "destructuring": false
           },
