@@ -393,6 +393,66 @@
                 "componentName": "div"
               }
             ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页6",
+              "name": "tab6"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页7",
+              "name": "tab7"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页8",
+              "name": "tab8"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页9",
+              "name": "tab9"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页10",
+              "name": "tab10"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
           }
         ]
       }
