@@ -14240,6 +14240,15 @@
         }
       },
       {
+        "component": "TinyDropdown",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Dropdown",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyForm",
         "npm": {
           "package": "@opentiny/vue",

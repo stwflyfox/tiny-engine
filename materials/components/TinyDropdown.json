@@ -1,0 +1,270 @@
+{
+  "name": {
+    "zh_CN": "下拉菜单"
+  },
+  "component": "TinyDropdown",
+  "icon": "dropdown",
+  "description": "可以配置菜单列表，点击或悬浮时下拉，支持多级菜单",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Dropdown",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [  
+          {
+            "property": "title",
+            "label": {
+              "text": {
+                "zh_CN": "按钮文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "按钮文本"
+            },
+            "labelPosition": "left"
+          },       
+          {
+            "property": "size",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "大小"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "large",
+                    "value": "large"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否被禁用"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "type",
+            "label": {
+              "text": {
+                "zh_CN": "类型"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "primary",
+                    "value": "primary"
+                  },
+                  {
+                    "label": "success",
+                    "value": "success"
+                  },
+                  {
+                    "label": "info",
+                    "value": "info"
+                  },
+                  {
+                    "label": "warning",
+                    "value": "warning"
+                  },
+                  {
+                    "label": "danger",
+                    "value": "danger"
+                  },
+                  {
+                    "label": "text",
+                    "value": "text"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置不同的主题样式"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "通过配置式设置菜单项的属性"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "通过配置式设置菜单项的属性"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }    
+    ],
+    "events": {
+      "onItemClick": {
+        "label": {
+          "zh_CN": "菜单项点击事件"
+        },
+        "description": {
+          "zh_CN": "菜单项被点击时触发的回调函数"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "text",
+        "size"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "下拉菜单"
+      },
+      "icon": "dropdown",
+      "screenshot": "",
+      "snippetName": "TinyDropdown",
+      "schema": {
+        "componentName": "TinyDropdown",
+        "props": {
+          "title": "下拉菜单",
+          "splitButton": true,
+          "size": "mini",
+          "type": "primary",
+          "options": [
+            {
+              "label": "老友粉"              
+            },
+            {
+              "label": "狮子头",
+              "divided": true
+            },
+            {
+              "label": "黄金糕"                            
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}
