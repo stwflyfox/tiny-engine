@@ -21,6 +21,7 @@ import ConfigItem from './component/ConfigItem.vue'
 import ConfigRender from './component/ConfigRender.vue'
 import MetaTables from './component/MetaTables.vue'
 import MetaField from './component/MetaField.vue'
+import MetaProp from './component/MetaProp.vue'
 import MetaArrayItem from './component/MetaArrayItem.vue'
 import MetaBindI18n from './component/MetaBindI18n.vue'
 import MetaBindVariable from './component/MetaBindVariable.vue'
@@ -108,6 +109,7 @@ export const injectGlobalComponents = {
 export const MetaComponents = {
   MetaTables,
   MetaField,
+  MetaProp,
   MetaArrayItem,
   MetaBindI18n,
   MetaBindVariable,

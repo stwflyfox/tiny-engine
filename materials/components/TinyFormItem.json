@@ -62,12 +62,12 @@
                 "zh_CN": "校验字段"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaField", 
+              "component": "MetaProp", 
               "props": {}
             },
             "description": {
@@ -81,7 +81,7 @@
                 "zh_CN": "必填"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
