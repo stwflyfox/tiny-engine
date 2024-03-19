@@ -33,7 +33,7 @@
             "zh_CN": "显示更多"
           }
         },
-        "content": [  
+        "content": [
           {
             "property": "title",
             "label": {
@@ -53,7 +53,7 @@
               "zh_CN": "按钮文本"
             },
             "labelPosition": "left"
-          },       
+          },
           {
             "property": "size",
             "type": "select",
@@ -163,7 +163,7 @@
             "labelPosition": "left"
           },
           {
-            "property": "options",
+            "property": "menu-options",
             "label": {
               "text": {
                 "zh_CN": "通过配置式设置菜单项的属性"
@@ -185,7 +185,7 @@
             "labelPosition": "left"
           }
         ]
-      }    
+      }
     ],
     "events": {
       "onItemClick": {
@@ -250,18 +250,22 @@
           "splitButton": true,
           "size": "mini",
           "type": "primary",
-          "options": [
-            {
-              "label": "老友粉"              
-            },
-            {
-              "label": "狮子头",
-              "divided": true
-            },
-            {
-              "label": "黄金糕"                            
-            }
-          ]
+          "menu-options": {
+            "options": [
+              {
+                "label": "下拉选项一",
+                "value" : "item1"
+              },
+              {
+                "label": "下拉选项二",
+                "value" : "item2"             
+              },
+              {
+                "label": "下拉选项三",
+                "value" : "item3"
+              }
+            ]
+          }
         }
       }
     }
