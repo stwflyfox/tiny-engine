@@ -1708,7 +1708,7 @@
         "version": "",
         "exportName": "shqy",
         "subName": "",
-        "cdnLink": "//unpkg.com/shqy-components",
+        "cdnLink": "//ssrm.91zd.cn/shqy-components.es.js",
         "destructuring": false,
         "main": ""
       },
@@ -11264,7 +11264,7 @@
               "npm": {
                 "package": "shqy-components",
                 "exportName": "Subtable",
-                "script": "//unpkg.com/shqy-components",
+                "script": "//ssrm.91zd.cn/shqy-components.es.js",
                 "version": "",
                 "destructuring": null
               },
@@ -14076,7 +14076,7 @@
       {
         "component": "PopSelect",
         "npm": {
-          "package": "shqy-components",
+          "package": "@shqy/components",
           "exportName": "PopSelect",
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
@@ -14087,7 +14087,7 @@
       {
         "component": "Program",
         "npm": {
-          "package": "shqy-components",
+          "package": "@shqy/components",
           "exportName": "ProgramBuild",
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",

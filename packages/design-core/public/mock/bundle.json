@@ -16,7 +16,7 @@
           "keywords": "",
           "devMode": "proCode",
           "npm": {
-            "package": "shqy-components",
+            "package": "@shqy/components",
             "exportName": "PopSelect",
             "script": "https://unpkg.91zd.cn/@shqy/components",
             "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
@@ -364,7 +364,7 @@
           "keywords": "",
           "devMode": "proCode",
           "npm": {
-            "package": "shqy-components",
+            "package": "@shqy/components",
             "exportName": "ProgramBuild",
             "script": "https://unpkg.91zd.cn/@shqy/components",
             "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
