@@ -1,7 +1,7 @@
 # 如何将TinyEngine的区块发布到npm私仓
 
   撰写人：欧阳@上海启业信息(stwflyfox@163.com)
-
+ 
 
 ## 前言
 
