@@ -16,6 +16,7 @@
   各位可以参考: https://blog.csdn.net/qq_40881695/article/details/125046492 安装 verdaccio ，
   在安装并完成测试后， 访问 http://localhost:4873/ ，在 verdaccio 的管理界面能看到发布上去的npm包表示安装成功。
   建议发布的测试包名称格式：@公司码/组件名，以便于后续搭建 unpkg 时测试使用。
+  
 
 
 ## 安装 unpkg
@@ -24,12 +25,18 @@
   就是解析 npm 包的 package.json 文件，从中获取到 main 字段，进而读取 npm 包里的 js 文件， 然后将该文件路径转换成可访问的url。
   各位可以用 git fork : https://github.com/stwflyfox/unpkg 我所修改的代码， 修改成符合自己要求的代码，
   重点要修改的是：**npmConfig.js** 的 **scrops** ，将 @shqy 改成 @自已公司码 , 以及 **privateNpmRegistryURL** 改成自己的 verdaccio 私仓地址。
+  ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/caa6778e-a779-4046-a5d4-3b3609fbf3bd)
+
   修改完成后, 执行：
     npm install
     npm run build
     npm run start
   访问 http://localhost:8080/ 能看到 unpkg 服务启动成功，
+  ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/77d2099b-6ca5-455e-b020-f99dec9c8c33)
+
   然后访问之前发布的测试包： http://localhost:8080/@公司码/组件名 ，如能显示 js 文件内容, 则表示 unpkg 安装成功。
+  ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/c3666252-8568-4c7c-ba90-363e05164281)
+
 
 
 ## 修改 tiny-engine-webservice
