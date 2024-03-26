@@ -37,8 +37,8 @@ const open = (params = {}) => {
   const hashString = utoa(JSON.stringify(params))
 
   openUrl = isDevelopEnv
-    ? `./preview.html?tenant=${tenant}#${hashString}`
-    : `${href}/preview?tenant=${tenant}#${hashString}`
+    ? `./preview.html?tenant=${tenant}&id=${params.app}#${hashString}`
+    : `${href}/preview?tenant=${tenant}&id=${params.app}#${hashString}`
 
   const aTag = document.createElement('a')
   aTag.href = openUrl
