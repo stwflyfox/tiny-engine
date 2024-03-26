@@ -23,7 +23,7 @@
 
   在 verdaccio 安装好后，还要安装 unpkg ，才能在TinyEngine的页面上显示你所建的区块。 unpkg 的实现原理其实很简单，
   就是解析 npm 包的 package.json 文件，从中获取到 main 字段，进而读取 npm 包里的 js 文件， 然后将该文件路径转换成可访问的url。
-  各位可以用 git fork : https://github.com/stwflyfox/unpkg 我所修改的代码， 修改成符合自己要求的代码，
+  各位可以用 git clone : https://github.com/stwflyfox/unpkg 我所修改的代码， 修改成符合自己要求的代码，
   重点要修改的是：**npmConfig.js** 的 **scrops** ，将 @shqy 改成 @自已公司码 , 以及 **privateNpmRegistryURL** 改成自己的 verdaccio 私仓地址。
   ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/caa6778e-a779-4046-a5d4-3b3609fbf3bd)
 
