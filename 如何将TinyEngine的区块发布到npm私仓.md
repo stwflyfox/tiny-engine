@@ -15,7 +15,8 @@
   现有很多搭建 npm 私仓的方案，如: verdaccio, neuxs, cnpmjs 等，在此推荐使用 verdaccio，它是一个轻量级的简单易用的 npm 私仓，
   各位可以参考: https://blog.csdn.net/qq_40881695/article/details/125046492 安装 verdaccio ，
   在安装并完成测试后， 访问 http://localhost:4873/ ，在 verdaccio 的管理界面能看到发布上去的npm包表示安装成功。
-  建议发布的测试包名称格式：@公司码/组件名，以便于后续搭建 unpkg 时测试使用。
+  建议发布的测试包名称格式：@公司码/组件名，以便于后续搭建 unpkg 时测试使用。以下是测试用的package.json供参考：
+![输入图片说明](package.png)
   
 
 
@@ -25,17 +26,21 @@
   就是解析 npm 包的 package.json 文件，从中获取到 main 字段，进而读取 npm 包里的 js 文件， 然后将该文件路径转换成可访问的url。
   各位可以用 git clone : https://github.com/stwflyfox/unpkg 我所修改的代码， 修改成符合自己要求的代码，
   重点要修改的是：**npmConfig.js** 的 **scrops** ，将 @shqy 改成 @自已公司码 , 以及 **privateNpmRegistryURL** 改成自己的 verdaccio 私仓地址。
-  ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/caa6778e-a779-4046-a5d4-3b3609fbf3bd)
+![输入图片说明](npmConfig.png)
+
 
   修改完成后, 执行：
-    npm install
-    npm run build
-    npm run start
+```
+   npm install
+   npm run build
+   npm run start
+```
   访问 http://localhost:8080/ 能看到 unpkg 服务启动成功，
-  ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/77d2099b-6ca5-455e-b020-f99dec9c8c33)
+!![输入图片说明](unpkg.png)
+  
 
   然后访问之前发布的测试包： http://localhost:8080/@公司码/组件名 ，如能显示 js 文件内容, 则表示 unpkg 安装成功。
-  ![image](https://github.com/stwflyfox/tiny-engine/assets/3983204/c3666252-8568-4c7c-ba90-363e05164281)
+![输入图片说明](componets.png)
 
 
 
@@ -69,7 +74,7 @@ async loginInNpm(packagePath) {
             const commands = [
             'npm config set strict-ssl false',
             `npm config set registry http://127.0.0.1:4873`,     // verdaccio 的访问地址    
-            `npm config set //127.0.0.1:4873/:_auth xxxxxxxxxx`  // auth授权码是你发布组件到npm私仓的 用户名:密码 进行 base64 编码后的结果，访问 https://www.matools.com/base64 可做base64编码
+            `npm config set //127.0.0.1:4873/:_auth xxxxxxxxxx`  // auth授权码是你发布组件到npm私仓的 用户名:密码 进行 base64 编码后的字符串， https://base64.us/ 可做base64线上编码
             ];
             return this.ctx.helper.execCommandWithCatch(commands, { cwd: packagePath }, 'login npm');
         }
@@ -82,7 +87,15 @@ async publishCnpm(packagePath) {
       }
 ```
 
-  以上代码修改完毕后，即可在TinyEngine中愉快的发布及使用区块了，
+## 在 TinyEngine 中发布区块
+  以上步骤完成后，即可在TinyEngine中愉快的发布及使用区块了，各位可以查看 tiny-engine-webservice的发布过程用以排查问题，
+TinyEngine会生成组件包:
+![输入图片说明](build.png)
+  然后发布到私仓:
+![输入图片说明](published.png)
 
-       
-    
+附注：如果用 TinyEngine 发布到npm私仓发生权限问题时，可以用手动登录方式后再重新尝试发布区块
+```
+npm config set registry http://127.0.0.1:4873
+npm login
+```
