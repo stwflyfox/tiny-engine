@@ -11634,7 +11634,8 @@
                   "title": "标题",
                   "show-close": true,
                   "show-footer": false,
-                  "show-header": true
+                  "show-header": true,
+                  "visible": true
                 },
                 "children": [
                   {
