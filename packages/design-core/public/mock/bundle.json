@@ -4223,7 +4223,22 @@
                 ]
               }
             ],
-            "events": {}
+            "events": {
+              "onClose": {
+                "label": {
+                  "zh_CN": "关闭事件"
+                },
+                "description": {
+                  "zh_CN": "关闭按钮被点击时触发的回调函数"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
           },
           "configure": {
             "loop": true,
