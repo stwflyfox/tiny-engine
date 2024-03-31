@@ -215,6 +215,7 @@
             },
             "labelPosition": "left"
           }
+         
         ]
       },
       {
@@ -223,6 +224,101 @@
           "zh_CN": "其他"
         },
         "content": [
+          {
+            "property": "filterable",
+            "label": {
+              "text": {
+                "zh_CN": "是否可过滤"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否可过滤"
+            },
+            "labelPosition": "left"
+          }, 
+          {
+            "property": "filter-method",
+            "label": {
+              "text": {
+                "zh_CN": "自定义过滤方法"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }           
+            },
+            "description": {
+              "zh_CN": "渲染为下拉表格或下拉树"
+            },
+            "labelPosition": "left"
+          },        
+          {
+            "property": "render-type",
+            "label": {
+              "text": {
+                "zh_CN": "渲染为下拉表格或下拉树"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "下拉树",
+                    "value": "tree"
+                  },
+                  {
+                    "label": "下拉表格",
+                    "value": "grid"
+                  }              
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "渲染为下拉表格或下拉树"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "tree-op",
+            "label": {
+              "text": {
+                "zh_CN": "下拉树时，内置树组件的配置"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "下拉树时，内置树组件的配置"
+            },
+            "labelPosition": "left"
+          },
           {
             "property": "multiple-limit",
             "label": {

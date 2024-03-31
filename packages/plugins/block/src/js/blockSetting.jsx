@@ -107,7 +107,7 @@ export const META_COMPONENTS_ENUM = {
 // 每个值类型可选的编辑器类型
 export const META_COMPONENT_LIST = {
   [META_TYPES.array]: ['MetaCodeEditor', 'MetaArrayItem', 'MetaRelatedColumns', 'MetaRelatedEditor'],
-  [META_TYPES.string]: ['MetaInput', 'MetaSelect', 'MetaBindI18n'],
+  [META_TYPES.string]: ['MetaInput', 'MetaSelect', 'MetaBindI18n', 'MetaField'],
   [META_TYPES.number]: ['MetaNumber'],
   [META_TYPES.object]: ['MetaCodeEditor', 'MetaJsSlot'],
   [META_TYPES.boolean]: ['MetaSwitch'],

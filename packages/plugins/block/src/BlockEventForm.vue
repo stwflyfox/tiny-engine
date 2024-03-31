@@ -55,6 +55,7 @@ export default {
       eventName: getEditEventName() || ''
     })
 
+
     const rules = {
       eventName: [{ pattern: REGEXP_EVENT_NAME, message: eventNameTip, trigger: 'change' }]
     }
