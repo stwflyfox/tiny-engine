@@ -147,7 +147,27 @@
             "description": {
               "zh_CN": "控制头部显示"
             }
+          },
+          {
+            "property": "mask-closable",
+            "label": {
+              "text": {
+                "zh_CN": "点击遮罩层关闭弹窗"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "点击遮罩层关闭弹窗"
+            }
           }
+         
         ]
       }
     ],
@@ -214,7 +234,8 @@
             "show-close" : true,
             "show-footer" : false,
             "show-header" : true,
-            "visible" : true
+            "visible" : true,
+            "mask-closable": false
         },
         "children": [
           {

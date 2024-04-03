@@ -4,11 +4,19 @@
     :clearable="true" :searchable="true" @change="handleChange">
     <tiny-option v-for="item in state.options" :key="item.value" :label="item.label" :value="item.value"> </tiny-option>
   </tiny-select>
+  <!-- <div>常用默认值选项:</div>
+  <tiny-select v-model="state.selectedDefault" :is-drop-inherit-width="true" :clearable="true" :searchable="true"
+    @change="handleParamterChange">
+    <tiny-option v-for="item in state.defaultParameters" :key="item.Value" :label="item.Name" :value="item.Value"
+      :disabled="item.Disable"> </tiny-option>
+  </tiny-select>
+  <div>默认值:</div>
+  <tiny-input v-model="state.defaultValue" :clearable="true" @change="handleDefaultChange" /> -->
 </template>
 
 <script>
 import { reactive, watchEffect } from 'vue'
-import { Select, Option } from '@opentiny/vue'
+import { Select, Option, Input } from '@opentiny/vue'
 import i18n from '@opentiny/tiny-engine-controller/js/i18n'
 
 import {
@@ -20,6 +28,7 @@ export default {
   components: {
     TinySelect: Select,
     TinyOption: Option,
+    TinyInput: Input,
   },
   props: {
     modelValue: {
@@ -41,16 +50,37 @@ export default {
     const { locale } = i18n.global
     const state = reactive({
       selected: props.modelValue && props.modelValue.value ? props.modelValue.value : '',
-      options: []
+      options: [],
+      defaultParameters: [],
+      selectedDefault: '',
+      defaultValue: ''
     })
 
+    const handleDefaultChange = () => {
+
+      emit('update:modelValue', {
+        type: 'JSExpression',
+        value: state.selected,
+        defaultValue: state.defaultValue
+      })
+    }
 
 
     const handleChange = (arg) => {
 
       emit('update:modelValue', {
         type: 'JSExpression',
-        value: arg
+        value: arg,
+        defaultValue: state.defaultValue
+      })
+    }
+
+    const handleParamterChange = (arg) => {
+      state.defaultValue = state.defaultValue + arg;
+      emit('update:modelValue', {
+        type: 'JSExpression',
+        value: state.selected,
+        defaultValue: state.defaultValue
       })
     }
 
@@ -61,7 +91,9 @@ export default {
     return {
       state,
       locale,
-      handleChange
+      handleChange,
+      handleParamterChange,
+      handleDefaultChange
     }
   },
   mounted() {
@@ -78,6 +110,11 @@ export default {
 
       })
     }
+    // request('/Workflow/QueryDefaultParameters', METHOD.POST, { showWaiting: false }).then(result => {
+    //   debugger
+    //   this.state.defaultParameters = result;
+    // });
+
   }
 }
 </script>

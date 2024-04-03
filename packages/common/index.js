@@ -14,7 +14,6 @@ import PluginSetting from './component/PluginSetting.vue'
 import PluginPanel from './component/PluginPanel.vue'
 import SvgButton from './component/SvgButton.vue'
 import LinkButton from './component/LinkButton.vue'
-
 import ConfigCollapse from './component/ConfigCollapse.vue'
 import ConfigGroup from './component/ConfigGroup.vue'
 import ConfigItem from './component/ConfigItem.vue'
@@ -22,6 +21,7 @@ import ConfigRender from './component/ConfigRender.vue'
 import MetaTables from './component/MetaTables.vue'
 import MetaField from './component/MetaField.vue'
 import MetaProp from './component/MetaProp.vue'
+import MetaDefault from './component/MetaDefault.vue'
 import MetaArrayItem from './component/MetaArrayItem.vue'
 import MetaBindI18n from './component/MetaBindI18n.vue'
 import MetaBindVariable from './component/MetaBindVariable.vue'
@@ -110,6 +110,7 @@ export const MetaComponents = {
   MetaTables,
   MetaField,
   MetaProp,
+  MetaDefault,  
   MetaArrayItem,
   MetaBindI18n,
   MetaBindVariable,

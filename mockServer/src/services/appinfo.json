@@ -14096,6 +14096,39 @@
         }
       },
       {
+        "component": "SelectDictionary",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "SelectDictionary",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": false
+        }
+      },
+      {
+        "component": "SelectOrganization",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "SelectOrganization",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": false
+        }
+      },
+      {
+        "component": "SelectOrganizationUser",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "SelectOrganizationUser",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": false
+        }
+      },
+      {
         "component": "SeparatorLine",
         "npm": {}
       },
@@ -14421,6 +14454,17 @@
           "exportName": "Tree",
           "version": "",
           "destructuring": true
+        }
+      },
+      {
+        "component": "UploadFile",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "UploadFile",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": false
         }
       },
       {
