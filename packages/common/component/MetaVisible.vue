@@ -1,9 +1,11 @@
 <template>
-
-  <tiny-select v-model="state.selected" :multiple="multi" :is-drop-inherit-width="true" :show-alloption="false"
-    :clearable="true" :searchable="true" @change="handleChange">
-    <tiny-option v-for="item in state.options" :key="item.value" :label="item.label" :value="item.value"> </tiny-option>
-  </tiny-select>
+  
+    <tiny-select v-model="state.selected" :multiple="false" :is-drop-inherit-width="true" :show-alloption="false"
+      :clearable="true" :searchable="true" @change="handleChange">
+      <tiny-option v-for="item in state.options" :key="item.value" :label="item.label" :value="item.value">
+      </tiny-option>
+    </tiny-select>
+  
 </template>
 
 <script>
@@ -19,16 +21,13 @@ import {
 export default {
   components: {
     TinySelect: Select,
-    TinyOption: Option
+    TinyOption: Option,
+
   },
   props: {
     modelValue: {
       type: Object,
       default: () => { }
-    },
-    multi: {
-      type: Boolean,
-      default: false
     }
   },
   emits: ['update:modelValue'],
@@ -47,6 +46,9 @@ export default {
       defaultValue: ''
     })
 
+    const change = (val) => {
+      emit('update:modelValue', val)
+    }
 
 
     const handleChange = (arg) => {
@@ -65,7 +67,8 @@ export default {
     return {
       state,
       locale,
-      handleChange
+      handleChange,
+      change
     }
   },
   mounted() {
@@ -77,7 +80,7 @@ export default {
         this.state.options = [];
 
         result.forEach(p => {
-          this.state.options.push({ label: p.field_common + '(' + p.field_name + ')', value: 'this.state.formData.' + p.field_name })
+          this.state.options.push({ label: p.field_common + '(' + p.field_name + ')', value: 'this.state.visibles.' + p.field_name })
         })
 
       })

@@ -167,6 +167,25 @@
             "description": {
               "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
             }
+          },         
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaDisabled",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
           }
         ]
       }

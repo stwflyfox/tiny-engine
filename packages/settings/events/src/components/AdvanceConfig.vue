@@ -3,8 +3,8 @@
     <div class="advnce-config">
       <label class="text-ellipsis-multiple">是否显示</label>
       <div class="advanced-config-form-item">
-        <meta-switch v-if="!isBind" :modelValue="condition" @update:modelValue="setConfig"> </meta-switch>
-        <div v-else class="binding-state">已绑定：{{ condition.value }}</div>
+        <MetaVisible v-if="!isBind" :modelValue="condition" @update:modelValue="setConfig"> </MetaVisible>
+        <div v-else class="binding-state">已绑定：{{ condition }}</div>
         <meta-bind-variable v-model="condition" name="advance" @update:modelValue="setConfig"></meta-bind-variable>
       </div>
     </div>
@@ -60,7 +60,7 @@
 
 <script>
 import { ref, computed, reactive, watch } from 'vue'
-import { MetaSwitch, MetaBindVariable, MetaInput, MetaCodeEditor } from '@opentiny/tiny-engine-common'
+import { MetaSwitch, MetaBindVariable, MetaInput, MetaCodeEditor, MetaVisible } from '@opentiny/tiny-engine-common'
 import { useProperties, useCanvas } from '@opentiny/tiny-engine-controller'
 import { PROP_DATA_TYPE } from '@opentiny/tiny-engine-controller/utils'
 import { string2Obj } from '@opentiny/tiny-engine-controller/adapter'
@@ -76,7 +76,8 @@ export default {
     TinyTooltip: Tooltip,
     MetaBindVariable,
     MetaInput,
-    MetaCodeEditor
+    MetaCodeEditor,
+    MetaVisible,
   },
   inheritAttrs: false,
   setup() {

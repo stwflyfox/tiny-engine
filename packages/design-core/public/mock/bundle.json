@@ -165,7 +165,7 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
                     "required": true,
@@ -173,11 +173,11 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   }
                 ]
@@ -671,6 +671,25 @@
                     "description": {
                       "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
                     }
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaDisabled",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用"
+                    }
                   }
                 ]
               }
@@ -927,6 +946,25 @@
                     "description": {
                       "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
                     }
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaDisabled",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用"
+                    }
                   }
                 ]
               }
@@ -1182,6 +1220,25 @@
                     },
                     "description": {
                       "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaDisabled",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用"
                     }
                   }
                 ]
@@ -1798,18 +1855,17 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否被禁用"
-                    },
-                    "labelPosition": "left"
+                      "zh_CN": "禁用"
+                    }
                   },
                   {
                     "property": "type",
@@ -2157,16 +2213,16 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   }
                 ]
@@ -2747,19 +2803,19 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -3014,19 +3070,19 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -3215,19 +3271,19 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -4091,19 +4147,19 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -5221,18 +5277,17 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否被禁用"
-                    },
-                    "labelPosition": "left"
+                      "zh_CN": "禁用"
+                    }
                   },
                   {
                     "property": "type",
@@ -7144,7 +7199,7 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
                     "required": false,
@@ -7152,11 +7207,11 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -7541,7 +7596,7 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
                     "required": false,
@@ -7549,11 +7604,11 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -8733,16 +8788,16 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   }
                 ]
@@ -9007,16 +9062,16 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   }
                 ]
@@ -9410,18 +9465,17 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否被禁用"
-                    },
-                    "labelPosition": "left"
+                      "zh_CN": "禁用"
+                    }
                   },
                   {
                     "property": "placeholder",
@@ -9754,19 +9808,19 @@
                     "property": "disabled",
                     "label": {
                       "text": {
-                        "zh_CN": "是否禁用"
+                        "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "禁用"
                     }
                   },
                   {
@@ -10498,18 +10552,17 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaSwitch",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否被禁用"
-                    },
-                    "labelPosition": "left"
+                      "zh_CN": "禁用"
+                    }
                   },
                   {
                     "property": "MetaField",
@@ -11914,6 +11967,25 @@
                       "zh_CN": "双向绑定值"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaDisabled",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用"
+                    }
                   }
                 ]
               }

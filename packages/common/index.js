@@ -20,6 +20,8 @@ import ConfigItem from './component/ConfigItem.vue'
 import ConfigRender from './component/ConfigRender.vue'
 import MetaTables from './component/MetaTables.vue'
 import MetaField from './component/MetaField.vue'
+import MetaDisabled from './component/MetaDisabled.vue'
+import MetaVisible from './component/MetaVisible.vue'
 import MetaProp from './component/MetaProp.vue'
 import MetaDefault from './component/MetaDefault.vue'
 import MetaArrayItem from './component/MetaArrayItem.vue'
@@ -109,6 +111,8 @@ export const injectGlobalComponents = {
 export const MetaComponents = {
   MetaTables,
   MetaField,
+  MetaDisabled,
+  MetaVisible,
   MetaProp,
   MetaDefault,  
   MetaArrayItem,
@@ -212,5 +216,6 @@ export {
   BindI18n,
   BlockDeployDialog,
   ProgressBar,
-  MetaTableColumns
+  MetaTableColumns,
+  MetaVisible
 }

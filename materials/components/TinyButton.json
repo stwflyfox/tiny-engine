@@ -121,18 +121,17 @@
                 "zh_CN": "禁用"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaSwitch",
+              "component": "MetaDisabled",
               "props": {}
             },
             "description": {
-              "zh_CN": "是否被禁用"
-            },
-            "labelPosition": "left"
+              "zh_CN": "禁用"
+            }
           },
           {
             "property": "type",

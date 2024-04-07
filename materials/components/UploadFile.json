@@ -54,6 +54,25 @@
               "zh_CN": "双向绑定值"
             },
             "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaDisabled",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
           }
         ]
       }

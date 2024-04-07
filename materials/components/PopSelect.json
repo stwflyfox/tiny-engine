@@ -160,7 +160,7 @@
             "property": "disabled",
             "label": {
               "text": {
-                "zh_CN": "是否禁用"
+                "zh_CN": "禁用"
               }
             },
             "required": true,
@@ -168,11 +168,11 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaSwitch",
+              "component": "MetaDisabled",
               "props": {}
             },
             "description": {
-              "zh_CN": ""
+              "zh_CN": "禁用"
             }
           }
         ]
