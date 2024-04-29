@@ -8965,7 +8965,7 @@
           "devMode": "proCode",
           "npm": {
             "package": "@opentiny/vue",
-            "exportName": "RadioGroup",
+            "exportName": "Radio",
             "version": "",
             "destructuring": true
           },
@@ -8999,7 +8999,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaCodeEditor",
                       "props": {}
                     },
                     "description": {
@@ -12641,6 +12641,20 @@
               "schema": {
                 "componentName": "TinyRadioGroup",
                 "props": {
+                  "options": [
+                    {
+                      "label": "选项1",
+                      "value": "1"
+                    },
+                    {
+                      "label": "选项2",
+                      "value": "2"
+                    },
+                    {
+                      "label": "选项3",
+                      "value": "3"
+                    }
+                  ],
                   "type": "radio",
                   "size": "mini"
                 }

@@ -14361,7 +14361,7 @@
         "component": "TinyRadioGroup",
         "npm": {
           "package": "@opentiny/vue",
-          "exportName": "RadioGroup",
+          "exportName": "Radio",
           "version": "",
           "destructuring": true
         }
