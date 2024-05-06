@@ -11268,7 +11268,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaNumber",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
