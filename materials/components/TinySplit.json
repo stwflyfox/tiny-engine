@@ -27,12 +27,7 @@
         "description": {
           "zh_CN": "基础信息"
         },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+    
         "content": [
           {
             "property": "mode",
@@ -158,26 +153,7 @@
             "description": {
               "zh_CN": "左面板/上面板最小阈值"
             }
-          },
-          {
-            "property": "threeAreas",
-            "label": {
-              "text": {
-                "zh_CN": "配置3个区块"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSwitch",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "配置3个区块"
-            }
-          },
+          },        
           {
             "property": "disabled",
             "label": {
@@ -200,6 +176,33 @@
         ]
       }
     ],
+    "slots": {
+      "bottom": {
+        "label": {
+          "zh_CN": "下面板插槽"
+        }
+      },
+      "left": {
+        "label": {
+          "zh_CN": "左面板插槽"
+        }
+      },
+      "right": {
+        "label": {
+          "zh_CN": "右面板插槽"
+        }
+      },
+      "top": {
+        "label": {
+          "zh_CN": "上面板插槽"
+        }
+      },
+      "trigger": {
+        "label": {
+          "zh_CN": "拖拽插槽"
+        }
+      }
+    },
     "events": {}
   },
   "configure": {
