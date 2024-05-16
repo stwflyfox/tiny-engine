@@ -73,7 +73,6 @@ import { MetaSwitch, MetaBindVariable, MetaInput, MetaCodeEditor, MetaVisible } 
 import { useProperties, useCanvas } from '@opentiny/tiny-engine-controller'
 import { PROP_DATA_TYPE } from '@opentiny/tiny-engine-controller/utils'
 import { string2Obj } from '@opentiny/tiny-engine-controller/adapter'
-import { updateRect } from '@opentiny/tiny-engine-canvas'
 import { constants } from '@opentiny/tiny-engine-utils'
 import { Tooltip } from '@opentiny/vue'
 
@@ -173,7 +172,8 @@ export default {
       } else {
         delete useProperties().getSchema().condition
       }
-      updateRect()
+
+      useCanvas().canvasApi.value.updateRect()
       condition.value = value
     }
 
