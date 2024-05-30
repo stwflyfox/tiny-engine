@@ -14081,7 +14081,7 @@
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
-          "destructuring": false
+          "destructuring": true
         }
       },
       {
@@ -14092,7 +14092,7 @@
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
-          "destructuring": false
+          "destructuring": true
         }
       },
       {
@@ -14103,7 +14103,7 @@
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
-          "destructuring": false
+          "destructuring": true
         }
       },
       {
@@ -14114,7 +14114,7 @@
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
-          "destructuring": false
+          "destructuring": true
         }
       },
       {
@@ -14125,7 +14125,7 @@
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
-          "destructuring": false
+          "destructuring": true
         }
       },
       {
@@ -14281,6 +14281,15 @@
         "npm": {
           "package": "@opentiny/vue",
           "exportName": "Dropdown",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "TinyDropTimes",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "DropTimes",
           "version": "",
           "destructuring": true
         }
@@ -14464,7 +14473,7 @@
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
-          "destructuring": false
+          "destructuring": true
         }
       },
       {
