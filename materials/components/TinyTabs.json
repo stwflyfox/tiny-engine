@@ -207,6 +207,47 @@
             "labelPosition": "left"
           },
           {
+            "property": "overflow-title",
+            "label": {
+              "text": {
+                "zh_CN": "页签是否在超过 title-width 省略显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "页签是否在超过 title-width 省略显示"
+            }
+          },
+          {
+            "property": "title-width",
+            "label": {
+              "text": {
+                "zh_CN": "指定页签标题的最大宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {
+                
+              }
+            },
+            "description": {
+              "zh_CN": "指定页签标题的最大宽度"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "size",
             "label": {
               "text": {
