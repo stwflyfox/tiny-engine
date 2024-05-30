@@ -11382,7 +11382,7 @@
                     "property": "overflow-title",
                     "label": {
                       "text": {
-                        "zh_CN": "页签是否在超过 title-width 省略显示"
+                        "zh_CN": "页签是否在超过 title-width 不要省略显示"
                       }
                     },
                     "required": false,
@@ -11394,7 +11394,7 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "页签是否在超过 title-width 省略显示"
+                      "zh_CN": "页签是否在超过 title-width 不要省略显示"
                     }
                   },
                   {
