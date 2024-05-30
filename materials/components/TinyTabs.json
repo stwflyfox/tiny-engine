@@ -137,6 +137,45 @@
             "labelPosition": "left"
           },
           {
+            "property": "position",
+            "label": {
+              "text": {
+                "zh_CN": "设置页签栏所在位置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "top",
+                    "value": "top"
+                  },
+                  {
+                    "label": "right",
+                    "value": "right"
+                  },
+                  {
+                    "label": "bottom",
+                    "value": "bottom"
+                  },
+                  {
+                    "label": "left",
+                    "value": "left"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置页签栏所在位置"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "tab-style",
             "label": {
               "text": {
