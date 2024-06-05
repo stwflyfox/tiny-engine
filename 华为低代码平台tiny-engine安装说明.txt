@@ -1,3 +1,5 @@
+安装nvm : 运行 nvm-setup.exe
+nvm install 20.10.0
 nvm use 20.10.0  
 npm install -g pnpm
 安装data-center:
@@ -18,7 +20,7 @@ npm install -g pnpm
      注销windows
 安装 tiny-engine:
     git 克隆：https://github.com/stwflyfox/tiny-engine.git , 
-    进入克隆后的目录, 切换到 release 分支，
+    进入克隆后的目录, 切换到 test 分支，
          运行 pnpm install
          运行 pnpm run build:plugin
          运行 pnpm run build:alpha

@@ -169,7 +169,7 @@
     "loop": true,
     "condition": true,
     "styles": true,
-    "isContainer": true,
+    "isContainer": false,
     "isModal": false,
     "nestingRule": {
       "childWhitelist": "",

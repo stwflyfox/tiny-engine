@@ -474,7 +474,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -807,7 +807,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -1082,7 +1082,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -1357,7 +1357,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -1703,7 +1703,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -3181,7 +3181,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -3400,7 +3400,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -4417,7 +4417,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -5382,7 +5382,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -5707,7 +5707,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -8247,7 +8247,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -8985,7 +8985,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "isPopper": true,
             "nestingRule": {
@@ -10810,7 +10810,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -12519,7 +12519,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": true,
+            "isContainer": false,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
