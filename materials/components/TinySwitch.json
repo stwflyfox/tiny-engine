@@ -35,6 +35,26 @@
         },
         "content": [
           {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定的当前选中值"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "disabled",
             "label": {
               "text": {
