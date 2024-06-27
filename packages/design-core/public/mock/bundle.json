@@ -7134,6 +7134,46 @@
                       "zh_CN": "设置行合并,该属性仅适用于普通表格，不可与 tree-config 同时使用"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "tree-config",
+                    "label": {
+                      "text": {
+                        "zh_CN": "树形配置"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置树形配置"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "context-menu",
+                    "label": {
+                      "text": {
+                        "zh_CN": "右键菜单"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置右键菜单"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
