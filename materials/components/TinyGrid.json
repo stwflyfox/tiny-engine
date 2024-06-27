@@ -802,7 +802,7 @@
             "property": "row-class-name",
             "label": {
               "text": {
-                "zh_CN": "hover 高亮"
+                "zh_CN": "给行附加 className"
               }
             },
             "required": true,
@@ -815,6 +815,26 @@
             },
             "description": {
               "zh_CN": "给行附加 className，也可以是函数 Function({seq, row, rowIndex, $rowIndex})"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "cell-class-name",
+            "label": {
+              "text": {
+                "zh_CN": "给单元格附加 className"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "给单元格附加 className，也可以是函数 Function({seq, row, rowIndex, $rowIndex, columnIndex})"
             },
             "labelPosition": "left"
           },
