@@ -7194,6 +7194,26 @@
                       "zh_CN": "设置右键菜单"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "span-method",
+                    "label": {
+                      "text": {
+                        "zh_CN": "自定义合并规则，绑定自定义方法"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "自定义合并规则，绑定自定义方法"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
@@ -7352,6 +7372,34 @@
                 },
                 "description": {
                   "zh_CN": "行点击时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onCellClick": {
+                "label": {
+                  "zh_CN": "单元格点击时触发"
+                },
+                "description": {
+                  "zh_CN": "单元格点击时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onContextMenuClick": {
+                "label": {
+                  "zh_CN": "菜单点击事件"
+                },
+                "description": {
+                  "zh_CN": "菜单点击事件"
                 },
                 "type": "event",
                 "functionInfo": {
