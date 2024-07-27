@@ -1,0 +1,159 @@
+{
+  "name": {
+    "zh_CN": "导入文件"
+  },
+  "component": "ImportFile",
+  "icon": "uploadfile",
+  "description": "导入文件",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "ImportFile", 
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+	  "css": "https://unpkg.91zd.cn/@shqy/components/style.css", 
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [         
+          {
+            "property": "url",
+            "label": {
+              "text": {
+                "zh_CN": "导入接口地址"
+              }
+            },
+            "cols": 12,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,            
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "导入接口地址"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "bottonText",
+            "type": "string",
+            "defaultValue": "",
+            "label": {
+              "text": {
+                "zh_CN": "按钮文字"
+              }
+            },            
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        
+        ]
+      }
+    ],
+    "events": {
+      "onUpload": {
+        "label": {
+          "zh_CN": "导入完成时触发"
+        },
+        "description": {
+          "zh_CN": "在导入完成时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "导入完成时触发"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }   
+   
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "导入文件"
+      },
+      "icon": "uploadfile",
+      "screenshot": "",
+      "snippetName": "ImportFile",
+      "schema": {
+        "componentName": "ImportFile",
+        "props": {
+          
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}

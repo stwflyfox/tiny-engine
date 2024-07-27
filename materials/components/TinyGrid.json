@@ -1118,6 +1118,20 @@
         },
         "defaultValue": ""
       },
+      "onCellMouseenter": {
+        "label": {
+          "zh_CN": "当单元格 hover 进入时会触发该事件"
+        },
+        "description": {
+          "zh_CN": "当单元格 hover 进入时会触发该事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },      
       "onContextMenuClick": {
         "label": {
           "zh_CN": "菜单点击事件"

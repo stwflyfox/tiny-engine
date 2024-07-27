@@ -151,6 +151,8 @@ const generateComponents = () => {
 
         appInfo.materialHistory.components = componentsMap
 
+        logger.success(JSON.stringify(componentsMap))
+
         write(bundle)
       })
     })
