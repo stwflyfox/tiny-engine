@@ -1,5 +1,5 @@
 <template>
-
+<tiny-input  v-model="state.selected" ></tiny-input>
   <tiny-select v-model="state.selected" :multiple="multi" :is-drop-inherit-width="true" :show-alloption="false"
     :clearable="true" :searchable="true" @change="handleChange">
     <tiny-option v-for="item in state.options" :key="item.value" :label="item.label" :value="item.value"> </tiny-option>
@@ -8,7 +8,7 @@
 
 <script>
 import { reactive, watchEffect } from 'vue'
-import { Select, Option } from '@opentiny/vue'
+import { Select, Option,Input } from '@opentiny/vue'
 import i18n from '@opentiny/tiny-engine-controller/js/i18n'
 
 import {
@@ -18,6 +18,7 @@ import {
 
 export default {
   components: {
+    TinyInput: Input,
     TinySelect: Select,
     TinyOption: Option
   },
