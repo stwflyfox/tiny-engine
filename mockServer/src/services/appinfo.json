@@ -14180,6 +14180,15 @@
         }
       },
       {
+        "component": "TinyCalendarView",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "CalendarView",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyCarousel",
         "npm": {
           "package": "@opentiny/vue",

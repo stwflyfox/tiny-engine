@@ -2404,6 +2404,457 @@
         },
         {
           "name": {
+            "zh_CN": "日历视图"
+          },
+          "component": "TinyCalendarView",
+          "icon": "datepick",
+          "description": "用于日历视图",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "CalendarView",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "year",
+                    "label": {
+                      "text": {
+                        "zh_CN": "日历当前显示年份"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "日历当前显示年份"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "month",
+                    "label": {
+                      "text": {
+                        "zh_CN": "日历当前显示月份"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "日历当前显示月份"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "height",
+                    "label": {
+                      "text": {
+                        "zh_CN": "日历高度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "日历高度"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "events",
+                    "label": {
+                      "text": {
+                        "zh_CN": "日程事件"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "日程事件"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "day-times",
+                    "label": {
+                      "text": {
+                        "zh_CN": "时间范围"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "配置时间线模式下所展示的时间范围，默认为[8,18]，可配范围[0,23]。"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "mode",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示模式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "时间线模式",
+                            "value": "timeline"
+                          },
+                          {
+                            "label": "日程模式",
+                            "value": "schedule"
+                          },
+                          {
+                            "label": "月模式",
+                            "value": "month"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "显示模式"
+                    }
+                  },
+                  {
+                    "property": "multi-select",
+                    "label": {
+                      "text": {
+                        "zh_CN": "日期多选"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否允许日期多选"
+                    },
+                    "labelPosition": "left"
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onSelectedDateChange": {
+                "label": {
+                  "zh_CN": "选中日期改变事件"
+                },
+                "description": {
+                  "zh_CN": "选中日期改变事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "选中日期改变事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onModeChange": {
+                "label": {
+                  "zh_CN": "模式切换事件"
+                },
+                "description": {
+                  "zh_CN": "模式切换事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "模式切换事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onYearChange": {
+                "label": {
+                  "zh_CN": "年改变事件"
+                },
+                "description": {
+                  "zh_CN": "年改变事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "年改变事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onMonthChange": {
+                "label": {
+                  "zh_CN": "月改变事件"
+                },
+                "description": {
+                  "zh_CN": "月改变事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "月改变事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onWeekChange": {
+                "label": {
+                  "zh_CN": "周改变事件"
+                },
+                "description": {
+                  "zh_CN": "周改变事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "周改变事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onPrevWeekClick": {
+                "label": {
+                  "zh_CN": "上一周按钮点击事件"
+                },
+                "description": {
+                  "zh_CN": "上一周按钮点击事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "上一周按钮点击事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onNextWeekClick": {
+                "label": {
+                  "zh_CN": "下一周按钮点击事件"
+                },
+                "description": {
+                  "zh_CN": "下一周按钮点击事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "下一周按钮点击事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            },
+            "slots": {
+              "header": {
+                "label": {
+                  "zh_CN": "头部插槽"
+                },
+                "description": {
+                  "zh_CN": "头部插槽"
+                },
+                "widget": {
+                  "component": "MetaCodeEditor",
+                  "props": {
+                    "dataType": "JSFunction"
+                  }
+                }
+              },
+              "timeline": {
+                "label": {
+                  "zh_CN": "时间线插槽"
+                },
+                "description": {
+                  "zh_CN": "时间线插槽，有timeline1-timeline7 7个插槽"
+                },
+                "widget": {
+                  "component": "MetaCodeEditor",
+                  "props": {
+                    "dataType": "JSFunction"
+                  }
+                }
+              },
+              "tool": {
+                "label": {
+                  "zh_CN": "工具栏插槽"
+                },
+                "description": {
+                  "zh_CN": "工具栏插槽"
+                },
+                "widget": {
+                  "component": "MetaCodeEditor",
+                  "props": {
+                    "dataType": "JSFunction"
+                  }
+                }
+              },
+              "weekday": {
+                "label": {
+                  "zh_CN": "日程插槽"
+                },
+                "description": {
+                  "zh_CN": "日程插槽，有weekday1-weekday7 7个插槽"
+                },
+                "widget": {
+                  "component": "MetaCodeEditor",
+                  "props": {
+                    "dataType": "JSFunction"
+                  }
+                }
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": true,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "value",
+                "disabled"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": {
             "zh_CN": "走马灯"
           },
           "component": "TinyCarousel",
@@ -13514,6 +13965,21 @@
                       "label": "软件"
                     }
                   ]
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "日历视图"
+              },
+              "icon": "datepick",
+              "screenshot": "",
+              "snippetName": "TinyCalendarView",
+              "schema": {
+                "componentName": "TinyCalendarView",
+                "props": {
+                  "year": "2024",
+                  "month": "9"
                 }
               }
             },
