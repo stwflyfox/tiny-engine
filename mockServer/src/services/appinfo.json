@@ -14261,6 +14261,15 @@
         }
       },
       {
+        "component": "TinyColorPicker",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyColorPicker",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyDatePicker",
         "npm": {
           "package": "@opentiny/vue",
@@ -14454,6 +14463,15 @@
         "npm": {
           "package": "@opentiny/vue",
           "exportName": "Tabs",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "TinyTag",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyTag",
           "version": "",
           "destructuring": true
         }

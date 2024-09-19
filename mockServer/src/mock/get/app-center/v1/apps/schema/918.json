@@ -1860,6 +1860,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyColorPicker",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyColorPicker",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyDatePicker",
         "package": "@opentiny/vue",
         "version": "",
@@ -2011,6 +2018,13 @@
         "package": "@opentiny/vue",
         "version": "",
         "exportName": "Tabs",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyTag",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyTag",
         "destructuring": true
       },
       {

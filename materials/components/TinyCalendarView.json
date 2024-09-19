@@ -192,7 +192,28 @@
               "zh_CN": "是否允许日期多选"
             },
             "labelPosition": "left"
+          },
+          {
+            "property": "set-day-bg-color",
+            "label": {
+              "text": {
+                "zh_CN": "自定义单元格背景色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "自定义单元格背景色"
+            },
+            "labelPosition": "left"
           }
+          
         ]
       }
     ],
