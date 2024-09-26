@@ -1,10 +1,10 @@
 {
   "name": {
-    "zh_CN": "时间选择"
+    "zh_CN": "时间选择框"
   },
-  "component": "TinyDropTimes",
+  "component": "TinyTimeSelect",
   "icon": "daterange",
-  "description": "简单用于下拉选择时间",
+  "description": "时间选择框是下拉框的特例，按时分格式（不支持自定义格式）展示下拉列表以供用户选择，并能扩展下拉框部分参数",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
@@ -12,7 +12,7 @@
   "devMode": "proCode",
   "npm": {
     "package": "@opentiny/vue",
-    "exportName": "DropTimes",
+    "exportName": "TimeSelect",
     "version": "",
     "destructuring": true
   },
@@ -74,7 +74,45 @@
               "zh_CN": "输入框占位文本"
             },
             "labelPosition": "left"
-          },       
+          },     
+          {
+            "property": "clearable",
+            "label": {
+              "text": {
+                "zh_CN": "清除按钮是否显示"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },      
+          {
+            "property": "editable",
+            "label": {
+              "text": {
+                "zh_CN": "文本框是否可手动输入"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },    
           {
             "property": "disabled",
             "label": {
@@ -129,10 +167,10 @@
             }
           },
           {
-            "property": "start",
+            "property": "picker-options",
             "label": {
               "text": {
-                "zh_CN": "开始时间，以分钟计算"
+                "zh_CN": "时间选择器选项"
               }
             },
             "required": false,
@@ -140,57 +178,13 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaNumber",
+              "component": "MetaCodeEditor",
               "props": {
-                "allowEmpty" : true
+                "language": "json"
               }
             },
             "description": {
-              "zh_CN": "开始时间，以分钟计算"
-            },
-            "labelPosition": "left"
-          },
-          {
-            "property": "step",
-            "label": {
-              "text": {
-                "zh_CN": "间隔时间，以分钟计算"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaNumber",
-              "props": {
-                "allowEmpty" : true
-              }
-            },
-            "description": {
-              "zh_CN": "间隔时间，以分钟计算"
-            },
-            "labelPosition": "left"
-          },
-          {
-            "property": "end",
-            "label": {
-              "text": {
-                "zh_CN": "结束时间，以分钟计算"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaNumber",
-              "props": {
-                "allowEmpty" : true
-              }
-            },
-            "description": {
-              "zh_CN": "结束时间，以分钟计算"
+              "zh_CN": "当前时间日期选择器特有的选项"
             },
             "labelPosition": "left"
           }
@@ -327,15 +321,15 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "时间选择"
+        "zh_CN": "时间选择框"
       },
       "icon": "daterange",
       "screenshot": "",
-      "snippetName": "TinyDropTimes",
+      "snippetName": "TinyTimeSelect",
       "schema": {
-        "componentName": "TinyDropTimes",
+        "componentName": "TinyTimeSelect",
         "props": {
-          "placeholder": "请选择",
+          "placeholder": "请选择时间",
           "modelValue": "",
           "size": "mini"
         }

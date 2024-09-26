@@ -14486,6 +14486,15 @@
         }
       },
       {
+        "component": "TinyTimeSelect",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TimeSelect",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyTooltip",
         "npm": {
           "package": "@opentiny/vue",

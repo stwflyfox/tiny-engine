@@ -2035,6 +2035,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyTimeSelect",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TimeSelect",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyTooltip",
         "package": "@opentiny/vue",
         "version": "",
