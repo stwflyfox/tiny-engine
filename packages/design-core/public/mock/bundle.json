@@ -13733,6 +13733,46 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "default-expand-all",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否默认展开所有节点"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否默认展开所有节点"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "show-line",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示连接线"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示连接线"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "data",
                     "label": {
                       "text": {
