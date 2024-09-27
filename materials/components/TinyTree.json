@@ -38,7 +38,7 @@
             "property": "show-checkbox",
             "label": {
               "text": {
-                "zh_CN": "多选"
+                "zh_CN": "多选模式"
               }
             },
             "required": true,
@@ -50,10 +50,31 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "设置接口是否可以多选"
+              "zh_CN": "设置是否可以多选"
             },
             "labelPosition": "left"
           },
+          {
+            "property": "show-radio",
+            "label": {
+              "text": {
+                "zh_CN": "单选模式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置是否为单选模式"
+            },
+            "labelPosition": "left"
+          },
+         
           {
             "property": "default-expand-all",
             "label": {
