@@ -116,7 +116,7 @@
                       }
                     },
                     "widget": {
-                      "component": "MetaSelect",
+                      "component": "MetaInput",
                       "props": {
                         "searchable": true,
                         "options": []
@@ -259,6 +259,22 @@
                             "value": "right"
                           }
                         ]
+                      }
+                    }
+                  },
+                  {
+                    "property": "treeNode",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否树节点字段"
+                      }
+                    },
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {
+                        
                       }
                     }
                   },
@@ -647,7 +663,46 @@
               "zh_CN": "是否允许列数据排序。默认为 true 可排序"
             },
             "labelPosition": "left"
-          }
+          },
+          {
+            "property": "width",
+            "label": {
+              "text": {
+                "zh_CN": "表格宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "表格宽度"
+            }
+          },   
+          {
+            "property": "height",
+            "label": {
+              "text": {
+                "zh_CN": "表格高度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "表格高度"
+            }
+          }         
+          
         ]
       },
       {
@@ -982,6 +1037,37 @@
               "defaultValue": "",
               "description": {
                 "zh_CN": "{$table,filters} 包含 table 实例对象和过滤条件的对象"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": "function onClick(e) {}"
+      },      
+      "onRadioChange": {
+        "label": {
+          "zh_CN": "手动勾选并且值发生改变时触发的事件"
+        },
+        "description": {
+          "zh_CN": "只对 type=radio 有效，当手动勾选并且值发生改变时触发的事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "table",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": " table 实例对象"
+              }
+            },
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": " 原生 Event"
               }
             }
           ],

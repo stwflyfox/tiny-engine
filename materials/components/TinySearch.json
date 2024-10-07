@@ -188,6 +188,52 @@
       }
     ],
     "events": {
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onInput": {
+        "label": {
+          "zh_CN": "输入值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "输入框输入的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
       "onChange": {
         "label": {
           "zh_CN": "输入完成时触发"
@@ -246,6 +292,20 @@
               }
             }
           ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onClear": {
+        "label": {
+          "zh_CN": "点击清空按钮时触发"
+        },
+        "description": {
+          "zh_CN": "清空值触发的回调函数"
+        },
+        "type": "event",
+        "functionInfo": {
+         
           "returns": {}
         },
         "defaultValue": ""

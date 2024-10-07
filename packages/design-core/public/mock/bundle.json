@@ -7274,7 +7274,7 @@
                               }
                             },
                             "widget": {
-                              "component": "MetaSelect",
+                              "component": "MetaInput",
                               "props": {
                                 "searchable": true,
                                 "options": []
@@ -7418,6 +7418,20 @@
                                   }
                                 ]
                               }
+                            }
+                          },
+                          {
+                            "property": "treeNode",
+                            "type": "boolean",
+                            "defaultValue": false,
+                            "label": {
+                              "text": {
+                                "zh_CN": "是否树节点字段"
+                              }
+                            },
+                            "widget": {
+                              "component": "MetaSwitch",
+                              "props": {}
                             }
                           },
                           {
@@ -7805,6 +7819,44 @@
                       "zh_CN": "是否允许列数据排序。默认为 true 可排序"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "width",
+                    "label": {
+                      "text": {
+                        "zh_CN": "表格宽度"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "表格宽度"
+                    }
+                  },
+                  {
+                    "property": "height",
+                    "label": {
+                      "text": {
+                        "zh_CN": "表格高度"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "表格高度"
+                    }
                   }
                 ]
               },
@@ -8139,6 +8191,37 @@
                       "defaultValue": "",
                       "description": {
                         "zh_CN": "{$table,filters} 包含 table 实例对象和过滤条件的对象"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": "function onClick(e) {}"
+              },
+              "onRadioChange": {
+                "label": {
+                  "zh_CN": "手动勾选并且值发生改变时触发的事件"
+                },
+                "description": {
+                  "zh_CN": "只对 type=radio 有效，当手动勾选并且值发生改变时触发的事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "table",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": " table 实例对象"
+                      }
+                    },
+                    {
+                      "name": "event",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": " 原生 Event"
                       }
                     }
                   ],
@@ -10922,6 +11005,52 @@
               }
             ],
             "events": {
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 输入值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onInput": {
+                "label": {
+                  "zh_CN": "输入值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 输入值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "输入框输入的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
               "onChange": {
                 "label": {
                   "zh_CN": "输入完成时触发"
@@ -10980,6 +11109,19 @@
                       }
                     }
                   ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onClear": {
+                "label": {
+                  "zh_CN": "点击清空按钮时触发"
+                },
+                "description": {
+                  "zh_CN": "清空值触发的回调函数"
+                },
+                "type": "event",
+                "functionInfo": {
                   "returns": {}
                 },
                 "defaultValue": ""
@@ -13793,6 +13935,26 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "expand-on-click-node",
+                    "label": {
+                      "text": {
+                        "zh_CN": "点击内容时展开/收起"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置节点在点击内容时展开 / 收起， 默认为 true。 当设置为 false时，只有点击图标才展开"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "data",
                     "label": {
                       "text": {
@@ -13822,6 +13984,26 @@
                     }
                   },
                   {
+                    "property": "current-node-key",
+                    "label": {
+                      "text": {
+                        "zh_CN": "当前选中节点"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "当前选中节点"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "node-key",
                     "label": {
                       "text": {
@@ -13838,6 +14020,26 @@
                     },
                     "description": {
                       "zh_CN": "节点唯一标识属性名称"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "default-checked-keys",
+                    "label": {
+                      "text": {
+                        "zh_CN": "自动勾选的节点的keys数组"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置默认加载时，自动勾选的节点的keys数组"
                     },
                     "labelPosition": "left"
                   },
@@ -13898,6 +14100,26 @@
                     },
                     "description": {
                       "zh_CN": "节点收缩的图标"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "filter-node-method",
+                    "label": {
+                      "text": {
+                        "zh_CN": "指定过滤节点时的函数"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "指定过滤节点时的函数，函数返回true时节点显示，否则节点隐藏"
                     },
                     "labelPosition": "left"
                   }

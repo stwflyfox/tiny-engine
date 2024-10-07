@@ -115,7 +115,26 @@
             },
             "labelPosition": "left"
           },
-         
+          {
+            "property": "expand-on-click-node",
+            "label": {
+              "text": {
+                "zh_CN": "点击内容时展开/收起"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置节点在点击内容时展开 / 收起， 默认为 true。 当设置为 false时，只有点击图标才展开"
+            },
+            "labelPosition": "left"
+          },          
           {
             "property": "data",
             "label": {
@@ -144,6 +163,26 @@
             "description": {
               "zh_CN": "可配置静态数据源和动态数据源"
             }
+          },          
+          {
+            "property": "current-node-key",
+            "label": {
+              "text": {
+                "zh_CN": "当前选中节点"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "当前选中节点"
+            },
+            "labelPosition": "left"
           },
           {
             "property": "node-key",
@@ -162,6 +201,26 @@
             },
             "description": {
               "zh_CN": "节点唯一标识属性名称"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "default-checked-keys",
+            "label": {
+              "text": {
+                "zh_CN": "自动勾选的节点的keys数组"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置默认加载时，自动勾选的节点的keys数组"
             },
             "labelPosition": "left"
           },
@@ -224,7 +283,28 @@
               "zh_CN": "节点收缩的图标"
             },
             "labelPosition": "left"
+          },
+          {
+            "property": "filter-node-method",
+            "label": {
+              "text": {
+                "zh_CN": "指定过滤节点时的函数"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "指定过滤节点时的函数，函数返回true时节点显示，否则节点隐藏"
+            },
+            "labelPosition": "left"
           }
+          
         ]
       },
       {
@@ -252,7 +332,7 @@
               "zh_CN": "是否在点击节点的时候选中节点，默认值为 false，即只有在点击复选框时才会选中节点"
             },
             "labelPosition": "left"
-          },
+          },          
           {
             "property": "filter-node-method",
             "label": {
