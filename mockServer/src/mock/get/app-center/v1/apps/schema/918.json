@@ -2049,6 +2049,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyTransfer",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Transfer",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyTree",
         "package": "@opentiny/vue",
         "version": "",

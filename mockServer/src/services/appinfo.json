@@ -14504,6 +14504,15 @@
         }
       },
       {
+        "component": "TinyTransfer",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Transfer",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyTree",
         "npm": {
           "package": "@opentiny/vue",

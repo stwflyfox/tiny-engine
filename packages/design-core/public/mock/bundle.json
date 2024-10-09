@@ -13819,6 +13819,235 @@
           }
         },
         {
+          "icon": "cursor-ew-resize",
+          "name": {
+            "zh_CN": "穿梭框"
+          },
+          "component": "TinyTransfer",
+          "description": "穿梭框，实现左右表格数据的双向交换的组件",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "Transfer",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 12,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": [
+                  {
+                    "property": "v-model",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "双向绑定值"
+                    },
+                    "labelPosition": "top"
+                  },
+                  {
+                    "property": "show-all-btn",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示全部移动按钮"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示全部移动按钮"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "data",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据源"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "左右列表的全量数据源"
+                    }
+                  },
+                  {
+                    "property": "filterable",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否启用搜索的功能"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否启用搜索的功能"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "filter-placeholder",
+                    "label": {
+                      "text": {
+                        "zh_CN": "启用搜索时，搜索框占位文本"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput"
+                    },
+                    "description": {
+                      "zh_CN": "启用搜索时，搜索框占位文本"
+                    }
+                  },
+                  {
+                    "property": "filter-method",
+                    "label": {
+                      "text": {
+                        "zh_CN": "自定义左右列表搜索的方法"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "自定义左右列表搜索的方法"
+                    }
+                  },
+                  {
+                    "property": "titles",
+                    "label": {
+                      "text": {
+                        "zh_CN": "自定义列表的标题"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "自定义列表的标题"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 输入值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "data",
+                "show-checkbox"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
           "icon": "tree",
           "name": {
             "zh_CN": "树"
@@ -15181,6 +15410,20 @@
                   "placeholder": "请选择时间",
                   "modelValue": "",
                   "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "穿梭框"
+              },
+              "icon": "cursor-ew-resize",
+              "screenshot": "",
+              "snippetName": "TinyTransfer",
+              "schema": {
+                "componentName": "TinyTransfer",
+                "props": {
+                  "filter-placeholder": "请输入搜索内容"
                 }
               }
             },
