@@ -38,7 +38,7 @@
         </div>
       </tiny-form-item> -->
 
-      <tiny-form-item label="业务表" prop="table">
+      <tiny-form-item label="业务表" prop="table" v-if="!isFolder">
         <tiny-select v-model="pageSettingState.currentPageData.route" :searchable="true" placeholder="请选择业务表"
           @change="changeTable" clearable>
           <tiny-option v-for="item in tableList" :key="item.table_name" :label="item.table_common" :value="item.table_name"> </tiny-option>
@@ -157,7 +157,7 @@ export default {
         }
       ],
       group: [{ required: true, message: '必须选择页面类型' }],
-      table: [{ required: true, message: '必须选择业务表' }]
+      // table: [{ required: true, message: '必须选择业务表' }]
     }
 
     const getFolders = (pages) => {
