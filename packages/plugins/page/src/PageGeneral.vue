@@ -24,7 +24,7 @@
           @change="changeParentForderId"></tiny-select>
       </tiny-form-item>
 
-      <!-- <tiny-form-item label="路由" prop="route">
+      <tiny-form-item label="路由" prop="route" v-if="isFolder">
         <tiny-input v-model="pageSettingState.currentPageData.route" placeholder="请设置路由">
           <template #prepend><span class="input-head">website.com</span></template>
         </tiny-input>
@@ -36,7 +36,7 @@
             <span class="text-dim">{{ currentRoute }}</span>
           </span>
         </div>
-      </tiny-form-item> -->
+      </tiny-form-item>
 
       <tiny-form-item label="业务表" prop="table" v-if="!isFolder">
         <tiny-select v-model="pageSettingState.currentPageData.route" :searchable="true" placeholder="请选择业务表"
