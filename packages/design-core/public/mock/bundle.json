@@ -4966,12 +4966,28 @@
                             "value": "datetime"
                           },
                           {
+                            "label": "日期范围",
+                            "value": "daterange"
+                          },
+                          {
+                            "label": "日期时间范围",
+                            "value": "datetimerange"
+                          },
+                          {
                             "label": "周",
                             "value": "week"
                           },
                           {
                             "label": "月份",
                             "value": "month"
+                          },
+                          {
+                            "label": "月份范围",
+                            "value": "monthrange"
+                          },
+                          {
+                            "label": "季度",
+                            "value": "quarter"
                           },
                           {
                             "label": "年份",
@@ -4983,6 +4999,87 @@
                     "description": {
                       "zh_CN": "设置日期框的type属性"
                     }
+                  },
+                  {
+                    "property": "picker-options",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置部分禁用、快捷选项等"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "dataType": "JSFunction"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "配置部分禁用、快捷选项等"
+                    }
+                  },
+                  {
+                    "property": "format",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示在输入框中的格式"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "显示在输入框中的格式"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "time-format",
+                    "label": {
+                      "text": {
+                        "zh_CN": "时间显示的格式"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "当自定义的 format 格式无法自动区分时间与日期时，可配置该选项用来辅助确定格式"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "value-format",
+                    "label": {
+                      "text": {
+                        "zh_CN": "指定绑定值的格式"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "指定绑定值的格式，不指定则绑定值为 Date 对象"
+                    },
+                    "labelPosition": "left"
                   },
                   {
                     "property": "placeholder",
