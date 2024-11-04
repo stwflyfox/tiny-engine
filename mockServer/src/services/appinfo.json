@@ -14441,6 +14441,15 @@
         }
       },
       {
+        "component": "TinySteps",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "steps",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinySwitch",
         "npm": {
           "package": "@opentiny/vue",

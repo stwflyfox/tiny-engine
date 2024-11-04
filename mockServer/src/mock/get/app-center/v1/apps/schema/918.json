@@ -2000,6 +2000,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinySteps",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "steps",
+        "destructuring": true
+      },
+      {
         "componentName": "TinySwitch",
         "package": "@opentiny/vue",
         "version": "",

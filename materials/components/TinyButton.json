@@ -149,27 +149,31 @@
               "props": {
                 "options": [
                   {
-                    "label": "primary",
+                    "label": "默认按钮",
+                    "value": "default"
+                  },
+                  {
+                    "label": "主要按钮",
                     "value": "primary"
                   },
                   {
-                    "label": "success",
+                    "label": "成功按钮",
                     "value": "success"
                   },
                   {
-                    "label": "info",
+                    "label": "信息按钮",
                     "value": "info"
                   },
                   {
-                    "label": "warning",
+                    "label": "警告按钮",
                     "value": "warning"
                   },
                   {
-                    "label": "danger",
+                    "label": "危险按钮",
                     "value": "danger"
                   },
                   {
-                    "label": "text",
+                    "label": "文本按钮",
                     "value": "text"
                   }
                 ]

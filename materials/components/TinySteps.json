@@ -1,10 +1,10 @@
 {
-  "icon": "radio",
   "name": {
-    "zh_CN": "单选"
+    "zh_CN": "步骤条"
   },
-  "component": "TinyRadio",
-  "description": "用于配置不同场景的选项，在一组备选项中进行单选",
+  "component": "TinySteps",
+  "icon": "steps",
+  "description": "引导用户按照流程分布完成任务的导航条",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
@@ -12,12 +12,12 @@
   "devMode": "proCode",
   "npm": {
     "package": "@opentiny/vue",
-    "exportName": "Radio",
+    "exportName": "steps",
     "version": "",
     "destructuring": true
   },
   "group": "component",
-  "priority": 3,
+  "priority": 2,
   "schema": {
     "properties": [
       {
@@ -33,105 +33,112 @@
             "zh_CN": "显示更多"
           }
         },
-        "content": [
+        "content": [      
           {
-            "property": "text",
+            "property": "line",           
             "label": {
               "text": {
-                "zh_CN": "文本"
+                "zh_CN": "通过 line 设置横向单链型步骤条"
               }
             },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
             "required": true,
             "readOnly": false,
             "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaInput",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": ""
-            }
-          },
-          {
-            "property": "label",
-            "label": {
-              "text": {
-                "zh_CN": "单选框的值"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "props": {}
-            },
-            "description": {
-              "zh_CN": ""
-            }
-          },
-          {
-            "property": "modelValue",
-            "label": {
-              "text": {
-                "zh_CN": "绑定值"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaField",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "双向绑定的当前选中值"
-            }
-          },
-          {
-            "property": "disabled",
-            "label": {
-              "text": {
-                "zh_CN": "禁用"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaDisabled",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "禁用"
-            }
-          }
-        ]
-      },
-      {
-        "label": {
-          "zh_CN": "其他"
-        },
-        "description": {
-          "zh_CN": ""
-        },
-        "content": [
-          {
-            "property": "border",
-            "label": {
-              "text": {
-                "zh_CN": "显示边框"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
             "widget": {
               "component": "MetaSwitch",
+              "props": {
+               
+              }
+            },
+            "description": {
+              "zh_CN": "通过 line 设置横向单链型步骤条"
+            }
+          },
+          {
+            "property": "flex",           
+            "label": {
+              "text": {
+                "zh_CN": "节点是否自适应宽度"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+               
+              }
+            },
+            "description": {
+              "zh_CN": "节点是否自适应宽度"
+            }
+          },
+          {
+            "property": "data",
+            "label": {
+              "text": {
+                "zh_CN": "步骤条的数据"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "步骤条的数据"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "space",
+            "type": "string",            
+            "label": {
+              "text": {
+                "zh_CN": "节点宽度"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "节点宽度, 可取值数字、带长度单位数值与百分比，传数字则默认以 px 为长度单位"
+            }
+          },
+          {
+            "property": "count-field",
+            "type": "string",
+            "defaultValue": "count",
+            "label": {
+              "text": {
+                "zh_CN": "条形步骤条里徽标计数对应的字段名"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
               "props": {}
             },
             "description": {
@@ -139,52 +146,43 @@
             }
           },
           {
-            "property": "size",
+            "property": "name-field",
+            "type": "string",
+            "defaultValue": "name",
             "label": {
               "text": {
-                "zh_CN": "单选框的尺寸"
+                "zh_CN": "节点名称对应的字段名"
               }
             },
+            "cols": 12,
+            "hidden": false,
             "required": true,
             "readOnly": false,
             "disabled": false,
-            "cols": 12,
             "widget": {
-              "component": "MetaSelect",
-              "props": {
-                "options": [
-                  {
-                    "label": "medium",
-                    "value": "medium"
-                  },
-                  {
-                    "label": "small",
-                    "value": "small"
-                  },
-                  {
-                    "label": "mini",
-                    "value": "mini"
-                  }
-                ]
-              }
+              "component": "MetaBindI18n",
+              "props": {}
             },
             "description": {
               "zh_CN": ""
             }
           },
           {
-            "property": "name",
+            "property": "status-field",
+            "type": "string",
+            "defaultValue": "status",
             "label": {
               "text": {
-                "zh_CN": "原生 name 属性"
+                "zh_CN": "数据状态对应的字段名，用于条形步骤条"
               }
             },
+            "cols": 12,
+            "hidden": false,
             "required": true,
             "readOnly": false,
             "disabled": false,
-            "cols": 12,
             "widget": {
-              "component": "MetaInput",
+              "component": "MetaBindI18n",
               "props": {}
             },
             "description": {
@@ -192,47 +190,9 @@
             }
           }
         ]
-      }
+      }    
     ],
-    "slots": {
-      "default": {
-        "label": {
-          "zh_CN": "默认插槽"
-        }      
-      }
-    },
-    "events": {
-      "onChange": {
-        "label": {
-          "zh_CN": "值变化事件"
-        },
-        "description": {
-          "zh_CN": "绑定值变化时触发的事件"
-        }
-      },
-      "onUpdate:modelValue": {
-        "label": {
-          "zh_CN": "双向绑定的值改变时触发"
-        },
-        "description": {
-          "zh_CN": "当前选中的值改变时触发"
-        },
-        "type": "event",
-        "functionInfo": {
-          "params": [
-            {
-              "name": "value",
-              "type": "string",
-              "defaultValue": "",
-              "description": {
-                "zh_CN": "双向绑定的当前选中值"
-              }
-            }
-          ],
-          "returns": {}
-        },
-        "defaultValue": ""
-      }
+    "events": {     
     }
   },
   "configure": {
@@ -252,8 +212,8 @@
     "rootSelector": "",
     "shortcuts": {
       "properties": [
-        "visible",
-        "width"
+        "text",
+        "size"
       ]
     },
     "contextMenu": {
@@ -269,17 +229,26 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "单选"
+        "zh_CN": "步骤条"
       },
-      "icon": "radio",
+      "icon": "steps",
       "screenshot": "",
-      "snippetName": "TinyRadio",
+      "snippetName": "TinySteps",
       "schema": {
-        "componentName": "TinyRadio",
-        "props": {
-          "label": "1",
-          "text": "单选文本",
-          "size": "mini"
+        "componentName": "TinySteps",
+        "props": {          
+            "line": true,
+            "data" : [
+              {
+                "name": "Basic Info",
+                "status": "done",
+                "description": "done 已完成"
+              },
+              { "name": "BOQ Info", "status": "doing", "description": "doing 处理中" },
+              { "name": "进行中 BOQ Info", "status": "disabled", "description": "disabled 禁用" },
+              { "name": "BBQ Info", "status": "error", "description": "error 错误" },
+              { "name": "BBQ Info", "description": "默认无状态" }
+            ]
         }
       }
     }

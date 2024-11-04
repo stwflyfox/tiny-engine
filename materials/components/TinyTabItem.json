@@ -1,5 +1,5 @@
 {
-  "icon": "tabitem",
+  "icon": "tabs",
   "name": {
     "zh_CN": "tab页签"
   },
@@ -109,7 +109,7 @@
         "name",
         "title"
       ]
-    },
+    }, 
     "contextMenu": {
       "actions": [
         "create symbol"
@@ -119,5 +119,5 @@
         "remove"
       ]
     }
-  }
+  } 
 }

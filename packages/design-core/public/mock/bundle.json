@@ -2023,27 +2023,31 @@
                       "props": {
                         "options": [
                           {
-                            "label": "primary",
+                            "label": "默认按钮",
+                            "value": "default"
+                          },
+                          {
+                            "label": "主要按钮",
                             "value": "primary"
                           },
                           {
-                            "label": "success",
+                            "label": "成功按钮",
                             "value": "success"
                           },
                           {
-                            "label": "info",
+                            "label": "信息按钮",
                             "value": "info"
                           },
                           {
-                            "label": "warning",
+                            "label": "警告按钮",
                             "value": "warning"
                           },
                           {
-                            "label": "danger",
+                            "label": "危险按钮",
                             "value": "danger"
                           },
                           {
-                            "label": "text",
+                            "label": "文本按钮",
                             "value": "text"
                           }
                         ]
@@ -10393,6 +10397,13 @@
                 ]
               }
             ],
+            "slots": {
+              "default": {
+                "label": {
+                  "zh_CN": "默认插槽"
+                }
+              }
+            },
             "events": {
               "onChange": {
                 "label": {
@@ -12081,6 +12092,230 @@
           }
         },
         {
+          "name": {
+            "zh_CN": "步骤条"
+          },
+          "component": "TinySteps",
+          "icon": "steps",
+          "description": "引导用户按照流程分布完成任务的导航条",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "steps",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 2,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
+                "content": [
+                  {
+                    "property": "line",
+                    "label": {
+                      "text": {
+                        "zh_CN": "通过 line 设置横向单链型步骤条"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "通过 line 设置横向单链型步骤条"
+                    }
+                  },
+                  {
+                    "property": "flex",
+                    "label": {
+                      "text": {
+                        "zh_CN": "节点是否自适应宽度"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "节点是否自适应宽度"
+                    }
+                  },
+                  {
+                    "property": "data",
+                    "label": {
+                      "text": {
+                        "zh_CN": "步骤条的数据"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "步骤条的数据"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "space",
+                    "type": "string",
+                    "label": {
+                      "text": {
+                        "zh_CN": "节点宽度"
+                      }
+                    },
+                    "cols": 12,
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "节点宽度, 可取值数字、带长度单位数值与百分比，传数字则默认以 px 为长度单位"
+                    }
+                  },
+                  {
+                    "property": "count-field",
+                    "type": "string",
+                    "defaultValue": "count",
+                    "label": {
+                      "text": {
+                        "zh_CN": "条形步骤条里徽标计数对应的字段名"
+                      }
+                    },
+                    "cols": 12,
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "name-field",
+                    "type": "string",
+                    "defaultValue": "name",
+                    "label": {
+                      "text": {
+                        "zh_CN": "节点名称对应的字段名"
+                      }
+                    },
+                    "cols": 12,
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "status-field",
+                    "type": "string",
+                    "defaultValue": "status",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据状态对应的字段名，用于条形步骤条"
+                      }
+                    },
+                    "cols": 12,
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {}
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "text",
+                "size"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
           "icon": "switch",
           "name": {
             "zh_CN": "开关"
@@ -12310,7 +12545,7 @@
           }
         },
         {
-          "icon": "tabitem",
+          "icon": "tabs",
           "name": {
             "zh_CN": "tab页签"
           },
@@ -15438,6 +15673,46 @@
                     }
                   ],
                   "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "步骤条"
+              },
+              "icon": "steps",
+              "screenshot": "",
+              "snippetName": "TinySteps",
+              "schema": {
+                "componentName": "TinySteps",
+                "props": {
+                  "line": true,
+                  "data": [
+                    {
+                      "name": "Basic Info",
+                      "status": "done",
+                      "description": "done 已完成"
+                    },
+                    {
+                      "name": "BOQ Info",
+                      "status": "doing",
+                      "description": "doing 处理中"
+                    },
+                    {
+                      "name": "进行中 BOQ Info",
+                      "status": "disabled",
+                      "description": "disabled 禁用"
+                    },
+                    {
+                      "name": "BBQ Info",
+                      "status": "error",
+                      "description": "error 错误"
+                    },
+                    {
+                      "name": "BBQ Info",
+                      "description": "默认无状态"
+                    }
+                  ]
                 }
               }
             },
