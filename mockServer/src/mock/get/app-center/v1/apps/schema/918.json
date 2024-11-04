@@ -1839,6 +1839,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyCheckboxGroupSlot",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "CheckboxGroup",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyCol",
         "package": "@opentiny/vue",
         "version": "",
@@ -1972,6 +1979,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyRadioGroupSlot",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "RadioGroup",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyRow",
         "package": "@opentiny/vue",
         "version": "",
@@ -2003,7 +2017,7 @@
         "componentName": "TinySteps",
         "package": "@opentiny/vue",
         "version": "",
-        "exportName": "steps",
+        "exportName": "Steps",
         "destructuring": true
       },
       {

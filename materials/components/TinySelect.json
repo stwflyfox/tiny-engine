@@ -419,6 +419,56 @@
         }
       }
     ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "选项默认插槽"
+        }       
+      },
+      "empty": {  
+        "label": {
+          "zh_CN": "empty"
+        },
+        "description": {
+          "zh_CN": "空数据插槽"
+        }       
+      },
+      "footer": {  
+        "label": {
+          "zh_CN": "footer"
+        },
+        "description": {
+          "zh_CN": "下拉弹框底部插槽"
+        }       
+      },
+      "prefix": {  
+        "label": {
+          "zh_CN": "prefix"
+        },
+        "description": {
+          "zh_CN": "输入框前缀插槽"
+        }       
+      },
+      "label": {  
+        "label": {
+          "zh_CN": "label"
+        },
+        "description": {
+          "zh_CN": "标签插槽"
+        }       
+      },
+      "reference": {  
+        "label": {
+          "zh_CN": "reference"
+        },
+        "description": {
+          "zh_CN": "触发源插槽"
+        }       
+      }
+    },
     "events": {
       "onChange": {
         "label": {

@@ -1,5 +1,5 @@
 {
-  "icon": "checkboxbutton",
+  "icon": "button-check",
   "name": {
     "zh_CN": "复选按钮"
   },
@@ -112,10 +112,42 @@
               "zh_CN": "按钮文本"
             },
             "labelPosition": "left"
+          },
+          {
+            "property": "label",
+            "label": {
+              "text": {
+                "zh_CN": "选中状态的值"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "选中状态的值（只有在 checkbox-group 中或者绑定对象类型为array时有效）"
+            },
+            "labelPosition": "left"
           }
+
+          
         ]
       }
     ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "选项默认插槽"
+        }       
+      }
+    },
     "events": {
       "onChange": {
         "label": {
@@ -195,5 +227,22 @@
         "remove"
       ]
     }
-  }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "复选按钮"
+      },
+      "icon": "button-check",
+      "screenshot": "",
+      "snippetName": "TinyCheckboxButton",
+      "schema": {
+        "componentName": "TinyCheckboxButton",
+        "props": {
+          "text": "复选框文案"
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
 }

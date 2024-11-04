@@ -12,7 +12,7 @@
   "devMode": "proCode",
   "npm": {
     "package": "@opentiny/vue",
-    "exportName": "steps",
+    "exportName": "Steps",
     "version": "",
     "destructuring": true
   },
