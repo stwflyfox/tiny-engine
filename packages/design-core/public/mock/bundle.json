@@ -4018,6 +4018,25 @@
                       "zh_CN": "checkbox组件类型（button/checkbox），该属性的默认值为 checkbox,配合 options 属性一起使用"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "vertical",
+                    "label": {
+                      "text": {
+                        "zh_CN": "垂直排列"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置组件排列方式，设置复选框是否垂直排列"
+                    }
                   }
                 ]
               }
@@ -4178,6 +4197,25 @@
                     },
                     "description": {
                       "zh_CN": "禁用"
+                    }
+                  },
+                  {
+                    "property": "vertical",
+                    "label": {
+                      "text": {
+                        "zh_CN": "垂直排列"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置组件排列方式，设置复选框是否垂直排列"
                     }
                   }
                 ]
@@ -10815,6 +10853,25 @@
                     "description": {
                       "zh_CN": "禁用"
                     }
+                  },
+                  {
+                    "property": "vertical",
+                    "label": {
+                      "text": {
+                        "zh_CN": "垂直排列"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置组件排列方式，设置复选框是否垂直排列"
+                    }
                   }
                 ]
               },
@@ -11090,6 +11147,25 @@
                     },
                     "description": {
                       "zh_CN": "禁用"
+                    }
+                  },
+                  {
+                    "property": "vertical",
+                    "label": {
+                      "text": {
+                        "zh_CN": "垂直排列"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置组件排列方式，设置复选框是否垂直排列"
                     }
                   }
                 ]
