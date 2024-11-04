@@ -14463,7 +14463,7 @@
         "npm": {
           "package": "@opentiny/vue",
           "exportName": "Steps",
-          "version": "",
+          "version": "3.18.0",
           "destructuring": true
         }
       },

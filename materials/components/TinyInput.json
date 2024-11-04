@@ -228,7 +228,39 @@
             "description": {
               "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
             }
+          },          
+          {
+            "property": "input-box-type",
+            "label": {
+              "text": {
+                "zh_CN": "设置边框模式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "normal",
+                    "value": "normal"
+                  },
+                  {
+                    "label": "underline",
+                    "value": "underline"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置边框模式。该属性的可选值为 normal / underline"
+            }
           }
+
+          
         ]
       },
       {

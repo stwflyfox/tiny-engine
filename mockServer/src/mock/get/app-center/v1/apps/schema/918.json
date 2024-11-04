@@ -2016,7 +2016,7 @@
       {
         "componentName": "TinySteps",
         "package": "@opentiny/vue",
-        "version": "",
+        "version": "3.18.0",
         "exportName": "Steps",
         "destructuring": true
       },
