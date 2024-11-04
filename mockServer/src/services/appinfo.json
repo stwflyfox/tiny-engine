@@ -14207,6 +14207,15 @@
         }
       },
       {
+        "component": "TinyCascader",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Cascader",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyCheckbox",
         "npm": {
           "package": "@opentiny/vue",

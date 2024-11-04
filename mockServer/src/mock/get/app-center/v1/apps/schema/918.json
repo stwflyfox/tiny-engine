@@ -1818,6 +1818,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyCascader",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Cascader",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyCheckbox",
         "package": "@opentiny/vue",
         "version": "",
