@@ -1,0 +1,539 @@
+{
+  "icon": "cascader",
+  "name": {
+    "zh_CN": "级联选择器"
+  },
+  "component": "TinyCascader",
+  "description": "当一个数据集合有清晰的层级结构时，可通过级联选择器逐级查看并选择。",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Cascader",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 4,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "选项数组"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "指定选项数组即可渲染出一个级联选择器"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
+          },
+          {
+            "property": "clearable",
+            "label": {
+              "text": {
+                "zh_CN": "可清空"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置输入框可清空"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "separator",
+            "label": {
+              "text": {
+                "zh_CN": "分隔符"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置分隔符"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "placeholder",
+            "label": {
+              "text": {
+                "zh_CN": "占位文本"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "输入框占位文本"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "大小"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "large",
+                    "value": "large"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      },
+      {
+        "name": "1",
+        "label": {
+          "zh_CN": "其他"
+        },
+        "content": [
+        
+          {
+            "property": "auto-size",
+            "label": {
+              "text": {
+                "zh_CN": "自适应高度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "指定下拉弹框是否根据内容自适应高度"
+            }
+          },
+          {
+            "property": "collapse-tags",
+            "label": {
+              "text": {
+                "zh_CN": "折叠Tag"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "多选模式下是否折叠 Tag"
+            }
+          },         
+          {
+            "property": "filterable",
+            "label": {
+              "text": {
+                "zh_CN": "可搜索选项"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否可搜索选项"
+            }
+          },
+          {
+            "property": "filter-method",
+            "label": {
+              "text": {
+                "zh_CN": "自定义搜索逻辑"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "配置选项"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "props",
+            "label": {
+              "text": {
+                "zh_CN": "配置选项"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "配置选项"
+            },
+            "labelPosition": "left"
+          }
+        ],
+        "description": {
+          "zh_CN": ""
+        }
+      }
+    ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "选项默认插槽"
+        }       
+      },
+      "empty": {
+        "label": {
+          "zh_CN": "empty"
+        },
+        "description": {
+          "zh_CN": "无匹配选项时的内容"
+        }       
+      },
+      "no-data": {
+        "label": {
+          "zh_CN": "no-data"
+        },
+        "description": {
+          "zh_CN": "通过 no-data 插槽设置没有数据时显示的内容"
+        }       
+      }
+    },
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "勾选值改变后将触发"
+        },
+        "description": {
+          "zh_CN": "勾选值改变后将触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "选中项的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onBlur": {
+        "label": {
+          "zh_CN": "当失去焦点时触发"
+        },
+        "description": {
+          "zh_CN": "当失去焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": ""            
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onFocus": {
+        "label": {
+          "zh_CN": "当获得焦点时触发"
+        },
+        "description": {
+          "zh_CN": "当获得焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": ""            
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onExpandChange": {
+        "label": {
+          "zh_CN": "当展开节点发生变化时触发"
+        },
+        "description": {
+          "zh_CN": "当展开节点发生变化时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": ""            
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onRemoveTag": {
+        "label": {
+          "zh_CN": "在多选模式下，移除Tag时触发"
+        },
+        "description": {
+          "zh_CN": "在多选模式下，移除Tag时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": ""            
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onVisibleChange": {
+        "label": {
+          "zh_CN": "下拉框出现/隐藏时触发"
+        },
+        "description": {
+          "zh_CN": "下拉框出现/隐藏时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": ""            
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "当前选中的值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的当前选中值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "border",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "级联选择器"
+      },
+      "icon": "cascader",
+      "screenshot": "",
+      "snippetName": "TinyCascader",
+      "schema": {
+        "componentName": "TinyCascader",
+        "props": {
+          "size": "mini"
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}
