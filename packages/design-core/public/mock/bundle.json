@@ -1626,6 +1626,215 @@
           }
         },
         {
+          "name": {
+            "zh_CN": "锚点"
+          },
+          "component": "TinyAnchor",
+          "icon": "anchor",
+          "description": "用于页内导航",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "Anchor",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 2,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": [
+                  {
+                    "property": "links",
+                    "label": {
+                      "text": {
+                        "zh_CN": "导航数据配置项"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "导航数据配置项"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "container-id",
+                    "type": "string",
+                    "label": {
+                      "text": {
+                        "zh_CN": "指定滚动容器的 id 值"
+                      }
+                    },
+                    "cols": 12,
+                    "hidden": false,
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "mark-class",
+                    "type": "String",
+                    "label": {
+                      "text": {
+                        "zh_CN": "元素类名"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "自定义滚动的目标元素类名"
+                    }
+                  },
+                  {
+                    "property": "type",
+                    "type": "select",
+                    "label": {
+                      "text": {
+                        "zh_CN": "锚点类型"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "line",
+                            "value": "line"
+                          },
+                          {
+                            "label": "dot",
+                            "value": "dot"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "is-affix",
+                    "label": {
+                      "text": {
+                        "zh_CN": "固定模式"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "固定模式"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onLinkClick": {
+                "label": {
+                  "zh_CN": "锚点点击事件"
+                },
+                "description": {
+                  "zh_CN": "锚点点击事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onChange": {
+                "label": {
+                  "zh_CN": "锚点链接改变事件"
+                },
+                "description": {
+                  "zh_CN": "锚点链接改变事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "text",
+                "size"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
           "icon": "breadcrumb",
           "name": {
             "zh_CN": "面包屑"
@@ -17058,6 +17267,54 @@
                 "props": {
                   "ref": "program",
                   "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "锚点"
+              },
+              "icon": "anchor",
+              "screenshot": "",
+              "snippetName": "TinyAnchor",
+              "schema": {
+                "componentName": "TinyAnchor",
+                "props": {
+                  "type": "dot",
+                  "links": [
+                    {
+                      "key": "demonstrate",
+                      "link": "#demonstrate",
+                      "title": "演示",
+                      "children": [
+                        {
+                          "key": "basic-usage",
+                          "link": "#basic-usage",
+                          "title": "基本用法"
+                        },
+                        {
+                          "key": "is-affix",
+                          "link": "#is-affix",
+                          "title": "固定模式"
+                        },
+                        {
+                          "key": "set-container",
+                          "link": "#set-container",
+                          "title": "滚动容器"
+                        },
+                        {
+                          "key": "on-change",
+                          "link": "#change",
+                          "title": "change 事件"
+                        }
+                      ]
+                    },
+                    {
+                      "key": "api",
+                      "link": "#API",
+                      "title": "API"
+                    }
+                  ]
                 }
               }
             },

@@ -1769,6 +1769,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyAnchor",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Anchor",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyBreadcrumb",
         "package": "@opentiny/vue",
         "version": "",

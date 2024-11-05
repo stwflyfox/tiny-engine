@@ -14144,6 +14144,15 @@
         "npm": {}
       },
       {
+        "component": "TinyAnchor",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Anchor",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyBreadcrumb",
         "npm": {
           "package": "@opentiny/vue",
