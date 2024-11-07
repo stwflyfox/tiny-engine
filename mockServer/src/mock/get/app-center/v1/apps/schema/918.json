@@ -2103,6 +2103,13 @@
         "version": "",
         "exportName": "UploadFile",
         "destructuring": true
+      },
+      {
+        "componentName": "UploadImage",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "UploadImage",
+        "destructuring": true
       }
     ],
     "bridge": [],
