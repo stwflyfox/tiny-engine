@@ -1727,6 +1727,13 @@
     ],
     "componentsMap": [
       {
+        "componentName": "FlowChart",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "FlowChart",
+        "destructuring": true
+      },
+      {
         "componentName": "ImportFile",
         "package": "@shqy/components",
         "version": "",
