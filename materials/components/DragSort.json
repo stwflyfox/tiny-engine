@@ -1,0 +1,167 @@
+{
+  "name": {
+    "zh_CN": "拖拽排序"
+  },
+  "component": "DragSort",
+  "icon": "overflow-scroll",
+  "description": "拖拽排序",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "DragSort", 
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+	  "css": "https://unpkg.91zd.cn/@shqy/components/style.css", 
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+      
+        "content": [         
+          {
+            "property": "list",
+            "label": {
+              "text": {
+                "zh_CN": "拖拽数据集合"
+              }
+            },
+            "cols": 12,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,            
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "拖拽数据集合"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "key",
+            "type": "string",
+            "defaultValue": "",
+            "label": {
+              "text": {
+                "zh_CN": "键值字段"
+              }
+            },            
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "键值字段"
+            }
+          },
+          {
+            "property": "label",
+            "type": "string",
+            "defaultValue": "",
+            "label": {
+              "text": {
+                "zh_CN": "文本字段"
+              }
+            },            
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "文本字段"
+            }
+          }
+        
+        ]
+      }
+    ]
+   
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "拖拽排序"
+      },
+      "icon": "overflow-scroll",
+      "screenshot": "",
+      "snippetName": "DragSort",
+      "schema": {
+        "componentName": "DragSort",
+        "props": {
+          "list": [
+            {
+              "id": 1,
+              "name": "item1"
+            },
+            {
+              "id": 2,
+              "name": "item2"
+            },
+            {
+              "id": 3,
+              "name": "item3"
+            }
+          ],
+          "key": "id",
+          "label": "name"
+        }
+      }
+    }
+  ],
+  "category": "容器组件"
+}

@@ -1727,6 +1727,13 @@
     ],
     "componentsMap": [
       {
+        "componentName": "DragSort",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "DragSort",
+        "destructuring": true
+      },
+      {
         "componentName": "FlowChart",
         "package": "@shqy/components",
         "version": "",

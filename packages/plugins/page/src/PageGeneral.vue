@@ -41,7 +41,9 @@
       <tiny-form-item label="业务表" prop="table" v-if="!isFolder">
         <tiny-select v-model="pageSettingState.currentPageData.route" :searchable="true" placeholder="请选择业务表"
           @change="changeTable" clearable>
-          <tiny-option v-for="item in tableList" :key="item.table_name" :label="item.table_common" :value="item.table_name"> </tiny-option>
+          <tiny-option v-for="item in tableList" :key="item.table_name" :label="item.table_common"
+            :value="item.table_name">
+          </tiny-option>
         </tiny-select>
 
       </tiny-form-item>
@@ -55,7 +57,7 @@
 <script lang="jsx">
 
 import { ref, computed, watchEffect } from 'vue'
-import { Form, FormItem, Input, Select, Radio, Option  } from '@opentiny/vue'
+import { Form, FormItem, Input, Select, Radio, Option } from '@opentiny/vue'
 import { usePage } from '@opentiny/tiny-engine-controller'
 import { REGEXP_PAGE_NAME, REGEXP_FOLDER_NAME, REGEXP_ROUTE } from '@opentiny/tiny-engine-controller/js/verification'
 import { SvgButton } from '@opentiny/tiny-engine-common'
@@ -200,7 +202,7 @@ export default {
       return options
     })
 
-    const tableList =  [];
+    const tableList = [];
 
 
     const generalForm = ref(null)
@@ -222,8 +224,17 @@ export default {
       oldParentId.value = value.id
     }
 
-    const changeTable = (value) => {      
-      sessionStorage.setItem('TableName',value);
+    const changeTable = (value) => {
+      sessionStorage.setItem('TableName', value);
+    }
+
+    const GetQueryString = (name) => {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) {
+        return (decodeURIComponent(r[2]));
+      }
+      return null;
     }
 
     return {
@@ -236,11 +247,14 @@ export default {
       currentRoute,
       changeParentForderId,
       tableList,
-      changeTable
+      changeTable,
+      GetQueryString
     }
   },
   mounted() {
-    request('/System/QueryTableList', METHOD.POST).then(result => {     
+    debugger
+    var system = this.GetQueryString('id')
+    request('/System/QueryTableList?System=' + system, METHOD.POST).then(result => {
       this.tableList = result;
     })
   }
