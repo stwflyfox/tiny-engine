@@ -16185,6 +16185,46 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "check-strictly",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否为父子严格模式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否为父子严格模式"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "show-line",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示连接线"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示连接线"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "expand-on-click-node",
                     "label": {
                       "text": {
