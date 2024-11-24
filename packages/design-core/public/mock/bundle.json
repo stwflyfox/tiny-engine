@@ -16412,6 +16412,28 @@
                       "zh_CN": "指定过滤节点时的函数，函数返回true时节点显示，否则节点隐藏"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "props",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据格式/禁用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "数据格式/禁用"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               },
