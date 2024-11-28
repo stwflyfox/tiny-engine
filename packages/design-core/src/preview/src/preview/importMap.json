@@ -14,6 +14,7 @@
     "@opentiny/tiny-engine-builtin-component": "${VITE_CDN_DOMAIN}/@opentiny/tiny-engine-builtin-component@1/dist/index.js",
     "vue-demi": "${VITE_CDN_DOMAIN}/vue-demi@0.13.11/lib/index.mjs",
     "pinia": "${VITE_CDN_DOMAIN}/pinia@2.0.22/dist/pinia.esm-browser.js",
+    "echarts": "https://registry.npmmirror.com/echarts/5.4.1/files/dist/echarts.esm.js",
     "@opentiny/vue": "https://registry.npmmirror.com/@opentiny/vue-runtime/${opentinyVueVersion}/files/dist3/tiny-vue-pc.mjs",
     "@opentiny/vue-icon": "https://registry.npmmirror.com/@opentiny/vue-runtime/${opentinyVueVersion}/files/dist3/tiny-vue-icon.mjs",
     "@opentiny/vue-common": "https://registry.npmmirror.com/@opentiny/vue-runtime/${opentinyVueVersion}/files/dist3/tiny-vue-common.mjs",
