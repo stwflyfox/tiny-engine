@@ -126,9 +126,9 @@ export default {
           message: '只允许包含英文字母，且为大写开头驼峰格式, 如DemoPage'
         },
         {
-          min: 3,
+          min: 2,
           max: 25,
-          message: '长度在 3 到 25 个字符'
+          message: '长度在 2 到 25 个字符'
         }
       ],
       route: [
@@ -149,7 +149,7 @@ export default {
           pattern: REGEXP_FOLDER_NAME,
           message: '只允许包含英文字母、数字、下横线_、中横线-, 且以英文字母开头'
         },
-        { min: 3, max: 25, message: '长度在 3 到 25 个字符' }
+        { min: 2, max: 25, message: '长度在 2 到 25 个字符' }
       ],
       route: [
         { required: true, message: '请输入页面文件夹路由' },
