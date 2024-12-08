@@ -15,7 +15,7 @@ import {
   request,
   METHOD
 } from './request'
-
+ 
 export default {
   components: {
     TinyInput: Input,
@@ -49,6 +49,10 @@ export default {
     })
 
 
+    watchEffect(() => {
+      state.selected = props.modelValue && props.modelValue.value ? props.modelValue.value : ''
+    })
+
 
     const handleChange = (arg) => {
 
@@ -58,10 +62,6 @@ export default {
       })
     }
 
-
-    watchEffect(() => {
-      state.selected = props.modelValue && props.modelValue.value ? props.modelValue.value : ''
-    })
 
     return {
       state,

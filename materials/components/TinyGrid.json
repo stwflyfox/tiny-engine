@@ -137,6 +137,9 @@
                       "props": {}
                     }
                   },
+                  
+                  
+
                   {
                     "property": "width",
                     "type": "string",
@@ -664,6 +667,26 @@
             },
             "labelPosition": "left"
           },
+          {
+            "property": "showHeader",
+            "label": {
+              "text": {
+                "zh_CN": "是否隐藏表头"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否隐藏表头"
+            },
+            "labelPosition": "left"
+          },        
           {
             "property": "width",
             "label": {
