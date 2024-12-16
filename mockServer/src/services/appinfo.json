@@ -14096,6 +14096,17 @@
         }
       },
       {
+        "component": "FluentEditor",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "FluentEditor",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "ImportFile",
         "npm": {
           "package": "@shqy/components",

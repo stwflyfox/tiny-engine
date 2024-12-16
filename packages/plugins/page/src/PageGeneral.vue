@@ -254,7 +254,7 @@ export default {
   mounted() {
     debugger
     var system = this.GetQueryString('id')
-    request('/System/QueryTableList?System=' + system, METHOD.POST).then(result => {
+    request('/System/QueryTableList', METHOD.POST).then(result => {
       this.tableList = result;
     })
   }
