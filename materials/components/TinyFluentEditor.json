@@ -1,19 +1,17 @@
 {
   "name": {
-    "zh_CN": "富文本编辑器"
+    "zh_CN": "Tiny富文本编辑器"
   },
-  "component": "FluentEditor",
+  "component": "TinyFluentEditor",
   "icon": "fluent-editor",
-  "description": "富文本编辑器",
+  "description": "Tiny富文本编辑器",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
   "keywords": "",
   "devMode": "proCode",
-  "npm": {"package": "@shqy/components",
+  "npm": {"package": "@opentiny/vue",
     "exportName": "FluentEditor", 
-    "script": "https://unpkg.91zd.cn/@shqy/components",
-	  "css": "https://unpkg.91zd.cn/@shqy/components/style.css", 
     "version": "",
     "destructuring": true
   },
@@ -214,15 +212,15 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "富文本编辑器"
+        "zh_CN": "Tiny富文本编辑器"
       },
       "icon": "fluent-editor",
       "screenshot": "",
-      "snippetName": "FluentEditor",
+      "snippetName": "TinyFluentEditor",
       "schema": {
-        "componentName": "FluentEditor",
+        "componentName": "TinyFluentEditor",
         "props": {
-          "chartOption" : {}
+       
         }
       }
     }

@@ -312,219 +312,6 @@
         },
         {
           "name": {
-            "zh_CN": "富文本编辑器"
-          },
-          "component": "FluentEditor",
-          "icon": "fluent-editor",
-          "description": "富文本编辑器",
-          "docUrl": "",
-          "screenshot": "",
-          "tags": "",
-          "keywords": "",
-          "devMode": "proCode",
-          "npm": {
-            "package": "@shqy/components",
-            "exportName": "FluentEditor",
-            "script": "https://unpkg.91zd.cn/@shqy/components",
-            "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
-            "version": "",
-            "destructuring": true
-          },
-          "group": "component",
-          "priority": 1,
-          "schema": {
-            "properties": [
-              {
-                "label": {
-                  "zh_CN": "基础信息"
-                },
-                "description": {
-                  "zh_CN": "基础信息"
-                },
-                "content": [
-                  {
-                    "property": "modelValue",
-                    "label": {
-                      "text": {
-                        "zh_CN": "绑定值"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "widget": {
-                      "component": "MetaField",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "双向绑定值"
-                    },
-                    "labelPosition": "top"
-                  },
-                  {
-                    "property": "disabled",
-                    "label": {
-                      "text": {
-                        "zh_CN": "禁用"
-                      }
-                    },
-                    "required": false,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaDisabled",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "禁用"
-                    }
-                  },
-                  {
-                    "property": "options",
-                    "label": {
-                      "text": {
-                        "zh_CN": "配置项"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaCodeEditor",
-                      "props": {
-                        "language": "json"
-                      }
-                    },
-                    "description": {
-                      "zh_CN": ""
-                    }
-                  },
-                  {
-                    "property": "width",
-                    "label": {
-                      "text": {
-                        "zh_CN": "宽度"
-                      }
-                    },
-                    "required": false,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaNumber",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "宽度"
-                    }
-                  },
-                  {
-                    "property": "height",
-                    "label": {
-                      "text": {
-                        "zh_CN": "高度"
-                      }
-                    },
-                    "required": false,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaNumber",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "高度"
-                    }
-                  }
-                ]
-              }
-            ],
-            "events": {
-              "onChange": {
-                "label": {
-                  "zh_CN": "值改变时触发"
-                },
-                "description": {
-                  "zh_CN": "在 Input 值改变时触发"
-                },
-                "type": "event",
-                "functionInfo": {
-                  "params": [
-                    {
-                      "name": "value",
-                      "type": "string",
-                      "defaultValue": "",
-                      "description": {
-                        "zh_CN": "输入框改变后的值"
-                      }
-                    }
-                  ],
-                  "returns": {}
-                },
-                "defaultValue": ""
-              },
-              "onUpdate:modelValue": {
-                "label": {
-                  "zh_CN": "双向绑定的值改变时触发"
-                },
-                "description": {
-                  "zh_CN": "双向绑定的值改变时触发"
-                },
-                "type": "event",
-                "functionInfo": {
-                  "params": [
-                    {
-                      "name": "value",
-                      "type": "string",
-                      "defaultValue": "",
-                      "description": {
-                        "zh_CN": "双向绑定的值"
-                      }
-                    }
-                  ],
-                  "returns": {}
-                },
-                "defaultValue": ""
-              }
-            }
-          },
-          "configure": {
-            "loop": true,
-            "condition": true,
-            "styles": true,
-            "isContainer": false,
-            "isModal": false,
-            "nestingRule": {
-              "childWhitelist": "",
-              "parentWhitelist": "",
-              "descendantBlacklist": "",
-              "ancestorWhitelist": ""
-            },
-            "isNullNode": false,
-            "isLayout": false,
-            "rootSelector": "",
-            "shortcuts": {
-              "properties": [
-                "value",
-                "disabled"
-              ]
-            },
-            "contextMenu": {
-              "actions": [
-                "create symbol"
-              ],
-              "disable": [
-                "copy",
-                "remove"
-              ]
-            }
-          }
-        },
-        {
-          "name": {
             "zh_CN": "导入文件"
           },
           "component": "ImportFile",
@@ -2007,6 +1794,228 @@
                 "type": "event",
                 "functionInfo": {
                   "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "value",
+                "disabled"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": {
+            "zh_CN": "省市区"
+          },
+          "component": "SelectRegions",
+          "icon": "regions",
+          "description": "省市区选择器",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@shqy/components",
+            "exportName": "SelectRegions",
+            "script": "https://unpkg.91zd.cn/@shqy/components",
+            "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": [
+                  {
+                    "property": "modelValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "双向绑定值"
+                    },
+                    "labelPosition": "top"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaDisabled",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用"
+                    }
+                  },
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "尺寸"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  },
+                  {
+                    "property": "selectType",
+                    "label": {
+                      "text": {
+                        "zh_CN": "选择类型"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "省市区",
+                            "value": 1
+                          },
+                          {
+                            "label": "省市",
+                            "value": 2
+                          },
+                          {
+                            "label": "省",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "选择类型"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onChange": {
+                "label": {
+                  "zh_CN": "值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "输入框改变后的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
                   "returns": {}
                 },
                 "defaultValue": ""
@@ -8184,6 +8193,217 @@
                       "defaultValue": "",
                       "description": {
                         "zh_CN": "原生 event"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "value",
+                "disabled"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": {
+            "zh_CN": "Tiny富文本编辑器"
+          },
+          "component": "TinyFluentEditor",
+          "icon": "fluent-editor",
+          "description": "Tiny富文本编辑器",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "FluentEditor",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": [
+                  {
+                    "property": "modelValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "双向绑定值"
+                    },
+                    "labelPosition": "top"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaDisabled",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用"
+                    }
+                  },
+                  {
+                    "property": "options",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置项"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
+                    "property": "width",
+                    "label": {
+                      "text": {
+                        "zh_CN": "宽度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "宽度"
+                    }
+                  },
+                  {
+                    "property": "height",
+                    "label": {
+                      "text": {
+                        "zh_CN": "高度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "高度"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onChange": {
+                "label": {
+                  "zh_CN": "值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "输入框改变后的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的值"
                       }
                     }
                   ],
@@ -18158,20 +18378,6 @@
           "children": [
             {
               "name": {
-                "zh_CN": "富文本编辑器"
-              },
-              "icon": "fluent-editor",
-              "screenshot": "",
-              "snippetName": "FluentEditor",
-              "schema": {
-                "componentName": "FluentEditor",
-                "props": {
-                  "chartOption": {}
-                }
-              }
-            },
-            {
-              "name": {
                 "zh_CN": "导入文件"
               },
               "icon": "uploadfile",
@@ -18196,6 +18402,18 @@
                   "text": "",
                   "size": "mini"
                 }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "省市区"
+              },
+              "icon": "regions",
+              "screenshot": "",
+              "snippetName": "SelectRegions",
+              "schema": {
+                "componentName": "SelectRegions",
+                "props": {}
               }
             },
             {
@@ -18439,6 +18657,18 @@
                   "modelValue": "",
                   "size": "mini"
                 }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "Tiny富文本编辑器"
+              },
+              "icon": "fluent-editor",
+              "screenshot": "",
+              "snippetName": "TinyFluentEditor",
+              "schema": {
+                "componentName": "TinyFluentEditor",
+                "props": {}
               }
             },
             {

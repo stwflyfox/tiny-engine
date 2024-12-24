@@ -1741,13 +1741,6 @@
         "destructuring": true
       },
       {
-        "componentName": "FluentEditor",
-        "package": "@shqy/components",
-        "version": "",
-        "exportName": "FluentEditor",
-        "destructuring": true
-      },
-      {
         "componentName": "ImportFile",
         "package": "@shqy/components",
         "version": "",
@@ -1787,6 +1780,13 @@
         "package": "@shqy/components",
         "version": "",
         "exportName": "SelectOrganizationUser",
+        "destructuring": true
+      },
+      {
+        "componentName": "SelectRegions",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "SelectRegions",
         "destructuring": true
       },
       {
@@ -1948,6 +1948,13 @@
         "package": "@opentiny/vue",
         "version": "",
         "exportName": "DropTimes",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyFluentEditor",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "FluentEditor",
         "destructuring": true
       },
       {

@@ -14096,17 +14096,6 @@
         }
       },
       {
-        "component": "FluentEditor",
-        "npm": {
-          "package": "@shqy/components",
-          "exportName": "FluentEditor",
-          "script": "https://unpkg.91zd.cn/@shqy/components",
-          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
         "component": "ImportFile",
         "npm": {
           "package": "@shqy/components",
@@ -14166,6 +14155,17 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SelectOrganizationUser",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "SelectRegions",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "SelectRegions",
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
@@ -14379,6 +14379,15 @@
         "npm": {
           "package": "@opentiny/vue",
           "exportName": "DropTimes",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "TinyFluentEditor",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "FluentEditor",
           "version": "",
           "destructuring": true
         }
