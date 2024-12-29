@@ -1727,10 +1727,10 @@
     ],
     "componentsMap": [
       {
-        "componentName": "DragSort",
-        "package": "@shqy/components",
+        "componentName": "VueDraggable",
+        "package": "vue-draggable-plus",
         "version": "",
-        "exportName": "DragSort",
+        "exportName": "VueDraggable",
         "destructuring": true
       },
       {

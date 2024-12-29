@@ -19,6 +19,6 @@
     "@opentiny/vue-icon": "https://registry.npmmirror.com/@opentiny/vue-runtime/${opentinyVueVersion}/files/dist3/tiny-vue-icon.mjs",
     "@opentiny/vue-common": "https://registry.npmmirror.com/@opentiny/vue-runtime/${opentinyVueVersion}/files/dist3/tiny-vue-common.mjs",
     "@opentiny/vue-locale": "https://registry.npmmirror.com/@opentiny/vue-runtime/${opentinyVueVersion}/files/dist3/tiny-vue-locale.mjs",
-    "@opentiny/vue-renderless/": "https://registry.npmmirror.com/@opentiny/vue-renderless/${opentinyVueVersion}/files"
+    "@opentiny/vue-renderless/": "https://registry.npmmirror.com/@opentiny/vue-renderless/${opentinyVueVersion}/files"    
   }
 }

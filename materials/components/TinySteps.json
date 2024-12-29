@@ -188,6 +188,52 @@
             "description": {
               "zh_CN": ""
             }
+          },
+          {
+            "property": "dot",           
+            "label": {
+              "text": {
+                "zh_CN": "点状形步骤条"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+               
+              }
+            },
+            "description": {
+              "zh_CN": "点状形步骤条，当值只支持垂直样式"
+            }           
+          },
+          {
+            "property": "vertical",           
+            "label": {
+              "text": {
+                "zh_CN": "垂直样式"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+               
+              }
+            },
+            "description": {
+              "zh_CN": "垂直样式"
+            }
           }
         ]
       }    

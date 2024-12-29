@@ -7,7 +7,7 @@
           "name": {
             "zh_CN": "拖拽排序"
           },
-          "component": "DragSort",
+          "component": "VueDraggable",
           "icon": "overflow-scroll",
           "description": "拖拽排序",
           "docUrl": "",
@@ -16,10 +16,10 @@
           "keywords": "",
           "devMode": "proCode",
           "npm": {
-            "package": "@shqy/components",
-            "exportName": "DragSort",
-            "script": "https://unpkg.91zd.cn/@shqy/components",
-            "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+            "package": "vue-draggable-plus",
+            "exportName": "VueDraggable",
+            "script": "https://registry.npmmirror.com/vue-draggable-plus",
+            "css": "",
             "version": "",
             "destructuring": true
           },
@@ -36,7 +36,7 @@
                 },
                 "content": [
                   {
-                    "property": "list",
+                    "property": "v-model",
                     "label": {
                       "text": {
                         "zh_CN": "拖拽数据集合"
@@ -58,9 +58,9 @@
                     "labelPosition": "left"
                   },
                   {
-                    "property": "key",
+                    "property": "item-key",
                     "type": "string",
-                    "defaultValue": "",
+                    "defaultValue": "id",
                     "label": {
                       "text": {
                         "zh_CN": "键值字段"
@@ -77,27 +77,6 @@
                     "description": {
                       "zh_CN": "键值字段"
                     }
-                  },
-                  {
-                    "property": "label",
-                    "type": "string",
-                    "defaultValue": "",
-                    "label": {
-                      "text": {
-                        "zh_CN": "文本字段"
-                      }
-                    },
-                    "hidden": false,
-                    "required": false,
-                    "readOnly": false,
-                    "disabled": false,
-                    "widget": {
-                      "component": "MetaBindI18n",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": "文本字段"
-                    }
                   }
                 ]
               }
@@ -107,7 +86,7 @@
             "loop": true,
             "condition": true,
             "styles": true,
-            "isContainer": false,
+            "isContainer": true,
             "isModal": false,
             "nestingRule": {
               "childWhitelist": "",
@@ -14419,6 +14398,48 @@
                     "description": {
                       "zh_CN": ""
                     }
+                  },
+                  {
+                    "property": "dot",
+                    "label": {
+                      "text": {
+                        "zh_CN": "点状形步骤条"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "点状形步骤条，当值只支持垂直样式"
+                    }
+                  },
+                  {
+                    "property": "vertical",
+                    "label": {
+                      "text": {
+                        "zh_CN": "垂直样式"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "垂直样式"
+                    }
                   }
                 ]
               }
@@ -17644,9 +17665,9 @@
               "screenshot": "",
               "snippetName": "DragSort",
               "schema": {
-                "componentName": "DragSort",
+                "componentName": "VueDraggable",
                 "props": {
-                  "list": [
+                  "v-model": [
                     {
                       "id": 1,
                       "name": "item1"
@@ -17659,9 +17680,7 @@
                       "id": 3,
                       "name": "item3"
                     }
-                  ],
-                  "key": "id",
-                  "label": "name"
+                  ]
                 }
               }
             },

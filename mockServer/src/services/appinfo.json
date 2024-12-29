@@ -14074,12 +14074,12 @@
     "description": "2023.3.9",
     "components": [
       {
-        "component": "DragSort",
+        "component": "VueDraggable",
         "npm": {
-          "package": "@shqy/components",
-          "exportName": "DragSort",
-          "script": "https://unpkg.91zd.cn/@shqy/components",
-          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "package": "vue-draggable-plus",
+          "exportName": "VueDraggable",
+          "script": "https://registry.npmmirror.com/vue-draggable-plus",
+          "css": "",
           "version": "",
           "destructuring": true
         }
