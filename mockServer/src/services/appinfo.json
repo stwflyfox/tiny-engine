@@ -14074,17 +14074,6 @@
     "description": "2023.3.9",
     "components": [
       {
-        "component": "VueDraggable",
-        "npm": {
-          "package": "vue-draggable-plus",
-          "exportName": "VueDraggable",
-          "script": "https://registry.npmmirror.com/vue-draggable-plus",
-          "css": "",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
         "component": "FlowChart",
         "npm": {
           "package": "@shqy/components",

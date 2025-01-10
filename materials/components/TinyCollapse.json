@@ -57,6 +57,9 @@
         ]
       }
     ],
+    "slots": {
+      
+    },
     "events": {
       "onChange": {
         "label": {

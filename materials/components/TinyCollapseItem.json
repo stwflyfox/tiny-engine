@@ -79,13 +79,37 @@
     ],
     "events": {},
     "slots": {
-      "title": {
+      "default": {
         "label": {
-          "zh_CN": "标题"
+          "zh_CN": "default"
         },
         "description": {
-          "zh_CN": "自定义标题"
-        }
+          "zh_CN": "默认插槽"
+        }       
+      },
+      "icon": {
+        "label": {
+          "zh_CN": "icon"
+        },
+        "description": {
+          "zh_CN": "展开折叠 icon 图标"
+        }       
+      },
+      "title": {
+        "label": {
+          "zh_CN": "title"
+        },
+        "description": {
+          "zh_CN": "标题"
+        }       
+      },
+      "title-right": {
+        "label": {
+          "zh_CN": "title-right"
+        },
+        "description": {
+          "zh_CN": "自定义面板标题右侧内容"
+        }       
       }
     }
   },

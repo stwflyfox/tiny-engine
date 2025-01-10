@@ -1727,13 +1727,6 @@
     ],
     "componentsMap": [
       {
-        "componentName": "VueDraggable",
-        "package": "vue-draggable-plus",
-        "version": "",
-        "exportName": "VueDraggable",
-        "destructuring": true
-      },
-      {
         "componentName": "FlowChart",
         "package": "@shqy/components",
         "version": "",

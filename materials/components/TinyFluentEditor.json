@@ -39,7 +39,7 @@
             "readOnly": false,
             "disabled": false,            
             "widget": {
-              "component": "MetaField",
+              "component": "MetaInput",
               "props": {}
             },
             "description": {
@@ -59,7 +59,7 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaDisabled",
+              "component": "MetaSwitch",
               "props": {}
             },
             "description": {
@@ -85,44 +85,6 @@
             },
             "description": {
               "zh_CN": ""
-            }
-          },           
-          {
-            "property": "width",
-            "label": {
-              "text": {
-                "zh_CN": "宽度"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaNumber",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "宽度"
-            }
-          },
-          {
-            "property": "height",
-            "label": {
-              "text": {
-                "zh_CN": "高度"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaNumber",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "高度"
             }
           }
         ]
