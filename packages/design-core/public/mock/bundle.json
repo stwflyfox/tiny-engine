@@ -2904,6 +2904,36 @@
                     }
                   },
                   {
+                    "property": "type",
+                    "label": {
+                      "text": {
+                        "zh_CN": "复选框组子项组件类型，需配合 options 属性使用"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "复选框",
+                            "value": "checkbox"
+                          },
+                          {
+                            "label": "按钮",
+                            "value": "button"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
                     "property": "size",
                     "label": {
                       "text": {
