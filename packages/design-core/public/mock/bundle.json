@@ -14155,6 +14155,26 @@
                 },
                 "content": [
                   {
+                    "property": "active",
+                    "label": {
+                      "text": {
+                        "zh_CN": "当前步骤索引"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "当前步骤索引，从0开始计数"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "line",
                     "label": {
                       "text": {
