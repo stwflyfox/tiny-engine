@@ -1015,8 +1015,30 @@
               "zh_CN": "自定义合并规则，绑定自定义方法"
             },
             "labelPosition": "left"
+          },
+          {
+            "property": "optimization",
+            "label": {
+              "text": {
+                "zh_CN": "虚拟滚动配置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+             "props": {
+                "dataType": "JSExpression"
+              }
+            },
+            "description": {
+              "zh_CN": "虚拟滚动配置"
+            },
+            "labelPosition": "left"
           }
-
+          
         ]
       }
     ],
