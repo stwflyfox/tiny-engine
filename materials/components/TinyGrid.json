@@ -686,7 +686,48 @@
               "zh_CN": "是否隐藏表头"
             },
             "labelPosition": "left"
-          },        
+          },  
+          {
+            "property": "show-footer",
+            "label": {
+              "text": {
+                "zh_CN": "是否显示表尾"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示表尾"
+            },
+            "labelPosition": "left"
+          },            
+          {
+            "property": "footer-method",
+            "label": {
+              "text": {
+                "zh_CN": "表尾合计的计算方法"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "表尾合计的计算方法"
+            },
+            "labelPosition": "left"
+          },
+          
           {
             "property": "width",
             "label": {
