@@ -765,7 +765,26 @@
             "description": {
               "zh_CN": "表格高度"
             }
-          }         
+          },   
+          {
+            "property": "column-min-width",
+            "label": {
+              "text": {
+                "zh_CN": "设置总体列可以调整到的最小宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置总体列可以调整到的最小宽度，不设置时默认 72。"
+            }
+          }             
           
         ]
       },

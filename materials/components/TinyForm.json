@@ -245,7 +245,74 @@
             "description": {
               "zh_CN": "表单验证规则"
             }
+          },
+          {
+            "property": "validate-type",
+            "label": {
+              "text": {
+                "zh_CN": "校验提示的形式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "tip",
+                    "value": "tip"
+                  },
+                  {
+                    "label": "text",
+                    "value": "text"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "校验提示的形式"
+            }
           }
+          ,
+          {
+            "property": "message-type",
+            "label": {
+              "text": {
+                "zh_CN": "校验提示的形式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "块级",
+                    "value": "block"
+                  },
+                  {
+                    "label": "行内",
+                    "value": "inline"
+                  },
+                  {
+                    "label": "绝对定位",
+                    "value": "absolute"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "校验提示的形式"
+            }
+          }
+          
+          
         ],
         "description": {
           "zh_CN": ""

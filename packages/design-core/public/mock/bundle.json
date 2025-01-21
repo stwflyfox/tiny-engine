@@ -8577,6 +8577,70 @@
                     "description": {
                       "zh_CN": "表单验证规则"
                     }
+                  },
+                  {
+                    "property": "validate-type",
+                    "label": {
+                      "text": {
+                        "zh_CN": "校验提示的形式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "tip",
+                            "value": "tip"
+                          },
+                          {
+                            "label": "text",
+                            "value": "text"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "校验提示的形式"
+                    }
+                  },
+                  {
+                    "property": "message-type",
+                    "label": {
+                      "text": {
+                        "zh_CN": "校验提示的形式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "块级",
+                            "value": "block"
+                          },
+                          {
+                            "label": "行内",
+                            "value": "inline"
+                          },
+                          {
+                            "label": "绝对定位",
+                            "value": "absolute"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "校验提示的形式"
+                    }
                   }
                 ],
                 "description": {
@@ -9630,6 +9694,25 @@
                     },
                     "description": {
                       "zh_CN": "表格高度"
+                    }
+                  },
+                  {
+                    "property": "column-min-width",
+                    "label": {
+                      "text": {
+                        "zh_CN": "设置总体列可以调整到的最小宽度"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置总体列可以调整到的最小宽度，不设置时默认 72。"
                     }
                   }
                 ]

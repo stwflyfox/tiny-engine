@@ -41,7 +41,7 @@
       <tiny-form-item label="业务表" prop="table" v-if="!isFolder">
         <tiny-select v-model="pageSettingState.currentPageData.route" :searchable="true" placeholder="请选择业务表"
           @change="changeTable" clearable>
-          <tiny-option v-for="item in tableList" :key="item.table_name" :label="item.table_common"
+          <tiny-option v-for="item in tableList" :key="item.table_name" :label="item.table_common+'('+item.table_name+')'"
             :value="item.table_name">
           </tiny-option>
         </tiny-select>
