@@ -29,6 +29,7 @@ import SwitchConfigurator from './switch-configurator/SwitchConfigurator.vue'
 import TableColumnsConfigurator from './table-columns-configurator/TableColumnsConfigurator.vue'
 import TabsGroupConfigurator from './tabs-group-configurator/TabsGroupConfigurator.vue'
 import VariableConfigurator from './variable-configurator/VariableConfigurator.vue'
+import MetaField from './MetaField.vue'
 
 import { I18nInput, MetaCodeEditor } from '@opentiny/tiny-engine-common'
 
@@ -98,5 +99,6 @@ export {
   IpSectionConfigurator as MetaIpSection,
   RelatedEditorConfigurator as MetaRelatedEditor,
   RelatedColumnsConfigurator as MetaRelatedColumns,
-  TableColumnsConfigurator as MetaTableColumns
+  TableColumnsConfigurator as MetaTableColumns,
+  MetaField
 }

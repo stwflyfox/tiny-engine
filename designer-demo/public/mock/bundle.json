@@ -6022,7 +6022,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "I18nConfigurator",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
