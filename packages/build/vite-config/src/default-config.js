@@ -20,7 +20,7 @@ const nodeGlobalsPolyfillPlugin = nodeGlobalsPolyfillPluginCjs.default
 const nodeModulesPolyfillPlugin = nodeModulesPolyfillPluginCjs.default
 const visualizer = visualizerCjs.default
 
-const origin = 'http://localhost:9090/'
+const origin = 'http://localhost:7011/'
 
 const getDefaultConfig = (engineConfig) => {
   const { root } = engineConfig
