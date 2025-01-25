@@ -43,15 +43,31 @@
         ></tiny-select>
       </tiny-form-item>
 
-      <tiny-form-item label="页面路由" prop="route">
-        <tiny-input v-model="pageSettingState.currentPageData.route" placeholder="请设置路由"> </tiny-input>
+      <tiny-form-item label="业务表" prop="route">
+        <tiny-select
+          v-model="pageSettingState.currentPageData.route"
+          :searchable="true"
+          placeholder="请选择业务表"
+          @change="changeTable"
+          clearable
+        >
+          <tiny-option
+            v-for="item in tableList"
+            :key="item.table_name"
+            :label="item.table_common + '(' + item.table_name + ')'"
+            :value="item.table_name"
+          >
+          </tiny-option>
+        </tiny-select>
+
+        <!-- <tiny-input v-model="pageSettingState.currentPageData.route" placeholder="请设置路由"> </tiny-input>
         <div class="tip">
           <span class="text" v-if="!pageSettingState.currentPageData.route">路由将以website.com开头</span>
           <span class="route-text" v-else>
             <span class="text">website.com/</span>
             <span class="text-dim">{{ currentRoute }}</span>
           </span>
-        </div>
+        </div> -->
       </tiny-form-item>
 
       <tiny-form-item v-if="pageSettingState.currentPageData.group !== 'publicPages'" prop="isDefault">
@@ -66,10 +82,12 @@
 
 <script lang="jsx">
 import { ref, computed, watchEffect } from 'vue'
-import { Form, FormItem, Input, Select, Radio, Checkbox } from '@opentiny/vue'
+import { Form, FormItem, Input, Select, Radio, Checkbox, Option } from '@opentiny/vue'
 import { usePage } from '@opentiny/tiny-engine-meta-register'
 import { REGEXP_PAGE_NAME, REGEXP_FOLDER_NAME, REGEXP_ROUTE } from '@opentiny/tiny-engine-common/js/verification'
 import PageHome from './PageHome.vue'
+
+import { request, METHOD } from './request'
 
 export default {
   components: {
@@ -79,7 +97,8 @@ export default {
     TinySelect: Select,
     PageHome,
     TinyRadio: Radio,
-    TinyCheckbox: Checkbox
+    TinyCheckbox: Checkbox,
+    TinyOption: Option
   },
   props: {
     modelValue: {
@@ -100,6 +119,12 @@ export default {
       oldParentId.value = pageSettingState.oldParentId
     })
 
+    const tableList = []
+
+    const changeTable = (value) => {
+      sessionStorage.setItem('TableName', value)
+    }
+
     const currentRoute = computed(() => {
       let route = pageSettingState.currentPageData.route || ''
       let parentId = pageSettingState.currentPageData.parentId
@@ -115,7 +140,7 @@ export default {
       if (route.startsWith('/')) {
         route = route.slice(1)
       }
-
+      sessionStorage.setItem('TableName', route)
       return route
     })
 
@@ -237,8 +262,15 @@ export default {
       validGeneralForm,
       treeFolderOp,
       currentRoute,
-      changeParentForderId
+      changeParentForderId,
+      tableList,
+      changeTable
     }
+  },
+  mounted() {
+    request('/System/QueryTableList', METHOD.POST).then((result) => {
+      this.tableList = result
+    })
   }
 }
 </script>
