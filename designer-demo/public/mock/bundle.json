@@ -4804,9 +4804,7 @@
             "package": "@opentiny/vue",
             "exportName": "Layout",
             "version": "3.20.0",
-            "destructuring": true,
-            "script": "https://unpkg.com/@opentiny/vue-runtime@~3.20/dist3/tiny-vue-pc.mjs",
-            "css": "https://unpkg.com/@opentiny/vue-theme@~3.20/index.css"
+            "destructuring": true
           },
           "group": "component",
           "priority": 5,
@@ -5996,7 +5994,10 @@
           "devMode": "proCode",
           "npm": {
             "package": "@opentiny/vue",
-            "exportName": "Input"
+            "exportName": "Input",
+            "css": "https://cdn.91zd.cn/lib/aurora-theme-index.css", 
+            "version": "",
+            "destructuring": true
           },
           "group": "component",
           "priority": 1,
@@ -6009,6 +6010,12 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
                 "content": [
                   {
                     "property": "modelValue",
@@ -6019,8 +6026,7 @@
                     },
                     "required": true,
                     "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
+                    "disabled": false,            
                     "widget": {
                       "component": "MetaField",
                       "props": {}
@@ -6028,8 +6034,27 @@
                     "description": {
                       "zh_CN": "双向绑定值"
                     },
-                    "labelPosition": "left"
-                  },
+                    "labelPosition": "top"
+                  },     
+                  {
+                    "property": "defaultValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "默认值"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,            
+                    "widget": {
+                      "component": "MetaDefault",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "默认值"
+                    },
+                    "labelPosition": "top"
+                  },       
                   {
                     "property": "type",
                     "label": {
@@ -6038,7 +6063,7 @@
                       }
                     },
                     "widget": {
-                      "component": "SelectConfigurator",
+                      "component": "MetaSelect",
                       "props": {
                         "options": [
                           {
@@ -6058,8 +6083,7 @@
                     },
                     "description": {
                       "zh_CN": "设置input框的type属性"
-                    },
-                    "labelPosition": "left"
+                    }
                   },
                   {
                     "property": "rows",
@@ -6069,12 +6093,11 @@
                       }
                     },
                     "widget": {
-                      "component": "NumberConfigurator"
+                      "component": "MetaNumber"
                     },
                     "description": {
                       "zh_CN": "输入框行数，只对 type='textarea' 有效"
-                    },
-                    "labelPosition": "left"
+                    }
                   },
                   {
                     "property": "placeholder",
@@ -6088,7 +6111,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "I18nConfigurator",
+                      "component": "MetaBindI18n",
                       "props": {}
                     },
                     "description": {
@@ -6108,7 +6131,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "CheckBoxConfigurator",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -6123,19 +6146,38 @@
                         "zh_CN": "禁用"
                       }
                     },
-                    "required": true,
+                    "required": false,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "CheckBoxConfigurator",
+                      "component": "MetaDisabled",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否禁用"
-                    },
-                    "labelPosition": "left"
+                      "zh_CN": "禁用"
+                    }
                   },
+                  {
+                    "property": "readonly",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否只读"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  
                   {
                     "property": "size",
                     "label": {
@@ -6148,7 +6190,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "SelectConfigurator",
+                      "component": "MetaSelect",
                       "props": {
                         "options": [
                           {
@@ -6168,9 +6210,40 @@
                     },
                     "description": {
                       "zh_CN": "输入框尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  },          
+                  {
+                    "property": "input-box-type",
+                    "label": {
+                      "text": {
+                        "zh_CN": "设置边框模式"
+                      }
                     },
-                    "labelPosition": "left"
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "normal",
+                            "value": "normal"
+                          },
+                          {
+                            "label": "underline",
+                            "value": "underline"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "设置边框模式。该属性的可选值为 normal / underline"
+                    }
                   }
+        
+                  
                 ]
               },
               {
@@ -6183,7 +6256,7 @@
                     "property": "maxlength",
                     "label": {
                       "text": {
-                        "zh_CN": "最大输入长度"
+                        "zh_CN": "最大长度"
                       }
                     },
                     "required": true,
@@ -6191,18 +6264,19 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "NumberConfigurator",
+                      "component": "MetaNumber",
                       "props": {}
                     },
                     "description": {
                       "zh_CN": "设置 input 框的maxLength"
-                    }
+                    },
+                    "labelPosition": "left"
                   },
                   {
                     "property": "autofocus",
                     "label": {
                       "text": {
-                        "zh_CN": "自动聚焦"
+                        "zh_CN": "聚焦"
                       }
                     },
                     "required": true,
@@ -6210,7 +6284,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "CheckBoxConfigurator",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -6384,14 +6458,43 @@
             "isLayout": false,
             "rootSelector": "",
             "shortcuts": {
-              "properties": ["value", "disabled"]
+              "properties": [
+                "value",
+                "disabled"
+              ]
             },
             "contextMenu": {
-              "actions": ["create symbol"],
-              "disable": ["copy", "remove"]
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
             }
-          }
+          },
+          "snippets": [
+            {
+              "name": {
+                "zh_CN": "输入框"
+              },
+              "icon": "input",
+              "screenshot": "",
+              "snippetName": "TinyInput",
+              "schema": {
+                "componentName": "TinyInput",
+                "props": {
+                  "placeholder": "请输入",
+                  "modelValue": "",
+                  "defaultValue": "",
+                  "clearable": true,
+                  "size": "mini"
+                }
+              }
+            }
+          ]         
         },
+        
         {
           "icon": "radio",
           "name": {
@@ -13868,189 +13971,16 @@
               }
             }
           ]
-        },
-        {
-          "group": "element-plus",
-          "label": {
-            "zh_CN": "Element Plus组件"
-          },
-          "children": [
-            {
-              "name": {
-                "zh_CN": "输入框"
-              },
-              "icon": "input",
-              "screenshot": "",
-              "snippetName": "ElInput",
-              "schema": {}
-            },
-            {
-              "name": {
-                "zh_CN": "按钮"
-              },
-              "icon": "button",
-              "screenshot": "",
-              "snippetName": "ElButton",
-              "schema": {
-                "children": [
-                  {
-                    "componentName": "Text",
-                    "props": {
-                      "text": "按钮文本"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "表单"
-              },
-              "icon": "form",
-              "screenshot": "",
-              "snippetName": "ElForm",
-              "schema": {
-                "children": [
-                  {
-                    "componentName": "ElFormItem",
-                    "props": {
-                      "label": "账号",
-                      "prop": "account"
-                    },
-                    "children": [
-                      {
-                        "componentName": "ElInput",
-                        "props": {
-                          "modelValue": "",
-                          "placeholder": "请输入账号"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "componentName": "ElFormItem",
-                    "props": {
-                      "label": "密码",
-                      "prop": "password"
-                    },
-                    "children": [
-                      {
-                        "componentName": "ElInput",
-                        "props": {
-                          "modelValue": "",
-                          "placeholder": "请输入密码",
-                          "type": "password"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "componentName": "ElFormItem",
-                    "props": {},
-                    "children": [
-                      {
-                        "componentName": "ElButton",
-                        "props": {
-                          "type": "primary",
-                          "style": "margin-right: 10px"
-                        },
-                        "children": [
-                          {
-                            "componentName": "Text",
-                            "props": {
-                              "text": "提交"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "componentName": "ElButton",
-                        "props": {
-                          "type": "primary"
-                        },
-                        "children": [
-                          {
-                            "componentName": "Text",
-                            "props": {
-                              "text": "重置"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "表格"
-              },
-              "icon": "grid",
-              "screenshot": "",
-              "snippetName": "ElTable",
-              "schema": {
-                "props": {
-                  "data": [
-                    {
-                      "date": "2016-05-03",
-                      "name": "Tom",
-                      "address": "No. 189, Grove St, Los Angeles"
-                    },
-                    {
-                      "date": "2016-05-02",
-                      "name": "Tom",
-                      "address": "No. 189, Grove St, Los Angeles"
-                    },
-                    {
-                      "date": "2016-05-04",
-                      "name": "Tom",
-                      "address": "No. 189, Grove St, Los Angeles"
-                    },
-                    {
-                      "date": "2016-05-01",
-                      "name": "Tom",
-                      "address": "No. 189, Grove St, Los Angeles"
-                    }
-                  ],
-                  "columns": [
-                    {
-                      "type": "index"
-                    },
-                    {
-                      "label": "Date",
-                      "prop": "date"
-                    },
-                    {
-                      "label": "Name",
-                      "prop": "name"
-                    },
-                    {
-                      "label": "Address",
-                      "prop": "address"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
+        }      
       ],
       "packages": [
         {
           "name": "TinyVue组件库",
           "package": "@opentiny/vue",
-          "version": "3.20.0",
+          "version": "3.21.0",
           "destructuring": true,
-          "script": "https://unpkg.com/@opentiny/vue-runtime@~3.20/dist3/tiny-vue-pc.mjs",
-          "css": "https://unpkg.com/@opentiny/vue-theme@~3.20/index.css"
-        },
-        {
-          "name": "element-plus组件库",
-          "package": "element-plus",
-          "version": "2.4.2",
-          "script": "https://unpkg.com/element-plus@2.4.2/dist/index.full.mjs",
-          "css": "https://unpkg.com/element-plus@2.4.2/dist/index.css"
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.21/files/dist3/tiny-vue-pc.mjs",
+          "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.21/files/index.css"
         }
       ]
     }
