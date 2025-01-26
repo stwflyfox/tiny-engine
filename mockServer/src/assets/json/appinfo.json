@@ -14413,6 +14413,7 @@
         "npm": {
           "package": "@opentiny/vue",
           "exportName": "Input",
+          "css": "https://cdn.91zd.cn/lib/aurora-theme-index.css",
           "version": "",
           "destructuring": true
         }
