@@ -34,7 +34,7 @@ const getDefaultConfig = (engineConfig) => {
     },
     server: {
       // 这里保证本地启动服务是localhost,支持js多线程和谷歌浏览器读写本地文件api
-      port: 8090,
+      port: 8080,
       open: '/?type=app&id=1&tenant=1',
       proxy: {
         '/app-center/v1/api': {
@@ -57,7 +57,7 @@ const getDefaultConfig = (engineConfig) => {
     },
     preview: {
       host: 'localhost',
-      port: 8090,
+      port: 8080,
       open: false
     },
     plugins: [
