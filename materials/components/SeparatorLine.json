@@ -1,0 +1,123 @@
+{
+  "name": {
+    "zh_CN": "间隔线"
+  },
+  "component": "SeparatorLine",
+  "icon": "separator-line",
+  "description": "间隔线",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {},
+  "group": "component",
+  "priority": 30,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "children",
+            "label": {
+              "text": {
+                "zh_CN": "类型"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaHtmlText",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            },
+            "labelPosition": "none"
+          },
+          {
+            "property": "attributes3",
+            "label": {
+              "text": {
+                "zh_CN": "原生属性"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaHtmlAttributes",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            },
+            "labelPosition": "none"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": [],
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [],
+      "disable": []
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "间隔线"
+      },
+      "icon": "separator-line",
+      "screenshot": "",
+      "snippetName": "SeparatorLine",
+      "schema": {
+        "componentName": "SeparatorLine",
+        "children": [
+          {
+            "componentName": "Text",
+            "props": {
+              "className": "",
+              "style": "width: 1px;height: 20px;border-left: 1px solid #b0b0b0;margin: 0px 5px 0 5px;vertical-align: middle;display: inline-block;float: none;"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "category": "表单组件"
+}

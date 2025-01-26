@@ -1,0 +1,287 @@
+{
+  "name": {
+    "zh_CN": "颜色选择器"
+  },
+  "component": "TinyColorPicker",
+  "icon": "cursor-progress",
+  "description": "颜色选择器",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "TinyColorPicker",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定的当前选中值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "large",
+                    "value": "large"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
+          {
+            "property": "history",
+            "label": {
+              "text": {
+                "zh_CN": "启用历史记录"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "启用历史记录"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "predefine",
+            "label": {
+              "text": {
+                "zh_CN": "启用预定义颜色"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "启用预定义颜色"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "visible",
+            "label": {
+              "text": {
+                "zh_CN": "默认显示"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "alpha",
+            "label": {
+              "text": {
+                "zh_CN": "是否启用alpha选择"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onCancel": {
+        "label": {
+          "zh_CN": "按下取消或点击外部的时触发该事件"
+        },
+        "description": {
+          "zh_CN": "按下取消或点击外部的时触发该事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "按下取消或点击外部的时触发该事件"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onConfirm": {
+        "label": {
+          "zh_CN": "点击关闭按钮时触发的事件"
+        },
+        "description": {
+          "zh_CN": "按下确认时触发该事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "颜色选择器"
+      },
+      "icon": "cursor-progress",
+      "screenshot": "",
+      "snippetName": "TinyColorPicker",
+      "schema": {
+        "componentName": "TinyColorPicker",
+        "props": {
+          "size": ""
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}

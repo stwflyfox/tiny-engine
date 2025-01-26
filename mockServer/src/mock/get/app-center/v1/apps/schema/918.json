@@ -1727,10 +1727,31 @@
     ],
     "componentsMap": [
       {
+        "componentName": "BarChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsBar",
+        "destructuring": true
+      },
+      {
         "componentName": "FlowChart",
         "package": "@shqy/components",
         "version": "",
         "exportName": "FlowChart",
+        "destructuring": true
+      },
+      {
+        "componentName": "GaugeChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsGauge",
+        "destructuring": true
+      },
+      {
+        "componentName": "HistogramChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsHistogram",
         "destructuring": true
       },
       {
@@ -1741,6 +1762,20 @@
         "destructuring": true
       },
       {
+        "componentName": "LineChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsLine",
+        "destructuring": true
+      },
+      {
+        "componentName": "PieChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsPie",
+        "destructuring": true
+      },
+      {
         "componentName": "PopSelect",
         "package": "@shqy/components",
         "version": "",
@@ -1748,10 +1783,24 @@
         "destructuring": true
       },
       {
+        "componentName": "ProcessChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsProcess",
+        "destructuring": true
+      },
+      {
         "componentName": "Program",
         "package": "@shqy/components",
         "version": "",
         "exportName": "ProgramBuild",
+        "destructuring": true
+      },
+      {
+        "componentName": "RingChart",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "TinyHuichartsRing",
         "destructuring": true
       },
       {

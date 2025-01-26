@@ -1,0 +1,177 @@
+{
+  "name": {
+    "zh_CN": "进度图"
+  },
+  "component": "ProcessChart",
+  "icon": "process-chart",
+  "description": "进度图",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "TinyHuichartsProcess",
+    "version": "", 
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [ 
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+      
+        "content": [      
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "图表配置项"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "ready": {
+        "label": {
+          "zh_CN": "图表渲染完成后触发"
+        },
+        "description": {
+          "zh_CN": "图表渲染完成后触发，每次渲染都会触发一次"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+   
+      "ready-once": {
+        "label": {
+          "zh_CN": "图表渲染完成后触发"
+        },
+        "description": {
+          "zh_CN": "图表渲染完成后触发，只会在首次渲染完成后触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [         
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }     
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "进度图"
+      },
+      "icon": "process-chart",
+      "screenshot": "",
+      "snippetName": "ProcessChart",
+      "schema": {
+        "componentName": "ProcessChart",
+        "props": {
+          "options" : {
+            "name": "ProcessBarChart",
+            "theme": "light",
+            "padding": [
+              32,
+              32,
+              0,
+              32
+            ],
+            "color": [
+              "#fa2a2d",
+              "#ff7500",
+              "#ffbf00",
+              "#41ba41",
+              "#00aaee"
+            ],
+            "data": [
+              {
+                "name": "UniEPMgr",
+                "value": 80
+              },
+              {
+                "name": "SMLoglic",
+                "value": 65
+              },
+              {
+                "name": "SSO",
+                "value": 45
+              },
+              {
+                "name": "APIMgr",
+                "value": 20
+              },
+              {
+                "name": "Logtransfer",
+                "value": 12
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "category": "图表组件"
+}

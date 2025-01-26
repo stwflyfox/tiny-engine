@@ -14074,12 +14074,39 @@
     "description": "2023.3.9",
     "components": [
       {
+        "component": "BarChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsBar",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "FlowChart",
         "npm": {
           "package": "@shqy/components",
           "exportName": "FlowChart",
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "GaugeChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsGauge",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "HistogramChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsHistogram",
           "version": "",
           "destructuring": true
         }
@@ -14096,6 +14123,24 @@
         }
       },
       {
+        "component": "LineChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsLine",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "PieChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsPie",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "PopSelect",
         "npm": {
           "package": "@shqy/components",
@@ -14107,12 +14152,30 @@
         }
       },
       {
+        "component": "ProcessChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsProcess",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "Program",
         "npm": {
           "package": "@shqy/components",
           "exportName": "ProgramBuild",
           "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "RingChart",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyHuichartsRing",
           "version": "",
           "destructuring": true
         }

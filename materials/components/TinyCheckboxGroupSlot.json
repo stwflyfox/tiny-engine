@@ -1,0 +1,197 @@
+{
+  "icon": "checkboxgroup",
+  "name": {
+    "zh_CN": "复选框组(插槽)"
+  },
+  "component": "TinyCheckboxGroupSlot",
+  "description": "多选项，拖动复选框或复选按钮",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "CheckboxGroup",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {
+                "dataType": "Array"
+              }
+            },
+            "description": {
+              "zh_CN": "双向绑定的当前选中值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaDisabled",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
+          },
+          {
+            "property": "vertical",
+            "label": {
+              "text": {
+                "zh_CN": "垂直排列"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置组件排列方式，设置复选框是否垂直排列"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "勾选值改变后将触发"
+        },
+        "description": {
+          "zh_CN": "勾选值改变后将触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "选中项的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "当前选中的值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "array",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的当前选中值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "disabled",
+        "type"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "复选框组(插槽)"
+      },
+      "icon": "checkboxs",
+      "screenshot": "",
+      "snippetName": "TinyCheckboxGroupSlot",
+      "schema": {
+        "componentName": "TinyCheckboxGroupSlot",
+        "props": {
+          "modelValue": []
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}

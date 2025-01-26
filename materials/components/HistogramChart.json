@@ -1,0 +1,206 @@
+{
+  "name": {
+    "zh_CN": "柱状图"
+  },
+  "component": "HistogramChart",
+  "icon": "histogram-chart",
+  "description": "柱状图",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "TinyHuichartsHistogram",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+      
+        "content": [      
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "图表配置项"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "ready": {
+        "label": {
+          "zh_CN": "图表渲染完成后触发"
+        },
+        "description": {
+          "zh_CN": "图表渲染完成后触发，每次渲染都会触发一次"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+   
+      "ready-once": {
+        "label": {
+          "zh_CN": "图表渲染完成后触发"
+        },
+        "description": {
+          "zh_CN": "图表渲染完成后触发，只会在首次渲染完成后触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [         
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }     
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "柱状图"
+      },
+      "icon": "histogram-chart",
+      "screenshot": "",
+      "snippetName": "HistogramChart",
+      "schema": {
+        "componentName": "HistogramChart",
+        "props": {
+          "options" : {
+            "data": [
+              {
+                "Month": "Jan",
+                "Domestic": 33,
+                "Abroad": 1
+              },
+              {
+                "Month": "Feb",
+                "Domestic": 27,
+                "Abroad": 39
+              },
+              {
+                "Month": "Mar",
+                "Domestic": 31,
+                "Abroad": 20
+              },
+              {
+                "Month": "Apr",
+                "Domestic": 30,
+                "Abroad": 15
+              },
+              {
+                "Month": "May",
+                "Domestic": 37,
+                "Abroad": 1
+              },
+              {
+                "Month": "Jun",
+                "Domestic": 36,
+                "Abroad": 17
+              },
+              {
+                "Month": "Jul",
+                "Domestic": 42,
+                "Abroad": 22
+              },
+              {
+                "Month": "Aug",
+                "Domestic": 22,
+                "Abroad": 12
+              },
+              {
+                "Month": "Sep",
+                "Domestic": 17,
+                "Abroad": 30
+              },
+              {
+                "Month": "Oct",
+                "Domestic": 40,
+                "Abroad": 33
+              },
+              {
+                "Month": "Nov",
+                "Domestic": 42,
+                "Abroad": 22
+              },
+              {
+                "Month": "Dec",
+                "Domestic": 32,
+                "Abroad": 1
+              }
+            ],
+            "xAxis": "Month",
+            "yAxis": {
+              "name": "Percent(%)"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "category": "图表组件"
+}

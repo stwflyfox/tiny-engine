@@ -1,0 +1,194 @@
+{
+  "name": {
+    "zh_CN": "上传图片"
+  },
+  "component": "UploadImage",
+  "icon": "uploadimage",
+  "description": "上传图片",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "UploadImage",
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+    "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "width",
+            "label": {
+              "text": {
+                "zh_CN": "宽度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "宽度"
+            }
+          },
+          {
+            "property": "height",
+            "label": {
+              "text": {
+                "zh_CN": "高度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "高度"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "输入框改变后的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "上传图片"
+      },
+      "icon": "uploadimage",
+      "screenshot": "",
+      "snippetName": "UploadImage",
+      "schema": {
+        "componentName": "UploadImage",
+        "props": {}
+      }
+    }
+  ],
+  "category": "表单组件"
+}

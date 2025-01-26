@@ -1,0 +1,367 @@
+{
+  "name": {
+    "zh_CN": "弹出选择"
+  },
+  "component": "PopSelect",
+  "icon": "popEditor",
+  "description": "该组件只能在弹出的面板中选择数据，不能手动输入数据；",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "PopSelect",
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+    "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 10,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "value",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值字段"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "绑定值字段"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "text",
+            "label": {
+              "text": {
+                "zh_CN": "绑定文本字段"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "绑定文本字段"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "placeholder",
+            "label": {
+              "text": {
+                "zh_CN": "占位文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "输入框占位文本"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "programCode",
+            "label": {
+              "text": {
+                "zh_CN": "弹出应用程序"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "弹出应用程序"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "programParams",
+            "label": {
+              "text": {
+                "zh_CN": "应用程序传参"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "应用程序传参"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "textField",
+            "label": {
+              "text": {
+                "zh_CN": "返回文本字段"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "返回文本字段"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaDisabled",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
+          }
+        ]
+      },
+      {
+        "name": "1",
+        "label": {
+          "zh_CN": "其他"
+        },
+        "content": [
+          {
+            "property": "width",
+            "label": {
+              "text": {
+                "zh_CN": "文本框宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置文本框的宽度（单位像素）"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "文本框尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
+          {
+            "property": "dialogWidth",
+            "label": {
+              "text": {
+                "zh_CN": "弹出面板宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置弹出面板的宽度（单位像素或百分比）"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "multi",
+            "label": {
+              "text": {
+                "zh_CN": "多选"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置弹出面板中的数据是否可多选"
+            },
+            "labelPosition": "left"
+          }
+        ],
+        "description": {
+          "zh_CN": ""
+        }
+      }
+    ],
+    "events": {
+      "onClear": {
+        "label": {
+          "zh_CN": "清除已选项时触发的事件"
+        },
+        "description": {
+          "zh_CN": "清除已选项时触发的事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onSelect": {
+        "label": {
+          "zh_CN": "弹框已选择时触发的事件"
+        },
+        "description": {
+          "zh_CN": "弹框已选择时触发的事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "modelValue",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "弹出选择"
+      },
+      "icon": "popeditor",
+      "screenshot": "",
+      "snippetName": "PopSelect",
+      "schema": {
+        "componentName": "PopSelect",
+        "props": {
+          "value": "",
+          "text": "",
+          "size": "mini"
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}

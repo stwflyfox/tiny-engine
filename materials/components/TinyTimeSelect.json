@@ -1,0 +1,338 @@
+{
+  "name": {
+    "zh_CN": "时间选择框"
+  },
+  "component": "TinyTimeSelect",
+  "icon": "daterange",
+  "description": "时间选择框是下拉框的特例，按时分格式（不支持自定义格式）展示下拉列表以供用户选择，并能扩展下拉框部分参数",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "TimeSelect",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "placeholder",
+            "label": {
+              "text": {
+                "zh_CN": "占位文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "输入框占位文本"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "clearable",
+            "label": {
+              "text": {
+                "zh_CN": "清除按钮是否显示"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "editable",
+            "label": {
+              "text": {
+                "zh_CN": "文本框是否可手动输入"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "是否禁用"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "日期框尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
+          {
+            "property": "picker-options",
+            "label": {
+              "text": {
+                "zh_CN": "时间选择器选项"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "当前时间日期选择器特有的选项"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "输入框改变后的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onBlur": {
+        "label": {
+          "zh_CN": "失去焦点时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 失去焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onFocus": {
+        "label": {
+          "zh_CN": "获取焦点时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 获取焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "时间选择框"
+      },
+      "icon": "daterange",
+      "screenshot": "",
+      "snippetName": "TinyTimeSelect",
+      "schema": {
+        "componentName": "TinyTimeSelect",
+        "props": {
+          "placeholder": "请选择时间",
+          "modelValue": "",
+          "size": "mini"
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}

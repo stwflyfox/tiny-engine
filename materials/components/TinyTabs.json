@@ -1,0 +1,540 @@
+{
+  "icon": "tabs",
+  "name": {
+    "zh_CN": "标签页"
+  },
+  "component": "TinyTabs",
+  "description": "分隔内容上有关联但属于不同类别的数据集合",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Tabs",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 10,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "showEditIcon",
+            "label": {
+              "text": {
+                "zh_CN": "显示编辑ICON "
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示标题后编辑 ICON"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "tabs",
+            "label": {
+              "text": {
+                "zh_CN": "选项卡"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "defaultValue": "",
+            "cols": 12,
+            "bindState": false,
+            "widget": {
+              "component": "MetaContainer",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "tabs"
+            },
+            "labelPosition": "none"
+          },
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "绑定值，选中选项卡的 name"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "with-add",
+            "label": {
+              "text": {
+                "zh_CN": "可新增"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "标签是否可增加"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "with-close",
+            "label": {
+              "text": {
+                "zh_CN": "可关闭"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "标签是否可关闭"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "position",
+            "label": {
+              "text": {
+                "zh_CN": "设置页签栏所在位置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "top",
+                    "value": "top"
+                  },
+                  {
+                    "label": "right",
+                    "value": "right"
+                  },
+                  {
+                    "label": "bottom",
+                    "value": "bottom"
+                  },
+                  {
+                    "label": "left",
+                    "value": "left"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置页签栏所在位置"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "tab-style",
+            "label": {
+              "text": {
+                "zh_CN": "标签页样式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "card",
+                    "value": "card"
+                  },
+                  {
+                    "label": "border-card",
+                    "value": "border-card"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "标签页样式"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "overflow-title",
+            "label": {
+              "text": {
+                "zh_CN": "页签是否在超过 title-width 不要省略显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "页签是否在超过 title-width 不要省略显示"
+            }
+          },
+          {
+            "property": "title-width",
+            "label": {
+              "text": {
+                "zh_CN": "指定页签标题的最大宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "指定页签标题的最大宽度"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "组件大小"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "small",
+                    "value": "small"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClick": {
+        "label": {
+          "zh_CN": "点击页签时触发事件"
+        },
+        "description": {
+          "zh_CN": "在 Input 值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "component",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "当前点击的页签对象"
+              }
+            },
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onEdit": {
+        "label": {
+          "zh_CN": "点击新增按钮或关闭按钮或者编辑按钮后触发"
+        },
+        "description": {
+          "zh_CN": "点击新增按钮或关闭按钮或者编辑按钮后触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "tab",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "当前操作的页签对象"
+              }
+            },
+            {
+              "name": "type",
+              "type": "String",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "当前操作的类型（remove || add || edit）"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onClose": {
+        "label": {
+          "zh_CN": "关闭页签时触发"
+        },
+        "description": {
+          "zh_CN": "关闭页签时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "name",
+              "type": "String",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "页签名称"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "clickCapture": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": [
+        "TinyTabItem"
+      ],
+      "parentWhitelist": [],
+      "descendantBlacklist": [],
+      "ancestorWhitelist": []
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "size",
+        "tab-style"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "标签页"
+      },
+      "icon": "tabs",
+      "screenshot": "",
+      "group": true,
+      "snippetName": "TinyTabs",
+      "schema": {
+        "componentName": "TinyTabs",
+        "props": {
+          "modelValue": "tab1",
+          "size": "small"
+        },
+        "children": [
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页1",
+              "name": "tab1"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页2",
+              "name": "tab2"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页3",
+              "name": "tab3"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页4",
+              "name": "tab4"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页5",
+              "name": "tab5"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页6",
+              "name": "tab6"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页7",
+              "name": "tab7"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页8",
+              "name": "tab8"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页9",
+              "name": "tab9"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          },
+          {
+            "componentName": "TinyTabItem",
+            "props": {
+              "title": "标签页10",
+              "name": "tab10"
+            },
+            "children": [
+              {
+                "componentName": "div"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "category": "容器组件"
+}

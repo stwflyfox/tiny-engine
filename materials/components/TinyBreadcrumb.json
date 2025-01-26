@@ -1,0 +1,175 @@
+{
+  "icon": "breadcrumb",
+  "name": {
+    "zh_CN": "面包屑"
+  },
+  "component": "TinyBreadcrumb",
+  "description": "告诉访问者他们目前在网站中的位置以及如何返回",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Select",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 20,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "separator",
+            "label": {
+              "text": {
+                "zh_CN": "分隔符"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "自定义分隔符"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "options"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "textField",
+            "label": {
+              "text": {
+                "zh_CN": "textField"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onSelect": {
+        "label": {
+          "zh_CN": "选择 breadcrumb 时触发"
+        },
+        "description": {
+          "zh_CN": "选择 breadcrumb 时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "clickCapture": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": [
+        "TinyBreadcrumbItem"
+      ],
+      "parentWhitelist": [],
+      "descendantBlacklist": [],
+      "ancestorWhitelist": []
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "separator"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "面包屑"
+      },
+      "icon": "breadcrumb",
+      "screenshot": "",
+      "snippetName": "TinyBreadcrumb",
+      "schema": {
+        "componentName": "TinyBreadcrumb",
+        "props": {
+          "options": [
+            {
+              "to": "{ path: '/' }",
+              "label": "首页"
+            },
+            {
+              "to": "{ path: '/breadcrumb' }",
+              "label": "产品"
+            },
+            {
+              "replace": "true",
+              "label": "软件"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "category": "容器组件"
+}

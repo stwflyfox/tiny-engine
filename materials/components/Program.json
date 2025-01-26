@@ -1,0 +1,169 @@
+{
+  "name": {
+    "zh_CN": "应用程序"
+  },
+  "component": "Program",
+  "icon": "input",
+  "description": "应用程序",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "ProgramBuild",
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+    "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
+          {
+            "property": "ProgramCode",
+            "label": {
+              "text": {
+                "zh_CN": "应用程序编码"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput"
+            },
+            "description": {
+              "zh_CN": "应用程序编码"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onButtonClick": {
+        "label": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "description": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "应用程序"
+      },
+      "icon": "display-grid",
+      "screenshot": "",
+      "snippetName": "Program",
+      "schema": {
+        "componentName": "Program",
+        "props": {
+          "ref": "program",
+          "size": "mini"
+        }
+      }
+    }
+  ],
+  "category": "容器组件"
+}

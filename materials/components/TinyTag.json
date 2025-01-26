@@ -1,0 +1,357 @@
+{
+  "name": {
+    "zh_CN": "Tag标签"
+  },
+  "component": "TinyTag",
+  "icon": "tag",
+  "description": "用于标记事物的属性和维度",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "TinyTag",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "value",
+            "label": {
+              "text": {
+                "zh_CN": "设置标签值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置标签值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
+          {
+            "property": "type",
+            "label": {
+              "text": {
+                "zh_CN": "类型"
+              }
+            },
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "默认",
+                    "value": ""
+                  },
+                  {
+                    "label": "成功",
+                    "value": "success"
+                  },
+                  {
+                    "label": "信息",
+                    "value": "info"
+                  },
+                  {
+                    "label": "警告",
+                    "value": "warning"
+                  },
+                  {
+                    "label": "危险",
+                    "value": "danger"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置类型"
+            }
+          },
+          {
+            "property": "effect",
+            "label": {
+              "text": {
+                "zh_CN": "主题"
+              }
+            },
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "dark",
+                    "value": "dark"
+                  },
+                  {
+                    "label": "light",
+                    "value": "light"
+                  },
+                  {
+                    "label": "plain",
+                    "value": "plain"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置主题"
+            }
+          },
+          {
+            "property": "hit",
+            "label": {
+              "text": {
+                "zh_CN": "是否有边框"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "color",
+            "label": {
+              "text": {
+                "zh_CN": "设置颜色"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "控制标签文本色和背景色"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "是否禁用"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "closable",
+            "label": {
+              "text": {
+                "zh_CN": "是否可关闭"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClick": {
+        "label": {
+          "zh_CN": "点击标签时触发的事件"
+        },
+        "description": {
+          "zh_CN": "点击标签时触发的事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "点击标签时触发的事件"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onClose": {
+        "label": {
+          "zh_CN": "点击关闭按钮时触发的事件"
+        },
+        "description": {
+          "zh_CN": "点击关闭按钮时触发的事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    },
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "通过 default 默认插槽自定义标签内容，生成图标标签"
+        }
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "Tag标签"
+      },
+      "icon": "tag",
+      "screenshot": "",
+      "snippetName": "TinyTag",
+      "schema": {
+        "componentName": "TinyTag",
+        "props": {
+          "size": ""
+        }
+      }
+    }
+  ],
+  "category": "表单组件"
+}
