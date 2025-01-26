@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 132 132" style="enable-background:new 0 0 132 132;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#808080;}
-</style>
-<rect id="size" class="st0" width="132" height="132"/>
-<path id="矢量_9" class="st1" d="M89.1,23.1c23.6,0,42.9,19.2,42.9,42.9c0,23.6-19.3,42.9-42.9,42.9H42.9C19.2,108.9,0,89.6,0,66
-	c0-23.7,19.2-42.9,42.9-42.9H89.1z M89.1,31.7c18.9,0,34.3,15.3,34.3,34.3c0,18.9-15.4,34.3-34.3,34.3H42.9
-	c-19,0-34.3-15.4-34.3-34.3c0-19,15.3-34.3,34.3-34.3H89.1z M85.8,39.6c-14.6,0-26.4,11.8-26.4,26.4c0,14.5,11.8,26.4,26.4,26.4
-	c14.5,0,26.4-11.9,26.4-26.4C112.2,51.4,100.3,39.6,85.8,39.6z"/>
+<svg version="1.1" id="图层_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+  <style type="text/css">
+	.st0{fill:currentcolor;}
+  </style>
+  <g>
+    <path class="st0" d="M46,16.5H18.1c-8.4,0-15.3,6.9-15.3,15.3s6.9,15.3,15.3,15.3H46c8.4,0,15.3-6.9,15.3-15.3S54.4,16.5,46,16.5z
+		 M46,43.1H18.1c-6.2,0-11.3-5.1-11.3-11.3s5.1-11.3,11.3-11.3H46c6.2,0,11.3,5.1,11.3,11.3S52.2,43.1,46,43.1z"/>
+    <circle class="st0" cx="44.2" cy="31.8" r="8.4"/>
+  </g>
 </svg>

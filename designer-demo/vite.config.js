@@ -15,7 +15,7 @@ export default defineConfig((configEnv) => {
     envDir: './env',
     publicDir: path.resolve(__dirname, './public'),
     server: {
-      port: 8080
+      port: 8090
     }
   }
 

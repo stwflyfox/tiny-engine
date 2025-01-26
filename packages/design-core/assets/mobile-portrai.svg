@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 132 132" style="enable-background:new 0 0 132 132;" xml:space="preserve">
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:currentColor;}
+	.st0{fill:none;stroke:currentColor;stroke-linejoin:round;}
+	.st1{fill:none;stroke:currentColor;stroke-linecap:round;}
 </style>
-<rect id="size" class="st0" width="132" height="132"/>
-<path id="形状结合" class="st1" d="M90.8,8.2c11.4,0,20.6,9.1,20.6,20.6v74.2c0,11.3-9.2,20.6-20.6,20.6H41.2
-	c-11.6,0-20.6-9.3-20.6-20.6V28.9c0-11.6,9.1-20.6,20.6-20.6H90.8z M90.8,16.5H41.2c-6.8,0-12.4,5.4-12.4,12.4v74.2
-	c0,6.8,5.5,12.4,12.4,12.4h49.5c6.8,0,12.4-5.6,12.4-12.4V28.9C103.1,21.9,97.5,16.5,90.8,16.5z M66,92.2c3.2,0,5.9,2.8,5.9,6
-	c0,3.4-2.6,6-5.9,6c-3.4,0-6-2.6-6-6C60,95,62.6,92.2,66,92.2z M78.4,28.9c2.2,0,4.1,1.7,4.1,4.1c0,2.2-1.9,4.1-4.1,4.1H53.6
-	c-2.4,0-4.1-1.9-4.1-4.1c0-2.4,1.7-4.1,4.1-4.1H78.4z"/>
+<g id="类型_x2F_手机">
+	<path id="矩形" class="st0" d="M5.5,2.6h5c0.9,0,1.7,0.7,1.7,1.7v7.5c0,0.9-0.7,1.7-1.7,1.7h-5c-0.9,0-1.7-0.7-1.7-1.7V4.2
+		C3.8,3.3,4.6,2.6,5.5,2.6z"/>
+	<line id="路径-18备份" class="st1" x1="6.7" y1="4.7" x2="9.3" y2="4.7"/>
+	<path id="path-1-path" d="M8,10.7c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6s0.6-0.3,0.6-0.6S8.3,10.7,8,10.7z"/>
+</g>
 </svg>

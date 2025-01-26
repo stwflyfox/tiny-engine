@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 132 132" style="enable-background:new 0 0 132 132;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:currentColor;}
-</style>
-<rect id="size" class="st0" width="132" height="132"/>
-<path id="形状结合" class="st1" d="M101.3,12.4c10.1,0,18.3,8.2,18.3,18.3v70.7c0,10.1-8.2,18.3-18.3,18.3H30.7
-	c-10.1,0-18.3-8.2-18.3-18.3V30.7c0-10.1,8.2-18.3,18.3-18.3H101.3z M33,20.6h-2.3c-5.5,0-10,4.5-10,10v70.7c0,5.5,4.5,10,10,10
-	h70.7c5.5,0,10-4.5,10-10V30.7c0-5.5-4.5-10-10-10H99v23.7c0,7.3-5.4,13.4-12.4,13.4H45.4c-6.9,0-12.4-6.1-12.4-13.4V20.6z
-	 M90.8,20.6H41.2v23.7c0,2.9,2,5.2,4.1,5.2h41.2c2.2,0,4.1-2.2,4.1-5.2V20.6z M78.4,26.8c2.3,0,4.1,1.8,4.1,4.1v8.2
-	c0,2.3-1.8,4.1-4.1,4.1s-4.1-1.8-4.1-4.1v-8.2C74.2,28.7,76.1,26.8,78.4,26.8z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>操作/保存</title>
+    <g id="操作/保存" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-备份" stroke="currentColor" x="2" y="2" width="12" height="12" rx="1.71633267"></rect>
+        <path
+            d="M11.5,2 L11.5,5.375 C11.5,5.99632034 11.0522847,6.5 10.5,6.5 L5.5,6.5 C4.94771525,6.5 4.5,5.99632034 4.5,5.375 L4.5,2 L4.5,2"
+            id="路径" stroke="currentColor"></path>
+        <line x1="9.5" y1="3.75" x2="9.5" y2="4.75" id="直线" stroke="currentColor" stroke-linecap="round"></line>
+    </g>
 </svg>

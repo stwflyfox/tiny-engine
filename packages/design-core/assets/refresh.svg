@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 132 132" style="enable-background:new 0 0 132 132;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:currentColor;}
-</style>
-<rect id="size" class="st0" width="132" height="132"/>
-<path id="形状结合" class="st1" d="M97.4,22.7c22.7,16.4,28.6,47.1,14.4,70.5l14-3.7c1.9-0.5,3.8,0.4,4.6,2.1l0.2,0.7
-	c0.6,2.1-0.7,4.3-2.8,4.8l-23.9,6.4c-2.1,0.6-4.3-0.7-4.8-2.8l-6.4-23.9c-0.6-2.1,0.7-4.3,2.8-4.9c2.1-0.6,4.3,0.7,4.9,2.8l4.1,15.2
-	c12.9-20,8-46.8-11.6-60.9c-20.4-14.7-48.8-10.2-63.6,10c-14.8,20.2-10.2,48.5,10.1,63.2c13.7,9.9,29.1,12,46.5,6.4
-	c2.1-0.7,4.3,0.5,5,2.5c0.7,2.1-0.5,4.3-2.5,5c-19.8,6.4-37.8,3.9-53.5-7.5C10.8,91.4,5.4,58.2,22.8,34.4
-	C40.1,10.7,73.5,5.5,97.4,22.7z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>操作/刷新 2</title>
+    <g id="操作/刷新" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+        <g id="编组-89" transform="translate(1.845235, 1.846902)" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.96">
+            <g id="编组">
+                <path d="M10.9754195,8.89876196 C12.5173743,6.23794509 11.6023098,2.83557177 8.93156576,1.29934844 C6.26082173,-0.236874897 2.84575458,0.674788288 1.30379979,3.33560515 C-0.238154993,5.99642201 0.676909492,9.39879534 3.34765352,10.9350187 C5.12814955,11.9591676 7.02570396,12.0217216 9.04031677,11.1226808" id="椭圆形" transform="translate(6.139610, 6.153098) rotate(6.000000) translate(-6.139610, -6.153098) "></path>
+                <polyline id="路径-17" transform="translate(11.165748, 8.072292) rotate(-390.000000) translate(-11.165748, -8.072292) " points="9.56244936 6.47229151 9.56760587 9.66713397 12.7690458 9.67229151"></polyline>
+            </g>
+        </g>
+    </g>
 </svg>

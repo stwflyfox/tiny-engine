@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 132 132" style="enable-background:new 0 0 132 132;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:currentColor;}
-</style>
-<rect id="size" class="st0" width="132" height="132"/>
-<path id="形状结合" class="st1" d="M66,8.2c31.9,0,57.8,25.9,57.8,57.8S97.9,123.8,66,123.8S8.2,97.9,8.2,66S34.1,8.2,66,8.2z
-	 M66,16.5c-27.3,0-49.5,22.2-49.5,49.5s22.2,49.5,49.5,49.5s49.5-22.2,49.5-49.5S93.3,16.5,66,16.5z M57,47.5c0.8,0,1.6,0.2,2.3,0.6
-	l24.3,13.3c2.4,1.3,3.4,4.5,2.1,7c-0.5,0.9-1.2,1.7-2.1,2.1L59.3,83.9c-2.4,1.3-5.5,0.4-6.8-2.1C52.2,81,52,80.2,52,79.3V52.7
-	C52,49.8,54.2,47.5,57,47.5z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>操作/播放1</title>
+    <g id="操作/播放1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" cx="8" cy="8" r="6.5">
+        </circle>
+        <path
+            d="M10.138376,8.55150128 L7.18978679,10.166874 C6.89439465,10.3287034 6.52771748,10.2129487 6.3707904,9.90832866 C6.32430724,9.81809757 6.3,9.71748421 6.3,9.61531063 L6.3,6.38456522 C6.3,6.03962737 6.57115659,5.76 6.90564519,5.76 C7.00472361,5.76 7.10228908,5.78506659 7.18978679,5.83300186 L10.138376,7.44837456 C10.4337682,7.61020395 10.5460163,7.98833592 10.3890892,8.29295596 C10.3323995,8.40299956 10.2450861,8.49304062 10.138376,8.55150128 Z"
+            id="三角形" fill="currentColor"></path>
+    </g>
 </svg>
