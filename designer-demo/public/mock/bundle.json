@@ -3357,8 +3357,6 @@
                   },
                   {
                     "property": "icon",
-                    "type": "String",
-                    "defaultValue": "IconSearch",
                     "bindState": true,
                     "label": {
                       "text": {

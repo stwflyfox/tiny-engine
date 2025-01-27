@@ -57,8 +57,8 @@
             }
           },
           {
-            "property": "icon",
-            "type": "String",
+            "property": "icon",            
+            "type": "Object",
             "defaultValue": "IconSearch",
             "bindState": true,
             "label": {
@@ -255,7 +255,7 @@
             "property": "circle",
             "label": {
               "text": {
-                "zh_CN": "圆角"
+                "zh_CN": "圆形"
               }
             },
             "required": true,
@@ -379,6 +379,7 @@
           "text": "按钮文案",
           "size": "mini",
           "type": "primary"
+          "icon": 
         }
       }
     }
