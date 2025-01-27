@@ -32,7 +32,7 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     'no-console': 0,
-    'no-debugger': 'warning',
+    'no-debugger': 0,
     'space-before-function-paren': 'off',
     'vue/multi-word-component-names': 'off',
     'no-use-before-define': 'error',
