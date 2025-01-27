@@ -54,8 +54,11 @@ export default {
       defaultValue: ''
     })
 
-    const handleChange = () => {
-      emit('update:modelValue', state.selected)
+    const handleChange = (arg) => {
+      emit('update:modelValue', {
+        type: 'JSExpression',
+        value: arg
+      })
     }
 
     watchEffect(() => {
