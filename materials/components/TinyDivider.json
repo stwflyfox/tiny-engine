@@ -33,6 +33,7 @@
             "zh_CN": "显示更多"
           }
         },
+        
         "content": [
           {
             "property": "direction",
@@ -119,17 +120,101 @@
               "zh_CN": "分隔线颜色"
             },
             "labelPosition": "left"
+          },
+          {
+            "property": "content-position",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "文案的位置"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "靠左",
+                    "value": "left"
+                  },
+                  {
+                    "label": "居中",
+                    "value": "center"
+                  },
+                  {
+                    "label": "靠右",
+                    "value": "right"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "content-background-color",
+            "label": {
+              "text": {
+                "zh_CN": "文案背景颜色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "文案背景颜色"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "content-color",
+            "label": {
+              "text": {
+                "zh_CN": "文案颜色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "分隔线颜色"
+            },
+            "labelPosition": "left"
           }
         ]
       }
     ],
-    "events": {}
+    "events": {},
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "默认插槽"
+        }
+      }     
+    }
   },
   "configure": {
     "loop": true,
     "condition": true,
     "styles": true,
-    "isContainer": false,
+    "isContainer": true,
     "isModal": false,
     "nestingRule": {
       "childWhitelist": "",
