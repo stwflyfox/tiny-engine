@@ -69,7 +69,7 @@
             "cols": 12,
             "rules": [],
             "widget": {
-              "component": "MetaSelectIcon",
+              "component": "SelectIconConfigurator",
               "props": {}
             }
           },
