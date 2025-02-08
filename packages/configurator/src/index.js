@@ -30,6 +30,7 @@ import TableColumnsConfigurator from './table-columns-configurator/TableColumnsC
 import TabsGroupConfigurator from './tabs-group-configurator/TabsGroupConfigurator.vue'
 import VariableConfigurator from './variable-configurator/VariableConfigurator.vue'
 import MetaField from './MetaField.vue'
+import MetaDisabled from './MetaDisabled.vue'
 
 import { I18nInput, MetaCodeEditor } from '@opentiny/tiny-engine-common'
 
@@ -100,5 +101,6 @@ export {
   RelatedEditorConfigurator as MetaRelatedEditor,
   RelatedColumnsConfigurator as MetaRelatedColumns,
   TableColumnsConfigurator as MetaTableColumns,
-  MetaField
+  MetaField,
+  MetaDisabled
 }
