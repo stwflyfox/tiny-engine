@@ -185,6 +185,28 @@
         },
         "defaultValue": ""
       }
+    },
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "默认插槽"
+        }
+      },
+      "footer": {
+        "label": {
+          "zh_CN": "底部插槽"
+        }
+      },
+      "header": {
+        "label": {
+          "zh_CN": "头部插槽"
+        }
+      },
+      "header-right": {
+        "label": {
+          "zh_CN": "头部右侧插槽"
+        }
+      }
     }
   },
   "configure": {
