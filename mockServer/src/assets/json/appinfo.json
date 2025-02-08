@@ -14447,15 +14447,6 @@
         }
       },
       {
-        "component": "TinyFluentEditor",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "FluentEditor",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
         "component": "TinyForm",
         "npm": {
           "package": "@opentiny/vue",

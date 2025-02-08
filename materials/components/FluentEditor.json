@@ -222,7 +222,8 @@
       "schema": {
         "componentName": "FluentEditor",
         "props": {
-          "chartOption" : {}
+          "chartOption" : {},
+          "'ref": "fluentEditor"
         }
       }
     }

@@ -2000,13 +2000,6 @@
         "destructuring": true
       },
       {
-        "componentName": "TinyFluentEditor",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "FluentEditor",
-        "destructuring": true
-      },
-      {
         "componentName": "TinyForm",
         "package": "@opentiny/vue",
         "version": "",
