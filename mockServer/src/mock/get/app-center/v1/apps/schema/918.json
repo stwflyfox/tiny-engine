@@ -1741,6 +1741,13 @@
         "destructuring": true
       },
       {
+        "componentName": "FluentEditor",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "FluentEditor",
+        "destructuring": true
+      },
+      {
         "componentName": "GaugeChart",
         "package": "@opentiny/vue",
         "version": "",
