@@ -20666,6 +20666,16 @@
             }
           ]
         }
+      ],
+      "packages": [
+        {
+          "name": "TinyVue组件库",
+          "package": "@opentiny/vue",
+          "version": "3.21.0",
+          "destructuring": true,
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.21/files/dist3/tiny-vue-pc.mjs",
+          "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.21/files/index.css"
+        }
       ]
     }
   }
