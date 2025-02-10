@@ -18180,6 +18180,28 @@
                     "description": {
                       "zh_CN": "禁用"
                     }
+                  },
+                  {
+                    "property": "limit",
+                    "label": {
+                      "text": {
+                        "zh_CN": "上传文件数限制"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {
+                        "allowEmpty": true
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "最大上传数量"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
