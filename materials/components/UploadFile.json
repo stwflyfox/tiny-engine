@@ -78,7 +78,7 @@
             "property": "limit",
             "label": {
               "text": {
-                "zh_CN": "上传文件数限制"
+                "zh_CN": "最大上传数量"
               }
             },
             "required": false,
