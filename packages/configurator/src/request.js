@@ -7,7 +7,6 @@ var BASE_URL
 var LoginInfo
 var Token
 
-var isLocal = location.href.toLowerCase().indexOf('localhost') >= 0 || location.href.indexOf('127.0.') >= 0
 var app = GetQueryString('id')
 switch (app) {
   case '21':

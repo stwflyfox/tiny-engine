@@ -7996,10 +7996,30 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "max-height",
+                    "label": {
+                      "text": {
+                        "zh_CN": "最大高度"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "弹出框的最大高度"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "top",
                     "label": {
                       "text": {
-                        "zh_CN": "设置弹出框距离窗口顶部的高度，默认为屏高的 15%"
+                        "zh_CN": "距离窗口顶部的高度"
                       }
                     },
                     "required": true,
@@ -8202,15 +8222,23 @@
                   "zh_CN": "标题区"
                 },
                 "description": {
-                  "zh_CN": "Dialog 标题区的内容"
+                  "zh_CN": "标题区的内容"
+                }
+              },
+              "default": {
+                "label": {
+                  "zh_CN": "主体区"
+                },
+                "description": {
+                  "zh_CN": "主体区的内容"
                 }
               },
               "footer": {
                 "label": {
-                  "zh_CN": "按钮操作区"
+                  "zh_CN": "底部操作区"
                 },
                 "description": {
-                  "zh_CN": "Dialog 按钮操作区的内容"
+                  "zh_CN": "底部操作区的内容"
                 }
               }
             }
