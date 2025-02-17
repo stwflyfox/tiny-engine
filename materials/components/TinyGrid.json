@@ -396,6 +396,28 @@
                     }
                   },
                   {
+                    "property": "showIcon",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示列头编辑图标"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {
+                        
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "是否显示列头编辑图标，在编辑时有效"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "showOverflow",
                     "label": {
                       "text": {

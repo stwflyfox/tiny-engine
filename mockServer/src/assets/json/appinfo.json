@@ -14538,6 +14538,15 @@
         }
       },
       {
+        "component": "TinyRate",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Rate",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyRow",
         "npm": {
           "package": "@opentiny/vue",

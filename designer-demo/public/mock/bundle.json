@@ -10325,6 +10325,26 @@
                             }
                           },
                           {
+                            "property": "showIcon",
+                            "label": {
+                              "text": {
+                                "zh_CN": "显示列头编辑图标"
+                              }
+                            },
+                            "required": true,
+                            "readOnly": false,
+                            "disabled": false,
+                            "cols": 12,
+                            "widget": {
+                              "component": "MetaSwitch",
+                              "props": {}
+                            },
+                            "description": {
+                              "zh_CN": "是否显示列头编辑图标，在编辑时有效"
+                            },
+                            "labelPosition": "left"
+                          },
+                          {
                             "property": "showOverflow",
                             "label": {
                               "text": {
@@ -13849,6 +13869,524 @@
               "properties": [
                 "visible",
                 "width"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": {
+            "zh_CN": "评分"
+          },
+          "component": "TinyRate",
+          "icon": "stars",
+          "description": "Rate 快速评级，对评价进行展示",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@opentiny/vue",
+            "exportName": "Rate",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": [
+                  {
+                    "property": "modelValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "双向绑定值"
+                    },
+                    "labelPosition": "top"
+                  },
+                  {
+                    "property": "allow-half",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否允许半选"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否允许半选"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否为只读"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否为只读"
+                    }
+                  },
+                  {
+                    "property": "disabled-void-color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用状态下未选中 icon 的颜色"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用状态下未选中 icon 的颜色"
+                    }
+                  },
+                  {
+                    "property": "disabled-void-icon-class",
+                    "label": {
+                      "text": {
+                        "zh_CN": "只读状态下未选中的图标样式名"
+                      }
+                    },
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "icon-starDisable",
+                            "value": "icon-starDisable"
+                          },
+                          {
+                            "label": "icon-starActive",
+                            "value": "icon-starActive"
+                          },
+                          {
+                            "label": "icon-frown",
+                            "value": "icon-frown"
+                          },
+                          {
+                            "label": "icon-meh",
+                            "value": "icon-meh"
+                          },
+                          {
+                            "label": "icon-smile",
+                            "value": "icon-smile"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "只读状态下未选中的图标样式名"
+                    }
+                  },
+                  {
+                    "property": "high-threshold",
+                    "label": {
+                      "text": {
+                        "zh_CN": "高分和中等分数的界限值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "高分和中等分数的界限值，值本身被划分在高分中"
+                    }
+                  },
+                  {
+                    "property": "low-threshold",
+                    "label": {
+                      "text": {
+                        "zh_CN": "低分和中等分数的界限值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "低分和中等分数的界限值，值本身被划分在低分中"
+                    }
+                  },
+                  {
+                    "property": "max",
+                    "label": {
+                      "text": {
+                        "zh_CN": "最大分值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "最大分值"
+                    }
+                  },
+                  {
+                    "property": "icon-classes",
+                    "label": {
+                      "text": {
+                        "zh_CN": "三个分段对应的图标样式名"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "三个分段对应的图标样式名"
+                    }
+                  },
+                  {
+                    "property": "radio",
+                    "label": {
+                      "text": {
+                        "zh_CN": "评分其他形态单选"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "评分其他形态单选"
+                    }
+                  },
+                  {
+                    "property": "show-score",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示当前分数"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示当前分数，show-score 和 show-text 不能同时为真"
+                    }
+                  },
+                  {
+                    "property": "show-text",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示辅助文字"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示辅助文字，若为真，则会从 texts 数组中选取当前分数对应的文字内容"
+                    }
+                  },
+                  {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "图标字体大小"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "图标字体大小"
+                    }
+                  },
+                  {
+                    "property": "space",
+                    "label": {
+                      "text": {
+                        "zh_CN": "每个图标所占宽度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "图标字体大小"
+                    }
+                  },
+                  {
+                    "property": "text-color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "辅助文字的颜色"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "辅助文字的颜色"
+                    }
+                  },
+                  {
+                    "property": "text-on-bottom",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否在图标下显示对应的文字"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否在图标下显示对应的文字"
+                    }
+                  },
+                  {
+                    "property": "texts",
+                    "label": {
+                      "text": {
+                        "zh_CN": "辅助文字数组"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "辅助文字数组，文字的数量应该与max属性一致"
+                    }
+                  },
+                  {
+                    "property": "void-color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "未选中 icon 的颜色"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "未选中 icon 的颜色"
+                    }
+                  },
+                  {
+                    "property": "void-icon-class",
+                    "label": {
+                      "text": {
+                        "zh_CN": "未选中 icon 的图标样式名"
+                      }
+                    },
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "icon-starDisable",
+                            "value": "icon-starDisable"
+                          },
+                          {
+                            "label": "icon-starActive",
+                            "value": "icon-starActive"
+                          },
+                          {
+                            "label": "icon-frown",
+                            "value": "icon-frown"
+                          },
+                          {
+                            "label": "icon-meh",
+                            "value": "icon-meh"
+                          },
+                          {
+                            "label": "icon-smile",
+                            "value": "icon-smile"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "未选中 icon 的图标样式名"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {
+              "onChange": {
+                "label": {
+                  "zh_CN": "值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "输入框改变后的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 输入值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "value",
+                "disabled"
               ]
             },
             "contextMenu": {
@@ -19596,6 +20134,20 @@
                 "props": {
                   "type": "radio",
                   "size": "mini"
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "评分"
+              },
+              "icon": "stars",
+              "screenshot": "",
+              "snippetName": "TinyRate",
+              "schema": {
+                "componentName": "TinyRate",
+                "props": {
+                  "modelValue": ""
                 }
               }
             },

@@ -2070,6 +2070,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyRate",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Rate",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyRow",
         "package": "@opentiny/vue",
         "version": "",
