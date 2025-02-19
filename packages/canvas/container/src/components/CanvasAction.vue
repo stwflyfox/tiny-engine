@@ -9,7 +9,7 @@
       width: selectState.width + 'px'
     }"
   >
-    <div v-if="!resize" ref="labelRef" class="corner-mark-left" :style="labelStyle">
+    <div v-if="showQuickAction" ref="labelRef" class="corner-mark-left" :style="labelStyle">
       <span>{{ selectState.componentName }}</span>
       <TinyPopover
         v-model="showPopover"
@@ -28,42 +28,42 @@
     <!-- 绝对定位画布时调节元素大小 -->
     <template v-else>
       <div
-        class="drag-resize resize-top"
+        :class="[showAction && 'drag-resize', 'resize-top']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'center', 'start')"
       ></div>
       <div
-        class="drag-resize resize-bottom"
+        :class="[showAction && 'drag-resize', 'resize-bottom']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'center', 'end')"
       ></div>
       <div
-        class="drag-resize resize-left"
+        :class="[showAction && 'drag-resize', 'resize-left']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'start', 'center')"
       ></div>
       <div
-        class="drag-resize resize-right"
+        :class="[showAction && 'drag-resize', 'resize-right']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'end', 'center')"
       ></div>
       <div
-        class="drag-resize resize-top-left"
+        :class="[showAction && 'drag-resize', 'resize-left']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'start', 'start')"
       ></div>
       <div
-        class="drag-resize resize-top-right"
+        :class="[showAction && 'drag-resize', 'resize-top-right']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'end', 'start')"
       ></div>
       <div
-        class="drag-resize resize-bottom-left"
+        :class="[showAction && 'drag-resize', 'resize-bottom-left']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'start', 'end')"
       ></div>
       <div
-        class="drag-resize resize-bottom-right"
+        :class="[showAction && 'drag-resize', 'resize-bottom-right']"
         draggable="true"
         @mousedown.stop="onMousedown($event, 'end', 'end')"
       ></div>
@@ -181,6 +181,10 @@ export default {
       type: Object,
       default: () => ({})
     },
+    multiStateLength: {
+      type: Number,
+      default: () => 0
+    },
     resize: {
       type: Boolean,
       default: false
@@ -236,12 +240,20 @@ export default {
       updateRect()
     }
 
+    const isSingleNode = computed(() => {
+      return props.multiStateLength < 2
+    })
+
     const showAction = computed(() => {
       const { schema, parent } = getCurrent()
       if (schema?.props?.['data-id'] === 'root-container') {
         return false
       }
-      return !props.resize && parent && parent?.type !== 'JSSlot'
+      return !props.resize && parent && parent?.type !== 'JSSlot' && isSingleNode.value
+    })
+
+    const showQuickAction = computed(() => {
+      return !props.resize && isSingleNode.value
     })
 
     const showToParent = computed(() => getCurrent().parent !== useCanvas().getSchema())
@@ -405,6 +417,10 @@ export default {
         verticalValue: -LABEL_HEIGHT
       })
 
+      if (!doc) {
+        return {}
+      }
+
       // 是否将操作栏放置到底部，判断当前选中组件底部与页面底部的距离。
       const isOptionAtBottom = canvasHeight - top - height >= OPTION_BAR_HEIGHT
       const optionAlign = new Align({
@@ -506,6 +522,7 @@ export default {
       optionRef,
       fixStyle,
       showAction,
+      showQuickAction,
       showPopover,
       showToParent,
       activeSetting,
@@ -523,7 +540,7 @@ export default {
   position: absolute;
   box-sizing: border-box;
   pointer-events: none;
-  border: 1px solid var(--ti-lowcode-canvas-rect-border-color);
+  border: 1px solid var(--te-canvas-container-border-color-checked);
   z-index: 2;
   &.absolute {
     pointer-events: all;
@@ -548,14 +565,14 @@ export default {
     left: v-bind("inactiveHoverState.left + 'px'");
     height: v-bind("inactiveHoverState.height + 'px'");
     width: v-bind("inactiveHoverState.width + 'px'");
-    border-color: var(--te-common-border-hover);
+    border-color: var(--te-canvas-container-border-color-hover);
 
     .corner-mark-left {
       height: 14px;
       top: -14px;
       padding-left: 0;
       font-size: 12px;
-      color: var(--te-common-text-weaken);
+      color: var(--te-canvas-container-text-color-weaken);
     }
   }
   &.line {
@@ -569,41 +586,41 @@ export default {
     &.top {
       width: 100%;
       height: 5px;
-      background: var(--ti-lowcode-icon-bind-color);
+      background: var(--te-canvas-container-text-color-checked);
       position: absolute;
       top: -3px;
     }
     &.left {
       width: 5px;
       height: 100%;
-      background: var(--ti-lowcode-icon-bind-color);
+      background: var(--te-canvas-container-text-color-checked);
       position: absolute;
       left: -3px;
     }
     &.bottom {
       width: 100%;
       height: 5px;
-      background: var(--ti-lowcode-icon-bind-color);
+      background: var(--te-canvas-container-text-color-checked);
       position: absolute;
       bottom: -3px;
     }
     &.right {
       width: 5px;
       height: 100%;
-      background: var(--ti-lowcode-icon-bind-color);
+      background: var(--te-canvas-container-text-color-checked);
       position: absolute;
       right: -3px;
     }
     &.in {
       width: 100%;
       height: 100%;
-      background: var(--ti-lowcode-canvas-hover-line-in-bg-color);
+      background: var(--te-canvas-container-hover-line-in-bg-color);
     }
     &.forbidden:not(.in) {
-      background: var(--ti-lowcode-canvas-hover-line-forbid-bg-color);
+      background: var(--te-canvas-container-hover-line-forbid-bg-color);
     }
     &.forbidden.in {
-      background: var(--ti-lowcode-canvas-hover-line-in-forbid-bg-color);
+      background: var(--te-canvas-container-hover-line-in-forbid-bg-color);
     }
   }
 
@@ -615,8 +632,8 @@ export default {
     & > div {
       pointer-events: all;
       width: 40px;
-      border: 1px solid var(--ti-lowcode-canvas-choose-slot-border-color);
-      color: var(--ti-lowcode-canvas-choose-slot-color);
+      border: 1px solid var(--te-canvas-container-border-color-checked);
+      color: var(--te-canvas-container-choose-slot-text-color);
       overflow: hidden;
       font-size: 10px;
       margin: 2px;
@@ -635,7 +652,7 @@ export default {
     position: absolute;
     top: -24px;
     height: 24px;
-    color: var(--ti-lowcode-canvas-corner-mark-left-color);
+    color: var(--te-canvas-container-corner-mark-left-text-color);
     padding: 0 8px;
 
     .icon-setting {
@@ -648,10 +665,9 @@ export default {
     position: absolute;
     font-size: 12px;
     right: -1px;
-    color: var(--ti-lowcode-canvas-corner-mark-bottom-right-color);
+    color: var(--te-canvas-container-text-color-white);
     bottom: -20px;
-    background: var(--ti-lowcode-canvas-corner-mark-bottom-right-bg-color);
-    border: 1px solid var(--ti-lowcode-canvas-corner-mark-bottom-right-border-color);
+    background: var(--te-canvas-container-bg-color-checked);
     padding: 0 2px;
     overflow: hidden;
     white-space: nowrap;
@@ -664,8 +680,8 @@ export default {
     position: absolute;
     height: 24px;
     padding: 0 4px;
-    color: var(--ti-lowcode-canvas-corner-mark-right-color);
-    background: var(--ti-lowcode-canvas-corner-mark-right-bg-color);
+    color: var(--te-canvas-container-text-color-white);
+    background: var(--te-canvas-container-bg-color-checked);
     pointer-events: all;
     cursor: pointer;
 
@@ -686,8 +702,8 @@ export default {
     .corner-mark-left {
       white-space: nowrap;
       pointer-events: all;
-      color: var(--ti-lowcode-canvas-select-corner-mark-left-color);
-      background: var(--ti-lowcode-canvas-select-corner-mark-left-bg-color);
+      color: var(--te-canvas-container-text-color-white);
+      background: var(--te-canvas-container-bg-color-checked);
       svg {
         cursor: pointer;
       }
@@ -695,7 +711,10 @@ export default {
   }
 }
 .short-cut-set.short-cut-set.tiny-popper.tiny-popover {
-  padding: 10px;
+  .tiny-popover__title {
+    color: var(--te-canvas-container-text-color-primary);
+    font-size: 14px;
+  }
 }
 
 .drag-resize {

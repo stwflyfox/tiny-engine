@@ -33,6 +33,7 @@ import MetaField from './MetaField.vue'
 import MetaDisabled from './MetaDisabled.vue'
 
 import { I18nInput, MetaCodeEditor } from '@opentiny/tiny-engine-common'
+import './styles/vars.less'
 
 export {
   ArrayItemConfigurator,

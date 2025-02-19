@@ -54,7 +54,7 @@ export default {
   setup() {
     const COMPONENT_PANEL_COLUMNS = '1fr 1fr 1fr'
     const SHORTCUT_PANEL_COLUMNS = '1fr 1fr 1fr 1fr 1fr 1fr'
-    const { generateNode, materialState } = useMaterial()
+    const { generateNode, materialState, getComponentsByGroup } = useMaterial()
     const gridTemplateColumns = ref(COMPONENT_PANEL_COLUMNS)
     const panelState = inject('panelState', {})
     const { components } = materialState
@@ -88,8 +88,17 @@ export default {
       return result
     }
 
+    const initComponents = () => {
+      const groupName = panelState.materialGroup
+      if (groupName) {
+        return getComponentsByGroup(components, groupName)
+      }
+
+      return components
+    }
+
     const state = reactive({
-      components,
+      components: initComponents(),
       activeName: [...Array(components.length).keys()],
       searchValue: ''
     })
@@ -143,7 +152,7 @@ export default {
   .component-group {
     display: grid;
     width: 100%;
-    color: var(--ti-lowcode-materials-component-list-color);
+    color: var(--te-materials-component-list-text-color);
 
     .component-item {
       padding: var(--te-common-vertical-form-label-spacing) 0 var(--te-common-vertical-form-label-spacing);
@@ -151,10 +160,10 @@ export default {
       text-align: center;
       user-select: none;
       cursor: move;
-      background: var(--te-common-bg-default);
+      background: var(--te-materials-component-list-item-bg-color);
 
       &:hover {
-        background: var(--te-common-bg-container);
+        background: var(--te-materials-component-list-item-bg-color-hover);
         border-radius: 4px;
       }
 
@@ -164,7 +173,7 @@ export default {
         svg {
           font-size: 40px;
           vertical-align: middle;
-          color: var(--te-common-icon-secondary);
+          color: var(--te-materials-component-list-item-icon-color);
           overflow: hidden;
         }
       }

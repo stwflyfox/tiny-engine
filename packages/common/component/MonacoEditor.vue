@@ -40,6 +40,7 @@
         :options="editorOptions"
         language="javascript"
         @editorDidMount="$emit('editorDidMount', $event)"
+        @shortcutSave="$emit('shortcutSave', $event)"
         @change="$emit('change', $event)"
       ></monaco-editor>
     </div>
@@ -75,7 +76,7 @@ export default {
       default: true
     }
   },
-  emits: ['editorDidMount', 'change', 'fullscreenChange'],
+  emits: ['editorDidMount', 'change', 'fullscreenChange', 'shortcutSave'],
   setup(props, { emit }) {
     const editor = ref(null)
     const fullscreen = ref(false)
@@ -160,7 +161,7 @@ export default {
   right: var(--base-right-panel-width);
   z-index: 100;
   padding: 10px 16px 16px 16px;
-  background-color: var(--te-common-bg-default);
+  background-color: var(--te-component-common-bg-color);
   height: auto !important;
 }
 
@@ -173,12 +174,12 @@ export default {
   .buttons {
     display: flex;
     gap: 8px;
-    color: var(--ti-lowcode-component-svg-button-color);
+    color: var(--te-component-common-text-color-primary);
     cursor: pointer;
   }
   #icon-buttons {
     :deep(.svg-icon) {
-      color: var(--te-common-icon-secondary);
+      color: var(--te-component-common-text-color-secondary);
     }
   }
   .monaco-btn-fullscreen {
@@ -195,7 +196,7 @@ export default {
 .editor {
   flex: 1;
   overflow: hidden;
-  border: 1px solid var(--ti-lowcode-state-management-monaco-editor-border-color);
+  border: 1px solid var(--te-component-common-border-color-hover);
   border-radius: 6px;
 }
 </style>

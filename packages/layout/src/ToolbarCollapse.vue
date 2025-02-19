@@ -1,5 +1,5 @@
 <template>
-  <tiny-popover :visible-arrow="false" width="140" trigger="click" :open-delay="OPEN_DELAY.Default">
+  <tiny-popover :visible-arrow="false" width="248" trigger="click" :open-delay="OPEN_DELAY.Default">
     <template #reference>
       <span class="toolbar-ellipsis">
         <svg-icon name="ellipsis"></svg-icon>
@@ -8,11 +8,19 @@
     <div class="collapse-content">
       <div class="empty-bar" v-for="(item, idx) in collapseBar" :key="idx">
         <div class="toolbar-list-button" v-if="typeof item === 'string'">
-          <component :is="getMergeMeta(item)?.entry" :options="getMergeMeta(comp).options"></component>
+          <component
+            :is="getMergeMeta(item)?.entry"
+            :options="getMergeMeta(item).options"
+            position="collapse"
+          ></component>
         </div>
         <div v-if="Array.isArray(item)">
           <div class="toolbar-list-button" v-for="comp in item" :key="comp">
-            <component :is="getMergeMeta(comp)?.entry" :options="getMergeMeta(comp).options"></component>
+            <component
+              :is="getMergeMeta(comp)?.entry"
+              :options="getMergeMeta(comp).options"
+              position="collapse"
+            ></component>
           </div>
           <div class="empty-line"></div>
         </div>
@@ -58,7 +66,7 @@ export default {
   margin-left: 4px;
 
   &:hover {
-    background: var(--ti-lowcode-toolbar-view-active-bg);
+    background: var(--te-layout-common-active-bg);
   }
 }
 
@@ -67,25 +75,24 @@ export default {
     font-size: 12px;
 
     .toolbar-list-button {
-      height: 24px;
       line-height: 24px;
       margin: 0 -16px;
       padding: 0 16px;
 
       &:hover {
-        background-color: var(--ti-lowcode-toolbar-ellipsis-hover-bg);
+        background-color: var(--te-layout-common-bg-color-hover);
         cursor: pointer;
       }
     }
 
     .empty-line {
       margin: 4px 0px;
-      border-top: 1px solid var(--te-common-bg-container);
+      border-top: 1px solid var(--te-layout-common-border-color);
     }
 
     .icon-hides {
       margin-right: 8px;
-      color: var(--te-common-icon-primary);
+      color: var(--te-layout-common-icon-color-primary);
     }
   }
 }
