@@ -1,22 +1,24 @@
 {
   "name": {
-    "zh_CN": "Tag标签"
+    "zh_CN": "穿梭组织用户"
   },
-  "component": "TinyTag",
-  "icon": "tag",
-  "description": "用于标记事物的属性和维度",
+  "component": "SelectUser",
+  "icon": "cursor-ew-resize",
+  "description": "穿梭组织用户",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
   "keywords": "",
   "devMode": "proCode",
   "npm": {
-    "package": "@opentiny/vue",
-    "exportName": "TinyTag",
+    "package": "@shqy/components",
+    "exportName": "SelectUser",
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+    "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
     "version": "",
     "destructuring": true
   },
-  "group": "component",
+  "group": "dropdown",
   "priority": 1,
   "schema": {
     "properties": [
@@ -27,18 +29,12 @@
         "description": {
           "zh_CN": "基础信息"
         },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
         "content": [
           {
-            "property": "value",
+            "property": "selectType",
             "label": {
               "text": {
-                "zh_CN": "设置标签值"
+                "zh_CN": "选择类型"
               }
             },
             "required": true,
@@ -46,11 +42,119 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaBindI18n",
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "组织用户",
+                    "value": 1
+                  },
+                  {
+                    "label": "组织部门",
+                    "value": 2
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "选择类型"
+            }
+          },
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
               "props": {}
             },
             "description": {
-              "zh_CN": "设置标签值"
+              "zh_CN": "双向绑定的当前选中值"
+            },
+            "labelPosition": "left"
+          },
+       
+          {
+            "property": "isUserOnly",
+            "label": {
+              "text": {
+                "zh_CN": "只能选择用户"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "选择组织用户时是否只能选择用户"
+            }
+          },
+          {
+            "property": "defaultExpandAll",
+            "label": {
+              "text": {
+                "zh_CN": "默认展开所有节点"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "默认展开所有节点"
+            }
+          },
+          {
+            "property": "linkage",
+            "label": {
+              "text": {
+                "zh_CN": "上下级是否连动选择"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "上下级是否连动选择"
+            }
+          },
+          {
+            "property": "multiple",
+            "label": {
+              "text": {
+                "zh_CN": "多选"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否允许选择多个项"
             },
             "labelPosition": "left"
           },
@@ -70,136 +174,25 @@
               "props": {
                 "options": [
                   {
-                    "label": "中等标签",
+                    "label": "medium",
                     "value": "medium"
                   },
                   {
-                    "label": "默认标签",
-                    "value": ""
-                  },
-                  {
-                    "label": "小型标签",
+                    "label": "small",
                     "value": "small"
                   }
                 ]
               }
             },
             "description": {
-              "zh_CN": "尺寸"
+              "zh_CN": "输入框尺寸。该属性的可选值为 medium / small "
             }
-          },
-          {
-            "property": "type",
-            "label": {
-              "text": {
-                "zh_CN": "类型"
-              }
-            },
-            "widget": {
-              "component": "MetaSelect",
-              "props": {
-                "options": [
-                  {
-                    "label": "默认",
-                    "value": ""
-                  },
-                  {
-                    "label": "成功",
-                    "value": "success"
-                  },
-                  {
-                    "label": "信息",
-                    "value": "info"
-                  },
-                  {
-                    "label": "警告",
-                    "value": "warning"
-                  },
-                  {
-                    "label": "危险",
-                    "value": "danger"
-                  }
-                ]
-              }
-            },
-            "description": {
-              "zh_CN": "设置类型"
-            }
-          },
-          {
-            "property": "effect",
-            "label": {
-              "text": {
-                "zh_CN": "主题"
-              }
-            },
-            "widget": {
-              "component": "MetaSelect",
-              "props": {
-                "options": [
-                  {
-                    "label": "dark",
-                    "value": "dark"
-                  },
-                  {
-                    "label": "light",
-                    "value": "light"
-                  },
-                  {
-                    "label": "plain",
-                    "value": "plain"
-                  }
-                ]
-              }
-            },
-            "description": {
-              "zh_CN": "设置主题"
-            }
-          },
-          {
-            "property": "hit",
-            "label": {
-              "text": {
-                "zh_CN": "是否有边框"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSwitch",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": ""
-            }
-          },
-          {
-            "property": "color",
-            "label": {
-              "text": {
-                "zh_CN": "设置颜色"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaBindI18n",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "控制标签文本色和背景色"
-            },
-            "labelPosition": "left"
           },
           {
             "property": "disabled",
             "label": {
               "text": {
-                "zh_CN": "是否禁用"
+                "zh_CN": "禁用"
               }
             },
             "required": true,
@@ -207,42 +200,23 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaSwitch",
+              "component": "MetaDisabled",
               "props": {}
             },
             "description": {
-              "zh_CN": ""
-            }
-          },
-          {
-            "property": "closable",
-            "label": {
-              "text": {
-                "zh_CN": "是否可关闭"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSwitch",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": ""
+              "zh_CN": "禁用"
             }
           }
         ]
       }
     ],
     "events": {
-      "onClick": {
+      "onChange": {
         "label": {
-          "zh_CN": "点击标签时触发的事件"
+          "zh_CN": "值改变时触发"
         },
         "description": {
-          "zh_CN": "点击标签时触发的事件"
+          "zh_CN": "在下拉框值改变时触发"
         },
         "type": "event",
         "functionInfo": {
@@ -252,7 +226,7 @@
               "type": "string",
               "defaultValue": "",
               "description": {
-                "zh_CN": "点击标签时触发的事件"
+                "zh_CN": "下拉框选中项的值"
               }
             }
           ],
@@ -265,7 +239,7 @@
           "zh_CN": "双向绑定的值改变时触发"
         },
         "description": {
-          "zh_CN": "在 Input 输入值改变时触发"
+          "zh_CN": "当前选中的值改变时触发"
         },
         "type": "event",
         "functionInfo": {
@@ -275,42 +249,21 @@
               "type": "string",
               "defaultValue": "",
               "description": {
-                "zh_CN": "双向绑定的值"
+                "zh_CN": "双向绑定的当前选中值"
               }
             }
           ],
           "returns": {}
         },
         "defaultValue": ""
-      },
-      "onClose": {
-        "label": {
-          "zh_CN": "点击关闭按钮时触发的事件"
-        },
-        "description": {
-          "zh_CN": "点击关闭按钮时触发的事件"
-        },
-        "type": "event",
-        "functionInfo": {
-          "params": [],
-          "returns": {}
-        },
-        "defaultValue": ""
-      }
-    },
-    "slots": {
-      "default": {
-        "label": {
-          "zh_CN": "通过 default 默认插槽自定义标签内容，生成图标标签"
-        }
-      }
+      }     
     }
   },
   "configure": {
     "loop": true,
     "condition": true,
     "styles": true,
-    "isContainer": true,
+    "isContainer": false,
     "isModal": false,
     "nestingRule": {
       "childWhitelist": "",
@@ -340,18 +293,18 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "Tag标签"
+        "zh_CN": "穿梭组织用户"
       },
-      "icon": "tag",
+      "icon": "cursor-ew-resize",
       "screenshot": "",
-      "snippetName": "TinyTag",
+      "snippetName": "SelectUser",
       "schema": {
-        "componentName": "TinyTag",
+        "componentName": "SelectUser",
         "props": {
-          "size": ""
+        
         }
       }
     }
   ],
-  "category": "表单组件"
+  "category": "业务组件"
 }

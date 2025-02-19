@@ -1839,6 +1839,13 @@
         "destructuring": true
       },
       {
+        "componentName": "SelectUser",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "SelectUser",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyAnchor",
         "package": "@opentiny/vue",
         "version": "",
