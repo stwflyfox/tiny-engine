@@ -133,27 +133,7 @@
               "zh_CN": "是否为父子严格模式"
             },
             "labelPosition": "left"
-          },
-          {
-            "property": "show-line",
-            "label": {
-              "text": {
-                "zh_CN": "是否显示连接线"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSwitch",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "是否显示连接线"
-            },
-            "labelPosition": "left"
-          },
+          },        
           {
             "property": "expand-on-click-node",
             "label": {
@@ -489,6 +469,43 @@
           "returns": {}
         },
         "defaultValue": ""
+      }
+    },
+    "slots": {
+      "contextmenu": {
+        "label": {
+          "zh_CN": "自定义树节点的右键菜单内容"
+        }
+      },
+      "default": {
+        "label": {
+          "zh_CN": "自定义树节点的内容"
+        }
+      },
+      "empty": {
+        "label": {
+          "zh_CN": "自定义空数据的元素"
+        }
+      },
+      "operation": {
+        "label": {
+          "zh_CN": "节点内容靠右对齐的元素"
+        }
+      },
+      "prefix": {
+        "label": {
+          "zh_CN": "节点内容前置元素"
+        }
+      },
+      "suffix": {
+        "label": {
+          "zh_CN": "节点内容后置元素"
+        }
+      },
+      "switch-text": {
+        "label": {
+          "zh_CN": "自定义开关右侧的内容"
+        }
       }
     }
   },
