@@ -523,6 +523,30 @@
             }
           },
           {
+            "property": "drop-config",
+            "label": {
+              "text": {
+                "zh_CN": "行拖拽"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "defaultValue": {
+             
+            },
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {               
+                "dataType": "JSExpression"
+              }
+            },
+            "description": {
+              "zh_CN": "行拖拽"
+            }
+          },
+          {
             "property": "resizable",
             "label": {
               "text": {
