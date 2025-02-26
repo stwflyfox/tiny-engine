@@ -472,14 +472,28 @@ const operationTypeMap = {
     // 筛选出来新增的和修改的
     const changedChildren = newChildren.filter(({ id }) => !deletedIdsSet.has(id))
 
-    changedChildren.forEach((childItem, index) => {
+    changedChildren.forEach((childItem) => {
       // 新增
       if (!originChildrenSet.has(childItem.id)) {
+        const newChildIndex = newChildren.findIndex(({ id }) => id === childItem.id)
+        let position = 'after'
+        let referTargetNodeId = null
+
+        // 1. 新节点 index === 0 （在最前面），插入位置为 before，插入到第一个
+        // 2. 新节点 index > 0，插入到 index -1 节点的后面。
+        // 3. 默认情况（index === -1）：插入到数组最后一个节点。（position: after，referTargetNodeId: nuLl）
+        if (newChildIndex === 0) {
+          position = 'before'
+        } else if (newChildIndex !== -1) {
+          position = 'after'
+          referTargetNodeId = newChildren[newChildIndex - 1]?.id
+        }
+
         operationTypeMap.insert({
           parentId: id,
           newNodeData: childItem,
-          position: 'after',
-          referTargetNodeId: changedChildren?.[index]?.id
+          position,
+          referTargetNodeId
         })
         return
       }
