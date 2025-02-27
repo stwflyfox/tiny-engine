@@ -12818,6 +12818,29 @@
                   "returns": {}
                 },
                 "defaultValue": ""
+              },
+              "onSizeChange": {
+                "label": {
+                  "zh_CN": "每页显示条目数改变后会触发"
+                },
+                "description": {
+                  "zh_CN": "每页显示条目数改变后会触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "page",
+                      "type": "String",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "每页显示条目数改变后会触发"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
               }
             }
           },
