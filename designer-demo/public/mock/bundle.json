@@ -12198,12 +12198,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "modelValue",
@@ -12364,6 +12358,26 @@
                     },
                     "description": {
                       "zh_CN": "加减按钮位置"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "show-left",
+                    "label": {
+                      "text": {
+                        "zh_CN": "设置左对齐"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置左对齐"
                     },
                     "labelPosition": "left"
                   },
