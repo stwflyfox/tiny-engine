@@ -184,7 +184,21 @@
           "returns": {}
         },
         "defaultValue": ""
-      }
+      },
+      "onConfirm": {
+        "label": {
+          "zh_CN": "确认事件"
+        },
+        "description": {
+          "zh_CN": "确认事件，设置显示底部时有效"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }      
     },
     "slots": {
       "default": {
