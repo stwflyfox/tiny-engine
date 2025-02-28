@@ -22,7 +22,7 @@ export default {
   entry,
   metas: [BlockService],
   options: {
-    mergeCategoriesAndGroups: true
+    mergeCategoriesAndGroups: false
   },
   components: {
     SaveNewBlock

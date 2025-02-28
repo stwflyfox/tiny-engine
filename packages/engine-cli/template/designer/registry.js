@@ -108,7 +108,7 @@ export default {
     Materials,
     Tree,
     Page,
-    [Block, { options: { ...Block.options, mergeCategoriesAndGroups: true } }],
+    [Block, { options: { ...Block.options, mergeCategoriesAndGroups: false } }],
     Datasource,
     Bridge,
     I18n,
