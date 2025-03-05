@@ -10715,12 +10715,10 @@
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
-                    "onChange": "this.delProp('data')",
                     "cols": 12,
                     "widget": {
                       "component": "MetaCodeEditor",
                       "props": {
-                        "name": "fetchData",
                         "dataType": "JSExpression"
                       }
                     },
