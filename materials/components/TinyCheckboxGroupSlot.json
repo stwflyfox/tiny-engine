@@ -1,7 +1,7 @@
 {
   "icon": "checkboxgroup",
   "name": {
-    "zh_CN": "复选框组(插槽)"
+    "zh_CN": "复选框组(容器)"
   },
   "component": "TinyCheckboxGroupSlot",
   "description": "多选项，拖动复选框或复选按钮",
@@ -76,6 +76,40 @@
             }
           },
           {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+            }
+          },
+          {
             "property": "vertical",
             "label": {
               "text": {
@@ -97,6 +131,16 @@
         ]
       }
     ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "选项默认插槽"
+        }
+      }
+    },
     "events": {
       "onChange": {
         "label": {
@@ -180,13 +224,13 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "复选框组(插槽)"
+        "zh_CN": "复选框组(容器)"
       },
       "icon": "checkboxs",
       "screenshot": "",
       "snippetName": "TinyCheckboxGroupSlot",
       "schema": {
-        "componentName": "TinyCheckboxGroupSlot",
+        "componentName": "TinyCheckboxGroup",
         "props": {
           "modelValue": []
         }

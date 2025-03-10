@@ -28,13 +28,7 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+        },       
         "content": [
           {
             "property": "modelValue",
@@ -91,6 +85,120 @@
             },
             "description": {
               "zh_CN": "高度"
+            }
+          },
+          {
+            "property": "isWebp",
+            "label": {
+              "text": {
+                "zh_CN": "是否手机端显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否手机端显示，宽度750按比例收缩高度，转换格式为webp)"
+            }
+          },
+          {
+            "property": "isRotation",
+            "label": {
+              "text": {
+                "zh_CN": "是否轮播图"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否轮播图，转换尺寸为700*350"
+            }
+          },
+          {
+            "property": "isBanner",
+            "label": {
+              "text": {
+                "zh_CN": "是否活动图"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否活动图，转换尺寸为700*150"
+            }
+          },
+          {
+            "property": "isIcon",
+            "label": {
+              "text": {
+                "zh_CN": "是否图标"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否图标，转换尺寸为120*120"
+            }
+          },
+          {
+            "property": "isThumbnail",
+            "label": {
+              "text": {
+                "zh_CN": "是否缩略图"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否缩略图，转换尺寸为300*300"
+            }
+          },
+          {
+            "property": "isAddThumbnail",
+            "label": {
+              "text": {
+                "zh_CN": "是否要增加缩略图"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否要增加缩略图"
             }
           }
         ]

@@ -21,53 +21,26 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
-        "content": [
+        },      
+        "content": [       
           {
-            "property": "children",
+            "property": "modelValue",
             "label": {
               "text": {
-                "zh_CN": "类型"
+                "zh_CN": "绑定值"
               }
             },
             "required": true,
             "readOnly": false,
             "disabled": false,
-            "cols": 12,
             "widget": {
-              "component": "MetaHtmlText",
+              "component": "MetaField",
               "props": {}
             },
             "description": {
-              "zh_CN": ""
+              "zh_CN": "双向绑定值"
             },
-            "labelPosition": "none"
-          },
-          {
-            "property": "attributes3",
-            "label": {
-              "text": {
-                "zh_CN": "原生属性"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaHtmlAttributes",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": ""
-            },
-            "labelPosition": "none"
+            "labelPosition": "top"
           }
         ]
       }
@@ -97,7 +70,7 @@
       "disable": []
     }
   },
-  "snippets": [
+  "snippets": [ 
     {
       "name": {
         "zh_CN": "间隔线"
@@ -110,8 +83,7 @@
         "children": [
           {
             "componentName": "Text",
-            "props": {
-              "className": "",
+            "props": {              
               "style": "width: 1px;height: 20px;border-left: 1px solid #b0b0b0;margin: 0px 5px 0 5px;vertical-align: middle;display: inline-block;float: none;"
             }
           }

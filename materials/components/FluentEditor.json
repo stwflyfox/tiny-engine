@@ -126,6 +126,25 @@
             "description": {
               "zh_CN": "高度"
             }
+          },
+          {
+            "property": "isWebp",
+            "label": {
+              "text": {
+                "zh_CN": "是否手机端显示"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否手机端显示"
+            }
           }
         ]
       }

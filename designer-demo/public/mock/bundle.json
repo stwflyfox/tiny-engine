@@ -423,6 +423,25 @@
                     "description": {
                       "zh_CN": "高度"
                     }
+                  },
+                  {
+                    "property": "isWebp",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否手机端显示"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否手机端显示"
+                    }
                   }
                 ]
               }
@@ -3270,52 +3289,25 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
-                    "property": "children",
+                    "property": "modelValue",
                     "label": {
                       "text": {
-                        "zh_CN": "类型"
+                        "zh_CN": "绑定值"
                       }
                     },
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
-                    "cols": 12,
                     "widget": {
-                      "component": "MetaHtmlText",
+                      "component": "MetaField",
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": ""
+                      "zh_CN": "双向绑定值"
                     },
-                    "labelPosition": "none"
-                  },
-                  {
-                    "property": "attributes3",
-                    "label": {
-                      "text": {
-                        "zh_CN": "原生属性"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaHtmlAttributes",
-                      "props": {}
-                    },
-                    "description": {
-                      "zh_CN": ""
-                    },
-                    "labelPosition": "none"
+                    "labelPosition": "top"
                   }
                 ]
               }
@@ -6393,12 +6385,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "modelValue",
@@ -6413,9 +6399,7 @@
                     "cols": 12,
                     "widget": {
                       "component": "MetaField",
-                      "props": {
-                        "dataType": "Array"
-                      }
+                      "props": {}
                     },
                     "description": {
                       "zh_CN": "双向绑定的当前选中值"
@@ -6448,56 +6432,19 @@
                         "zh_CN": "数据列表"
                       }
                     },
-                    "defaultValue": [
-                      {
-                        "label": "标签2"
-                      },
-                      {
-                        "label": "标签2"
-                      }
-                    ],
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
                     "cols": 12,
                     "widget": {
                       "component": "MetaCodeEditor",
-                      "props": {}
+                      "props": {
+                        "language": "json"
+                      }
                     },
                     "description": {
                       "zh_CN": "checkbox组件列表"
                     }
-                  },
-                  {
-                    "property": "type",
-                    "label": {
-                      "text": {
-                        "zh_CN": "类型"
-                      }
-                    },
-                    "required": true,
-                    "readOnly": false,
-                    "disabled": false,
-                    "cols": 12,
-                    "widget": {
-                      "component": "MetaSelect",
-                      "props": {
-                        "options": [
-                          {
-                            "label": "button",
-                            "value": "button"
-                          },
-                          {
-                            "label": "checkbox",
-                            "value": "checkbox"
-                          }
-                        ]
-                      }
-                    },
-                    "description": {
-                      "zh_CN": "checkbox组件类型（button/checkbox），该属性的默认值为 checkbox,配合 options 属性一起使用"
-                    },
-                    "labelPosition": "left"
                   },
                   {
                     "property": "vertical",
@@ -6605,7 +6552,7 @@
         {
           "icon": "checkboxgroup",
           "name": {
-            "zh_CN": "复选框组(插槽)"
+            "zh_CN": "复选框组(容器)"
           },
           "component": "TinyCheckboxGroupSlot",
           "description": "多选项，拖动复选框或复选按钮",
@@ -6680,6 +6627,40 @@
                     }
                   },
                   {
+                    "property": "size",
+                    "label": {
+                      "text": {
+                        "zh_CN": "尺寸"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "尺寸。该属性的可选值为 medium / small / mini"
+                    }
+                  },
+                  {
                     "property": "vertical",
                     "label": {
                       "text": {
@@ -6701,6 +6682,16 @@
                 ]
               }
             ],
+            "slots": {
+              "default": {
+                "label": {
+                  "zh_CN": "default"
+                },
+                "description": {
+                  "zh_CN": "选项默认插槽"
+                }
+              }
+            },
             "events": {
               "onChange": {
                 "label": {
@@ -19343,12 +19334,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "modelValue",
@@ -19405,6 +19390,120 @@
                     },
                     "description": {
                       "zh_CN": "高度"
+                    }
+                  },
+                  {
+                    "property": "isWebp",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否手机端显示"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否手机端显示，宽度750按比例收缩高度，转换格式为webp)"
+                    }
+                  },
+                  {
+                    "property": "isRotation",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否轮播图"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否轮播图，转换尺寸为700*350"
+                    }
+                  },
+                  {
+                    "property": "isBanner",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否活动图"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否活动图，转换尺寸为700*150"
+                    }
+                  },
+                  {
+                    "property": "isIcon",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否图标"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否图标，转换尺寸为120*120"
+                    }
+                  },
+                  {
+                    "property": "isThumbnail",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否缩略图"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否缩略图，转换尺寸为300*300"
+                    }
+                  },
+                  {
+                    "property": "isAddThumbnail",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否要增加缩略图"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否要增加缩略图"
                     }
                   }
                 ]
@@ -20130,7 +20229,6 @@
                   {
                     "componentName": "Text",
                     "props": {
-                      "className": "",
                       "style": "width: 1px;height: 20px;border-left: 1px solid #b0b0b0;margin: 0px 5px 0 5px;vertical-align: middle;display: inline-block;float: none;"
                     }
                   }
@@ -20233,10 +20331,6 @@
               "schema": {
                 "componentName": "TinyCheckboxGroup",
                 "props": {
-                  "modelValue": [
-                    "name1",
-                    "name2"
-                  ],
                   "type": "checkbox",
                   "options": [
                     {
@@ -20257,13 +20351,13 @@
             },
             {
               "name": {
-                "zh_CN": "复选框组(插槽)"
+                "zh_CN": "复选框组(容器)"
               },
               "icon": "checkboxs",
               "screenshot": "",
               "snippetName": "TinyCheckboxGroupSlot",
               "schema": {
-                "componentName": "TinyCheckboxGroupSlot",
+                "componentName": "TinyCheckboxGroup",
                 "props": {
                   "modelValue": []
                 }

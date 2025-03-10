@@ -26,13 +26,7 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+        },      
         "content": [
           {
             "property": "modelValue",
@@ -48,7 +42,7 @@
             "widget": {
               "component": "MetaField",
               "props": {
-                "dataType": "Array"
+                
               }
             },
             "description": {
@@ -81,58 +75,21 @@
               "text": {
                 "zh_CN": "数据列表"
               }
-            },
-            "defaultValue": [
-              {
-                "label": "标签2"
-              },
-              {
-                "label": "标签2"
-              }
-            ],
+            },            
             "required": true,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
             "widget": {
               "component": "MetaCodeEditor",
-              "props": {}
+              "props": {
+                 "language": "json"
+              }
             },
             "description": {
               "zh_CN": "checkbox组件列表"
             }
-          },
-          {
-            "property": "type",
-            "label": {
-              "text": {
-                "zh_CN": "类型"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSelect",
-              "props": {
-                "options": [
-                  {
-                    "label": "button",
-                    "value": "button"
-                  },
-                  {
-                    "label": "checkbox",
-                    "value": "checkbox"
-                  }
-                ]
-              }
-            },
-            "description": {
-              "zh_CN": "checkbox组件类型（button/checkbox），该属性的默认值为 checkbox,配合 options 属性一起使用"
-            },
-            "labelPosition": "left"
-          },
+          },        
           {
             "property": "vertical",
             "label": {
@@ -245,11 +202,7 @@
       "snippetName": "TinyCheckboxGroup",
       "schema": {
         "componentName": "TinyCheckboxGroup",
-        "props": {
-          "modelValue": [
-            "name1",
-            "name2"
-          ],
+        "props": {          
           "type": "checkbox",
           "options": [
             {
