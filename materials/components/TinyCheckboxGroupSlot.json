@@ -209,7 +209,7 @@
       "properties": [
         "disabled",
         "type"
-      ]
+      ] 
     },
     "contextMenu": {
       "actions": [
@@ -230,7 +230,7 @@
       "screenshot": "",
       "snippetName": "TinyCheckboxGroupSlot",
       "schema": {
-        "componentName": "TinyCheckboxGroup",
+        "componentName": "TinyCheckboxGroupSlot",
         "props": {
           "modelValue": []
         }

@@ -6447,6 +6447,37 @@
                     }
                   },
                   {
+                    "property": "type",
+                    "label": {
+                      "text": {
+                        "zh_CN": "类型"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "button",
+                            "value": "button"
+                          },
+                          {
+                            "label": "checkbox",
+                            "value": "checkbox"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "checkbox组件类型（button/checkbox），该属性的默认值为 checkbox,配合 options 属性一起使用"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "vertical",
                     "label": {
                       "text": {
@@ -20357,7 +20388,7 @@
               "screenshot": "",
               "snippetName": "TinyCheckboxGroupSlot",
               "schema": {
-                "componentName": "TinyCheckboxGroup",
+                "componentName": "TinyCheckboxGroupSlot",
                 "props": {
                   "modelValue": []
                 }
