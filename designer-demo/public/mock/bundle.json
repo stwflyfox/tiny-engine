@@ -18740,20 +18740,12 @@
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
-                    "defaultValue": [
-                      {
-                        "label": "一级 1",
-                        "children": [
-                          {
-                            "label": "二级 1-1"
-                          }
-                        ]
-                      }
-                    ],
                     "cols": 12,
                     "widget": {
                       "component": "MetaCodeEditor",
-                      "props": {}
+                      "props": {
+                        "language": "json"
+                      }
                     },
                     "description": {
                       "zh_CN": "可配置静态数据源和动态数据源"
