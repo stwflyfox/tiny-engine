@@ -48,7 +48,7 @@
             "widget": {
               "component": "MetaCodeEditor",
               "props": {
-                "language": "json"
+                "dataType": "JSExpression"
               }
             },
             "description": {
@@ -316,8 +316,7 @@
               "text": "选项3",
               "label": 3
             }
-          ],
-          "type": "radio",
+          ],         
           "size": "mini"
         }
       }

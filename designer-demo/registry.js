@@ -62,6 +62,12 @@ export default {
       ...Layout.options,
       isShowLine: true,
       isShowCollapse: true,
+      useBaseStyle: false, 
+      // 自动注入的组件基础样式
+      componentBaseStyle: {
+        className: 'component-base-style',
+        style: 'margin: 0px;'
+      },    
       toolbars: {
         left: ['engine.toolbars.breadcrumb', 'engine.toolbars.lock', 'engine.toolbars.logo'],
         center: ['engine.toolbars.media'],

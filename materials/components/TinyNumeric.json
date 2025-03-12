@@ -166,7 +166,7 @@
                 "zh_CN": "加减按钮位置"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
@@ -176,7 +176,7 @@
                 "options": [
                   {
                     "label": "左右两侧",
-                    "value": ""
+                    "value": null
                   },
                   {
                     "label": "只在右侧",
