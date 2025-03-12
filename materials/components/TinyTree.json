@@ -467,12 +467,18 @@
       "contextmenu": {
         "label": {
           "zh_CN": "自定义树节点的右键菜单内容"
-        }
+        },
+        "params": [
+            "node"
+          ]
       },
       "default": {
         "label": {
           "zh_CN": "自定义树节点的内容"
-        }
+        },
+        "params": [
+            "node","data"
+          ]
       },
       "empty": {
         "label": {
