@@ -2035,6 +2035,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyMceEditor",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "TinyMceEditor",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyNumeric",
         "package": "@opentiny/vue",
         "version": "",
@@ -2193,6 +2200,13 @@
         "package": "@shqy/components",
         "version": "",
         "exportName": "UploadImage",
+        "destructuring": true
+      },
+      {
+        "componentName": "VHTML",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "VHTML",
         "destructuring": true
       }
     ],

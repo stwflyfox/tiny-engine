@@ -1,0 +1,113 @@
+{
+  "name": {
+    "zh_CN": "TinyMce富文本编辑器"
+  },
+  "component": "TinyMceEditor",
+  "icon": "fluent-editor",
+  "description": "TinyMce富文本编辑器",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "TinyMceEditor",
+    "script": "https://unpkg.91zd.cn/@shqy/components",
+    "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "绑定值"
+            },
+            "labelPosition": "top"
+          }
+        ]
+      }
+    ],
+    "events": {
+      
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "TinyMce富文本编辑器"
+      },
+      "icon": "fluent-editor",
+      "screenshot": "",
+      "snippetName": "TinyMceEditor",
+      "schema": {
+        "componentName": "TinyMceEditor",
+        "props": {
+          "ref": "tinyMceEditor"        
+        }
+      }
+    }
+  ],
+  "category": "容器组件"
+}
