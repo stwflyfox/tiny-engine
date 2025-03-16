@@ -4,7 +4,7 @@
     "vue/server-renderer": "https://registry.npmmirror.com/@vue/server-renderer/~3.4/files/dist/server-renderer.esm-browser.js",
     "vue-i18n": "https://registry.npmmirror.com/vue-i18n/~9/files/dist/vue-i18n.esm-browser.js",
     "vue-router": "https://registry.npmmirror.com/vue-router/~4/files/dist/vue-router.esm-browser.js",
-    "@vue/devtools-api": "${VITE_CDN_DOMAIN}/@vue/devtools-api@6.5.1/lib/esm/index.js",
+    "@vue/devtools-api": "https://registry.npmmirror.com/@vue/devtools-api/~6/files/lib/esm/index.js",
     "@vueuse/core": "${VITE_CDN_DOMAIN}/@vueuse/core@9.6.0/index.mjs",
     "@vueuse/shared": "${VITE_CDN_DOMAIN}/@vueuse/shared@9.6.0/index.mjs",
     "axios": "https://registry.npmmirror.com/axios/@1.7.9/files/dist/esm/axios.js",

@@ -2888,6 +2888,25 @@
                     "description": {
                       "zh_CN": "选择类型"
                     }
+                  },
+                  {
+                    "property": "linkage",
+                    "label": {
+                      "text": {
+                        "zh_CN": "连动选择"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "连动选择"
+                    }
                   }
                 ]
               }

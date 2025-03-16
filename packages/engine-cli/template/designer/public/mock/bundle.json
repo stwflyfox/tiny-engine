@@ -4805,8 +4805,8 @@
             "exportName": "Layout",
             "version": "3.20.0",
             "destructuring": true,
-            "script": "https://unpkg.com/@opentiny/vue-runtime@~3.20/dist3/tiny-vue-pc.mjs",
-            "css": "https://unpkg.com/@opentiny/vue-theme@~3.20/index.css"
+            "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.20.4/files/dist3/tiny-vue-pc.mjs",
+            "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.20.2/files/index.css"
           },
           "group": "component",
           "priority": 5,

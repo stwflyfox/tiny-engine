@@ -13,13 +13,14 @@ export function getImportMapData(overrideVersions = {}, canvasDeps = { scripts: 
   // 以下内容由于区块WebComponent加载需要补充
   const blockRequire = {
     imports: {
-      '@opentiny/vue': `${VITE_CDN_DOMAIN}/@opentiny/vue-runtime@${importMapVersions.tinyVue}/dist3/tiny-vue-pc.mjs`,
-      '@opentiny/vue-icon': `${VITE_CDN_DOMAIN}/@opentiny/vue-runtime@${importMapVersions.tinyVue}/dist3/tiny-vue-icon.mjs`,
+      '@opentiny/vue': 'https://registry.npmmirror.com/@opentiny/vue-runtime/3.20.4/files/dist3/tiny-vue-pc.mjs',
+      '@opentiny/vue-icon': 'https://registry.npmmirror.com/@opentiny/vue-runtime/3.20.4/files/dist3/tiny-vue-icon.mjs',
       'element-plus': `${VITE_CDN_DOMAIN}/element-plus@2.4.2/dist/index.full.mjs`,
-      '@opentiny/tiny-engine-builtin-component': `${VITE_CDN_DOMAIN}/@opentiny/tiny-engine-builtin-component@^2.0.0/dist/index.mjs`
+      '@opentiny/tiny-engine-builtin-component':
+        'https://registry.npmmirror.com/@opentiny/tiny-engine-builtin-component/~2/files/dist/index.mjs'
     },
     importStyles: [
-      `${VITE_CDN_DOMAIN}/@opentiny/vue-theme@${importMapVersions.tinyVue}/index.css`,
+      'https://registry.npmmirror.com/@opentiny/vue-theme/3.20.2/files/index.css',
       `${VITE_CDN_DOMAIN}/element-plus@2.4.2/dist/index.css`
     ]
   }
@@ -27,9 +28,11 @@ export function getImportMapData(overrideVersions = {}, canvasDeps = { scripts: 
   // 以下内容由于物料协议不支持声明子依赖而@opentiny/vue需要依赖所以需要补充
   const tinyVueRequire = {
     imports: {
-      '@opentiny/vue-common': `${VITE_CDN_DOMAIN}/@opentiny/vue-runtime@${importMapVersions.tinyVue}/dist3/tiny-vue-common.mjs`,
-      '@opentiny/vue-locale': `${VITE_CDN_DOMAIN}/@opentiny/vue-runtime@${importMapVersions.tinyVue}/dist3/tiny-vue-locale.mjs`,
-      echarts: `${VITE_CDN_DOMAIN}/echarts@5.4.1/dist/echarts.esm.js`
+      '@opentiny/vue-common':
+        'https://registry.npmmirror.com/@opentiny/vue-runtime/3.20.4/files/dist3/tiny-vue-common.mjs',
+      '@opentiny/vue-locale':
+        'https://registry.npmmirror.com/@opentiny/vue-runtime/3.20.4/files/dist3/tiny-vue-locale.mjs',
+      echarts: 'https://registry.npmmirror.com/echarts/5.4.1/files/dist/echarts.esm.js'
     }
   }
 
@@ -43,8 +46,8 @@ export function getImportMapData(overrideVersions = {}, canvasDeps = { scripts: 
 
   const importMap = {
     imports: {
-      vue: `${VITE_CDN_DOMAIN}/vue@${importMapVersions.vue}/dist/vue.runtime.esm-browser.prod.js`,
-      'vue-i18n': `${VITE_CDN_DOMAIN}/vue-i18n@${importMapVersions.vueI18n}/dist/vue-i18n.esm-browser.js`,
+      vue: 'https://registry.npmmirror.com/vue/~3.4/files/dist/vue.runtime.esm-browser.js',
+      'vue-i18n': 'https://registry.npmmirror.com/vue-i18n/~9/files/dist/vue-i18n.esm-browser.js',
       ...blockRequire.imports,
       ...tinyVueRequire.imports,
       ...materialsAndUtilsRequire
