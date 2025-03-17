@@ -137,7 +137,7 @@ export default {
 
     const currentRoute = computed(() => {
       let route = pageSettingState.currentPageData.route || ''
-      let parentId = pageParentId
+      let parentId = pageParentId.value
 
       while (parentId !== ROOT_ID) {
         const parent = pageSettingState.treeDataMapping[parentId]

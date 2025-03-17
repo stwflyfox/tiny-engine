@@ -9,14 +9,12 @@
  * A PARTICULAR PURPOSE. SEE THE APPLICABLE LICENSES FOR MORE DETAILS.
  *
  */
-
-import metaData from './meta.js'
-import { HelpService } from './src/composable'
+import './src/common.less'
 import './src/styles/vars.less'
+import metaData from './meta.js'
 
 export default {
   ...metaData,
-  metas: [HelpService]
+  // 插件暴露的 api，可以提供其他 api 进行调用，如果无需暴露，可为空
+  apis: {}
 }
-
-export { HelpService }
