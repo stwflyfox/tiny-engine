@@ -12298,6 +12298,44 @@
                       "zh_CN": "绑定值"
                     },
                     "labelPosition": "top"
+                  },
+                  {
+                    "property": "height",
+                    "label": {
+                      "text": {
+                        "zh_CN": "编辑区高度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "编辑区高度"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "禁用编辑"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "禁用编辑"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
