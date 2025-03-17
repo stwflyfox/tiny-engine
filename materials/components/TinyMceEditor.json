@@ -70,7 +70,7 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "编辑区高度"
+              "zh_CN": "高度"
             },
             "labelPosition": "left"
           },
