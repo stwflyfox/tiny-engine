@@ -9171,12 +9171,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "title",
@@ -9259,6 +9253,25 @@
                     }
                   },
                   {
+                    "property": "split-button",
+                    "label": {
+                      "text": {
+                        "zh_CN": "下拉触发元素呈现为按钮"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "下拉触发元素呈现为按钮"
+                    }
+                  },
+                  {
                     "property": "type",
                     "label": {
                       "text": {
@@ -9301,7 +9314,7 @@
                       }
                     },
                     "description": {
-                      "zh_CN": "设置不同的主题样式"
+                      "zh_CN": "按钮类型。注意：只在 split-button 为 true 的情况下有效"
                     },
                     "labelPosition": "left"
                   },
@@ -9326,6 +9339,75 @@
                       "zh_CN": "通过配置式设置菜单项的属性"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "show-icon",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示下拉触发源图标"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示下拉触发源图标"
+                    }
+                  },
+                  {
+                    "property": "visible-arrow",
+                    "label": {
+                      "text": {
+                        "zh_CN": "下拉弹框是否显示箭头"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "下拉弹框是否显示箭头"
+                    }
+                  },
+                  {
+                    "property": "trigger",
+                    "label": {
+                      "text": {
+                        "zh_CN": "触发下拉的方式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "hover",
+                            "value": "hover"
+                          },
+                          {
+                            "label": "click",
+                            "value": "click"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "触发下拉的方式"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
@@ -9344,6 +9426,13 @@
                   "returns": {}
                 },
                 "defaultValue": ""
+              }
+            },
+            "slots": {
+              "default": {
+                "label": {
+                  "zh_CN": "默认插槽"
+                }
               }
             }
           },

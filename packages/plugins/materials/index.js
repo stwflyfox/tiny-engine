@@ -31,11 +31,11 @@ export default {
     useBaseStyle: true,
     blockBaseStyle: {
       className: 'block-base-style',
-      style: 'margin: 16px;'
+      style: 'margin: 0px;'
     },
     componentBaseStyle: {
       className: 'component-base-style',
-      style: 'margin: 8px;'
+      style: 'margin: 0px;'
     }
   },
   components: {

@@ -1,90 +1,38 @@
 <template>
-  <tiny-base-select
-    v-model="state.selected"
-    :multiple="multi"
-    :is-drop-inherit-width="true"
-    :show-alloption="false"
-    :clearable="true"
-    @change="handleChange"
-    :options="state.options"
-  >
-  </tiny-base-select>
+  <tiny-switch v-model="valueRef" @change="change"></tiny-switch>
 </template>
 
 <script>
-import { reactive, watchEffect } from 'vue'
-import { Select } from '@opentiny/vue'
-import i18n from '@opentiny/tiny-engine-common/js/i18n'
-
-import { request, METHOD } from './request'
+import { Switch } from '@opentiny/vue'
+import { ref, watchEffect } from 'vue'
 
 export default {
   components: {
-    TinyBaseSelect: Select
+    TinySwitch: Switch
   },
+  inheritAttrs: false,
   props: {
+    // switch 默认传递的值
     modelValue: {
-      type: Object,
-      default: () => {}
+      type: [String, null, Boolean],
+      default: () => null
     }
-  },
-  emits: ['update:modelValue'],
-  data() {
-    return {}
   },
   setup(props, { emit }) {
-    const { locale } = i18n.global
-    const state = reactive({
-      selected: props.modelValue && props.modelValue.value ? props.modelValue.value : '',
-      options: [],
-      defaultParameters: [],
-      selectedDefault: '',
-      defaultValue: ''
-    })
-
-    const handleChange = (arg) => {
-      emit('update:modelValue', {
-        type: 'JSExpression',
-        value: arg
-      })
-    }
+    const valueRef = ref(props.modelValue)
 
     watchEffect(() => {
-      state.selected = props.modelValue && props.modelValue.value ? props.modelValue.value : ''
+      valueRef.value = props.modelValue
     })
 
-    return {
-      state,
-      locale,
-      handleChange
+    const change = (val) => {
+      emit('update:modelValue', val)
     }
-  },
-  mounted() {
-    var TableName = sessionStorage.getItem('TableName')
 
-    if (TableName != null && TableName != '') {
-      request('/System/GetTableFieldsByName', METHOD.POST, { TableName: TableName }).then((result) => {
-        this.state.options = []
-
-        result.forEach((p) => {
-          this.state.options.push({
-            label: p.field_common + '(' + p.field_name + ')',
-            value: 'this.state.disableds.' + p.field_name
-          })
-        })
-      })
+    return {
+      change,
+      valueRef
     }
   }
 }
 </script>
-<style scoped>
-.tiny-select-dropdown__item {
-  padding: 0 4px;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: inline-block;
-  line-height: 30px;
-}
-</style>
