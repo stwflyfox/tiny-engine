@@ -177,6 +177,45 @@
             }
           },
           {
+            "property": "display-only",
+            "label": {
+              "text": {
+                "zh_CN": "设置文本只读态"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaDisabled",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置文本只读态"
+            }
+          },
+          {
+            "property": "display-only-content",
+            "label": {
+              "text": {
+                "zh_CN": "只读态时的文本内容区"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "只读态时的文本内容区"
+            }
+          },
+          
+          {
             "property": "readonly",
             "label": {
               "text": {
