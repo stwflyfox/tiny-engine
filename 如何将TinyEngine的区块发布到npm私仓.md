@@ -18,7 +18,7 @@
   建议发布的测试包名称格式：@公司码/组件名，以便于后续搭建 unpkg 时测试使用。以下是测试用的package.json供参考：
 ![a44044e173a1d209642c25f8bb03201a_package](https://github.com/stwflyfox/tiny-engine/assets/3983204/d50efa4e-9477-4dac-bf57-dfb750374761)
 
-  
+   
 
 
 ## 安装 unpkg
