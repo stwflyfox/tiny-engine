@@ -2220,7 +2220,8 @@
           "value": "",
           "package": "axios",
           "destructuring": false,
-          "exportName": "axios"
+          "exportName": "axios",
+          "cdnLink": "https://registry.npmmirror.com/axios/1.7.9/files/dist/esm/axios.min.js"
         }
       },
       {
