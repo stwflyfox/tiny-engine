@@ -165,6 +165,50 @@
             "description": {
               "zh_CN": "自定义列表的标题"
             }
+          },
+          {
+            "property": "render",
+            "label": {
+              "text": {
+                "zh_CN": "设置左右区域的渲染类型"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "dataType": "JSExpression"
+              }
+            },
+            "description": {
+              "zh_CN": "该属性值的plugin设置为Table时设置渲染为表格;该属性值的 plugin 设置为Tree渲染为树"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "tree-op",
+            "label": {
+              "text": {
+                "zh_CN": "设置树的相关配置属性"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "dataType": "JSExpression"
+              }
+            },
+            "description": {
+              "zh_CN": "在渲染类型为 tree 时，设置树的相关配置属性"
+            },
+            "labelPosition": "left"
           }
         ]
       }
