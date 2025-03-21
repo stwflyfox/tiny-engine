@@ -488,17 +488,26 @@
       "operation": {
         "label": {
           "zh_CN": "节点内容靠右对齐的元素"
-        }
+        },
+        "params": [
+            "node"
+          ]
       },
       "prefix": {
         "label": {
           "zh_CN": "节点内容前置元素"
-        }
+        },
+        "params": [
+            "node"
+          ]
       },
       "suffix": {
         "label": {
           "zh_CN": "节点内容后置元素"
-        }
+        },
+        "params": [
+            "node"
+          ]
       },
       "switch-text": {
         "label": {
