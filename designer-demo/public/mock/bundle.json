@@ -18654,7 +18654,7 @@
                 },
                 "content": [
                   {
-                    "property": "v-model",
+                    "property": "modelValue",
                     "label": {
                       "text": {
                         "zh_CN": "绑定值"
@@ -18832,6 +18832,28 @@
                     },
                     "description": {
                       "zh_CN": "在渲染类型为 tree 时，设置树的相关配置属性"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "props",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据源的字段别名映射配置"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "dataType": "JSExpression"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "数据源的字段别名映射配置"
                     },
                     "labelPosition": "left"
                   }
