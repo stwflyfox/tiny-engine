@@ -1755,6 +1755,20 @@
         "destructuring": true
       },
       {
+        "componentName": "GridItem",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "GridItem",
+        "destructuring": true
+      },
+      {
+        "componentName": "GridLayout",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "GridLayout",
+        "destructuring": true
+      },
+      {
         "componentName": "HistogramChart",
         "package": "@opentiny/vue",
         "version": "",

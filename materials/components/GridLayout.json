@@ -1,0 +1,258 @@
+{
+  "name": {
+    "zh_CN": "拖拽布局"
+  },
+  "component": "GridLayout",
+  "icon": "grid",
+  "description": "拖拽布局",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "GridLayout",
+    "script": "http://192.168.0.113:8088/@shqy/components",
+    "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },     
+        "content": [
+          {
+            "property": "layout",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "col-num",
+            "label": {
+              "text": {
+                "zh_CN": "col-num"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "col-num"
+            }
+          },
+          {
+            "property": "row-height",
+            "label": {
+              "text": {
+                "zh_CN": "row-height"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "row-height"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "is-draggable",
+            "label": {
+              "text": {
+                "zh_CN": "is-draggable"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "is-draggable"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "is-resizable",
+            "label": {
+              "text": {
+                "zh_CN": "is-resizable"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "is-resizable"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "vertical-compact",
+            "label": {
+              "text": {
+                "zh_CN": "vertical-compact"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "vertical-compact"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "use-css-transforms",
+            "label": {
+              "text": {
+                "zh_CN": "use-css-transforms"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "use-css-transforms"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+     
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "拖拽布局"
+      },
+      "icon": "grid",
+      "screenshot": "",
+      "snippetName": "GridLayout",
+      "schema": {
+        "componentName": "GridLayout",
+        "props": {}
+      }
+    }
+  ],
+  "category": "容器组件"
+}
