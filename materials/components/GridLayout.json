@@ -28,7 +28,13 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },     
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
         "content": [
           {
             "property": "layout",
@@ -41,8 +47,10 @@
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaInput",
-              "props": {}
+              "component": "MetaCodeEditor",
+              "props": {
+                "dataType": "JSExpression"
+              }
             },
             "description": {
               "zh_CN": "绑定值"
@@ -182,31 +190,29 @@
       }
     ],
     "events": {
-      
-      "onUpdate:modelValue": {
+      "onButtonClick": {
         "label": {
-          "zh_CN": "双向绑定的值改变时触发"
+          "zh_CN": "点击按钮时触发"
         },
         "description": {
-          "zh_CN": "在 Input 输入值改变时触发"
+          "zh_CN": "点击按钮时触发"
         },
         "type": "event",
         "functionInfo": {
           "params": [
             {
-              "name": "value",
-              "type": "string",
+              "name": "event",
+              "type": "Object",
               "defaultValue": "",
               "description": {
-                "zh_CN": "双向绑定的值"
+                "zh_CN": "原生 event"
               }
             }
           ],
           "returns": {}
         },
         "defaultValue": ""
-      }
-     
+      }  
     }
   },
   "configure": {
@@ -250,7 +256,9 @@
       "snippetName": "GridLayout",
       "schema": {
         "componentName": "GridLayout",
-        "props": {}
+        "props": {
+        
+        }
       }
     }
   ],
