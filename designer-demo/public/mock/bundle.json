@@ -894,6 +894,12 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
+                "collapse": {
+                  "number": 6,
+                  "text": {
+                    "zh_CN": "显示更多"
+                  }
+                },
                 "content": [
                   {
                     "property": "layout",
@@ -906,8 +912,10 @@
                     "readOnly": false,
                     "disabled": false,
                     "widget": {
-                      "component": "MetaInput",
-                      "props": {}
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "dataType": "JSExpression"
+                      }
                     },
                     "description": {
                       "zh_CN": "绑定值"
@@ -1143,8 +1151,8 @@
                 "functionInfo": {
                   "params": [
                     {
-                      "name": "value",
-                      "type": "string",
+                      "name": "event",
+                      "type": "Object",
                       "defaultValue": "",
                       "description": {
                         "zh_CN": "LayoutUpdated"
