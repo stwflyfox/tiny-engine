@@ -934,6 +934,25 @@
                     }
                   },
                   {
+                    "property": "cols",
+                    "label": {
+                      "text": {
+                        "zh_CN": "cols"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "cols"
+                    }
+                  },
+                  {
                     "property": "row-height",
                     "label": {
                       "text": {
@@ -1022,6 +1041,72 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "isBounded",
+                    "label": {
+                      "text": {
+                        "zh_CN": "isBounded"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {
+                        "allowEmpty": true
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "isBounded"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "restoreOnDrag",
+                    "label": {
+                      "text": {
+                        "zh_CN": "restoreOnDrag"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {
+                        "allowEmpty": true
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "restoreOnDrag"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "autoSize",
+                    "label": {
+                      "text": {
+                        "zh_CN": "autoSize"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {
+                        "allowEmpty": true
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "autoSize"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "use-css-transforms",
                     "label": {
                       "text": {
@@ -1047,12 +1132,12 @@
               }
             ],
             "events": {
-              "onUpdate:modelValue": {
+              "onLayoutUpdated": {
                 "label": {
-                  "zh_CN": "双向绑定的值改变时触发"
+                  "zh_CN": "LayoutUpdated"
                 },
                 "description": {
-                  "zh_CN": "在 Input 输入值改变时触发"
+                  "zh_CN": "LayoutUpdated"
                 },
                 "type": "event",
                 "functionInfo": {
@@ -1062,7 +1147,7 @@
                       "type": "string",
                       "defaultValue": "",
                       "description": {
-                        "zh_CN": "双向绑定的值"
+                        "zh_CN": "LayoutUpdated"
                       }
                     }
                   ],
