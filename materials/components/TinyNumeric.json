@@ -158,6 +158,28 @@
             "description": {
               "zh_CN": ""
             }
+          },          
+          {
+            "property": "unit",
+            "label": {
+              "text": {
+                "zh_CN": "单位"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {
+                
+              }
+            },
+            "description": {
+              "zh_CN": "设置计数器的单位，设置单位后，加减按钮将不可用"
+            },
+            "labelPosition": "left"
           },
           {
             "property": "controls-position",

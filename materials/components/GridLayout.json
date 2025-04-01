@@ -28,13 +28,7 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+        },      
         "content": [
           {
             "property": "layout",
@@ -336,14 +330,23 @@
     {
       "name": {
         "zh_CN": "拖拽布局"
-      },
+      }, 
       "icon": "grid",
       "screenshot": "",
       "snippetName": "GridLayout",
       "schema": {
         "componentName": "GridLayout",
         "props": {
-        
+          "layout" : [],
+          "col-num": 1,
+          "cols": 1,
+          "is-draggable": true,
+          "is-resizable": false,
+          "isBounded": true,
+          "restoreOnDrag": true,          
+          "autoSize": true,
+          "vertical-compact": true,
+          "use-css-transforms": true
         }
       }
     }

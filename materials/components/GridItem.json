@@ -161,22 +161,22 @@
     ],
     "events": {
       
-      "onUpdate:modelValue": {
+      "onMoved": {
         "label": {
-          "zh_CN": "双向绑定的值改变时触发"
+          "zh_CN": "moved"
         },
         "description": {
-          "zh_CN": "在 Input 输入值改变时触发"
+          "zh_CN": "moved"
         },
         "type": "event",
         "functionInfo": {
           "params": [
             {
-              "name": "value",
-              "type": "string",
+              "name": "event",
+              "type": "Object",
               "defaultValue": "",
               "description": {
-                "zh_CN": "双向绑定的值"
+                "zh_CN": "moved"
               }
             }
           ],

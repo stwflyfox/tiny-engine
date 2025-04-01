@@ -806,22 +806,22 @@
               }
             ],
             "events": {
-              "onUpdate:modelValue": {
+              "onMoved": {
                 "label": {
-                  "zh_CN": "双向绑定的值改变时触发"
+                  "zh_CN": "moved"
                 },
                 "description": {
-                  "zh_CN": "在 Input 输入值改变时触发"
+                  "zh_CN": "moved"
                 },
                 "type": "event",
                 "functionInfo": {
                   "params": [
                     {
-                      "name": "value",
-                      "type": "string",
+                      "name": "event",
+                      "type": "Object",
                       "defaultValue": "",
                       "description": {
-                        "zh_CN": "双向绑定的值"
+                        "zh_CN": "moved"
                       }
                     }
                   ],
@@ -893,12 +893,6 @@
                 },
                 "description": {
                   "zh_CN": "基础信息"
-                },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
                 },
                 "content": [
                   {
@@ -13216,6 +13210,26 @@
                     }
                   },
                   {
+                    "property": "unit",
+                    "label": {
+                      "text": {
+                        "zh_CN": "单位"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "设置计数器的单位，设置单位后，加减按钮将不可用"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "controls-position",
                     "label": {
                       "text": {
@@ -21907,7 +21921,18 @@
               "snippetName": "GridLayout",
               "schema": {
                 "componentName": "GridLayout",
-                "props": {}
+                "props": {
+                  "layout": [],
+                  "col-num": 1,
+                  "cols": 1,
+                  "is-draggable": true,
+                  "is-resizable": false,
+                  "isBounded": true,
+                  "restoreOnDrag": true,
+                  "autoSize": true,
+                  "vertical-compact": true,
+                  "use-css-transforms": true
+                }
               }
             },
             {
