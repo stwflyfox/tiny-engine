@@ -1,0 +1,105 @@
+{
+  "name": {
+    "zh_CN": "预览文件"
+  },
+  "component": "PreviewFile",
+  "icon": "text-page-review",
+  "description": "预览文件",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "PreviewFile",
+    "script": "http://192.168.0.113:8088/@shqy/components",
+    "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },        
+        "content": [
+          {
+            "property": "url",
+            "label": {
+              "text": {
+                "zh_CN": "文件名"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "上传的文件名，多个时用英文逗号分隔"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+    
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "预览文件"
+      },
+      "icon": "text-page-review",
+      "screenshot": "",
+      "snippetName": "PreviewFile",
+      "schema": {
+        "componentName": "PreviewFile",
+        "props": {}
+      }
+    }
+  ],
+  "category": "表单组件"
+}

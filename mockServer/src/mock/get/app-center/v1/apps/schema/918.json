@@ -1804,6 +1804,13 @@
         "destructuring": true
       },
       {
+        "componentName": "PreviewFile",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "PreviewFile",
+        "destructuring": true
+      },
+      {
         "componentName": "ProcessChart",
         "package": "@opentiny/vue",
         "version": "",
