@@ -19,6 +19,7 @@ class Logger {
       return `[${this.command}] [${colors.dim(time)}] ${colorMsg} ${msg}`
     }
 
+    // eslint-disable-next-line no-console
     return console.log(format())
   }
 

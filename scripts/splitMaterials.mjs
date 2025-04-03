@@ -19,39 +19,25 @@ const toPascalCase = (str) => str.split('-').map(capitalize).join('')
  */
 const splitMaterials = () => {
   try {
-    // 预处理 snippets
-    const snippetsMap = {}
-    snippets.forEach((snippetItem) => {
-      if (!Array.isArray(snippetItem?.children)) {
-        return
-      }
-      
-      snippetItem.children.forEach((item) => {
-        const key = item?.schema?.componentName || item.snippetName
-        if (!key) {
-          return
-        }
-        const realKey = toPascalCase(key)
-        if (!snippetsMap[realKey]) {
-          snippetsMap[realKey] = []
-        }
-        snippetsMap[realKey].push({
-          ...item,
-          category: snippetItem.group
-        })
-      })
-    })
-    // 处理组件
     components.forEach((comp) => {
-      const matchKey = Array.isArray(comp.component) 
-        ? toPascalCase(comp.component[0])
-        : toPascalCase(comp.component)
-      
-      const matchedSnippets = snippetsMap[matchKey]
+      snippets.some((child) => {
+        const snippet = child.children.find((item) => {
+          if (Array.isArray(comp.component)) {
+            return toPascalCase(comp.component[0]) === toPascalCase(item.snippetName)
+          }
 
-      if (matchedSnippets?.length) {
-        comp.snippets = matchedSnippets
-      }
+          return toPascalCase(comp.component) === toPascalCase(item.snippetName)
+        })
+
+        if (snippet) {
+          comp.snippets = [snippet]
+          comp.category = child.group
+
+          return true
+        }
+
+        return false
+      })
 
       const fileName = Array.isArray(comp.component) ? comp.component[0] : comp.component
       const componentPath = path.join(process.cwd(), materialsDir, 'components', `${toPascalCase(fileName)}.json`)

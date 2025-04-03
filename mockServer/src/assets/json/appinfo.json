@@ -14518,6 +14518,13 @@
         }
       },
       {
+        "component": "TinyGridColumn",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "TinyGridColumn"
+        }
+      },
+      {
         "component": "TinyInput",
         "npm": {
           "package": "@opentiny/vue",
