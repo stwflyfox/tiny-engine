@@ -20282,6 +20282,52 @@
               }
             ],
             "events": {
+              "onError": {
+                "label": {
+                  "zh_CN": "文件上传失败时触发的事件"
+                },
+                "description": {
+                  "zh_CN": "文件上传失败时触发的事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "文件上传失败时触发的事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onSuccess": {
+                "label": {
+                  "zh_CN": "文件上传成功时触发的事件"
+                },
+                "description": {
+                  "zh_CN": "文件上传成功时触发的事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "文件上传成功时触发的事件"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
               "onChange": {
                 "label": {
                   "zh_CN": "值改变时触发"
