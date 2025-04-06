@@ -1867,6 +1867,13 @@
         "destructuring": true
       },
       {
+        "componentName": "SignaturePad",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "SignaturePad",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyAnchor",
         "package": "@opentiny/vue",
         "version": "",

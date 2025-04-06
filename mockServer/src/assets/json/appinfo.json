@@ -14284,6 +14284,17 @@
         "npm": {}
       },
       {
+        "component": "SignaturePad",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "SignaturePad",
+          "script": "http://192.168.0.113:8088/@shqy/components",
+          "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyAnchor",
         "npm": {
           "package": "@opentiny/vue",
