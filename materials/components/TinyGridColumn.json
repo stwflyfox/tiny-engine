@@ -6,7 +6,7 @@
    "component": "TinyGridColumn", 
    "description": "提供了非常强大数据表格功能，可以展示数据列表，可以对数据列表进行选择、编辑等", 
    "docUrl": "", 
-   "screenshot": "", 
+   "screenshot": "",  
    "tags": "", 
    "keywords": "", 
    "devMode": "proCode", 
