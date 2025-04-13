@@ -6177,12 +6177,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "modelValue",
@@ -6223,6 +6217,28 @@
                     },
                     "description": {
                       "zh_CN": "指定选项数组即可渲染出一个级联选择器"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "props",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置选项"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "配置选项"
                     },
                     "labelPosition": "left"
                   },
@@ -11245,12 +11261,6 @@
                 "description": {
                   "zh_CN": "基础属性"
                 },
-                "collapse": {
-                  "number": 15,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "tableName",
@@ -12046,12 +12056,6 @@
                 "description": {
                   "zh_CN": "其他属性"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "size",
@@ -12091,7 +12095,7 @@
                     "property": "auto-resize",
                     "label": {
                       "text": {
-                        "zh_CN": "可排序"
+                        "zh_CN": "父元素响应式监听"
                       }
                     },
                     "required": true,
@@ -12103,7 +12107,7 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "是否允许列数据排序。默认为 true 可排序"
+                      "zh_CN": "父元素响应式监听"
                     },
                     "labelPosition": "left"
                   },

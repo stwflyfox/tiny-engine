@@ -26,13 +26,7 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+        },      
         "content": [
           {
             "property": "modelValue",
@@ -73,6 +67,28 @@
             },
             "description": {
               "zh_CN": "指定选项数组即可渲染出一个级联选择器"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "props",
+            "label": {
+              "text": {
+                "zh_CN": "配置选项"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "配置选项"
             },
             "labelPosition": "left"
           },
