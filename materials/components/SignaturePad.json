@@ -98,6 +98,67 @@
             "description": {
               "zh_CN": "画笔颜色"
             }
+          },
+          {
+            "property": "showToolbar",
+            "label": {
+              "text": {
+                "zh_CN": "显示工具栏"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示工具栏"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "showBorder",
+            "label": {
+              "text": {
+                "zh_CN": "显示边框"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示边框"
+            },
+            "labelPosition": "left"
+          }
+          ,
+          {
+            "property": "showSave",
+            "label": {
+              "text": {
+                "zh_CN": "显示保存按钮"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示保存按钮"
+            },
+            "labelPosition": "left"
           }
         ]
       }

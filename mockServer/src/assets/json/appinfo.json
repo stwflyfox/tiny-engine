@@ -14295,6 +14295,15 @@
         }
       },
       {
+        "component": "TinyAlert",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Alert",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyAnchor",
         "npm": {
           "package": "@opentiny/vue",

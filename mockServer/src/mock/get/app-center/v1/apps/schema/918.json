@@ -1874,6 +1874,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyAlert",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Alert",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyAnchor",
         "package": "@opentiny/vue",
         "version": "",

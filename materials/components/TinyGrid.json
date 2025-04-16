@@ -61,8 +61,10 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaField",
-              "props": {}
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
             },
             "onChange": "this.delProp('fetchData')",
             "description": {
