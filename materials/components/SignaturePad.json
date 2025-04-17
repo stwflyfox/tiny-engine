@@ -68,7 +68,27 @@
               "zh_CN": "保存的文件前缀名称"
             }
           },
-         
+          {
+            "property": "padstyle",
+            "label": {
+              "text": {
+                "zh_CN": "自定义样式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "css"
+              }
+            },
+            "description": {
+              "zh_CN": "自定义样式"
+            },
+            "labelPosition": "left"
+          },
           {
             "property": "penColor",
             "label": {
