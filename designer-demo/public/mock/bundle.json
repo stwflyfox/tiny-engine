@@ -4044,6 +4044,25 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "refId",
+                    "label": {
+                      "text": {
+                        "zh_CN": "ref引用id"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "ref引用id, 在 onClick 事件中回传"
+                    }
+                  },
+                  {
                     "property": "preUrl",
                     "label": {
                       "text": {
@@ -4134,6 +4153,26 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "showUnderline",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示下划线"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "显示下划线"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "showBorder",
                     "label": {
                       "text": {
@@ -4177,6 +4216,29 @@
               }
             ],
             "events": {
+              "onClick": {
+                "label": {
+                  "zh_CN": "点击手写区时触发"
+                },
+                "description": {
+                  "zh_CN": "点击手写区时触发，会传回ref引用id"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "点击手写区时触发，会传回ref引用id"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
               "onSave": {
                 "label": {
                   "zh_CN": "保存成功时触发"
