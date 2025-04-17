@@ -67,7 +67,7 @@
             "description": {
               "zh_CN": "ref引用id, 在 onClick 事件中回传"
             }
-          },
+          }, 
           {
             "property": "preUrl",
             "label": {
