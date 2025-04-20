@@ -1363,7 +1363,35 @@
           "returns": {}
         },
         "defaultValue": ""
-      }
+      },
+      "onRowDropStart": {
+        "label": {
+          "zh_CN": "行拖拽开始事件"
+        },
+        "description": {
+          "zh_CN": "行拖拽开始事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onRowDropEnd": {
+        "label": {
+          "zh_CN": "行拖拽结束事件"
+        },
+        "description": {
+          "zh_CN": "行拖拽结束事件"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }      
     },
     "slots": {
       "toolbar": {

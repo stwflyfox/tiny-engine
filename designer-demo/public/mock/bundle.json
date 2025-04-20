@@ -4044,6 +4044,25 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "divId",
+                    "label": {
+                      "text": {
+                        "zh_CN": "背景内容div的id"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "背景内容div的id"
+                    }
+                  },
+                  {
                     "property": "refId",
                     "label": {
                       "text": {
@@ -12914,6 +12933,34 @@
                 },
                 "description": {
                   "zh_CN": "菜单点击事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onRowDropStart": {
+                "label": {
+                  "zh_CN": "行拖拽开始事件"
+                },
+                "description": {
+                  "zh_CN": "行拖拽开始事件"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onRowDropEnd": {
+                "label": {
+                  "zh_CN": "行拖拽结束事件"
+                },
+                "description": {
+                  "zh_CN": "行拖拽结束事件"
                 },
                 "type": "event",
                 "functionInfo": {

@@ -50,6 +50,25 @@
             "labelPosition": "left"
           },
           {
+            "property": "divId",
+            "label": {
+              "text": {
+                "zh_CN": "背景内容div的id"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "背景内容div的id"
+            }
+          }, 
+          {
             "property": "refId",
             "label": {
               "text": {
