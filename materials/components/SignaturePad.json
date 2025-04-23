@@ -156,8 +156,7 @@
             "description": {
               "zh_CN": "画笔颜色"
             }
-          },
-          
+          },          
           {
             "property": "showToolbar",
             "label": {
@@ -177,6 +176,47 @@
               "zh_CN": "显示工具栏"
             },
             "labelPosition": "left" 
+          },
+          {
+            "property": "size",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "按钮大小"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "large",
+                    "value": "large"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
           },
           {
             "property": "showUnderline",

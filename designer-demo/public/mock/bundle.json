@@ -4172,6 +4172,47 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "size",
+                    "type": "select",
+                    "label": {
+                      "text": {
+                        "zh_CN": "按钮大小"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSelect",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "large",
+                            "value": "large"
+                          },
+                          {
+                            "label": "medium",
+                            "value": "medium"
+                          },
+                          {
+                            "label": "small",
+                            "value": "small"
+                          },
+                          {
+                            "label": "mini",
+                            "value": "mini"
+                          }
+                        ]
+                      }
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
                     "property": "showUnderline",
                     "label": {
                       "text": {
