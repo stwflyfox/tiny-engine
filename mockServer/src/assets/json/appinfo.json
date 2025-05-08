@@ -14594,6 +14594,15 @@
         }
       },
       {
+        "component": "TinyProgress",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Progress",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyRadio",
         "npm": {
           "package": "@opentiny/vue",

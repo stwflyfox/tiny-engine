@@ -2105,6 +2105,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyProgress",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Progress",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyRadio",
         "package": "@opentiny/vue",
         "version": "",
