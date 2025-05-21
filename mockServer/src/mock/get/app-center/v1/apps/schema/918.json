@@ -1874,6 +1874,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TextSvg",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "TextSvg",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyAlert",
         "package": "@opentiny/vue",
         "version": "",

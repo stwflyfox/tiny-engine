@@ -4380,6 +4380,284 @@
           }
         },
         {
+          "name": {
+            "zh_CN": "SVG文本"
+          },
+          "component": "TextSvg",
+          "icon": "text",
+          "description": "SVG文本",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@shqy/components",
+            "exportName": "TextSvg",
+            "script": "http://192.168.0.113:8088/@shqy/components",
+            "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": [
+                  {
+                    "property": "textContent",
+                    "label": {
+                      "text": {
+                        "zh_CN": "文本内容"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "文本内容"
+                    }
+                  },
+                  {
+                    "property": "fill",
+                    "label": {
+                      "text": {
+                        "zh_CN": "fill"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "fill"
+                    }
+                  },
+                  {
+                    "property": "width",
+                    "label": {
+                      "text": {
+                        "zh_CN": "width"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "width"
+                    }
+                  },
+                  {
+                    "property": "height",
+                    "label": {
+                      "text": {
+                        "zh_CN": "height"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "height"
+                    }
+                  },
+                  {
+                    "property": "textLength",
+                    "label": {
+                      "text": {
+                        "zh_CN": "textLength"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "textLength"
+                    }
+                  },
+                  {
+                    "property": "viewBox",
+                    "label": {
+                      "text": {
+                        "zh_CN": "viewBox"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "viewBox"
+                    }
+                  },
+                  {
+                    "property": "x",
+                    "label": {
+                      "text": {
+                        "zh_CN": "x"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "x"
+                    }
+                  },
+                  {
+                    "property": "y",
+                    "label": {
+                      "text": {
+                        "zh_CN": "y"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "y"
+                    }
+                  },
+                  {
+                    "property": "textAnchor",
+                    "label": {
+                      "text": {
+                        "zh_CN": "textAnchor"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "textAnchor"
+                    }
+                  },
+                  {
+                    "property": "dominantBaseline",
+                    "label": {
+                      "text": {
+                        "zh_CN": "dominantBaseline"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "dominantBaseline"
+                    }
+                  },
+                  {
+                    "property": "lengthAdjust",
+                    "label": {
+                      "text": {
+                        "zh_CN": "lengthAdjust"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "lengthAdjust"
+                    }
+                  }
+                ]
+              }
+            ],
+            "events": {}
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "value",
+                "disabled"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
           "icon": "alert",
           "name": {
             "zh_CN": "警告提示"
@@ -22401,6 +22679,30 @@
               "schema": {
                 "componentName": "SignaturePad",
                 "props": {}
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "SVG文本"
+              },
+              "icon": "text",
+              "screenshot": "",
+              "snippetName": "TextSvg",
+              "schema": {
+                "componentName": "TextSvg",
+                "props": {
+                  "textContent": "文本内容",
+                  "fill": "#ff0000",
+                  "width": 30,
+                  "height": 30,
+                  "textLength": 25,
+                  "viewBox": "0 0 30 30",
+                  "x": "50%",
+                  "y": "50%",
+                  "textAnchor": "middle",
+                  "dominantBaseline": "middle",
+                  "lengthAdjust": "spacingAndGlyphs"
+                }
               }
             },
             {
