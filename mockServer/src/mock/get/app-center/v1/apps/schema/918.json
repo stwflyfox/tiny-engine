@@ -1734,6 +1734,13 @@
         "destructuring": true
       },
       {
+        "componentName": "CardLan",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "CardLan",
+        "destructuring": true
+      },
+      {
         "componentName": "FlowChart",
         "package": "@shqy/components",
         "version": "",
