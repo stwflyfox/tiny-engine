@@ -113,6 +113,47 @@
             },
             "labelPosition": "left"
           },
+          
+          {
+            "property": "indeterminate",
+            "label": {
+              "text": {
+                "zh_CN": "设置 indeterminate 状态"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置 indeterminate 状态"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "text",
+            "label": {
+              "text": {
+                "zh_CN": "文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "复选框的文本"
+            },
+            "labelPosition": "left"
+          },
           {
             "property": "label",
             "label": {

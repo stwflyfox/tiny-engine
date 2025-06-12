@@ -20,9 +20,12 @@ npm install -g pnpm
      注销windows
 安装 tiny-engine:
     git 克隆：https://github.com/stwflyfox/tiny-engine.git , 
-    进入克隆后的目录, 切换到 2.0 分支，
+    进入克隆后的目录, (当前为 develop 分支)
          运行 pnpm install
          运行 pnpm run build:plugin
          运行 pnpm run build:alpha
+    切换到 2.0 分支，
+         运行 pnpm install
+         运行 dev.bat
 以上安装完成后，按序进入 data-center， webservice ， tiny-engine 各目录运行 dev 即可
 
