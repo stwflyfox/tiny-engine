@@ -26,13 +26,7 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+        },      
         "content": [
           {
             "property": "show-checkbox",
@@ -95,6 +89,26 @@
             "labelPosition": "left"
           },
           {
+            "property": "default-expanded-keys",
+            "label": {
+              "text": {
+                "zh_CN": "默认展开的节点的keys数组"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置默认加载时，默认展开的节点的keys数组"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "show-line",
             "label": {
               "text": {
@@ -113,7 +127,8 @@
               "zh_CN": "是否显示连接线"
             },
             "labelPosition": "left"
-          },
+          },         
+        
           {
             "property": "check-strictly",
             "label": {
