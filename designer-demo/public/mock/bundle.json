@@ -12546,6 +12546,26 @@
                     }
                   },
                   {
+                    "property": "row-key",
+                    "label": {
+                      "text": {
+                        "zh_CN": "行主键"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否自动生成行主键，行拖拽时必须启用"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "resizable",
                     "label": {
                       "text": {
