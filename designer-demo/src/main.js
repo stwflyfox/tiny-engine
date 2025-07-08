@@ -16,7 +16,6 @@ import { init } from '@opentiny/tiny-engine'
 import { configurators } from './configurators/'
 import 'virtual:svg-icons-register'
 
-import './assets/styles/main.css'
 
 //FluentEditor img src 白名单
 import { xss } from '@opentiny/utils'

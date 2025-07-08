@@ -9,8 +9,6 @@
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 vite build"
   },
   "dependencies": {
-    "@fontsource/noto-sans-sc": "^5.2.6",
-    "@fontsource/noto-serif-sc": "^5.2.6",
     "@opentiny/tiny-engine": "workspace:^",
     "@opentiny/tiny-engine-utils": "workspace:*",
     "@opentiny/utils": "^1.0.0",
