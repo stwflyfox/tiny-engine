@@ -1727,6 +1727,13 @@
     ],
     "componentsMap": [
       {
+        "componentName": "AnswerSplit",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "AnswerSplit",
+        "destructuring": true
+      },
+      {
         "componentName": "BarChart",
         "package": "@opentiny/vue",
         "version": "",

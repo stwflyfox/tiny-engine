@@ -5,6 +5,74 @@
       "components": [
         {
           "name": {
+            "zh_CN": "题干拆分"
+          },
+          "component": "AnswerSplit",
+          "icon": "justify-items-stretch",
+          "description": "题干拆分",
+          "docUrl": "",
+          "screenshot": "",
+          "tags": "",
+          "keywords": "",
+          "devMode": "proCode",
+          "npm": {
+            "package": "@shqy/components",
+            "exportName": "AnswerSplit",
+            "script": "http://192.168.0.113:8088/@shqy/components",
+            "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+            "version": "",
+            "destructuring": true
+          },
+          "group": "component",
+          "priority": 1,
+          "schema": {
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "基础信息"
+                },
+                "description": {
+                  "zh_CN": "基础信息"
+                },
+                "content": []
+              }
+            ],
+            "events": {}
+          },
+          "configure": {
+            "loop": true,
+            "condition": true,
+            "styles": true,
+            "isContainer": false,
+            "isModal": false,
+            "nestingRule": {
+              "childWhitelist": "",
+              "parentWhitelist": "",
+              "descendantBlacklist": "",
+              "ancestorWhitelist": ""
+            },
+            "isNullNode": false,
+            "isLayout": false,
+            "rootSelector": "",
+            "shortcuts": {
+              "properties": [
+                "value",
+                "disabled"
+              ]
+            },
+            "contextMenu": {
+              "actions": [
+                "create symbol"
+              ],
+              "disable": [
+                "copy",
+                "remove"
+              ]
+            }
+          }
+        },
+        {
+          "name": {
             "zh_CN": "条形图"
           },
           "component": "BarChart",
@@ -22333,398 +22401,22 @@
       "blocks": [],
       "snippets": [
         {
-          "group": "图表组件",
-          "children": [
-            {
-              "name": {
-                "zh_CN": "条形图"
-              },
-              "icon": "bar-chart",
-              "screenshot": "",
-              "snippetName": "BarChart",
-              "schema": {
-                "componentName": "BarChart",
-                "props": {
-                  "options": {
-                    "data": [
-                      {
-                        "日期": "1/1",
-                        "访问用户": 1393,
-                        "下单用户": 1093,
-                        "下单率": 0.32
-                      },
-                      {
-                        "日期": "1/2",
-                        "访问用户": 3530,
-                        "下单用户": 3230,
-                        "下单率": 0.26
-                      },
-                      {
-                        "日期": "1/3",
-                        "访问用户": 2923,
-                        "下单用户": 2623,
-                        "下单率": 0.76
-                      },
-                      {
-                        "日期": "1/4",
-                        "访问用户": 1723,
-                        "下单用户": 1423,
-                        "下单率": 0.49
-                      },
-                      {
-                        "日期": "1/5",
-                        "访问用户": 3792,
-                        "下单用户": 3492,
-                        "下单率": 0.323
-                      },
-                      {
-                        "日期": "1/6",
-                        "访问用户": 4593,
-                        "下单用户": 4293,
-                        "下单率": 0.78
-                      }
-                    ],
-                    "xAxis": {
-                      "data": "日期"
-                    },
-                    "direction": "horizontal"
-                  }
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "流程图"
-              },
-              "icon": "flow-chart",
-              "screenshot": "",
-              "snippetName": "FlowChart",
-              "schema": {
-                "componentName": "FlowChart",
-                "props": {
-                  "chartOption": {}
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "仪表盘"
-              },
-              "icon": "gauge-chart",
-              "screenshot": "",
-              "snippetName": "GaugeChart",
-              "schema": {
-                "componentName": "GaugeChart",
-                "props": {
-                  "options": {
-                    "data": [
-                      {
-                        "value": 71,
-                        "name": "Utilization rate"
-                      }
-                    ]
-                  }
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "柱状图"
-              },
-              "icon": "histogram-chart",
-              "screenshot": "",
-              "snippetName": "HistogramChart",
-              "schema": {
-                "componentName": "HistogramChart",
-                "props": {
-                  "options": {
-                    "data": [
-                      {
-                        "Month": "Jan",
-                        "Domestic": 33,
-                        "Abroad": 1
-                      },
-                      {
-                        "Month": "Feb",
-                        "Domestic": 27,
-                        "Abroad": 39
-                      },
-                      {
-                        "Month": "Mar",
-                        "Domestic": 31,
-                        "Abroad": 20
-                      },
-                      {
-                        "Month": "Apr",
-                        "Domestic": 30,
-                        "Abroad": 15
-                      },
-                      {
-                        "Month": "May",
-                        "Domestic": 37,
-                        "Abroad": 1
-                      },
-                      {
-                        "Month": "Jun",
-                        "Domestic": 36,
-                        "Abroad": 17
-                      },
-                      {
-                        "Month": "Jul",
-                        "Domestic": 42,
-                        "Abroad": 22
-                      },
-                      {
-                        "Month": "Aug",
-                        "Domestic": 22,
-                        "Abroad": 12
-                      },
-                      {
-                        "Month": "Sep",
-                        "Domestic": 17,
-                        "Abroad": 30
-                      },
-                      {
-                        "Month": "Oct",
-                        "Domestic": 40,
-                        "Abroad": 33
-                      },
-                      {
-                        "Month": "Nov",
-                        "Domestic": 42,
-                        "Abroad": 22
-                      },
-                      {
-                        "Month": "Dec",
-                        "Domestic": 32,
-                        "Abroad": 1
-                      }
-                    ],
-                    "xAxis": "Month",
-                    "yAxis": {
-                      "name": "Percent(%)"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "折线图"
-              },
-              "icon": "line-chart",
-              "screenshot": "",
-              "snippetName": "LineChart",
-              "schema": {
-                "componentName": "LineChart",
-                "props": {
-                  "options": {
-                    "padding": [
-                      50,
-                      30,
-                      50,
-                      20
-                    ],
-                    "legend": {
-                      "show": true,
-                      "icon": "line"
-                    },
-                    "data": [
-                      {
-                        "Month": "Jan",
-                        "Domestic": 33,
-                        "Abroad": 1
-                      },
-                      {
-                        "Month": "Feb",
-                        "Domestic": 27,
-                        "Abroad": 39
-                      },
-                      {
-                        "Month": "Mar",
-                        "Domestic": 31,
-                        "Abroad": 20
-                      },
-                      {
-                        "Month": "Apr",
-                        "Domestic": 30,
-                        "Abroad": 15
-                      },
-                      {
-                        "Month": "May",
-                        "Domestic": 37,
-                        "Abroad": 1
-                      },
-                      {
-                        "Month": "Jun",
-                        "Domestic": 36,
-                        "Abroad": 17
-                      },
-                      {
-                        "Month": "Jul",
-                        "Domestic": 42,
-                        "Abroad": 22
-                      },
-                      {
-                        "Month": "Aug",
-                        "Domestic": 22,
-                        "Abroad": 12
-                      },
-                      {
-                        "Month": "Sep",
-                        "Domestic": 17,
-                        "Abroad": 30
-                      },
-                      {
-                        "Month": "Oct",
-                        "Domestic": 40,
-                        "Abroad": 33
-                      },
-                      {
-                        "Month": "Nov",
-                        "Domestic": 42,
-                        "Abroad": 22
-                      },
-                      {
-                        "Month": "Dec",
-                        "Domestic": 32,
-                        "Abroad": 1
-                      }
-                    ],
-                    "xAxis": "Month",
-                    "yAxis": {
-                      "name": "Percent(%)"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "饼图"
-              },
-              "icon": "pie-chart",
-              "screenshot": "",
-              "snippetName": "PieChart",
-              "schema": {
-                "componentName": "PieChart",
-                "props": {
-                  "options": {
-                    "type": "pie",
-                    "selectedMode": "multipe",
-                    "data": [
-                      {
-                        "value": 100,
-                        "name": "VPC"
-                      },
-                      {
-                        "value": 90,
-                        "name": "IM"
-                      },
-                      {
-                        "value": 49,
-                        "name": "EIP"
-                      },
-                      {
-                        "value": 14,
-                        "name": "SG"
-                      }
-                    ]
-                  }
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "进度图"
-              },
-              "icon": "process-chart",
-              "screenshot": "",
-              "snippetName": "ProcessChart",
-              "schema": {
-                "componentName": "ProcessChart",
-                "props": {
-                  "options": {
-                    "name": "ProcessBarChart",
-                    "theme": "light",
-                    "padding": [
-                      32,
-                      32,
-                      0,
-                      32
-                    ],
-                    "color": [
-                      "#fa2a2d",
-                      "#ff7500",
-                      "#ffbf00",
-                      "#41ba41",
-                      "#00aaee"
-                    ],
-                    "data": [
-                      {
-                        "name": "UniEPMgr",
-                        "value": 80
-                      },
-                      {
-                        "name": "SMLoglic",
-                        "value": 65
-                      },
-                      {
-                        "name": "SSO",
-                        "value": 45
-                      },
-                      {
-                        "name": "APIMgr",
-                        "value": 20
-                      },
-                      {
-                        "name": "Logtransfer",
-                        "value": 12
-                      }
-                    ]
-                  }
-                }
-              }
-            },
-            {
-              "name": {
-                "zh_CN": "环图"
-              },
-              "icon": "ring-chart",
-              "screenshot": "",
-              "snippetName": "RingChart",
-              "schema": {
-                "componentName": "RingChart",
-                "props": {
-                  "options": {
-                    "type": "circle",
-                    "data": [
-                      {
-                        "value": 100,
-                        "name": "VPC"
-                      },
-                      {
-                        "value": 98,
-                        "name": "IM"
-                      },
-                      {
-                        "value": 49,
-                        "name": "EIP"
-                      },
-                      {
-                        "value": 14,
-                        "name": "SG"
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
           "group": "容器组件",
           "children": [
+            {
+              "name": {
+                "zh_CN": "题干拆分"
+              },
+              "icon": "justify-items-stretch",
+              "screenshot": "",
+              "snippetName": "AnswerSplit",
+              "schema": {
+                "componentName": "AnswerSplit",
+                "props": {
+                  "ref": "answerSplit"
+                }
+              }
+            },
             {
               "name": {
                 "zh_CN": "卡联读卡"
@@ -23511,6 +23203,396 @@
               "schema": {
                 "componentName": "VHTML",
                 "props": {}
+              }
+            }
+          ]
+        },
+        {
+          "group": "图表组件",
+          "children": [
+            {
+              "name": {
+                "zh_CN": "条形图"
+              },
+              "icon": "bar-chart",
+              "screenshot": "",
+              "snippetName": "BarChart",
+              "schema": {
+                "componentName": "BarChart",
+                "props": {
+                  "options": {
+                    "data": [
+                      {
+                        "日期": "1/1",
+                        "访问用户": 1393,
+                        "下单用户": 1093,
+                        "下单率": 0.32
+                      },
+                      {
+                        "日期": "1/2",
+                        "访问用户": 3530,
+                        "下单用户": 3230,
+                        "下单率": 0.26
+                      },
+                      {
+                        "日期": "1/3",
+                        "访问用户": 2923,
+                        "下单用户": 2623,
+                        "下单率": 0.76
+                      },
+                      {
+                        "日期": "1/4",
+                        "访问用户": 1723,
+                        "下单用户": 1423,
+                        "下单率": 0.49
+                      },
+                      {
+                        "日期": "1/5",
+                        "访问用户": 3792,
+                        "下单用户": 3492,
+                        "下单率": 0.323
+                      },
+                      {
+                        "日期": "1/6",
+                        "访问用户": 4593,
+                        "下单用户": 4293,
+                        "下单率": 0.78
+                      }
+                    ],
+                    "xAxis": {
+                      "data": "日期"
+                    },
+                    "direction": "horizontal"
+                  }
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "流程图"
+              },
+              "icon": "flow-chart",
+              "screenshot": "",
+              "snippetName": "FlowChart",
+              "schema": {
+                "componentName": "FlowChart",
+                "props": {
+                  "chartOption": {}
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "仪表盘"
+              },
+              "icon": "gauge-chart",
+              "screenshot": "",
+              "snippetName": "GaugeChart",
+              "schema": {
+                "componentName": "GaugeChart",
+                "props": {
+                  "options": {
+                    "data": [
+                      {
+                        "value": 71,
+                        "name": "Utilization rate"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "柱状图"
+              },
+              "icon": "histogram-chart",
+              "screenshot": "",
+              "snippetName": "HistogramChart",
+              "schema": {
+                "componentName": "HistogramChart",
+                "props": {
+                  "options": {
+                    "data": [
+                      {
+                        "Month": "Jan",
+                        "Domestic": 33,
+                        "Abroad": 1
+                      },
+                      {
+                        "Month": "Feb",
+                        "Domestic": 27,
+                        "Abroad": 39
+                      },
+                      {
+                        "Month": "Mar",
+                        "Domestic": 31,
+                        "Abroad": 20
+                      },
+                      {
+                        "Month": "Apr",
+                        "Domestic": 30,
+                        "Abroad": 15
+                      },
+                      {
+                        "Month": "May",
+                        "Domestic": 37,
+                        "Abroad": 1
+                      },
+                      {
+                        "Month": "Jun",
+                        "Domestic": 36,
+                        "Abroad": 17
+                      },
+                      {
+                        "Month": "Jul",
+                        "Domestic": 42,
+                        "Abroad": 22
+                      },
+                      {
+                        "Month": "Aug",
+                        "Domestic": 22,
+                        "Abroad": 12
+                      },
+                      {
+                        "Month": "Sep",
+                        "Domestic": 17,
+                        "Abroad": 30
+                      },
+                      {
+                        "Month": "Oct",
+                        "Domestic": 40,
+                        "Abroad": 33
+                      },
+                      {
+                        "Month": "Nov",
+                        "Domestic": 42,
+                        "Abroad": 22
+                      },
+                      {
+                        "Month": "Dec",
+                        "Domestic": 32,
+                        "Abroad": 1
+                      }
+                    ],
+                    "xAxis": "Month",
+                    "yAxis": {
+                      "name": "Percent(%)"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "折线图"
+              },
+              "icon": "line-chart",
+              "screenshot": "",
+              "snippetName": "LineChart",
+              "schema": {
+                "componentName": "LineChart",
+                "props": {
+                  "options": {
+                    "padding": [
+                      50,
+                      30,
+                      50,
+                      20
+                    ],
+                    "legend": {
+                      "show": true,
+                      "icon": "line"
+                    },
+                    "data": [
+                      {
+                        "Month": "Jan",
+                        "Domestic": 33,
+                        "Abroad": 1
+                      },
+                      {
+                        "Month": "Feb",
+                        "Domestic": 27,
+                        "Abroad": 39
+                      },
+                      {
+                        "Month": "Mar",
+                        "Domestic": 31,
+                        "Abroad": 20
+                      },
+                      {
+                        "Month": "Apr",
+                        "Domestic": 30,
+                        "Abroad": 15
+                      },
+                      {
+                        "Month": "May",
+                        "Domestic": 37,
+                        "Abroad": 1
+                      },
+                      {
+                        "Month": "Jun",
+                        "Domestic": 36,
+                        "Abroad": 17
+                      },
+                      {
+                        "Month": "Jul",
+                        "Domestic": 42,
+                        "Abroad": 22
+                      },
+                      {
+                        "Month": "Aug",
+                        "Domestic": 22,
+                        "Abroad": 12
+                      },
+                      {
+                        "Month": "Sep",
+                        "Domestic": 17,
+                        "Abroad": 30
+                      },
+                      {
+                        "Month": "Oct",
+                        "Domestic": 40,
+                        "Abroad": 33
+                      },
+                      {
+                        "Month": "Nov",
+                        "Domestic": 42,
+                        "Abroad": 22
+                      },
+                      {
+                        "Month": "Dec",
+                        "Domestic": 32,
+                        "Abroad": 1
+                      }
+                    ],
+                    "xAxis": "Month",
+                    "yAxis": {
+                      "name": "Percent(%)"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "饼图"
+              },
+              "icon": "pie-chart",
+              "screenshot": "",
+              "snippetName": "PieChart",
+              "schema": {
+                "componentName": "PieChart",
+                "props": {
+                  "options": {
+                    "type": "pie",
+                    "selectedMode": "multipe",
+                    "data": [
+                      {
+                        "value": 100,
+                        "name": "VPC"
+                      },
+                      {
+                        "value": 90,
+                        "name": "IM"
+                      },
+                      {
+                        "value": 49,
+                        "name": "EIP"
+                      },
+                      {
+                        "value": 14,
+                        "name": "SG"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "进度图"
+              },
+              "icon": "process-chart",
+              "screenshot": "",
+              "snippetName": "ProcessChart",
+              "schema": {
+                "componentName": "ProcessChart",
+                "props": {
+                  "options": {
+                    "name": "ProcessBarChart",
+                    "theme": "light",
+                    "padding": [
+                      32,
+                      32,
+                      0,
+                      32
+                    ],
+                    "color": [
+                      "#fa2a2d",
+                      "#ff7500",
+                      "#ffbf00",
+                      "#41ba41",
+                      "#00aaee"
+                    ],
+                    "data": [
+                      {
+                        "name": "UniEPMgr",
+                        "value": 80
+                      },
+                      {
+                        "name": "SMLoglic",
+                        "value": 65
+                      },
+                      {
+                        "name": "SSO",
+                        "value": 45
+                      },
+                      {
+                        "name": "APIMgr",
+                        "value": 20
+                      },
+                      {
+                        "name": "Logtransfer",
+                        "value": 12
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "name": {
+                "zh_CN": "环图"
+              },
+              "icon": "ring-chart",
+              "screenshot": "",
+              "snippetName": "RingChart",
+              "schema": {
+                "componentName": "RingChart",
+                "props": {
+                  "options": {
+                    "type": "circle",
+                    "data": [
+                      {
+                        "value": 100,
+                        "name": "VPC"
+                      },
+                      {
+                        "value": 98,
+                        "name": "IM"
+                      },
+                      {
+                        "value": 49,
+                        "name": "EIP"
+                      },
+                      {
+                        "value": 14,
+                        "name": "SG"
+                      }
+                    ]
+                  }
+                }
               }
             }
           ]
