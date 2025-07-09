@@ -19,7 +19,7 @@
             "package": "@shqy/components",
             "exportName": "AnswerSplit",
             "script": "http://192.168.0.113:8088/@shqy/components",
-            "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+            "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-400.css",
             "version": "",
             "destructuring": true
           },
@@ -2387,7 +2387,7 @@
             "package": "@shqy/components",
             "exportName": "ProgramBuild",
             "script": "http://192.168.0.113:8088/@shqy/components",
-            "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+            "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-700.css",
             "version": "",
             "destructuring": true
           },
@@ -24397,16 +24397,7 @@
           ]
         }
       ],
-      "packages": [
-        {
-          "name": "TinyVue组件库",
-          "package": "@opentiny/vue",
-          "version": "3.21.0",
-          "destructuring": true,
-          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.21/files/dist3/tiny-vue-pc.mjs",
-          "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.21/files/index.css"
-        }
-      ] 
+      "packages": []
     }
   }
 }
