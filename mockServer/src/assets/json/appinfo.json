@@ -14391,6 +14391,15 @@
         }
       },
       {
+        "component": "TinyCard",
+        "npm": {
+          "package": "@opentiny/vue",
+          "exportName": "Card",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "TinyCarousel",
         "npm": {
           "package": "@opentiny/vue",

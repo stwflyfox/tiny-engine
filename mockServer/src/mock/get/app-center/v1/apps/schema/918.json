@@ -1944,6 +1944,13 @@
         "destructuring": true
       },
       {
+        "componentName": "TinyCard",
+        "package": "@opentiny/vue",
+        "version": "",
+        "exportName": "Card",
+        "destructuring": true
+      },
+      {
         "componentName": "TinyCarousel",
         "package": "@opentiny/vue",
         "version": "",

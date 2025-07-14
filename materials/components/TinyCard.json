@@ -1,0 +1,262 @@
+{
+  "icon": "single-page",
+  "name": {
+    "zh_CN": "卡片"
+  },
+  "component": "TinyCard",
+  "description": "卡片",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Card",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "auto-width",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的宽度是否自动撑开"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的宽度是否自动撑开"
+            },
+            "labelPosition": "left"
+          },
+          
+          {
+            "property": "custom-class",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的class"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的class"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "height",
+            "label": {
+              "text": {
+                "zh_CN": "卡片内容区域的高度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片内容区域的高度"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "src",
+            "label": {
+              "text": {
+                "zh_CN": "图片或者视频的地址"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "图片或者视频的地址"
+            },
+            "labelPosition": "left"
+          },          
+         
+          {
+            "property": "type",
+            "label": {
+              "text": {
+                "zh_CN": "设置卡片类型"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "text",
+                    "value": "text"
+                  },
+                  {
+                    "label": "image",
+                    "value": "image"
+                  },
+                  {
+                    "label": "video",
+                    "value": "video"
+                  },
+                  {
+                    "label": "logo",
+                    "value": "logo"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "property": "title",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的标题"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的标题"
+            },
+            "labelPosition": "left"
+          }
+       
+        ]
+      }
+    ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "组件默认插槽"
+        }
+      },
+      "footer": {
+        "label": {
+          "zh_CN": "footer"
+        },
+        "description": {
+          "zh_CN": "组件底部插槽"
+        }
+      },
+      "title": {
+        "label": {
+          "zh_CN": "title"
+        },
+        "description": {
+          "zh_CN": "标题插槽"
+        }
+      },
+      "title-left": {
+        "label": {
+          "zh_CN": "title-left"
+        },
+        "description": {
+          "zh_CN": "标题左侧插槽"
+        }
+      },
+      "title-right": {
+        "label": {
+          "zh_CN": "title-right"
+        },
+        "description": {
+          "zh_CN": "标题右侧插槽"
+        }
+      }
+    },
+    "events": {
+     
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "data",
+        "show-checkbox"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "卡片"
+      },
+      "icon": "single-page",
+      "screenshot": "",
+      "snippetName": "TinyCard",
+      "schema": {
+        "componentName": "TinyCard",
+        "props": {
+          "description": "卡片"
+        }
+      }
+    }
+  ],
+  "category": "容器组件"
+}
