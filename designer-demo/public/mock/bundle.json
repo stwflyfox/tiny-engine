@@ -1503,6 +1503,26 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "system",
+                    "defaultValue": 1,
+                    "label": {
+                      "text": {
+                        "zh_CN": "系统(ESystem的枚举值)"
+                      }
+                    },
+                    "hidden": false,
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": ""
+                    }
+                  },
+                  {
                     "property": "bottonText",
                     "type": "string",
                     "defaultValue": "",
