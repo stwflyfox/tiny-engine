@@ -95,6 +95,27 @@
             "labelPosition": "left"
           },
           {
+            "property": "top-create",
+            "label": {
+              "text": {
+                "zh_CN": "下拉框显示新增按钮"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "下拉框显示新增按钮"
+            },
+            "labelPosition": "left"
+          },
+          
+          {
             "property": "searchable",
             "label": {
               "text": {
@@ -492,12 +513,12 @@
         },
         "defaultValue": ""
       },
-      "onUpdate:modelValue": {
+      "onTopCreateClick": {
         "label": {
-          "zh_CN": "双向绑定的值改变时触发"
+          "zh_CN": "顶部新增按钮点击事件"
         },
         "description": {
-          "zh_CN": "当前选中的值改变时触发"
+          "zh_CN": "顶部新增按钮点击事件"
         },
         "type": "event",
         "functionInfo": {
@@ -507,10 +528,24 @@
               "type": "string",
               "defaultValue": "",
               "description": {
-                "zh_CN": "双向绑定的当前选中值"
+                "zh_CN": "下拉框选中项的值"
               }
             }
           ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "当前选中的值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          
           "returns": {}
         },
         "defaultValue": ""
