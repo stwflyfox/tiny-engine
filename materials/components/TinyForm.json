@@ -54,6 +54,25 @@
             }
           },
           {
+            "property": "display-only",
+            "label": {
+              "text": {
+                "zh_CN": "是否开启仅展示模式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
             "property": "label-width",
             "label": {
               "text": {
