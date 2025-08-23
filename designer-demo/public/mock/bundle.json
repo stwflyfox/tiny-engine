@@ -21388,6 +21388,26 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "expand-on-click-node",
+                    "label": {
+                      "text": {
+                        "zh_CN": "节点在点击内容时,是否展开/收起"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "节点在点击内容时,是否展开/收起"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "default-expanded-keys",
                     "label": {
                       "text": {
