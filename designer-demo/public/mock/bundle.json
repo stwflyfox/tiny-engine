@@ -5860,6 +5860,25 @@
                 },
                 "content": [
                   {
+                    "property": "modelValue",
+                    "label": {
+                      "text": {
+                        "zh_CN": "绑定值"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaField",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "双向绑定值"
+                    },
+                    "labelPosition": "top"
+                  },
+                  {
                     "property": "data",
                     "label": {
                       "text": {
