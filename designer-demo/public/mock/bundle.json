@@ -10871,12 +10871,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "visible",
@@ -10990,6 +10984,25 @@
                     },
                     "description": {
                       "zh_CN": "控制头部显示"
+                    }
+                  },
+                  {
+                    "property": "mask",
+                    "label": {
+                      "text": {
+                        "zh_CN": "显示遮罩层"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "显示遮罩层"
                     }
                   },
                   {
