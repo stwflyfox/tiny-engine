@@ -21945,12 +21945,6 @@
                 "description": {
                   "zh_CN": "基础信息"
                 },
-                "collapse": {
-                  "number": 6,
-                  "text": {
-                    "zh_CN": "显示更多"
-                  }
-                },
                 "content": [
                   {
                     "property": "modelValue",
@@ -21989,6 +21983,44 @@
                     "description": {
                       "zh_CN": "禁用"
                     }
+                  },
+                  {
+                    "property": "accept",
+                    "label": {
+                      "text": {
+                        "zh_CN": "限制文件类型"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "限制文件类型"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "fileSize",
+                    "label": {
+                      "text": {
+                        "zh_CN": "限制文件大小，单位为 KB；格式为数组[min,max] 设置上传范围"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaInput",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "限制文件大小，单位为 KB；格式为数组[min,max] 设置上传范围"
+                    },
+                    "labelPosition": "left"
                   },
                   {
                     "property": "limit",
