@@ -14078,7 +14078,7 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "AnswerSplit",
-          "script": "http://192.168.0.99:8088/@shqy/components",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-400.css",
           "version": "",
           "destructuring": true
@@ -14098,8 +14098,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "CardLan",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14109,8 +14109,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "FlowChart",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14120,8 +14120,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "FluentEditor",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14140,8 +14140,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "GridItem",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14151,8 +14151,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "GridLayout",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14171,8 +14171,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "ImportFile",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14200,8 +14200,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "PopSelect",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14211,8 +14211,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "PreviewFile",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14231,7 +14231,7 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "ProgramBuild",
-          "script": "http://192.168.0.99:8088/@shqy/components",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
           "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-700.css",
           "version": "",
           "destructuring": true
@@ -14251,8 +14251,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SelectDictionary",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14262,8 +14262,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SelectOrganization",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14273,8 +14273,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SelectOrganizationUser",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14284,8 +14284,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SelectRegions",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14295,8 +14295,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SelectUser",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14310,8 +14310,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "SignaturePad",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14321,8 +14321,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "TextSvg",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14602,8 +14602,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "TinyMceEditor",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14811,8 +14811,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "UploadFile",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14822,8 +14822,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "UploadImage",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
@@ -14833,8 +14833,8 @@
         "npm": {
           "package": "@shqy/components",
           "exportName": "VHTML",
-          "script": "http://192.168.0.99:8088/@shqy/components",
-          "css": "http://192.168.0.99:8088/@shqy/components/style.css",
+          "script": "https://unpkg.91zd.cn/@shqy/components",
+          "css": "https://unpkg.91zd.cn/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }
