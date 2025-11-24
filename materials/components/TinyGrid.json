@@ -1342,6 +1342,20 @@
         },
         "defaultValue": ""
       },
+      "onHeaderCellClick": {
+        "label": {
+          "zh_CN": "表头单元格点击时触发"
+        },
+        "description": {
+          "zh_CN": "表头单元格点击时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
       "onCellClick": {
         "label": {
           "zh_CN": "单元格点击时触发"
