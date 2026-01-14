@@ -329,6 +329,29 @@
         },
         "defaultValue": ""
       },
+      "onCleared": {
+        "label": {
+          "zh_CN": "清除成功时触发"
+        },
+        "description": {
+          "zh_CN": "清除成功时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "清除成功时触发"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
       "onUpdate:modelValue": {
         "label": {
           "zh_CN": "双向绑定的值改变时触发"
