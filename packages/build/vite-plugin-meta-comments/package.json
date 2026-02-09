@@ -38,5 +38,8 @@
   },
   "author": "OpenTiny Team",
   "license": "MIT",
-  "homepage": "https://opentiny.design/tiny-engine"
+  "homepage": "https://opentiny.design/tiny-engine",
+  "dependencies": {
+    "@opentiny/vue-renderless": "3.20.0"
+  }
 }

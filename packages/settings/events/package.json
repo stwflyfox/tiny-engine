@@ -29,6 +29,7 @@
     "@opentiny/tiny-engine-configurator": "workspace:*",
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
+    "@opentiny/vue-renderless": "3.20.0",
     "magic-string": "^0.30.17"
   },
   "devDependencies": {
