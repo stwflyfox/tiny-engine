@@ -15,6 +15,7 @@
     "@opentiny/tiny-engine": "workspace:^",
     "@opentiny/tiny-engine-meta-register": "workspace:^",
     "@opentiny/tiny-engine-utils": "workspace:*",
+    "@opentiny/utils":"~3.28.0",
     "@opentiny/vue": "~3.28.0",
     "@opentiny/vue-design-smb": "~3.28.0",
     "@opentiny/vue-icon": "~3.28.0",

@@ -12,6 +12,18 @@
 import { configurators } from './configurators/'
 import 'virtual:svg-icons-register'
 
+
+//FluentEditor img src 白名单
+import { xss } from '@opentiny/utils'
+const options = {
+  html: {
+    whiteList: {
+      img: ['src']
+    }
+  }
+}
+xss.setXssOption(options)
+
 async function startApp() {
   const registry = await import('../registry')
   const { init } = await import('@opentiny/tiny-engine')
