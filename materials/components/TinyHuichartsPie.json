@@ -1,0 +1,397 @@
+{
+  "version": "3.22.0",
+  "name": {
+    "zh_CN": "圆盘图"
+  },
+  "component": "TinyHuichartsPie",
+  "icon": "pie",
+  "description": "圆盘图",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "destructuring": true,
+    "exportName": "TinyHuichartsPie",
+    "name": "TinyVueHuicharts组件库",
+    "package": "@opentiny/vue-huicharts",
+    "version": "3.22.0",
+    "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+  },
+  "group": "chart",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "图表配置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "默认分组"
+                },
+                "content": [
+                  {
+                    "property": "color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "颜色"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      "#6D8FF0",
+                      "#00A874",
+                      "#BD72F0",
+                      "#54BCCE",
+                      "#FDC000",
+                      "#9185F0",
+                      "#00A2B5"
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "颜色, 类型Array"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "data",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      {
+                        "value": 100,
+                        "name": "VPC"
+                      },
+                      {
+                        "value": 90,
+                        "name": "IM"
+                      },
+                      {
+                        "value": 49,
+                        "name": "EIP"
+                      }
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "图表数据"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "title",
+                    "label": {
+                      "text": {
+                        "zh_CN": "中心文本配置"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "text": " ",
+                      "subtext": " ",
+                      "top": "center",
+                      "left": "center",
+                      "itemGap": 8,
+                      "textStyle": {
+                        "color": "#191919",
+                        "fontSize": 28,
+                        "lineHeight": 28,
+                        "fontWeight": "normal"
+                      },
+                      "subtextStyle": {
+                        "color": "#bbbbbb",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "fontWeight": "normal"
+                      }
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "itemStyle",
+                    "label": {
+                      "text": {
+                        "zh_CN": "描边配置"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "borderColor": "#ffffff",
+                      "borderWidth": 3,
+                      "borderRadius": 0
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "position",
+                    "label": {
+                      "text": {
+                        "zh_CN": "图表位置及大小"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "center": [
+                        "50%",
+                        "45%"
+                      ],
+                      "radius": [
+                        "44%",
+                        "50%"
+                      ]
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "theme",
+                    "label": {
+                      "text": {
+                        "zh_CN": "主题"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "cloud-light",
+                    "cols": 12,
+                    "widget": {
+                      "component": "SelectConfigurator",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "light",
+                            "value": "light"
+                          },
+                          {
+                            "label": "dark",
+                            "value": "dark"
+                          },
+                          {
+                            "label": "hdesign-light",
+                            "value": "hdesign-light"
+                          },
+                          {
+                            "label": "hdesign-dark",
+                            "value": "hdesign-dark"
+                          },
+                          {
+                            "label": "cloud-light",
+                            "value": "cloud-light"
+                          },
+                          {
+                            "label": "bpit-light",
+                            "value": "bpit-light"
+                          },
+                          {
+                            "label": "bpit-dark",
+                            "value": "bpit-dark"
+                          }
+                        ]
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "tooltip",
+                    "label": {
+                      "text": {
+                        "zh_CN": "悬浮框内容"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "悬浮提示框内容配置"
+                    },
+                    "labelPosition": "left"
+                  }
+                ]
+              }
+            ],
+            "widget": {
+              "component": "NestedPropertyConfigurator",
+              "props": {
+                "type": "object",
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "圆盘图配置"
+            },
+            "labelPosition": "top"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "圆盘图"
+      },
+      "icon": "pie",
+      "screenshot": "",
+      "snippetName": "TinyHuichartsPie",
+      "schema": {
+        "componentName": "TinyHuichartsPie",
+        "props": {
+          "options": {
+            "type": "pie",
+            "theme": "hdesign-light",
+            "label": {
+              "show": true,
+              "line": true,
+              "labelHtml": "{a|}{b|{b}:}{c|{d}%}",
+              "rich": {
+                "a": {
+                  "width": 12,
+                  "height": 12,
+                  "backgroundColor": {
+                    "image": "./image/charts/pie/ic_jiantou_hong.svg"
+                  }
+                },
+                "b": {
+                  "padding": [
+                    2,
+                    4,
+                    0,
+                    0
+                  ]
+                },
+                "c": {
+                  "fontWeight": "bold",
+                  "padding": [
+                    2,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "data": [
+              {
+                "value": 100,
+                "name": "VPC"
+              },
+              {
+                "value": 90,
+                "name": "IM"
+              },
+              {
+                "value": 49,
+                "name": "EIP"
+              },
+              {
+                "value": 14,
+                "name": "SG"
+              }
+            ]
+          }
+        }
+      },
+      "category": "chart"
+    }
+  ]
+}

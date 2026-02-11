@@ -1,0 +1,356 @@
+{
+  "version": "3.22.0",
+  "name": {
+    "zh_CN": "进度图"
+  },
+  "component": "TinyHuichartsProcess",
+  "icon": "process",
+  "description": "进度图",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "destructuring": true,
+    "exportName": "TinyHuichartsProcess",
+    "name": "TinyVueHuicharts组件库",
+    "package": "@opentiny/vue-huicharts",
+    "version": "3.22.0",
+    "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+  },
+  "group": "chart",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "图表配置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "默认分组"
+                },
+                "content": [
+                  {
+                    "property": "color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "颜色"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      "#6D8FF0",
+                      "#00A874",
+                      "#BD72F0",
+                      "#54BCCE",
+                      "#FDC000",
+                      "#9185F0",
+                      "#00A2B5"
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "颜色, 类型Array"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "data",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      {
+                        "name": "UniEPMgr",
+                        "value": 80
+                      },
+                      {
+                        "name": "SMLoglic",
+                        "value": 65
+                      },
+                      {
+                        "name": "SSO",
+                        "value": 45
+                      }
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "图表数据"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "name",
+                    "label": {
+                      "text": {
+                        "zh_CN": "图表数据（必填）"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "state",
+                    "label": {
+                      "text": {
+                        "zh_CN": "根据状态设置颜色"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "error": 75,
+                      "warning": 60,
+                      "subwarning": 50,
+                      "success": 20
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "padding",
+                    "label": {
+                      "text": {
+                        "zh_CN": "图表内边距"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "[50, 20, 50, 20]",
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "theme",
+                    "label": {
+                      "text": {
+                        "zh_CN": "主题"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "cloud-light",
+                    "cols": 12,
+                    "widget": {
+                      "component": "SelectConfigurator",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "light",
+                            "value": "light"
+                          },
+                          {
+                            "label": "dark",
+                            "value": "dark"
+                          },
+                          {
+                            "label": "hdesign-light",
+                            "value": "hdesign-light"
+                          },
+                          {
+                            "label": "hdesign-dark",
+                            "value": "hdesign-dark"
+                          },
+                          {
+                            "label": "cloud-light",
+                            "value": "cloud-light"
+                          },
+                          {
+                            "label": "bpit-light",
+                            "value": "bpit-light"
+                          },
+                          {
+                            "label": "bpit-dark",
+                            "value": "bpit-dark"
+                          }
+                        ]
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "tooltip",
+                    "label": {
+                      "text": {
+                        "zh_CN": "悬浮框内容"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "悬浮提示框内容配置"
+                    },
+                    "labelPosition": "left"
+                  }
+                ]
+              }
+            ],
+            "widget": {
+              "component": "NestedPropertyConfigurator",
+              "props": {
+                "type": "object",
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "进度图配置"
+            },
+            "labelPosition": "top"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "进度图"
+      },
+      "icon": "process",
+      "screenshot": "",
+      "snippetName": "TinyHuichartsProcess",
+      "schema": {
+        "componentName": "TinyHuichartsProcess",
+        "props": {
+          "options": {
+            "name": "ProcessBarChart",
+            "theme": "light",
+            "padding": [
+              32,
+              32,
+              0,
+              32
+            ],
+            "color": [
+              "#fa2a2d",
+              "#ff7500",
+              "#ffbf00",
+              "#41ba41",
+              "#00aaee"
+            ],
+            "data": [
+              {
+                "name": "UniEPMgr",
+                "value": 80
+              },
+              {
+                "name": "SMLoglic",
+                "value": 65
+              },
+              {
+                "name": "SSO",
+                "value": 45
+              },
+              {
+                "name": "APIMgr",
+                "value": 20
+              },
+              {
+                "name": "Logtransfer",
+                "value": 12
+              }
+            ]
+          }
+        }
+      },
+      "category": "chart"
+    }
+  ]
+}

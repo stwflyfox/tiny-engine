@@ -1,0 +1,544 @@
+{
+  "version": "3.22.0",
+  "name": {
+    "zh_CN": "散点图"
+  },
+  "component": "TinyHuichartsScatter",
+  "icon": "scatter",
+  "description": "散点图",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "destructuring": true,
+    "exportName": "TinyHuichartsScatter",
+    "name": "TinyVueHuicharts组件库",
+    "package": "@opentiny/vue-huicharts",
+    "version": "3.22.0",
+    "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+  },
+  "group": "chart",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "图表配置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "默认分组"
+                },
+                "content": [
+                  {
+                    "property": "color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "颜色"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      "#6D8FF0",
+                      "#00A874",
+                      "#BD72F0",
+                      "#54BCCE",
+                      "#FDC000",
+                      "#9185F0",
+                      "#00A2B5"
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "颜色, 类型Array"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "data",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "1990": [
+                        [
+                          28604,
+                          77,
+                          17096869,
+                          "Australia",
+                          1990
+                        ],
+                        [
+                          31163,
+                          77.4,
+                          27662440,
+                          "Canada",
+                          1990
+                        ],
+                        [
+                          60001,
+                          68,
+                          1154605773,
+                          "China",
+                          1990
+                        ]
+                      ],
+                      "2000": [
+                        [
+                          19349,
+                          69.6,
+                          147568552,
+                          "Russia",
+                          2000
+                        ],
+                        [
+                          10670,
+                          67.3,
+                          53994605,
+                          "Turkey",
+                          2000
+                        ],
+                        [
+                          26424,
+                          75.7,
+                          57110117,
+                          "United Kingdom",
+                          2000
+                        ]
+                      ],
+                      "2015": [
+                        [
+                          44056,
+                          81.8,
+                          23968973,
+                          "Australia",
+                          2015
+                        ],
+                        [
+                          43294,
+                          81.7,
+                          35939927,
+                          "Canada",
+                          2015
+                        ],
+                        [
+                          13334,
+                          76.9,
+                          1376048943,
+                          "China",
+                          2015
+                        ]
+                      ]
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "图表数据"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "bubbleSize",
+                    "label": {
+                      "text": {
+                        "zh_CN": "气泡大小范围"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "[10, 70]",
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "itemStyle",
+                    "label": {
+                      "text": {
+                        "zh_CN": "节点图形样式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "padding",
+                    "label": {
+                      "text": {
+                        "zh_CN": "图表内边距"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "[50, 20, 50, 20]",
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "theme",
+                    "label": {
+                      "text": {
+                        "zh_CN": "主题"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "cloud-light",
+                    "cols": 12,
+                    "widget": {
+                      "component": "SelectConfigurator",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "light",
+                            "value": "light"
+                          },
+                          {
+                            "label": "dark",
+                            "value": "dark"
+                          },
+                          {
+                            "label": "hdesign-light",
+                            "value": "hdesign-light"
+                          },
+                          {
+                            "label": "hdesign-dark",
+                            "value": "hdesign-dark"
+                          },
+                          {
+                            "label": "cloud-light",
+                            "value": "cloud-light"
+                          },
+                          {
+                            "label": "bpit-light",
+                            "value": "bpit-light"
+                          },
+                          {
+                            "label": "bpit-dark",
+                            "value": "bpit-dark"
+                          }
+                        ]
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "tooltip",
+                    "label": {
+                      "text": {
+                        "zh_CN": "悬浮框内容"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "悬浮提示框内容配置"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "xAxis",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置x轴"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "默认值：图表数据data中data[0]对象的第一个key值"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "yAxis",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置y轴"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  }
+                ]
+              }
+            ],
+            "widget": {
+              "component": "NestedPropertyConfigurator",
+              "props": {
+                "type": "object",
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "散点图配置"
+            },
+            "labelPosition": "top"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "散点图"
+      },
+      "icon": "scatter",
+      "screenshot": "",
+      "snippetName": "TinyHuichartsScatter",
+      "schema": {
+        "componentName": "TinyHuichartsScatter",
+        "props": {
+          "options": {
+            "padding": [
+              50,
+              30,
+              50,
+              20
+            ],
+            "legend": {
+              "orient": "horizontal",
+              "show": true,
+              "position": {
+                "left": "center",
+                "bottom": 15
+              }
+            },
+            "bubbleSize": [
+              20,
+              100
+            ],
+            "xAxisType": "value",
+            "data": {
+              "1990": [
+                [
+                  28604,
+                  77,
+                  1709866,
+                  "Australia",
+                  1990
+                ],
+                [
+                  31163,
+                  77.4,
+                  27662440,
+                  "Canada",
+                  1990
+                ],
+                [
+                  60001,
+                  68,
+                  1154605773,
+                  "China",
+                  1990
+                ],
+                [
+                  13670,
+                  74.7,
+                  10582082,
+                  "Cuba",
+                  1990
+                ],
+                [
+                  28599,
+                  75,
+                  4986705,
+                  "Finland",
+                  1990
+                ]
+              ],
+              "2000": [
+                [
+                  19349,
+                  69.6,
+                  147568552,
+                  "Russia",
+                  2000
+                ],
+                [
+                  10670,
+                  67.3,
+                  53994606,
+                  "Turkey",
+                  2000
+                ],
+                [
+                  26424,
+                  75.7,
+                  57110117,
+                  "United Kingdom",
+                  2000
+                ],
+                [
+                  37062,
+                  75.4,
+                  252847810,
+                  "United States",
+                  2000
+                ],
+                [
+                  23038,
+                  73.13,
+                  143456918,
+                  "Russia",
+                  2000
+                ]
+              ],
+              "2015": [
+                [
+                  44056,
+                  81.8,
+                  23968976,
+                  "Australia",
+                  2015
+                ],
+                [
+                  43294,
+                  81.7,
+                  35939927,
+                  "Canada",
+                  2015
+                ],
+                [
+                  13334,
+                  76.9,
+                  1376048943,
+                  "Cuba",
+                  2015
+                ],
+                [
+                  21291,
+                  78.5,
+                  11389566,
+                  "Finland",
+                  2015
+                ],
+                [
+                  38923,
+                  80.8,
+                  5503457,
+                  "France",
+                  2015
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "category": "chart"
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "version": "3.22.0",
+  "name": {
+    "zh_CN": "瀑布图"
+  },
+  "component": "TinyHuichartsWaterfall",
+  "icon": "waterfall",
+  "description": "瀑布图",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "destructuring": true,
+    "exportName": "TinyHuichartsWaterfall",
+    "name": "TinyVueHuicharts组件库",
+    "package": "@opentiny/vue-huicharts",
+    "version": "3.22.0",
+    "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+  },
+  "group": "chart",
+  "priority": 2,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "options",
+            "label": {
+              "text": {
+                "zh_CN": "图表配置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "properties": [
+              {
+                "label": {
+                  "zh_CN": "默认分组"
+                },
+                "content": [
+                  {
+                    "property": "color",
+                    "label": {
+                      "text": {
+                        "zh_CN": "颜色"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      "#6D8FF0",
+                      "#00A874",
+                      "#BD72F0",
+                      "#54BCCE",
+                      "#FDC000",
+                      "#9185F0",
+                      "#00A2B5"
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "颜色, 类型Array"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "data",
+                    "label": {
+                      "text": {
+                        "zh_CN": "数据"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      {
+                        "Month": "Jan",
+                        "Domestic": [
+                          5,
+                          20
+                        ],
+                        "Abroad": [
+                          5,
+                          23
+                        ]
+                      },
+                      {
+                        "Month": "Feb",
+                        "Domestic": [
+                          10,
+                          30
+                        ],
+                        "Abroad": [
+                          8,
+                          25
+                        ]
+                      },
+                      {
+                        "Month": "Mar",
+                        "Domestic": [
+                          8,
+                          25
+                        ],
+                        "Abroad": [
+                          2,
+                          20
+                        ]
+                      }
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "图表数据"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "dataZoom",
+                    "label": {
+                      "text": {
+                        "zh_CN": "区域缩放轴"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "start": 0,
+                      "end": 100,
+                      "show": false,
+                      "position": {
+                        "left": 36,
+                        "bottom": 20
+                      },
+                      "height": 24
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "itemStyle",
+                    "label": {
+                      "text": {
+                        "zh_CN": "柱体样式"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "barWidth": 8,
+                      "barGap": "60%"
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "padding",
+                    "label": {
+                      "text": {
+                        "zh_CN": "图表内边距"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "[50, 20, 50, 20]",
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "theme",
+                    "label": {
+                      "text": {
+                        "zh_CN": "主题"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": "cloud-light",
+                    "cols": 12,
+                    "widget": {
+                      "component": "SelectConfigurator",
+                      "props": {
+                        "options": [
+                          {
+                            "label": "light",
+                            "value": "light"
+                          },
+                          {
+                            "label": "dark",
+                            "value": "dark"
+                          },
+                          {
+                            "label": "hdesign-light",
+                            "value": "hdesign-light"
+                          },
+                          {
+                            "label": "hdesign-dark",
+                            "value": "hdesign-dark"
+                          },
+                          {
+                            "label": "cloud-light",
+                            "value": "cloud-light"
+                          },
+                          {
+                            "label": "bpit-light",
+                            "value": "bpit-light"
+                          },
+                          {
+                            "label": "bpit-dark",
+                            "value": "bpit-dark"
+                          }
+                        ]
+                      }
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "tooltip",
+                    "label": {
+                      "text": {
+                        "zh_CN": "悬浮框内容"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "悬浮提示框内容配置"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "xAxis",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置x轴"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": {
+                      "data": "Month",
+                      "name": "Utils",
+                      "line": {
+                        "show": true,
+                        "lineStyle": {
+                          "color": "red",
+                          "type": "dashed",
+                          "width": 2
+                        }
+                      },
+                      "interval": 2,
+                      "fullGrid": true,
+                      "labelRotate": 45,
+                      "ellipsis": {
+                        "overflow": "truncate",
+                        "labelWidth": 20
+                      },
+                      "nameLocation": "end",
+                      "nameTextStyle": {
+                        "fontSize": 12,
+                        "color": "#4e4e4e"
+                      }
+                    },
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "默认值：图表数据data中data[0]对象的第一个key值"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "yAxis",
+                    "label": {
+                      "text": {
+                        "zh_CN": "配置y轴"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "defaultValue": [
+                      {
+                        "max": 60,
+                        "min": 0,
+                        "interval": 10,
+                        "position": "left",
+                        "dataName": [
+                          "Domestic"
+                        ],
+                        "name": "value",
+                        "unit": "元",
+                        "nameTextStyle": {
+                          "padding": [
+                            0,
+                            0,
+                            0,
+                            -45
+                          ]
+                        }
+                      },
+                      {
+                        "max": 90,
+                        "min": 0,
+                        "interval": 15,
+                        "position": "right",
+                        "dataName": [
+                          "Abroad"
+                        ],
+                        "name": "kal",
+                        "unit": "$",
+                        "offset": 45,
+                        "nameTextStyle": {
+                          "padding": [
+                            0,
+                            -45,
+                            0,
+                            0
+                          ]
+                        }
+                      }
+                    ],
+                    "cols": 12,
+                    "widget": {
+                      "component": "CodeConfigurator",
+                      "props": {
+                        "language": "json"
+                      }
+                    },
+                    "labelPosition": "left"
+                  }
+                ]
+              }
+            ],
+            "widget": {
+              "component": "NestedPropertyConfigurator",
+              "props": {
+                "type": "object",
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "瀑布图配置"
+            },
+            "labelPosition": "top"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "瀑布图"
+      },
+      "icon": "waterfall",
+      "screenshot": "",
+      "snippetName": "TinyHuichartsWaterfall",
+      "schema": {
+        "componentName": "TinyHuichartsWaterfall",
+        "props": {
+          "options": {
+            "padding": [
+              50,
+              30,
+              20,
+              20
+            ],
+            "legend": {
+              "show": false
+            },
+            "type": "water-fall",
+            "data": [
+              {
+                "Name": "NLE",
+                "User": 10
+              },
+              {
+                "Name": "HIN",
+                "User": 20
+              },
+              {
+                "Name": "FBP",
+                "User": 9
+              },
+              {
+                "Name": "VEDIO",
+                "User": 35
+              },
+              {
+                "Name": "SASS",
+                "User": 20
+              },
+              {
+                "Name": "RDS",
+                "User": 35
+              },
+              {
+                "Name": "E-SYS",
+                "User": 9
+              }
+            ],
+            "xAxis": {
+              "data": "Name"
+            },
+            "yAxis": {
+              "name": "Number"
+            }
+          }
+        }
+      },
+      "category": "chart"
+    }
+  ]
+}

@@ -17113,30 +17113,10 @@
         }
       },
       {
-        "component": "BarChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsBar",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
         "component": "CardLan",
         "npm": {
           "package": "@shqy/components",
           "exportName": "CardLan",
-          "script": "http://192.168.0.113:8088/@shqy/components",
-          "css": "http://192.168.0.113:8088/@shqy/components/style.css",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
-        "component": "FlowChart",
-        "npm": {
-          "package": "@shqy/components",
-          "exportName": "FlowChart",
           "script": "http://192.168.0.113:8088/@shqy/components",
           "css": "http://192.168.0.113:8088/@shqy/components/style.css",
           "version": "",
@@ -17150,15 +17130,6 @@
           "exportName": "FluentEditor",
           "script": "http://192.168.0.113:8088/@shqy/components",
           "css": "http://192.168.0.113:8088/@shqy/components/style.css",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
-        "component": "GaugeChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsGauge",
           "version": "",
           "destructuring": true
         }
@@ -17186,39 +17157,12 @@
         }
       },
       {
-        "component": "HistogramChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsHistogram",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
         "component": "ImportFile",
         "npm": {
           "package": "@shqy/components",
           "exportName": "ImportFile",
           "script": "http://192.168.0.113:8088/@shqy/components",
           "css": "http://192.168.0.113:8088/@shqy/components/style.css",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
-        "component": "LineChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsLine",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
-        "component": "PieChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsPie",
           "version": "",
           "destructuring": true
         }
@@ -17246,30 +17190,12 @@
         }
       },
       {
-        "component": "ProcessChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsProcess",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
         "component": "Program",
         "npm": {
           "package": "@shqy/components",
           "exportName": "ProgramBuild",
           "script": "http://192.168.0.113:8088/@shqy/components",
           "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-700.css",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
-        "component": "RingChart",
-        "npm": {
-          "package": "@opentiny/vue",
-          "exportName": "TinyHuichartsRing",
           "version": "",
           "destructuring": true
         }
@@ -17613,6 +17539,138 @@
           "package": "@opentiny/vue",
           "exportName": "TinyGridColumn",
           "destructuring": true
+        }
+      },
+      {
+        "component": "TinyHuichartsBar",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsBar",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsFunnel",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsFunnel",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsGauge",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsGauge",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsGraph",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsGraph",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsHistogram",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsHistogram",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsLine",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsLine",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsPie",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsPie",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsProcess",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsProcess",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsRadar",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsRadar",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsRing",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsRing",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsScatter",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsScatter",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+        }
+      },
+      {
+        "component": "TinyHuichartsWaterfall",
+        "npm": {
+          "destructuring": true,
+          "exportName": "TinyHuichartsWaterfall",
+          "name": "TinyVueHuicharts组件库",
+          "package": "@opentiny/vue-huicharts",
+          "version": "3.22.0",
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
         }
       },
       {

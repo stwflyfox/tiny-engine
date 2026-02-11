@@ -1,6 +1,13 @@
 {
   "packages": [
     {
+      "name": "TinyVueHuicharts组件库",
+      "package": "@opentiny/vue-huicharts",
+      "version": "3.22.0",
+      "destructuring": true,
+      "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/3.22/files/dist3/tiny-vue-huicharts.mjs"
+    },
+    {
       "name": "TinyVue组件库",
       "package": "@opentiny/vue",
       "version": "3.21.0",

@@ -1733,13 +1733,6 @@
         "destructuring": true
       },
       {
-        "componentName": "BarChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsBar",
-        "destructuring": true
-      },
-      {
         "componentName": "CardLan",
         "package": "@shqy/components",
         "version": "",
@@ -1747,24 +1740,10 @@
         "destructuring": true
       },
       {
-        "componentName": "FlowChart",
-        "package": "@shqy/components",
-        "version": "",
-        "exportName": "FlowChart",
-        "destructuring": true
-      },
-      {
         "componentName": "FluentEditor",
         "package": "@shqy/components",
         "version": "",
         "exportName": "FluentEditor",
-        "destructuring": true
-      },
-      {
-        "componentName": "GaugeChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsGauge",
         "destructuring": true
       },
       {
@@ -1782,31 +1761,10 @@
         "destructuring": true
       },
       {
-        "componentName": "HistogramChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsHistogram",
-        "destructuring": true
-      },
-      {
         "componentName": "ImportFile",
         "package": "@shqy/components",
         "version": "",
         "exportName": "ImportFile",
-        "destructuring": true
-      },
-      {
-        "componentName": "LineChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsLine",
-        "destructuring": true
-      },
-      {
-        "componentName": "PieChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsPie",
         "destructuring": true
       },
       {
@@ -1824,24 +1782,10 @@
         "destructuring": true
       },
       {
-        "componentName": "ProcessChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsProcess",
-        "destructuring": true
-      },
-      {
         "componentName": "Program",
         "package": "@shqy/components",
         "version": "",
         "exportName": "ProgramBuild",
-        "destructuring": true
-      },
-      {
-        "componentName": "RingChart",
-        "package": "@opentiny/vue",
-        "version": "",
-        "exportName": "TinyHuichartsRing",
         "destructuring": true
       },
       {
@@ -2094,6 +2038,90 @@
         "package": "@opentiny/vue",
         "version": "",
         "exportName": "TinyGridColumn",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsBar",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsBar",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsFunnel",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsFunnel",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsGauge",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsGauge",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsGraph",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsGraph",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsHistogram",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsHistogram",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsLine",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsLine",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsPie",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsPie",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsProcess",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsProcess",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsRadar",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsRadar",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsRing",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsRing",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsScatter",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsScatter",
+        "destructuring": true
+      },
+      {
+        "componentName": "TinyHuichartsWaterfall",
+        "package": "@opentiny/vue-huicharts",
+        "version": "3.22.0",
+        "exportName": "TinyHuichartsWaterfall",
         "destructuring": true
       },
       {
