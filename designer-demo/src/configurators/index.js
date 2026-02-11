@@ -1,5 +1,5 @@
-import MyInputConfigurator from './MyInputConfigurator.vue'
+import MetaField from './MetaField.vue'
 
 export const configurators = {
-  MyInputConfigurator
+  MetaField
 }
