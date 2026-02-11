@@ -1,0 +1,86 @@
+{
+  "version": "1.2.0",
+  "name": {
+    "zh_CN": "题干拆分"
+  },
+  "component": "AnswerSplit",
+  "icon": "justify-items-stretch",
+  "description": "题干拆分",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "AnswerSplit",
+    "script": "http://192.168.0.113:8088/@shqy/components",
+    "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-400.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": []
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "题干拆分"
+      },
+      "icon": "justify-items-stretch",
+      "screenshot": "",
+      "snippetName": "AnswerSplit",
+      "schema": {
+        "componentName": "AnswerSplit",
+        "props": {
+          "ref": "answerSplit"
+        }
+      },
+      "category": "容器组件"
+    }
+  ]
+}

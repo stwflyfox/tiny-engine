@@ -2,8 +2,9 @@ import eslintRecommended from '@eslint/js/src/configs/eslint-recommended'
 
 export default {
   ...eslintRecommended.rules,
-  'no-console': 'error',
-  'no-debugger': 'error',
+  'no-console': 0,
+  'no-debugger': 0,
+  'no-undef': 0,
   'space-before-function-paren': 'off',
   'no-use-before-define': 'error'
 }

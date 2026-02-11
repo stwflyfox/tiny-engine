@@ -20,11 +20,11 @@ const componentsTableName = 't_component'
 const materialHistoryId = 1
 // 数据库配置
 const mysqlConfig = {
-  host: SQL_HOST, // 主机名（服务器地址）
-  port: SQL_PORT, // 端口号
-  user: SQL_USER, // 用户名
-  password: SQL_PASSWORD, // 密码
-  database: SQL_DATABASE // 数据库名称
+  host: '192.168.0.113', // 主机名（服务器地址）
+  port: 3306, // 端口号
+  user: 'root', // 用户名
+  password: 'Akcw2019!@#', // 密码
+  database: 'tiny_engine_data_java' // 数据库名称
 }
 class MysqlConnection {
   constructor(config) {

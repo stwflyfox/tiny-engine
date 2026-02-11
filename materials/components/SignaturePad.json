@@ -1,0 +1,426 @@
+{
+  "version": "1.2.0",
+  "name": {
+    "zh_CN": "手写板"
+  },
+  "component": "SignaturePad",
+  "icon": "data-edit",
+  "description": "手写板",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "SignaturePad",
+    "script": "http://192.168.0.113:8088/@shqy/components",
+    "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "divId",
+            "label": {
+              "text": {
+                "zh_CN": "背景内容div的id"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "背景内容div的id"
+            }
+          },
+          {
+            "property": "refId",
+            "label": {
+              "text": {
+                "zh_CN": "ref引用id"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "ref引用id, 在 onClick 事件中回传"
+            }
+          },
+          {
+            "property": "preUrl",
+            "label": {
+              "text": {
+                "zh_CN": "保存的文件前缀名称"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "保存的文件前缀名称"
+            }
+          },
+          {
+            "property": "padstyle",
+            "label": {
+              "text": {
+                "zh_CN": "自定义样式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "css"
+              }
+            },
+            "description": {
+              "zh_CN": "自定义样式"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "penColor",
+            "label": {
+              "text": {
+                "zh_CN": "画笔颜色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "黑色",
+                    "value": "black"
+                  },
+                  {
+                    "label": "红色",
+                    "value": "red"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "画笔颜色"
+            }
+          },
+          {
+            "property": "showToolbar",
+            "label": {
+              "text": {
+                "zh_CN": "显示工具栏"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示工具栏"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "type": "select",
+            "label": {
+              "text": {
+                "zh_CN": "按钮大小"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "large",
+                    "value": "large"
+                  },
+                  {
+                    "label": "medium",
+                    "value": "medium"
+                  },
+                  {
+                    "label": "small",
+                    "value": "small"
+                  },
+                  {
+                    "label": "mini",
+                    "value": "mini"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "showUnderline",
+            "label": {
+              "text": {
+                "zh_CN": "显示下划线"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示下划线"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "showBorder",
+            "label": {
+              "text": {
+                "zh_CN": "显示边框"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示边框"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "showSave",
+            "label": {
+              "text": {
+                "zh_CN": "显示保存按钮"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示保存按钮"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClick": {
+        "label": {
+          "zh_CN": "点击手写区时触发"
+        },
+        "description": {
+          "zh_CN": "点击手写区时触发，会传回ref引用id"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "点击手写区时触发，会传回ref引用id"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onSave": {
+        "label": {
+          "zh_CN": "保存成功时触发"
+        },
+        "description": {
+          "zh_CN": "保存成功时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "保存成功时触发"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onCleared": {
+        "label": {
+          "zh_CN": "清除成功时触发"
+        },
+        "description": {
+          "zh_CN": "清除成功时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "清除成功时触发"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "手写板"
+      },
+      "icon": "data-edit",
+      "screenshot": "",
+      "snippetName": "SignaturePad",
+      "schema": {
+        "componentName": "SignaturePad",
+        "props": {}
+      },
+      "category": "表单组件"
+    }
+  ]
+}

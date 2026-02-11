@@ -1,0 +1,204 @@
+{
+  "version": "3.21.0",
+  "icon": "alert",
+  "name": {
+    "zh_CN": "警告提示"
+  },
+  "component": "TinyAlert",
+  "description": "非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@opentiny/vue",
+    "exportName": "Alert",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "description",
+            "label": {
+              "text": {
+                "zh_CN": "警告的提示内容"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "警告的提示内容"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "size",
+            "label": {
+              "text": {
+                "zh_CN": "尺寸"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "normal",
+                    "value": "normal"
+                  },
+                  {
+                    "label": "large",
+                    "value": "large"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "property": "type",
+            "label": {
+              "text": {
+                "zh_CN": "类型"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "成功",
+                    "value": "success"
+                  },
+                  {
+                    "label": "信息",
+                    "value": "info"
+                  },
+                  {
+                    "label": "警告",
+                    "value": "warning"
+                  },
+                  {
+                    "label": "错误",
+                    "value": "error"
+                  },
+                  {
+                    "label": "简单",
+                    "value": "simple"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "设置不同的类型"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "title",
+            "label": {
+              "text": {
+                "zh_CN": "警告的标题"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "警告的标题，在 size 为 large 时有效"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClose": {
+        "label": {
+          "zh_CN": "关闭 alert 时触发的事件"
+        },
+        "description": {
+          "zh_CN": "关闭 alert 时触发的事件"
+        },
+        "type": "event",
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "data",
+        "show-checkbox"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "警告提示"
+      },
+      "icon": "alert",
+      "screenshot": "",
+      "snippetName": "TinyAlert",
+      "schema": {
+        "componentName": "TinyAlert",
+        "props": {
+          "description": "警告提示内容"
+        }
+      },
+      "category": "容器组件"
+    }
+  ]
+}

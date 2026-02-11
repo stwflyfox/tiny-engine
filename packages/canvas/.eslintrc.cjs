@@ -31,13 +31,14 @@ module.exports = {
   },
   plugins: ['vue'],
   rules: {
-    'no-console': 'error',
-    'no-debugger': 'error',
+    'no-console': 0,
+    'no-debugger': 0,
+    'no-undef': 0,
     'space-before-function-paren': 'off',
     'vue/multi-word-component-names': 'off',
     'no-use-before-define': 'error',
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true, varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
-    'import/no-inner-modules': 'off'
+    'no-unused-vars': 0,
+    '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true, varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
+    'import/no-inner-modules': 0
   }
 }

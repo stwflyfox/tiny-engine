@@ -4,6 +4,7 @@
     "materials": {
       "components": [
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "题干拆分"
           },
@@ -189,6 +190,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "卡联读卡"
           },
@@ -432,6 +434,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "富文本编辑器"
           },
@@ -494,7 +497,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -781,6 +784,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "拖拽项"
           },
@@ -1000,6 +1004,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "拖拽布局"
           },
@@ -1445,6 +1450,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "导入文件"
           },
@@ -1839,6 +1845,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "弹出选择"
           },
@@ -2008,7 +2015,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -2187,6 +2194,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "预览文件"
           },
@@ -2392,6 +2400,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "应用程序"
           },
@@ -2660,6 +2669,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "选择字典项"
           },
@@ -2841,7 +2851,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -2993,6 +3003,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "选择组织架构"
           },
@@ -3116,7 +3127,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -3268,6 +3279,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "选择组织用户"
           },
@@ -3391,7 +3403,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -3543,6 +3555,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "省市区"
           },
@@ -3605,7 +3618,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -3784,6 +3797,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "穿梭组织用户"
           },
@@ -3984,7 +3998,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -4076,6 +4090,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "间隔线"
           },
@@ -4149,6 +4164,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "手写板"
           },
@@ -4559,6 +4575,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "SVG文本"
           },
@@ -4837,6 +4854,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "alert",
           "name": {
             "zh_CN": "警告提示"
@@ -5023,6 +5041,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "锚点"
           },
@@ -5232,6 +5251,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "breadcrumb",
           "name": {
             "zh_CN": "面包屑"
@@ -5377,6 +5397,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "breadcrumb",
           "name": {
             "zh_CN": "面包屑项"
@@ -5479,6 +5500,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "按钮"
           },
@@ -5606,7 +5628,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -5847,6 +5869,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "按钮组"
           },
@@ -6017,7 +6040,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -6062,6 +6085,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "日历视图"
           },
@@ -6533,6 +6557,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "single-page",
           "name": {
             "zh_CN": "卡片"
@@ -6773,6 +6798,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "走马灯"
           },
@@ -7113,6 +7139,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "走马灯子项"
           },
@@ -7254,6 +7281,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "cascader",
           "name": {
             "zh_CN": "级联选择器"
@@ -7790,6 +7818,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "checkbox",
           "name": {
             "zh_CN": "复选框"
@@ -7857,7 +7886,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -8127,6 +8156,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "button-check",
           "name": {
             "zh_CN": "复选按钮"
@@ -8194,7 +8224,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -8356,6 +8386,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "checkboxgroup",
           "name": {
             "zh_CN": "复选框组"
@@ -8417,7 +8448,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -8614,6 +8645,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "checkboxgroup",
           "name": {
             "zh_CN": "复选框组(容器)"
@@ -8683,7 +8715,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -8838,6 +8870,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "col",
           "name": {
             "zh_CN": "col"
@@ -9156,6 +9189,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "collapse",
           "name": {
             "zh_CN": "折叠面板"
@@ -9297,6 +9331,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "collapseitem",
           "name": {
             "zh_CN": "折叠面板项"
@@ -9444,6 +9479,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "颜色选择器"
           },
@@ -9714,6 +9750,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "日期选择"
           },
@@ -9956,7 +9993,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -10247,6 +10284,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "dialogbox",
           "name": {
             "zh_CN": "对话框"
@@ -10623,6 +10661,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "分隔线"
           },
@@ -10866,6 +10905,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "border-right",
           "name": {
             "zh_CN": "抽屉面板"
@@ -11136,6 +11176,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "下拉菜单"
           },
@@ -11238,7 +11279,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -11462,6 +11503,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "时间选择"
           },
@@ -11787,6 +11829,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "form",
           "name": {
             "zh_CN": "表单"
@@ -12265,6 +12308,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "formitem",
           "name": {
             "zh_CN": "表单项"
@@ -12410,6 +12454,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "grid",
           "name": {
             "zh_CN": "子表"
@@ -13895,6 +13940,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "grid",
           "name": {
             "zh_CN": "表格行"
@@ -13951,6 +13997,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "输入框"
           },
@@ -14121,7 +14168,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -14140,7 +14187,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -14490,6 +14537,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "TinyMce富文本编辑器"
           },
@@ -14622,6 +14670,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "数字输入框"
           },
@@ -14722,7 +14771,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -15109,6 +15158,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "分页"
           },
@@ -15377,6 +15427,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "popover",
           "name": {
             "zh_CN": "提示框"
@@ -15871,6 +15922,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "tile-x",
           "name": {
             "zh_CN": "进度条"
@@ -16146,6 +16198,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "radio",
           "name": {
             "zh_CN": "单选"
@@ -16249,7 +16302,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -16415,6 +16468,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "radio",
           "name": {
             "zh_CN": "单选组"
@@ -16532,7 +16586,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -16710,6 +16764,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "radio",
           "name": {
             "zh_CN": "单选组(插槽)"
@@ -16827,7 +16882,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -17005,6 +17060,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "评分"
           },
@@ -17523,6 +17579,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "row",
           "name": {
             "zh_CN": "row"
@@ -17700,6 +17757,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "search",
           "name": {
             "zh_CN": "搜索框"
@@ -17767,7 +17825,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -18045,6 +18103,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "select",
           "name": {
             "zh_CN": "下拉框"
@@ -18192,7 +18251,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -18713,6 +18772,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "display-flex",
           "name": {
             "zh_CN": "分割面板"
@@ -18951,6 +19011,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "步骤条"
           },
@@ -19237,6 +19298,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "switch",
           "name": {
             "zh_CN": "开关"
@@ -19304,7 +19366,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -19466,6 +19528,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "tabs",
           "name": {
             "zh_CN": "tab页签"
@@ -19589,6 +19652,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "tabs",
           "name": {
             "zh_CN": "标签页"
@@ -19988,6 +20052,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "Tag标签"
           },
@@ -20328,6 +20393,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "timeline",
           "name": {
             "zh_CN": "时间线"
@@ -20545,6 +20611,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "name": {
             "zh_CN": "时间选择框"
           },
@@ -20864,6 +20931,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "tooltip",
           "name": {
             "zh_CN": "文字提示框"
@@ -21072,6 +21140,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "cursor-ew-resize",
           "name": {
             "zh_CN": "穿梭框"
@@ -21367,6 +21436,7 @@
           }
         },
         {
+          "version": "3.21.0",
           "icon": "tree",
           "name": {
             "zh_CN": "树"
@@ -21952,6 +22022,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "上传文件"
           },
@@ -22014,7 +22085,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaDisabled",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -22281,6 +22352,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "上传图片"
           },
@@ -22568,6 +22640,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "HTML显示区"
           },
@@ -22656,6 +22729,7 @@
           }
         },
         {
+          "version": "1.2.0",
           "name": {
             "zh_CN": "视频"
           },
@@ -22832,7 +22906,7 @@
         }
       ],
       "blocks": [],
-      "snippets": [
+      "snippets":  [
         {
           "group": "容器组件",
           "children": [
@@ -24852,8 +24926,16 @@
           "destructuring": true,
           "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.21/files/dist3/tiny-vue-pc.mjs",
           "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.21/files/index.css"
+        },
+        {
+          "name": "shqy组件库",
+          "package": "@shqy/components",
+          "version": "1.2.0",
+          "destructuring": true,
+          "script": "http://192.168.0.113:8088/@shqy/components",
+          "css": "http://192.168.0.113:8088/@shqy/components/style.css"
         }
-      ] 
+      ]
     }
   }
 }

@@ -1,0 +1,235 @@
+{
+  "version": "1.2.0",
+  "name": {
+    "zh_CN": "拖拽项"
+  },
+  "component": "GridItem",
+  "icon": "formfield",
+  "description": "拖拽项",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "GridItem",
+    "script": "http://192.168.0.113:8088/@shqy/components",
+    "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "static",
+            "label": {
+              "text": {
+                "zh_CN": "static"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "static"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "x",
+            "label": {
+              "text": {
+                "zh_CN": "x"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "x"
+            }
+          },
+          {
+            "property": "y",
+            "label": {
+              "text": {
+                "zh_CN": "y"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "y"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "w",
+            "label": {
+              "text": {
+                "zh_CN": "w"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "w"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "h",
+            "label": {
+              "text": {
+                "zh_CN": "h"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "h"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "i",
+            "label": {
+              "text": {
+                "zh_CN": "i"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "i"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onMoved": {
+        "label": {
+          "zh_CN": "moved"
+        },
+        "description": {
+          "zh_CN": "moved"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "moved"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "拖拽项"
+      },
+      "icon": "formfield",
+      "screenshot": "",
+      "snippetName": "GridItem",
+      "schema": {
+        "componentName": "GridItem",
+        "props": {}
+      },
+      "category": "容器组件"
+    }
+  ]
+}

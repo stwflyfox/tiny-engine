@@ -1,0 +1,355 @@
+{
+  "version": "1.2.0",
+  "name": {
+    "zh_CN": "拖拽布局"
+  },
+  "component": "GridLayout",
+  "icon": "grid",
+  "description": "拖拽布局",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/components",
+    "exportName": "GridLayout",
+    "script": "http://192.168.0.113:8088/@shqy/components",
+    "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "layout",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "dataType": "JSExpression"
+              }
+            },
+            "description": {
+              "zh_CN": "绑定值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "col-num",
+            "label": {
+              "text": {
+                "zh_CN": "col-num"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "col-num"
+            }
+          },
+          {
+            "property": "cols",
+            "label": {
+              "text": {
+                "zh_CN": "cols"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "cols"
+            }
+          },
+          {
+            "property": "row-height",
+            "label": {
+              "text": {
+                "zh_CN": "row-height"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "row-height"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "is-draggable",
+            "label": {
+              "text": {
+                "zh_CN": "is-draggable"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "is-draggable"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "is-resizable",
+            "label": {
+              "text": {
+                "zh_CN": "is-resizable"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "is-resizable"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "vertical-compact",
+            "label": {
+              "text": {
+                "zh_CN": "vertical-compact"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "vertical-compact"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "isBounded",
+            "label": {
+              "text": {
+                "zh_CN": "isBounded"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "isBounded"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "restoreOnDrag",
+            "label": {
+              "text": {
+                "zh_CN": "restoreOnDrag"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "restoreOnDrag"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "autoSize",
+            "label": {
+              "text": {
+                "zh_CN": "autoSize"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "autoSize"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "use-css-transforms",
+            "label": {
+              "text": {
+                "zh_CN": "use-css-transforms"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {
+                "allowEmpty": true
+              }
+            },
+            "description": {
+              "zh_CN": "use-css-transforms"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onLayoutUpdated": {
+        "label": {
+          "zh_CN": "LayoutUpdated"
+        },
+        "description": {
+          "zh_CN": "LayoutUpdated"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "LayoutUpdated"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "拖拽布局"
+      },
+      "icon": "grid",
+      "screenshot": "",
+      "snippetName": "GridLayout",
+      "schema": {
+        "componentName": "GridLayout",
+        "props": {
+          "layout": [],
+          "col-num": 1,
+          "cols": 1,
+          "is-draggable": true,
+          "is-resizable": false,
+          "isBounded": true,
+          "restoreOnDrag": true,
+          "autoSize": true,
+          "vertical-compact": true,
+          "use-css-transforms": true
+        }
+      },
+      "category": "容器组件"
+    }
+  ]
+}

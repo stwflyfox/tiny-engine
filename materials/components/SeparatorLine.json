@@ -1,0 +1,96 @@
+{
+  "version": "1.2.0",
+  "name": {
+    "zh_CN": "间隔线"
+  },
+  "component": "SeparatorLine",
+  "icon": "separator-line",
+  "description": "间隔线",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {},
+  "group": "component",
+  "priority": 30,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "top"
+          }
+        ]
+      }
+    ],
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": [],
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": []
+    },
+    "contextMenu": {
+      "actions": [],
+      "disable": []
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "间隔线"
+      },
+      "icon": "separator-line",
+      "screenshot": "",
+      "snippetName": "SeparatorLine",
+      "schema": {
+        "componentName": "SeparatorLine",
+        "children": [
+          {
+            "componentName": "Text",
+            "props": {
+              "style": "width: 1px;height: 20px;border-left: 1px solid #b0b0b0;margin: 0px 5px 0 5px;vertical-align: middle;display: inline-block;float: none;"
+            }
+          }
+        ]
+      },
+      "category": "表单组件"
+    }
+  ]
+}
