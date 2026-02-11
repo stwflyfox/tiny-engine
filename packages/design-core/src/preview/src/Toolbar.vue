@@ -2,6 +2,7 @@
   <div class="tiny-engine-toolbar">
     <div class="toolbar-left">
       <component :is="Breadcrumb"></component>
+      <SelectTenant />
     </div>
     <div class="toolbar-center">
       <component :is="ToolbarMedia" :isCanvas="false" @setViewPort="setViewPort"></component>
@@ -24,9 +25,12 @@ import { BROADCAST_CHANNEL } from '../src/preview/srcFiles/constant'
 import { injectDebugSwitch } from './preview/debugSwitch'
 import { previewState } from './preview/usePreviewData'
 
+import SelectTenant from './SelectTenant.vue'
+
 export default {
   components: {
-    TinySwitch
+    TinySwitch,
+    SelectTenant
   },
   setup() {
     const debugSwitch = injectDebugSwitch()
