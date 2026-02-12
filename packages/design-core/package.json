@@ -94,6 +94,7 @@
     "@opentiny/tiny-schema-renderer": "1.0.0-beta.6",
     "@vue/repl": "4.6.1",
     "@vueuse/core": "^9.6.0",
+    "axios": "~0.28.1",
     "crypto-js": "^4.2.0",
     "element-resize-detector": "^1.2.4",
     "eslint-linter-browserify": "8.57.0",
