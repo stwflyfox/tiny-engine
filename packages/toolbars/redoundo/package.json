@@ -27,7 +27,8 @@
   "dependencies": {
     "@opentiny/tiny-engine-common": "workspace:*",
     "@opentiny/tiny-engine-meta-register": "workspace:*",
-    "@opentiny/vue-renderless": "3.20.0"
+    "@opentiny/vue-renderless": "3.20.0",
+    "axios": "^1.13.5"
   },
   "devDependencies": {
     "@opentiny/tiny-engine-vite-plugin-meta-comments": "workspace:*",

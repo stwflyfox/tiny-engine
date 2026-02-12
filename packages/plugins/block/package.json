@@ -29,6 +29,7 @@
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
     "@vue/shared": "^3.4.29",
+    "axios": "^1.13.5",
     "html2canvas": "^1.4.1",
     "pinyin-pro": "^3.13.0"
   },

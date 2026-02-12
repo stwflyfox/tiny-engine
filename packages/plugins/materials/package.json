@@ -30,6 +30,7 @@
     "@opentiny/tiny-engine-common": "workspace:*",
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
+    "axios": "^1.13.5",
     "zod": "^3.25.76"
   },
   "devDependencies": {

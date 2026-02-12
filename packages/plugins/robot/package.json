@@ -34,6 +34,7 @@
     "@opentiny/tiny-robot-svgs": "0.3.1",
     "@opentiny/tiny-schema-renderer": "1.0.0-beta.6",
     "@vueuse/core": "^9.13.0",
+    "axios": "^1.13.5",
     "dompurify": "^3.0.1",
     "fast-json-patch": "~3.1.1",
     "highlight.js": "^11.11.1",

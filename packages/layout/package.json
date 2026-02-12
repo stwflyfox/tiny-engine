@@ -27,6 +27,7 @@
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
     "@vueuse/core": "^9.6.0",
+    "axios": "^1.13.5",
     "vue-draggable-next": "2.2.1",
     "zod": "^3.25.76"
   },

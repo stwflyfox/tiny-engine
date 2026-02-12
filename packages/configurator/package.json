@@ -33,6 +33,7 @@
     "@opentiny/tiny-engine-plugin-i18n": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
     "@vue/shared": "^3.3.4",
+    "axios": "^1.13.5",
     "monaco-editor": "0.51.0",
     "vue-draggable-next": "2.2.1"
   },

@@ -23,6 +23,7 @@
     "@opentiny/vue-renderless": "~3.21.0",
     "@opentiny/vue-theme": "~3.21.0",
     "@vueuse/core": "^9.6.0",
+    "axios": "^1.13.5",
     "vue": "^3.4.21"
   },
   "devDependencies": {

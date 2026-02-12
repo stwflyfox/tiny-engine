@@ -30,6 +30,7 @@
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
     "@vueuse/core": "^9.6.0",
+    "axios": "^1.13.5",
     "postcss": "^8.4.31"
   },
   "devDependencies": {

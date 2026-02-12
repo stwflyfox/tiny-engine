@@ -29,6 +29,7 @@
     "vite-plugin-dts": "^4.5.4"
   },
   "dependencies": {
-    "@opentiny/vue-renderless": "3.20.0"
+    "@opentiny/vue-renderless": "3.20.0",
+    "axios": "^1.13.5"
   }
 }

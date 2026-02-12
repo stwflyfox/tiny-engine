@@ -29,6 +29,7 @@
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
     "@opentiny/vue-renderless": "3.20.0",
+    "axios": "^1.13.5",
     "vue-clipboard3": "^2.0.0",
     "zod": "^3.25.67"
   },

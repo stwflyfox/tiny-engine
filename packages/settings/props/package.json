@@ -29,7 +29,8 @@
     "@opentiny/tiny-engine-configurator": "workspace:*",
     "@opentiny/tiny-engine-meta-register": "workspace:*",
     "@opentiny/tiny-engine-utils": "workspace:*",
-    "@vueuse/core": "^9.6.0"
+    "@vueuse/core": "^9.6.0",
+    "axios": "^1.13.5"
   },
   "devDependencies": {
     "@opentiny/tiny-engine-vite-plugin-meta-comments": "workspace:*",

@@ -40,6 +40,7 @@
   "license": "MIT",
   "homepage": "https://opentiny.design/tiny-engine",
   "dependencies": {
-    "@opentiny/vue-renderless": "3.20.0"
+    "@opentiny/vue-renderless": "3.20.0",
+    "axios": "^1.13.5"
   }
 }
