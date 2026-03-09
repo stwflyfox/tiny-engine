@@ -57,6 +57,44 @@
             "labelPosition": "top"
           },
           {
+            "property": "autohide",
+            "label": {
+              "text": {
+                "zh_CN": "自动隐藏工具栏"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "自动隐藏工具栏"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "border",
+            "label": {
+              "text": {
+                "zh_CN": "是否显示边框"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示边框"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "height",
             "label": {
               "text": {
