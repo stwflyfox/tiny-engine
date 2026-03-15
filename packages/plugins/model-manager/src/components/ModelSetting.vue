@@ -8,8 +8,9 @@
   >
     <template #header>
       <button-group>
-        <tiny-button @click="$emit('exportModel', selectedModel?.id)">导出SQL</tiny-button>
+        <tiny-button v-if="showExport" @click="$emit('exportModel', selectedModel?.id)">导出SQL</tiny-button>
         <tiny-button type="primary" @click="saveModel">保存</tiny-button>
+        <svg-button name="delete" v-if="selectedModel?.id" @click="deleteModel"></svg-button>
         <svg-button name="close" @click="closeModelSettingPanel"></svg-button>
       </button-group>
     </template>
@@ -38,14 +39,14 @@
 </template>
 <script>
 import { ref, watch, nextTick } from 'vue'
-import { Button, Collapse, CollapseItem } from '@opentiny/vue'
+import { Button, Collapse, CollapseItem, Notify } from '@opentiny/vue'
 import { PluginSetting, ButtonGroup, SvgButton } from '@opentiny/tiny-engine-common'
 import { useLayout } from '@opentiny/tiny-engine-meta-register'
 import ModelBasicForm from './ModelBasicForm.vue'
 import FieldManager from './FieldManager.vue'
 import { createModel, updateModel } from '../composable/useModelManager'
 
-const isShow = ref(false) 
+const isShow = ref(false)
 
 export const openModelSettingPanel = () => {
   isShow.value = true
@@ -74,9 +75,13 @@ export default {
     models: {
       type: Array,
       default: () => []
+    },
+    showExport: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['editCallback', 'exportModel'],
+  emits: ['editCallback', 'exportModel', 'deleteCallback'],
   setup(props, { emit }) {
     const { PLUGIN_NAME } = useLayout()
     const activeName = ref(['general', 'fields'])
@@ -129,66 +134,114 @@ export default {
       field.options.splice(index, 1)
     }
 
+    const isSaving = ref(false)
+
     // 保存模型时一并保存version字段
     const saveModel = async () => {
       // 从子组件获取最新的数据
       const latestModelData = modelBasicFormRef.value?.getLocalValue()
-      modelBasicFormRef.value.validate().then(async (valid) => {
-        if (valid) {
-          const newModel = {
-            description: latestModelData.description,
-            modelUrl: latestModelData.modelUrl,
-            nameCn: latestModelData.nameCn,
-            nameEn: latestModelData.nameEn,
-            version: latestModelData.version,
-            id: latestModelData.id,
-            parameters: latestModelData.parameters.filter((item) => !!item.prop)
-          }
-          let isModelRefRelative = true
-          let propertyName = ''
-          if (newModel.parameters?.length > 0) {
-            newModel.parameters.forEach((item) => {
-              if (item.type === 'Enum') {
-                item.options = JSON.stringify(item.options)
-              }
-              if (item.type === 'ModelRef') {
-                item.isModel = true
-                delete item.options
-                item.defaultValue = item.defaultValue || null
-                isModelRefRelative = !!item.defaultValue
-                propertyName = item.prop
-              }
-            })
-          }
-          if (!isModelRefRelative) {
+      modelBasicFormRef.value
+        .validate()
+        .then(async (valid) => {
+          if (valid) {
+            isSaving.value = true // 设置保存标志
+
+            // 深拷贝一份数据用于保存
+            const newModel = {
+              description: latestModelData.description,
+              modelUrl: latestModelData.modelUrl,
+              nameCn: latestModelData.nameCn,
+              nameEn: latestModelData.nameEn,
+              version: latestModelData.version,
+              id: latestModelData.id,
+              parameters: JSON.parse(JSON.stringify(latestModelData.parameters.filter((item) => Boolean(item.prop))))
+            }
+
+            let isModelRefRelative = true
+            let propertyName = ''
+
+            if (newModel.parameters?.length > 0) {
+              newModel.parameters.forEach((item) => {
+                if (item.type === 'Enum') {
+                  // 保存时序列化为字符串
+                  item.options = JSON.stringify(item.options || [])
+                }
+                if (item.type === 'ModelRef') {
+                  item.isModel = true
+                  delete item.options
+                  item.defaultValue = item.defaultValue || null
+                  isModelRefRelative = !!item.defaultValue
+                  propertyName = item.prop
+                }
+              })
+            }
+
+            if (!isModelRefRelative) {
+              Notify({
+                type: 'error',
+                message: `字段${propertyName}未关联模型引用`
+              })
+              isSaving.value = false
+              return
+            }
+
+            if (latestModelData.id === null) {
+              delete newModel.id
+              await createModel(newModel)
+            } else {
+              await updateModel(newModel.id, newModel)
+            }
+
+            emit('editCallback')
             Notify({
-              type: 'error',
-              message: `字段${propertyName}未关联模型引用`
+              type: 'success',
+              message: '保存成功'
             })
-            return
+
+            // 关闭面板
+            closeModelSettingPanel()
+            selectedModel.value = null
+            isSaving.value = false
           }
-          if (latestModelData.id === null) {
-            delete newModel.id
-            await createModel(newModel)
-          } else {
-            await updateModel(newModel.id, newModel)
-          }
-          emit('editCallback')
-          Notify({
-            type: 'success',
-            message: '保存成功'
-          })
-          selectedModel.value = null
-        }
-      })
+        })
+        .catch(() => {
+          isSaving.value = false
+        })
     }
+
+    const deleteModel = () => {
+      emit('deleteCallback', selectedModel.value)
+      closeModelSettingPanel()
+    }
+
     // 监听 props 变化，同步到本地（当选择不同模型时）
     watch(
       () => props.model,
       (newModel) => {
-        selectedModel.value = newModel
+        if (!isSaving.value && newModel) {
+          // 只在非保存过程中处理
+          // 深拷贝避免修改props
+          const modelCopy = JSON.parse(JSON.stringify(newModel))
+
+          // 加载时反序列化枚举字段
+          if (modelCopy.parameters) {
+            modelCopy.parameters.forEach((param) => {
+              if (param.type === 'Enum' && typeof param.options === 'string') {
+                try {
+                  param.options = JSON.parse(param.options)
+                } catch (e) {
+                  param.options = [{ value: '', label: '' }]
+                }
+              }
+            })
+          }
+
+          selectedModel.value = modelCopy
+        } else {
+          selectedModel.value = newModel
+        }
       },
-      { deep: true }
+      { deep: true, immediate: true }
     )
     return {
       isShow,
@@ -201,13 +254,27 @@ export default {
       handleAddField,
       insertEnumValueAfter,
       removeEnumValue,
-      saveModel
+      saveModel,
+      deleteModel
     }
   }
 }
 </script>
 <style lang="less" scoped>
 .modelmanager-plugin-setting {
-  width: fit-content;
+  width: 578px;
+
+  :deep(.tiny-collapse .tiny-collapse-item) {
+    .tiny-collapse-item__header {
+      padding: 0;
+    }
+
+    .tiny-collapse-item__wrap .tiny-collapse-item__content {
+      padding: 0;
+      .section {
+        padding: 0;
+      }
+    }
+  }
 }
 </style>

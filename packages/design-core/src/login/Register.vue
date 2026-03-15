@@ -49,7 +49,7 @@
         </tiny-tooltip>
       </tiny-form-item>
       <tiny-form-item>
-        <tiny-button type="primary" @click="handleRegister"> 注册</tiny-button>
+        <tiny-button :disabled="!isReady" type="primary" @click="handleRegister"> 注册</tiny-button>
       </tiny-form-item>
     </tiny-form>
     <div class="register-bottom">
@@ -60,7 +60,7 @@
 </template>
 
 <script lang="ts">
-import { reactive, watch } from 'vue'
+import { reactive, watch, computed } from 'vue'
 import { TinyForm, TinyFormItem, TinyInput, TinyButton, TinyTooltip } from '@opentiny/vue'
 import useLogin from './js/useLogin'
 import { getMetaApi, META_SERVICE } from '@opentiny/tiny-engine-meta-register'
@@ -84,6 +84,16 @@ export default {
       pwManualShow: false,
       confirmManualShow: false,
       rules: [...useLogin().passwordRules]
+    })
+
+    const isReady = computed(() => {
+      return (
+        state.registerData.username &&
+        state.registerData.password &&
+        state.registerData.confirmPassword &&
+        !state.pwManualShow &&
+        state.registerData.confirmPassword === state.registerData.password
+      )
     })
 
     const handleConfirmPwChange = () => {
@@ -144,6 +154,7 @@ export default {
 
     return {
       state,
+      isReady,
       handleRegister,
       handlePwChange,
       toLogin
@@ -157,7 +168,7 @@ export default {
   color: #191919;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 
 .pw-tips {
@@ -178,11 +189,10 @@ export default {
 }
 
 .register-bottom {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
   color: #808080;
-  margin-bottom: 32px;
+  font-size: 14px;
   .to-login {
     cursor: pointer;
     color: #1476ff;
