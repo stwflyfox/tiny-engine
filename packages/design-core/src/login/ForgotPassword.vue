@@ -52,14 +52,17 @@
         </tiny-tooltip>
       </tiny-form-item>
       <tiny-form-item>
-        <tiny-button type="primary" @click="handleForgot"> 提交</tiny-button>
+        <tiny-button :disabled="!isReady" type="primary" @click="handleForgot"> 提交</tiny-button>
       </tiny-form-item>
     </tiny-form>
+    <div class="forgot-bottom">
+      <div class="to-login" @click="toLogin">去登录</div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { reactive, watch } from 'vue'
+import { reactive, watch, computed } from 'vue'
 import { TinyForm, TinyFormItem, TinyInput, TinyButton, TinyTooltip } from '@opentiny/vue'
 import useLogin from './js/useLogin'
 import { getMetaApi, META_SERVICE } from '@opentiny/tiny-engine-meta-register'
@@ -85,6 +88,17 @@ export default {
       pwManualShow: false,
       confirmManualShow: false,
       rules: [...useLogin().passwordRules]
+    })
+
+    const isReady = computed(() => {
+      return (
+        state.forgotData.username &&
+        state.forgotData.password &&
+        state.forgotData.key &&
+        state.forgotData.confirmPassword &&
+        !state.pwManualShow &&
+        state.forgotData.confirmPassword === state.forgotData.password
+      )
     })
 
     const handleConfirmPwChange = () => {
@@ -131,6 +145,10 @@ export default {
       }
     }
 
+    const toLogin = () => {
+      emit('changeStatus', useLogin().LOGIN)
+    }
+
     watch(
       () => state.forgotData.password,
       () => {
@@ -139,7 +157,9 @@ export default {
     )
     return {
       state,
-      handleForgot
+      isReady,
+      handleForgot,
+      toLogin
     }
   }
 }
@@ -150,7 +170,7 @@ export default {
   color: #191919;
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 
 .pw-tips {
@@ -167,6 +187,16 @@ export default {
     .pw-content-item {
       line-height: 22px;
     }
+  }
+}
+
+.forgot-bottom {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  .to-login {
+    cursor: pointer;
+    color: #1476ff;
   }
 }
 
