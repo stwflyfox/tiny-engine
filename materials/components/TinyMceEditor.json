@@ -95,10 +95,10 @@
             "labelPosition": "left"
           },
           {
-            "property": "height",
+            "property": "lineHeight",
             "label": {
               "text": {
-                "zh_CN": "编辑区高度"
+                "zh_CN": "默认行距"
               }
             },
             "required": false,
