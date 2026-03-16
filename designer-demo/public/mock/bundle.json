@@ -29123,8 +29123,8 @@
           "package": "@opentiny/vue",
           "version": "3.21.0",
           "destructuring": true,
-          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.21/files/dist3/tiny-vue-pc.mjs",
-          "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.21/files/index.css"
+          "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.29/files/dist3/tiny-vue-pc.mjs",
+          "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.29/files/index.css"
         },
         {
           "name": "shqy组件库",
