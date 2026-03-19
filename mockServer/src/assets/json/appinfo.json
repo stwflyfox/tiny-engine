@@ -17107,7 +17107,6 @@
           "package": "@shqy/components",
           "exportName": "AnswerSplit",
           "script": "http://192.168.0.113:8088/@shqy/components",
-          "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-400.css",
           "version": "",
           "destructuring": true
         }
@@ -17195,7 +17194,6 @@
           "package": "@shqy/components",
           "exportName": "ProgramBuild",
           "script": "http://192.168.0.113:8088/@shqy/components",
-          "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-700.css",
           "version": "",
           "destructuring": true
         }

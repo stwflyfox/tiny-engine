@@ -20,7 +20,6 @@
             "package": "@shqy/components",
             "exportName": "AnswerSplit",
             "script": "http://192.168.0.113:8088/@shqy/components",
-            "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-400.css",
             "version": "",
             "destructuring": true
           },
@@ -1539,7 +1538,6 @@
             "package": "@shqy/components",
             "exportName": "ProgramBuild",
             "script": "http://192.168.0.113:8088/@shqy/components",
-            "css": "https://cdn.91zd.cn/fonts/noto-serif-sc/chinese-simplified-700.css",
             "version": "",
             "destructuring": true
           },
@@ -3860,7 +3858,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "alert",
           "name": {
             "zh_CN": "警告提示"
@@ -4047,7 +4045,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "锚点"
           },
@@ -4257,7 +4255,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "breadcrumb",
           "name": {
             "zh_CN": "面包屑"
@@ -4403,7 +4401,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "breadcrumb",
           "name": {
             "zh_CN": "面包屑项"
@@ -4506,7 +4504,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "按钮"
           },
@@ -4875,7 +4873,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "按钮组"
           },
@@ -5091,7 +5089,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "日历视图"
           },
@@ -5563,7 +5561,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "single-page",
           "name": {
             "zh_CN": "卡片"
@@ -5804,7 +5802,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "走马灯"
           },
@@ -6145,7 +6143,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "走马灯子项"
           },
@@ -6287,7 +6285,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "cascader",
           "name": {
             "zh_CN": "级联选择器"
@@ -6824,7 +6822,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "checkbox",
           "name": {
             "zh_CN": "复选框"
@@ -7162,7 +7160,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "button-check",
           "name": {
             "zh_CN": "复选按钮"
@@ -7392,7 +7390,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "checkboxgroup",
           "name": {
             "zh_CN": "复选框组"
@@ -7651,7 +7649,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "checkboxgroup",
           "name": {
             "zh_CN": "复选框组(容器)"
@@ -7876,7 +7874,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "col",
           "name": {
             "zh_CN": "col"
@@ -8195,7 +8193,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "collapse",
           "name": {
             "zh_CN": "折叠面板"
@@ -8337,7 +8335,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "collapseitem",
           "name": {
             "zh_CN": "折叠面板项"
@@ -8485,7 +8483,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "颜色选择器"
           },
@@ -8756,7 +8754,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "日期选择"
           },
@@ -9290,7 +9288,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "dialogbox",
           "name": {
             "zh_CN": "对话框"
@@ -9667,7 +9665,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "分隔线"
           },
@@ -9911,7 +9909,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "border-right",
           "name": {
             "zh_CN": "抽屉面板"
@@ -10182,7 +10180,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "下拉菜单"
           },
@@ -10509,7 +10507,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "时间选择"
           },
@@ -10835,7 +10833,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "form",
           "name": {
             "zh_CN": "表单"
@@ -11314,7 +11312,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "formitem",
           "name": {
             "zh_CN": "表单项"
@@ -11460,7 +11458,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "grid",
           "name": {
             "zh_CN": "子表"
@@ -12946,7 +12944,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "grid",
           "name": {
             "zh_CN": "表格行"
@@ -17654,7 +17652,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "输入框"
           },
@@ -18290,6 +18288,25 @@
                     "labelPosition": "left"
                   },
                   {
+                    "property": "minHeight",
+                    "label": {
+                      "text": {
+                        "zh_CN": "最小高度"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaNumber",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "最小高度"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
                     "property": "lineHeight",
                     "label": {
                       "text": {
@@ -18304,7 +18321,7 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "高度"
+                      "zh_CN": "默认行距"
                     },
                     "labelPosition": "left"
                   },
@@ -18365,7 +18382,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "数字输入框"
           },
@@ -18853,7 +18870,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "分页"
           },
@@ -19122,7 +19139,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "popover",
           "name": {
             "zh_CN": "提示框"
@@ -19617,7 +19634,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "tile-x",
           "name": {
             "zh_CN": "进度条"
@@ -19893,7 +19910,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "radio",
           "name": {
             "zh_CN": "单选"
@@ -20163,7 +20180,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "radio",
           "name": {
             "zh_CN": "单选组"
@@ -20459,7 +20476,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "radio",
           "name": {
             "zh_CN": "单选组(插槽)"
@@ -20755,7 +20772,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "评分"
           },
@@ -21274,7 +21291,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "row",
           "name": {
             "zh_CN": "row"
@@ -21452,7 +21469,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "search",
           "name": {
             "zh_CN": "搜索框"
@@ -21798,7 +21815,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "select",
           "name": {
             "zh_CN": "下拉框"
@@ -22467,7 +22484,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "display-flex",
           "name": {
             "zh_CN": "分割面板"
@@ -22706,7 +22723,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "步骤条"
           },
@@ -22993,7 +23010,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "switch",
           "name": {
             "zh_CN": "开关"
@@ -23223,7 +23240,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "tabs",
           "name": {
             "zh_CN": "tab页签"
@@ -23347,7 +23364,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "tabs",
           "name": {
             "zh_CN": "标签页"
@@ -23747,7 +23764,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "Tag标签"
           },
@@ -24088,7 +24105,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "timeline",
           "name": {
             "zh_CN": "时间线"
@@ -24306,7 +24323,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "name": {
             "zh_CN": "时间选择框"
           },
@@ -24626,7 +24643,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "tooltip",
           "name": {
             "zh_CN": "文字提示框"
@@ -24835,7 +24852,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "cursor-ew-resize",
           "name": {
             "zh_CN": "穿梭框"
@@ -25131,7 +25148,7 @@
           }
         },
         {
-          "version": "3.21.0",
+          "version": "3.29.0",
           "icon": "tree",
           "name": {
             "zh_CN": "树"
@@ -26601,7 +26618,7 @@
         }
       ],
       "blocks": [],
-      "snippets":  [
+      "snippets":[
         {
           "group": "容器组件",
           "label": {
@@ -29109,7 +29126,7 @@
             }
           ]
         }
-      ],
+      ] ,
       "packages": [
         {
           "name": "TinyVueHuicharts组件库",
@@ -29121,7 +29138,7 @@
         {
           "name": "TinyVue组件库",
           "package": "@opentiny/vue",
-          "version": "3.21.0",
+          "version": "3.29.0",
           "destructuring": true,
           "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.29/files/dist3/tiny-vue-pc.mjs",
           "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.29/files/index.css"

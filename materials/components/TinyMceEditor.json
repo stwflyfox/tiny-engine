@@ -95,6 +95,25 @@
             "labelPosition": "left"
           },
           {
+            "property": "minHeight",
+            "label": {
+              "text": {
+                "zh_CN": "最小高度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "最小高度"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "lineHeight",
             "label": {
               "text": {
@@ -109,7 +128,7 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "高度"
+              "zh_CN": "默认行距"
             },
             "labelPosition": "left"
           },
