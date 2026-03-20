@@ -1,0 +1,4 @@
+低代码服务启动步骤:
+/home/www/verdaccio 下运行 verdaccio -c ./config.yaml
+/home/www/unpkg 下运行 npm run start
+/home/tiny-engine-backend-java 下运行 java -jar app/target/tiny-engine-app-1.0-SNAPSHOT.jar
