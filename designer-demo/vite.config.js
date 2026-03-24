@@ -17,6 +17,14 @@ export default defineConfig((configEnv) => {
     publicDir: path.resolve(__dirname, './public'),
     server: {
       port: 8080
+    },
+    define: {
+      __uniConfig: JSON.stringify({
+        darkmode: false,
+        nvue: {},
+        globalStyle: {}
+      }),
+      WeCropper: 'window.WeCropper || {}'
     }
   }
 

@@ -1,0 +1,396 @@
+{
+  "version": "1.0.0",
+  "icon": "single-page",
+  "name": {
+    "zh_CN": "卡片"
+  },
+  "component": "uCard",
+  "description": "卡片",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uCard",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "title",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的标题"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的标题"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "title-color",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的标题颜色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的标题颜色"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "title-size",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的标题字休大小"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的标题字休大小"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "sub-title",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的副标题"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的副标题"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "sub-title-color",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的副标题颜色"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的副标题颜色"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "sub-title-size",
+            "label": {
+              "text": {
+                "zh_CN": "卡片的副标题字休大小"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "卡片的副标题字休大小"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "thumb",
+            "label": {
+              "text": {
+                "zh_CN": "左上角封面图片地址"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "左上角封面图片地址"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "border",
+            "label": {
+              "text": {
+                "zh_CN": "外边框"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "外边框"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "show-head",
+            "label": {
+              "text": {
+                "zh_CN": "显示头部"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示头部"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "show-foot",
+            "label": {
+              "text": {
+                "zh_CN": "显示尾部"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示尾部"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "head-border-bottom",
+            "label": {
+              "text": {
+                "zh_CN": "头部的下边框"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "头部的下边框"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "foot-border-top",
+            "label": {
+              "text": {
+                "zh_CN": "底部的上边框"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "底部的上边框"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "margin",
+            "label": {
+              "text": {
+                "zh_CN": "间距"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "间距"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "padding",
+            "label": {
+              "text": {
+                "zh_CN": "内边距"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "内边距"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "组件默认插槽"
+        }
+      },
+      "footer": {
+        "label": {
+          "zh_CN": "footer"
+        },
+        "description": {
+          "zh_CN": "组件底部插槽"
+        }
+      },
+      "title": {
+        "label": {
+          "zh_CN": "title"
+        },
+        "description": {
+          "zh_CN": "标题插槽"
+        }
+      },
+      "title-left": {
+        "label": {
+          "zh_CN": "title-left"
+        },
+        "description": {
+          "zh_CN": "标题左侧插槽"
+        }
+      },
+      "title-right": {
+        "label": {
+          "zh_CN": "title-right"
+        },
+        "description": {
+          "zh_CN": "标题右侧插槽"
+        }
+      }
+    },
+    "events": {}
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "data",
+        "show-checkbox"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "卡片"
+      },
+      "icon": "single-page",
+      "screenshot": "",
+      "snippetName": "uCard",
+      "schema": {
+        "componentName": "uCard",
+        "props": {}
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

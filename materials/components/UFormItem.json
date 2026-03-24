@@ -1,0 +1,286 @@
+{
+  "version": "1.0.0",
+  "icon": "formitem",
+  "name": {
+    "zh_CN": "表单项"
+  },
+  "component": "uFormItem",
+  "description": "由按钮、输入框、选择器、单选框、多选框等控件组成，用以收集、校验、提交数据",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uFormItem",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "label",
+            "label": {
+              "text": {
+                "zh_CN": "标签文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "defaultValue": "标签",
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "标签文本"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "prop",
+            "label": {
+              "text": {
+                "zh_CN": "校验字段"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaProp",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "表单域 model 字段，在使用 validate、resetFields 方法的情况下，该属性是必填的"
+            }
+          },
+          {
+            "property": "required",
+            "label": {
+              "text": {
+                "zh_CN": "必填"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否必填"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "border-bottom",
+            "label": {
+              "text": {
+                "zh_CN": "显示下边框"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示下边框"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "right-icon",
+            "label": {
+              "text": {
+                "zh_CN": "右侧自定义字体图标"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "右侧自定义字体图标"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "label-width",
+            "label": {
+              "text": {
+                "zh_CN": "标签宽度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "表单中标签占位宽度，默认为 90rpx"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "label-position",
+            "label": {
+              "text": {
+                "zh_CN": "标签位置"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "left ",
+                    "value": "left "
+                  },
+                  {
+                    "label": "top",
+                    "value": "top"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "表单中标签的布局位置"
+            }
+          },
+          {
+            "property": "label-align",
+            "label": {
+              "text": {
+                "zh_CN": "标签对齐方式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "left",
+                    "value": "left"
+                  },
+                  {
+                    "label": "center",
+                    "value": "center"
+                  },
+                  {
+                    "label": "right",
+                    "value": "right"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {},
+    "slots": {
+      "label": {
+        "label": {
+          "zh_CN": "字段名"
+        },
+        "description": {
+          "zh_CN": "自定义显示字段名称"
+        }
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": [
+        "uForm",
+        "div"
+      ],
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "label",
+        "rules"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "表单项"
+      },
+      "icon": "formitem",
+      "screenshot": "",
+      "snippetName": "uFormItem",
+      "schema": {
+        "componentName": "uFormItem",
+        "props": {}
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

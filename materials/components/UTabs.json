@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "icon": "tabs",
+  "name": {
+    "zh_CN": "选项卡"
+  },
+  "component": "uTabs",
+  "description": "选项卡组件",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uCard",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "list",
+            "label": {
+              "text": {
+                "zh_CN": "标签数组"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaCodeEditor",
+              "props": {
+                "language": "json"
+              }
+            },
+            "description": {
+              "zh_CN": "标签数组"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "is-scroll",
+            "label": {
+              "text": {
+                "zh_CN": "左右滑动"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "左右滑动"
+            }
+          },
+          {
+            "property": "current",
+            "label": {
+              "text": {
+                "zh_CN": "当前选项卡"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "当前选项卡"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "点击标签时触发"
+        },
+        "description": {
+          "zh_CN": "点击标签时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "data",
+        "show-checkbox"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "选项卡"
+      },
+      "icon": "tabs",
+      "screenshot": "",
+      "snippetName": "uTabs",
+      "schema": {
+        "componentName": "uTabs",
+        "props": {
+          "list": [
+            {
+              "name": "待收货"
+            },
+            {
+              "name": "待付款"
+            },
+            {
+              "name": "待评价",
+              "count": 5
+            }
+          ]
+        }
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

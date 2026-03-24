@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "icon": "switch",
+  "name": {
+    "zh_CN": "开关"
+  },
+  "component": "uSwitch",
+  "description": "Switch 在两种状态间切换选择",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uSwitch",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 9,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定的当前选中值"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "点击事件"
+        },
+        "description": {
+          "zh_CN": "按钮被点击时触发的回调函数"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "开关的状态值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的开关状态值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "disabled",
+        "mini"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "开关"
+      },
+      "icon": "switch",
+      "screenshot": "",
+      "snippetName": "uSwitch",
+      "schema": {
+        "componentName": "uSwitch",
+        "props": {
+          "modelValue": ""
+        }
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

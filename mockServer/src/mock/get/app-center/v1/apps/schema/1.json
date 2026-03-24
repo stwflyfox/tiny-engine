@@ -2293,6 +2293,90 @@
         "destructuring": true
       },
       {
+        "componentName": "uButton",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uButton",
+        "destructuring": true
+      },
+      {
+        "componentName": "uCard",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uCard",
+        "destructuring": true
+      },
+      {
+        "componentName": "uCheckbox",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uCheckbox",
+        "destructuring": true
+      },
+      {
+        "componentName": "uCheckboxGroup",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uCheckboxGroup",
+        "destructuring": true
+      },
+      {
+        "componentName": "uDatetimePicker",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uDatetimePicker",
+        "destructuring": true
+      },
+      {
+        "componentName": "uForm",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uForm",
+        "destructuring": true
+      },
+      {
+        "componentName": "uFormItem",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uFormItem",
+        "destructuring": true
+      },
+      {
+        "componentName": "uIcon",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uIcon",
+        "destructuring": true
+      },
+      {
+        "componentName": "uImage",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uImage",
+        "destructuring": true
+      },
+      {
+        "componentName": "uInput",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uInput",
+        "destructuring": true
+      },
+      {
+        "componentName": "uLine",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uLine",
+        "destructuring": true
+      },
+      {
+        "componentName": "uModal",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uModal",
+        "destructuring": true
+      },
+      {
         "componentName": "UploadFile",
         "package": "@shqy/components",
         "version": "",
@@ -2304,6 +2388,55 @@
         "package": "@shqy/components",
         "version": "",
         "exportName": "UploadImage",
+        "destructuring": true
+      },
+      {
+        "componentName": "uPopup",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uPopup",
+        "destructuring": true
+      },
+      {
+        "componentName": "uRadio",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uRadio",
+        "destructuring": true
+      },
+      {
+        "componentName": "uRadioGroup",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uRadioGroup",
+        "destructuring": true
+      },
+      {
+        "componentName": "uSwitch",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uSwitch",
+        "destructuring": true
+      },
+      {
+        "componentName": "uTabs",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uCard",
+        "destructuring": true
+      },
+      {
+        "componentName": "uText",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uText",
+        "destructuring": true
+      },
+      {
+        "componentName": "uTextarea",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uTextarea",
         "destructuring": true
       },
       {

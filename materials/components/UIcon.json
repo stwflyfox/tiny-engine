@@ -1,0 +1,173 @@
+{
+  "version": "1.0.0",
+  "name": {
+    "zh_CN": "图标"
+  },
+  "component": "uIcon",
+  "icon": "icon",
+  "description": "图标",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uIcon",
+    "script": "http://192.168.0.113:8088/@shqy/mobile",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "name",
+            "type": "string",
+            "defaultValue": "photo",
+            "label": {
+              "text": {
+                "zh_CN": "图标名称"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "color",
+            "type": "string",
+            "defaultValue": "",
+            "label": {
+              "text": {
+                "zh_CN": "图标颜色"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "size",
+            "type": "number",
+            "label": {
+              "text": {
+                "zh_CN": "图标大小"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClick": {
+        "label": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "description": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "图标"
+      },
+      "icon": "icon",
+      "screenshot": "",
+      "snippetName": "uIcon",
+      "schema": {
+        "componentName": "uIcon",
+        "props": {}
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

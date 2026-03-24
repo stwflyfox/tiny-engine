@@ -1,0 +1,222 @@
+{
+  "version": "1.0.0",
+  "name": {
+    "zh_CN": "图片"
+  },
+  "component": "uImage",
+  "icon": "image",
+  "description": "图片",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uImage",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "src",
+            "type": "string",
+            "defaultValue": "https://cdn.91zd.cn/logo.png",
+            "label": {
+              "text": {
+                "zh_CN": "图片地址"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "width",
+            "type": "number",
+            "defaultValue": "100",
+            "label": {
+              "text": {
+                "zh_CN": "宽度"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "height",
+            "type": "number",
+            "defaultValue": "100",
+            "label": {
+              "text": {
+                "zh_CN": "高度"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "mode",
+            "type": "string",
+            "defaultValue": "scaleToFill",
+            "label": {
+              "text": {
+                "zh_CN": "填充模式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "填满",
+                    "value": "scaleToFill"
+                  },
+                  {
+                    "label": "长边完全显示",
+                    "value": "aspectFit"
+                  },
+                  {
+                    "label": "短边完全显示",
+                    "value": "aspectFill"
+                  },
+                  {
+                    "label": "高度自动变化",
+                    "value": "widthFix"
+                  },
+                  {
+                    "label": "宽度自动变化",
+                    "value": "heightFix"
+                  },
+                  {
+                    "label": "危险按钮",
+                    "value": "error"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "填充模式"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onClick": {
+        "label": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "description": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "图片"
+      },
+      "icon": "image",
+      "screenshot": "",
+      "snippetName": "uImage",
+      "schema": {
+        "componentName": "uImage",
+        "props": {}
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

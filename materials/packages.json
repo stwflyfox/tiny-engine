@@ -10,10 +10,10 @@
     {
       "name": "TinyVue组件库",
       "package": "@opentiny/vue",
-      "version": "3.21.0",
+      "version": "3.29.0",
       "destructuring": true,
-      "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.21/files/dist3/tiny-vue-pc.mjs",
-      "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.21/files/index.css"
+      "script": "https://registry.npmmirror.com/@opentiny/vue-runtime/~3.29/files/dist3/tiny-vue-pc.mjs",
+      "css": "https://registry.npmmirror.com/@opentiny/vue-theme/3.29/files/index.css"
     },
     {
       "name": "shqy组件库",
@@ -22,6 +22,14 @@
       "destructuring": true,
       "script": "http://192.168.0.113:8088/@shqy/components",
       "css": "http://192.168.0.113:8088/@shqy/components/style.css"
+    },
+    {
+      "name": "shqy手机端组件库",
+      "package": "@shqy/mobile",
+      "version": "1.0.0",
+      "destructuring": true,
+      "script": "http://192.168.0.113:8088/@shqy/mobile",
+      "css": "http://192.168.0.113:8088/@shqy/mobile/style.css"
     }
   ]
 }

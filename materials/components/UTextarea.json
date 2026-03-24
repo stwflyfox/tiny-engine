@@ -1,0 +1,401 @@
+{
+  "version": "1.0.0",
+  "name": {
+    "zh_CN": "文本域"
+  },
+  "component": "uTextarea",
+  "icon": "textarea",
+  "description": "文本域",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uTextarea",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定值"
+            },
+            "labelPosition": "top"
+          },
+          {
+            "property": "border",
+            "label": {
+              "text": {
+                "zh_CN": "边框类型"
+              }
+            },
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "四周边框",
+                    "value": "surround"
+                  },
+                  {
+                    "label": "无边框",
+                    "value": "none"
+                  },
+                  {
+                    "label": "底部边框",
+                    "value": "bottom"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "边框类型"
+            }
+          },
+          {
+            "property": "placeholder",
+            "label": {
+              "text": {
+                "zh_CN": "占位文本"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaBindI18n",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "输入框占位文本"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "clearable",
+            "label": {
+              "text": {
+                "zh_CN": "清除按钮"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示清除按钮"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
+          },
+          {
+            "property": "autoHeight",
+            "label": {
+              "text": {
+                "zh_CN": "自动增加高度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "count",
+            "label": {
+              "text": {
+                "zh_CN": "显示计数"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "type为textarea模式下显示计数"
+            }
+          },
+          {
+            "property": "height",
+            "label": {
+              "text": {
+                "zh_CN": "输入框高度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "输入框高度"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "maxlength",
+            "label": {
+              "text": {
+                "zh_CN": "最大长度"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "设置 input 框的maxLength"
+            },
+            "labelPosition": "left"
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "输入框改变后的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onInput": {
+        "label": {
+          "zh_CN": "输入值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "输入框输入的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 输入值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onBlur": {
+        "label": {
+          "zh_CN": "失去焦点时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 失去焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onFocus": {
+        "label": {
+          "zh_CN": "获取焦点时触发"
+        },
+        "description": {
+          "zh_CN": "在 Input 获取焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onClear": {
+        "label": {
+          "zh_CN": "点击清空按钮时触发"
+        },
+        "description": {
+          "zh_CN": "点击清空按钮时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "文本域"
+      },
+      "icon": "textarea",
+      "screenshot": "",
+      "snippetName": "uTextarea",
+      "schema": {
+        "componentName": "uTextarea",
+        "props": {
+          "modelValue": ""
+        }
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

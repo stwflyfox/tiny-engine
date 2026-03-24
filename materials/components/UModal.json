@@ -1,0 +1,214 @@
+{
+  "version": "1.0.0",
+  "icon": "dialogbox",
+  "name": {
+    "zh_CN": "对话框"
+  },
+  "component": "uModal",
+  "description": "对话框",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uModal",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "show",
+            "label": {
+              "text": {
+                "zh_CN": "显示对话框"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示对话框"
+            }
+          },
+          {
+            "property": "content",
+            "label": {
+              "text": {
+                "zh_CN": "内容"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "标题"
+            }
+          },
+          {
+            "property": "show-title",
+            "label": {
+              "text": {
+                "zh_CN": "是否显示标题"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示标题"
+            }
+          },
+          {
+            "property": "title",
+            "label": {
+              "text": {
+                "zh_CN": "标题"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "标题"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onConfirm": {
+        "label": {
+          "zh_CN": "点击确认时触发"
+        },
+        "description": {
+          "zh_CN": "点击确认时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onCancel": {
+        "label": {
+          "zh_CN": "点击取消时触发"
+        },
+        "description": {
+          "zh_CN": "点击取消时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "data",
+        "show-checkbox"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "对话框"
+      },
+      "icon": "dialogbox",
+      "screenshot": "",
+      "snippetName": "uModal",
+      "schema": {
+        "componentName": "uModal",
+        "props": {}
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

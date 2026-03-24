@@ -1,0 +1,205 @@
+{
+  "version": "1.0.0",
+  "icon": "radiogroup",
+  "name": {
+    "zh_CN": "单选组"
+  },
+  "component": "uRadioGroup",
+  "description": "通过 options 配置式渲染单选组",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uRadioGroup",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 4,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "modelValue",
+            "label": {
+              "text": {
+                "zh_CN": "绑定值"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaField",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "双向绑定的当前选中值"
+            }
+          },
+          {
+            "property": "disabled",
+            "label": {
+              "text": {
+                "zh_CN": "禁用"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "禁用"
+            }
+          },
+          {
+            "property": "label-disabled",
+            "label": {
+              "text": {
+                "zh_CN": "文本是否可点击"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "文本是否可点击"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "shape",
+            "label": {
+              "text": {
+                "zh_CN": "形状"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "方形",
+                    "value": "square"
+                  },
+                  {
+                    "label": "圆形",
+                    "value": "circle"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "形状。该属性的可选值为 square / circle"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "值变化事件"
+        },
+        "description": {
+          "zh_CN": "绑定值变化时触发的事件"
+        }
+      },
+      "onUpdate:modelValue": {
+        "label": {
+          "zh_CN": "双向绑定的值改变时触发"
+        },
+        "description": {
+          "zh_CN": "当前选中的值改变时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "value",
+              "type": "string",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "双向绑定的当前选中值"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": true,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "visible",
+        "width"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "单选框组"
+      },
+      "icon": "radiogroup",
+      "screenshot": "",
+      "snippetName": "uRadioGroup",
+      "schema": {
+        "componentName": "uRadioGroup",
+        "props": {
+          "modelValue": ""
+        }
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

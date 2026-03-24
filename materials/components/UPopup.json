@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "icon": "border-bottom",
+  "name": {
+    "zh_CN": "弹出层"
+  },
+  "component": "uPopup",
+  "description": "弹出层组件",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uPopup",
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 12,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "content": [
+          {
+            "property": "show",
+            "label": {
+              "text": {
+                "zh_CN": "显示弹出层"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示弹出层"
+            }
+          },
+          {
+            "property": "mode",
+            "type": "string",
+            "defaultValue": "scaleToFill",
+            "label": {
+              "text": {
+                "zh_CN": "弹出层的方向"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "left",
+                    "value": "left"
+                  },
+                  {
+                    "label": "top",
+                    "value": "top"
+                  },
+                  {
+                    "label": "right",
+                    "value": "right"
+                  },
+                  {
+                    "label": "bottom",
+                    "value": "bottom"
+                  },
+                  {
+                    "label": "center",
+                    "value": "center"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "弹出层的方向"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "closeable",
+            "label": {
+              "text": {
+                "zh_CN": "显示关闭图标"
+              }
+            },
+            "cols": 12,
+            "rules": [],
+            "hidden": false,
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示关闭图标"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onChange": {
+        "label": {
+          "zh_CN": "点击标签时触发"
+        },
+        "description": {
+          "zh_CN": "点击标签时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "data",
+        "show-checkbox"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "弹出层"
+      },
+      "icon": "border-bottom",
+      "screenshot": "",
+      "snippetName": "uPopup",
+      "schema": {
+        "componentName": "uPopup",
+        "props": {
+          "mode": "bottom"
+        }
+      },
+      "category": "手机端组件"
+    }
+  ]
+}

@@ -17891,6 +17891,115 @@
         }
       },
       {
+        "component": "uButton",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uButton",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uCard",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uCard",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uCheckbox",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uCheckbox",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uCheckboxGroup",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uCheckboxGroup",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uDatetimePicker",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uDatetimePicker",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uForm",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uForm",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uFormItem",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uFormItem",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uIcon",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uIcon",
+          "script": "http://192.168.0.113:8088/@shqy/mobile",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uImage",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uImage",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uInput",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uInput",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uLine",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uLine",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uModal",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uModal",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "UploadFile",
         "npm": {
           "package": "@shqy/components",
@@ -17908,6 +18017,70 @@
           "exportName": "UploadImage",
           "script": "http://192.168.0.113:8088/@shqy/components",
           "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uPopup",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uPopup",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uRadio",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uRadio",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uRadioGroup",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uRadioGroup",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uSwitch",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uSwitch",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uTabs",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uCard",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uText",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uText",
+          "script": "http://192.168.0.113:8088/@shqy/mobile",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "uTextarea",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uTextarea",
           "version": "",
           "destructuring": true
         }
