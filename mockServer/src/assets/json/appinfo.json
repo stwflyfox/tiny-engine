@@ -17927,10 +17927,10 @@
         }
       },
       {
-        "component": "uDatetimePicker",
+        "component": "uDate",
         "npm": {
           "package": "@shqy/mobile",
-          "exportName": "uDatetimePicker",
+          "exportName": "uDate",
           "version": "",
           "destructuring": true
         }

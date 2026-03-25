@@ -2321,10 +2321,10 @@
         "destructuring": true
       },
       {
-        "componentName": "uDatetimePicker",
+        "componentName": "uDate",
         "package": "@shqy/mobile",
         "version": "",
-        "exportName": "uDatetimePicker",
+        "exportName": "uDate",
         "destructuring": true
       },
       {
