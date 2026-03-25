@@ -26264,44 +26264,28 @@
               }
             ],
             "slots": {
-              "default": {
+              "default ": {
                 "label": {
-                  "zh_CN": "default"
+                  "zh_CN": "default "
                 },
                 "description": {
                   "zh_CN": "组件默认插槽"
                 }
               },
-              "footer": {
+              "foot": {
                 "label": {
-                  "zh_CN": "footer"
+                  "zh_CN": "foot"
                 },
                 "description": {
                   "zh_CN": "组件底部插槽"
                 }
               },
-              "title": {
+              "head": {
                 "label": {
-                  "zh_CN": "title"
+                  "zh_CN": "head"
                 },
                 "description": {
                   "zh_CN": "标题插槽"
-                }
-              },
-              "title-left": {
-                "label": {
-                  "zh_CN": "title-left"
-                },
-                "description": {
-                  "zh_CN": "标题左侧插槽"
-                }
-              },
-              "title-right": {
-                "label": {
-                  "zh_CN": "title-right"
-                },
-                "description": {
-                  "zh_CN": "标题右侧插槽"
                 }
               }
             },
@@ -27536,7 +27520,7 @@
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
-                    "defaultValue": "标签",
+                    "defaultValue": "",
                     "cols": 12,
                     "widget": {
                       "component": "MetaInput",
@@ -27559,7 +27543,7 @@
                     "disabled": false,
                     "cols": 12,
                     "widget": {
-                      "component": "MetaProp",
+                      "component": "MetaInput",
                       "props": {}
                     },
                     "description": {
@@ -27715,12 +27699,12 @@
             ],
             "events": {},
             "slots": {
-              "label": {
+              "right": {
                 "label": {
-                  "zh_CN": "字段名"
+                  "zh_CN": "右侧插槽"
                 },
                 "description": {
-                  "zh_CN": "自定义显示字段名称"
+                  "zh_CN": "右侧插槽"
                 }
               }
             }
@@ -33737,7 +33721,7 @@
               "schema": {
                 "componentName": "uCard",
                 "props": {
-                  
+                  "title": "卡片标题"
                 }
               }
             },
@@ -33833,7 +33817,16 @@
                 "componentName": "uForm",
                 "props": {
                  
-                }
+                },
+                "children": [
+                  {
+                    "componentName": "uFormItem",
+                    "props": {
+                      
+                    }
+                    
+                  }        
+                ]
               }
             },
             {
@@ -33846,7 +33839,7 @@
               "schema": {
                 "componentName": "uFormItem",
                 "props": {
-                 
+                 "label" : "标签"
                 }
               }
             },
@@ -33966,7 +33959,7 @@
             
           ]
         }
-      ] ,
+      ],
       "packages": [
         {
           "name": "TinyVueHuicharts组件库",

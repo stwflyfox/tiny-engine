@@ -45,7 +45,7 @@
             "required": true,
             "readOnly": false,
             "disabled": false,
-            "defaultValue": "标签",
+            "defaultValue": "",
             "cols": 12,
             "widget": {
               "component": "MetaInput",
@@ -68,7 +68,7 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaProp",
+              "component": "MetaInput",
               "props": {}
             },
             "description": {
@@ -224,12 +224,12 @@
     ],
     "events": {},
     "slots": {
-      "label": {
+      "right": {
         "label": {
-          "zh_CN": "字段名"
+          "zh_CN": "右侧插槽"
         },
         "description": {
-          "zh_CN": "自定义显示字段名称"
+          "zh_CN": "右侧插槽"
         }
       }
     }
@@ -278,7 +278,9 @@
       "snippetName": "uFormItem",
       "schema": {
         "componentName": "uFormItem",
-        "props": {}
+        "props": {
+          "label" : "标签"
+        }
       },
       "category": "手机端组件"
     }

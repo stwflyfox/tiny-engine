@@ -217,7 +217,16 @@
       "snippetName": "uForm",
       "schema": {
         "componentName": "uForm",
-        "props": {}
+        "props": {},
+        "children": [
+          {
+            "componentName": "uFormItem",
+            "props": {
+              
+            }
+            
+          }        
+        ]
       },
       "category": "手机端组件"
     }

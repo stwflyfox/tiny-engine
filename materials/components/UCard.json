@@ -304,44 +304,28 @@
       }
     ],
     "slots": {
-      "default": {
+      "default ": {
         "label": {
-          "zh_CN": "default"
+          "zh_CN": "default "
         },
         "description": {
           "zh_CN": "组件默认插槽"
         }
       },
-      "footer": {
+      "foot": {
         "label": {
-          "zh_CN": "footer"
+          "zh_CN": "foot"
         },
         "description": {
           "zh_CN": "组件底部插槽"
         }
       },
-      "title": {
+      "head": {
         "label": {
-          "zh_CN": "title"
+          "zh_CN": "head"
         },
         "description": {
           "zh_CN": "标题插槽"
-        }
-      },
-      "title-left": {
-        "label": {
-          "zh_CN": "title-left"
-        },
-        "description": {
-          "zh_CN": "标题左侧插槽"
-        }
-      },
-      "title-right": {
-        "label": {
-          "zh_CN": "title-right"
-        },
-        "description": {
-          "zh_CN": "标题右侧插槽"
         }
       }
     },
@@ -373,7 +357,7 @@
         "create symbol"
       ],
       "disable": [
-        "copy",
+        "copy", 
         "remove"
       ]
     }
@@ -388,7 +372,9 @@
       "snippetName": "uCard",
       "schema": {
         "componentName": "uCard",
-        "props": {}
+        "props": {
+          "title": "卡片标题"
+        }
       },
       "category": "手机端组件"
     }
