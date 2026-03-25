@@ -69,7 +69,7 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaNumber",
+              "component": "MetaInput",
               "props": {}
             },
             "description": {

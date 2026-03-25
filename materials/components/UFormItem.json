@@ -27,13 +27,7 @@
         },
         "description": {
           "zh_CN": "基础信息"
-        },
-        "collapse": {
-          "number": 6,
-          "text": {
-            "zh_CN": "显示更多"
-          }
-        },
+        },    
         "content": [
           {
             "property": "label",
@@ -147,11 +141,11 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaNumber",
+              "component": "MetaInput",
               "props": {}
             },
             "description": {
-              "zh_CN": "表单中标签占位宽度，默认为 90rpx"
+              "zh_CN": "表单中标签占位宽度，默认为 90px"
             },
             "labelPosition": "left"
           },
