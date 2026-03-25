@@ -26233,7 +26233,7 @@
                     "readOnly": false,
                     "disabled": false,
                     "widget": {
-                      "component": "MetaNumber",
+                      "component": "MetaInput",
                       "props": {}
                     },
                     "description": {
@@ -26252,7 +26252,7 @@
                     "readOnly": false,
                     "disabled": false,
                     "widget": {
-                      "component": "MetaNumber",
+                      "component": "MetaInput",
                       "props": {}
                     },
                     "description": {
