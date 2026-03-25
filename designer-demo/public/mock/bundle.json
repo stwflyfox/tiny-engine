@@ -26266,7 +26266,7 @@
             "slots": {
               "default ": {
                 "label": {
-                  "zh_CN": "default "
+                  "zh_CN": "default"
                 },
                 "description": {
                   "zh_CN": "组件默认插槽"
@@ -28533,15 +28533,12 @@
                 },
                 "content": [
                   {
-                    "property": "show",
+                    "property": "modelValue",
                     "label": {
                       "text": {
                         "zh_CN": "显示对话框"
                       }
                     },
-                    "cols": 12,
-                    "rules": [],
-                    "hidden": false,
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
@@ -28551,7 +28548,8 @@
                     },
                     "description": {
                       "zh_CN": "显示对话框"
-                    }
+                    },
+                    "labelPosition": "top"
                   },
                   {
                     "property": "content",
@@ -28571,7 +28569,28 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "标题"
+                      "zh_CN": "内容"
+                    }
+                  },
+                  {
+                    "property": "show-cancel-button",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否显示取消按钮"
+                      }
+                    },
+                    "cols": 12,
+                    "rules": [],
+                    "hidden": false,
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否显示取消按钮"
                     }
                   },
                   {
@@ -28588,7 +28607,7 @@
                     "readOnly": false,
                     "disabled": false,
                     "widget": {
-                      "component": "MetaInput",
+                      "component": "MetaSwitch",
                       "props": {}
                     },
                     "description": {
@@ -29350,15 +29369,12 @@
                 },
                 "content": [
                   {
-                    "property": "show",
+                    "property": "modelValue",
                     "label": {
                       "text": {
                         "zh_CN": "显示弹出层"
                       }
                     },
-                    "cols": 12,
-                    "rules": [],
-                    "hidden": false,
                     "required": true,
                     "readOnly": false,
                     "disabled": false,
@@ -29368,7 +29384,8 @@
                     },
                     "description": {
                       "zh_CN": "显示弹出层"
-                    }
+                    },
+                    "labelPosition": "top"
                   },
                   {
                     "property": "mode",
@@ -29439,6 +29456,16 @@
                 ]
               }
             ],
+            "slots": {
+              "default ": {
+                "label": {
+                  "zh_CN": "default"
+                },
+                "description": {
+                  "zh_CN": "组件默认插槽"
+                }
+              }
+            },
             "events": {
               "onChange": {
                 "label": {

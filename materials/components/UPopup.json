@@ -30,15 +30,12 @@
         },
         "content": [
           {
-            "property": "show",
+            "property": "modelValue",
             "label": {
               "text": {
                 "zh_CN": "显示弹出层"
               }
             },
-            "cols": 12,
-            "rules": [],
-            "hidden": false,
             "required": true,
             "readOnly": false,
             "disabled": false,
@@ -48,8 +45,9 @@
             },
             "description": {
               "zh_CN": "显示弹出层"
-            }
-          },
+            },
+            "labelPosition": "top"
+          },  
           {
             "property": "mode",
             "type": "string",
@@ -119,6 +117,16 @@
         ]
       }
     ],
+    "slots": {
+      "default ": {
+        "label": {
+          "zh_CN": "default"
+        },
+        "description": {
+          "zh_CN": "组件默认插槽"
+        }
+      }      
+    },
     "events": {
       "onChange": {
         "label": {
