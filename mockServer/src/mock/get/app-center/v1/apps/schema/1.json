@@ -2398,6 +2398,13 @@
         "destructuring": true
       },
       {
+        "componentName": "uProgram",
+        "package": "@shqy/mobile",
+        "version": "",
+        "exportName": "uProgram",
+        "destructuring": true
+      },
+      {
         "componentName": "uRadio",
         "package": "@shqy/mobile",
         "version": "",

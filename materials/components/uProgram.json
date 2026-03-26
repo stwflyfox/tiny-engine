@@ -1,0 +1,134 @@
+{
+  "version": "1.0.0",
+  "name": {
+    "zh_CN": "应用程序"
+  },
+  "component": "uProgram",
+  "icon": "display-grid",
+  "description": "应用程序",
+  "docUrl": "",
+  "screenshot": "",
+  "tags": "",
+  "keywords": "",
+  "devMode": "proCode",
+  "npm": {
+    "package": "@shqy/mobile",
+    "exportName": "uProgram",    
+    "version": "",
+    "destructuring": true
+  },
+  "group": "component",
+  "priority": 1,
+  "schema": {
+    "properties": [
+      {
+        "label": {
+          "zh_CN": "基础信息"
+        },
+        "description": {
+          "zh_CN": "基础信息"
+        },
+        "collapse": {
+          "number": 6,
+          "text": {
+            "zh_CN": "显示更多"
+          }
+        },
+        "content": [
+          
+          {
+            "property": "ProgramCode",
+            "label": {
+              "text": {
+                "zh_CN": "应用程序编码"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaInput"
+            },
+            "description": {
+              "zh_CN": "应用程序编码"
+            }
+          }
+        ]
+      }
+    ],
+    "events": {
+      "onButtonClick": {
+        "label": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "description": {
+          "zh_CN": "点击按钮时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      }
+    }
+  },
+  "configure": {
+    "loop": true,
+    "condition": true,
+    "styles": true,
+    "isContainer": false,
+    "isModal": false,
+    "nestingRule": {
+      "childWhitelist": "",
+      "parentWhitelist": "",
+      "descendantBlacklist": "",
+      "ancestorWhitelist": ""
+    },
+    "isNullNode": false,
+    "isLayout": false,
+    "rootSelector": "",
+    "shortcuts": {
+      "properties": [
+        "value",
+        "disabled"
+      ]
+    },
+    "contextMenu": {
+      "actions": [
+        "create symbol"
+      ],
+      "disable": [
+        "copy",
+        "remove"
+      ]
+    }
+  },
+  "snippets": [
+    {
+      "name": {
+        "zh_CN": "应用程序"
+      },
+      "icon": "display-grid",
+      "screenshot": "",
+      "snippetName": "uProgram",
+      "schema": {
+        "componentName": "uProgram",
+        "props": {
+          "ref": "program"
+        }
+      },
+      "category": "容器组件"
+    }
+  ]
+}

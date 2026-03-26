@@ -18031,6 +18031,15 @@
         }
       },
       {
+        "component": "uProgram",
+        "npm": {
+          "package": "@shqy/mobile",
+          "exportName": "uProgram",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "uRadio",
         "npm": {
           "package": "@shqy/mobile",
