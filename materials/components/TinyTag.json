@@ -188,7 +188,7 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaBindI18n",
+              "component": "ColorConfigurator",
               "props": {}
             },
             "description": {

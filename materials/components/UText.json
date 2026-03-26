@@ -32,8 +32,7 @@
         "content": [
           {
             "property": "text",
-            "type": "string",
-            "defaultValue": "文本文案",
+            "type": "string",          
             "label": {
               "text": {
                 "zh_CN": "文本文案"
@@ -59,7 +58,7 @@
                 "zh_CN": "文本主题"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
@@ -76,7 +75,7 @@
                     "value": "success"
                   },
                   {
-                    "label": "信息按钮",
+                    "label": "信息",
                     "value": "info"
                   },
                   {
@@ -94,7 +93,218 @@
               "zh_CN": "文本主题"
             },
             "labelPosition": "left"
+          },
+          
+          {
+            "property": "mode",
+            "label": {
+              "text": {
+                "zh_CN": "匹配模式"
+              }
+            },
+            "required": true,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "普通文本",
+                    "value": "text"
+                  },
+                  {
+                    "label": "金额",
+                    "value": "price"
+                  },
+                  {
+                    "label": "手机号",
+                    "value": "phone"
+                  },
+                  {
+                    "label": "姓名",
+                    "value": "name"
+                  },
+                  {
+                    "label": "日期",
+                    "value": "date"
+                  },
+                  {
+                    "label": "链接",
+                    "value": "link"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "匹配模式"
+            },
+            "labelPosition": "left"
+          },
+          
+          {
+            "property": "decoration",
+            "label": {
+              "text": {
+                "zh_CN": "文字装饰"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  {
+                    "label": "无",
+                    "value": "none"
+                  },
+                  {
+                    "label": "下划线",
+                    "value": "underline"
+                  },
+                  {
+                    "label": "中划线",
+                    "value": "line-through"
+                  }
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "匹配模式"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "color",
+            "type": "string",          
+            "label": {
+              "text": {
+                "zh_CN": "文本颜色"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "ColorConfigurator",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "size",
+            "type": "string",          
+            "label": {
+              "text": {
+                "zh_CN": "字体大小"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "bold",
+            "label": {
+              "text": {
+                "zh_CN": "是否粗体"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否粗体"
+            }
+          },
+          {
+            "property": "iconStyle",
+            "type": "string",          
+            "label": {
+              "text": {
+                "zh_CN": "图标大小"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },    
+              
+         
+          {
+            "property": "prefixIcon",
+            "type": "string",          
+            "label": {
+              "text": {
+                "zh_CN": "前置图标"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaColorPicker",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
+          },
+          {
+            "property": "suffixIcon",
+            "type": "string",          
+            "label": {
+              "text": {
+                "zh_CN": "后置图标"
+              }
+            },
+            "cols": 12,
+            "hidden": false,
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaColorPicker",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": ""
+            }
           }
+          
         ]
       }
     ],

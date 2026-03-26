@@ -104,7 +104,7 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "显示在输入框中的格式"
+              "zh_CN": "显示在输入框中的格式(日期时间时必须输入，格式为：yyyy-MM-dd hh:mm:ss)"
             },
             "labelPosition": "left"
           },
@@ -167,26 +167,6 @@
             "description": {
               "zh_CN": "禁用"
             }
-          },
-          {
-            "property": "readonly",
-            "label": {
-              "text": {
-                "zh_CN": "是否只读"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaSwitch",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": ""
-            }
-                   
           }
         ]
       }

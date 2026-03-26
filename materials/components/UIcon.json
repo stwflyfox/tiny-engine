@@ -67,7 +67,7 @@
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaBindI18n",
+              "component": "ColorConfigurator",
               "props": {}
             },
             "description": {

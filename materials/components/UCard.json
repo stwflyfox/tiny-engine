@@ -59,7 +59,7 @@
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaInput",
+              "component": "ColorConfigurator",
               "props": {}
             },
             "description": {
@@ -116,7 +116,7 @@
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaInput",
+              "component": "ColorConfigurator",
               "props": {}
             },
             "description": {
