@@ -1527,7 +1527,7 @@
             "zh_CN": "应用程序"
           },
           "component": "Program",
-          "icon": "input",
+          "icon": "display-grid",
           "description": "应用程序",
           "docUrl": "",
           "screenshot": "",
