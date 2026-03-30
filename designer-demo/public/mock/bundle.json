@@ -18245,7 +18245,7 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "绑定值"
+                      "zh_CN": "双向绑定值"
                     },
                     "labelPosition": "top"
                   },
@@ -18376,7 +18376,7 @@
                   "zh_CN": "双向绑定的值改变时触发"
                 },
                 "description": {
-                  "zh_CN": "在输入值改变时触发"
+                  "zh_CN": "在 Input 输入值改变时触发"
                 },
                 "type": "event",
                 "functionInfo": {
