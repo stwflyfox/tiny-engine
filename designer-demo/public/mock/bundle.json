@@ -18194,11 +18194,11 @@
         {
           "version": "1.2.0",
           "name": {
-            "zh_CN": "TinyMce富文本编辑器"
+            "zh_CN": "富文本编辑器"
           },
           "component": "TinyMceEditor",
           "icon": "fluent-editor",
-          "description": "TinyMce富文本编辑器",
+          "description": "富文本编辑器",
           "docUrl": "",
           "screenshot": "",
           "tags": "",
@@ -18347,7 +18347,100 @@
                 ]
               }
             ],
-            "events": {}
+            "events": {
+              "onChange": {
+                "label": {
+                  "zh_CN": "值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "输入框改变后的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onUpdate:modelValue": {
+                "label": {
+                  "zh_CN": "双向绑定的值改变时触发"
+                },
+                "description": {
+                  "zh_CN": "在输入值改变时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onBlur": {
+                "label": {
+                  "zh_CN": "失去焦点时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 失去焦点时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "event",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "原生 event"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onFocus": {
+                "label": {
+                  "zh_CN": "获取焦点时触发"
+                },
+                "description": {
+                  "zh_CN": "在 Input 获取焦点时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "event",
+                      "type": "Object",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "原生 event"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              }
+            }
           },
           "configure": {
             "loop": true,
