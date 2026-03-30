@@ -1740,13 +1740,6 @@
         "destructuring": true
       },
       {
-        "componentName": "FluentEditor",
-        "package": "@shqy/components",
-        "version": "",
-        "exportName": "FluentEditor",
-        "destructuring": true
-      },
-      {
         "componentName": "GridItem",
         "package": "@shqy/components",
         "version": "",
