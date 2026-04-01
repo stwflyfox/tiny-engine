@@ -89,6 +89,25 @@
             "labelPosition": "left"
           },
           {
+            "property": "height",
+            "label": {
+              "text": {
+                "zh_CN": "固定高度"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaNumber",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "固定高度"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "minHeight",
             "label": {
               "text": {
@@ -137,11 +156,61 @@
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaNumber",
-              "props": {}
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  { "label": "系统", "value": null },
+                  { "label": "初号", "value": 56 },
+                  { "label": "小初", "value": 48 },
+                  { "label": "一号", "value": 34.7 },
+                  { "label": "小一", "value": 32 },
+                  { "label": "二号", "value": 29.3 },
+                  { "label": "小二", "value": 24 },
+                  { "label": "三号", "value": 21.3 },
+                  { "label": "小三", "value": 20 },
+                  { "label": "四号", "value": 18.7 },
+                  { "label": "小四", "value": 16 },
+                  { "label": "五号", "value": 14 },
+                  { "label": "小五", "value": 12 },
+                  { "label": "六号", "value": 10 },
+                  { "label": "小六", "value": 8.7 },
+                  { "label": "七号", "value": 7.3 },
+                  { "label": "八号", "value": 6.7 }
+                ]
+              }
             },
             "description": {
               "zh_CN": "默认字体大小"
+            },
+            "labelPosition": "left"
+          },
+          {
+            "property": "fontfamily",
+            "label": {
+              "text": {
+                "zh_CN": "粘贴时将中文字体替换为"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  { "label": "不替换", "value": null },
+                  { "label": "宋体", "value": "SimSun" },
+                  { "label": "新宋体", "value": "NSimSun" },
+                  { "label": "仿宋", "value": "FangSong" },
+                  { "label": "楷体", "value": "KaiTi" },
+                  { "label": "黑体", "value": "SimHei" },
+                  { "label": "微软雅黑", "value": "Microsoft YaHei" },
+                  { "label": "华文细黑", "value": "STXihei" }                  
+                ]
+              }
+            },
+            "description": {
+              "zh_CN": "粘贴时将中文字体替换为"
             },
             "labelPosition": "left"
           },
@@ -156,8 +225,21 @@
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaNumber",
-              "props": {}
+              "component": "MetaSelect",
+              "props": {
+                "options": [
+                  { "label": "系统", "value": null },
+                  { "label": "1.5", "value": 1.5 },
+                  { "label": "2", "value": 2 },
+                  { "label": "2.5", "value": 2.5 },
+                  { "label": "3", "value": 3 },
+                  { "label": "1", "value": 1 },
+                  { "label": "1.5", "value": 1.5 },
+                  { "label": "2", "value": 2 },
+                  { "label": "2.5", "value": 2.5 },
+                  { "label": "3", "value": 3 }
+                ]
+              }
             },
             "description": {
               "zh_CN": "默认行距"
@@ -330,3 +412,4 @@
     }
   ]
 }
+
