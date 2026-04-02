@@ -51,6 +51,25 @@
             "labelPosition": "top"
           },
           {
+            "property": "editId",
+            "label": {
+              "text": {
+                "zh_CN": "编辑器ID"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaInput",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "编辑器ID，初始化完成事件中会回传这个ID"
+            },
+            "labelPosition": "left"
+          },
+          {
             "property": "autohide",
             "label": {
               "text": {
@@ -229,15 +248,62 @@
               "props": {
                 "options": [
                   { "label": "系统", "value": null },
-                  { "label": "1.5", "value": 1.5 },
-                  { "label": "2", "value": 2 },
-                  { "label": "2.5", "value": 2.5 },
-                  { "label": "3", "value": 3 },
-                  { "label": "1", "value": 1 },
-                  { "label": "1.5", "value": 1.5 },
-                  { "label": "2", "value": 2 },
-                  { "label": "2.5", "value": 2.5 },
-                  { "label": "3", "value": 3 }
+                  {
+                    "value": 1,
+                    "label": "1"
+                  },
+                  {
+                    "value": 1.25,
+                    "label": "1.25"
+                  },
+                  {
+                    "value": 1.5,
+                    "label": "1.5"
+                  },
+                  {
+                    "value": 1.75,
+                    "label": "1.75"
+                  },
+                  {
+                    "value": 2,
+                    "label": "2"
+                  },
+                  {
+                    "value": 2.25,
+                    "label": "2.25"
+                  },
+                  {
+                    "value": 2.5,
+                    "label": "2.5"
+                  },
+                  {
+                    "value": 2.75,
+                    "label": "2.75"
+                  },
+                  {
+                    "value": 3,
+                    "label": "3"
+                  },
+                  {
+                    "value": 3.25,
+                    "label": "3.25"
+                  },
+                  {
+                    "value": 3.5,
+                    "label": "3.5"
+                  },
+                  {
+                    "value": 4,
+                    "label": "4"
+                  },
+                  {
+                    "value": 4.5,
+                    "label": "4.5"
+                  },
+                  {
+                    "value": 5,
+                    "label": "5"
+                  }
                 ]
               }
             },
@@ -344,6 +410,29 @@
         },
         "description": {
           "zh_CN": "在 Input 获取焦点时触发"
+        },
+        "type": "event",
+        "functionInfo": {
+          "params": [
+            {
+              "name": "event",
+              "type": "Object",
+              "defaultValue": "",
+              "description": {
+                "zh_CN": "原生 event"
+              }
+            }
+          ],
+          "returns": {}
+        },
+        "defaultValue": ""
+      },
+      "onInit": {
+        "label": {
+          "zh_CN": "初始化完成时触发"
+        },
+        "description": {
+          "zh_CN": "初始化完成时触发"
         },
         "type": "event",
         "functionInfo": {
