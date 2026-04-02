@@ -25164,6 +25164,28 @@
                       "zh_CN": "数据源的字段别名映射配置"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "drop-config",
+                    "label": {
+                      "text": {
+                        "zh_CN": "拖拽配置"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "defaultValue": {},
+                    "widget": {
+                      "component": "MetaCodeEditor",
+                      "props": {
+                        "dataType": "JSExpression"
+                      }
+                    },
+                    "description": {
+                      "zh_CN": "拖拽配置"
+                    }
                   }
                 ]
               }
