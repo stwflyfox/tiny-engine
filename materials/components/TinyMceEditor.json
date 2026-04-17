@@ -313,6 +313,26 @@
             "labelPosition": "left"
           },
           {
+            "property": "showLineBreak",
+            "label": {
+              "text": {
+                "zh_CN": "显示换行符"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "显示换行符"
+            },
+            "labelPosition": "left"
+          },
+          
+          {
             "property": "disabled",
             "label": {
               "text": {
