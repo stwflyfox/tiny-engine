@@ -92,6 +92,26 @@
             },
             "description": {
               "zh_CN": "是否必填"
+            }, 
+            "labelPosition": "left"
+          },
+          {
+            "property": "show-message",
+            "label": {
+              "text": {
+                "zh_CN": "是否显示校验错误信息"
+              }
+            },
+            "required": false,
+            "readOnly": false,
+            "disabled": false,
+            "cols": 12,
+            "widget": {
+              "component": "MetaSwitch",
+              "props": {}
+            },
+            "description": {
+              "zh_CN": "是否显示校验错误信息"
             },
             "labelPosition": "left"
           }
