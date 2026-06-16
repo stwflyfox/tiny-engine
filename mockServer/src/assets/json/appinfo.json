@@ -17123,21 +17123,10 @@
         }
       },
       {
-        "component": "GridItem",
+        "component": "GridDragSorter",
         "npm": {
           "package": "@shqy/components",
-          "exportName": "GridItem",
-          "script": "http://192.168.0.113:8088/@shqy/components",
-          "css": "http://192.168.0.113:8088/@shqy/components/style.css",
-          "version": "",
-          "destructuring": true
-        }
-      },
-      {
-        "component": "GridLayout",
-        "npm": {
-          "package": "@shqy/components",
-          "exportName": "GridLayout",
+          "exportName": "GridDragSorter",
           "script": "http://192.168.0.113:8088/@shqy/components",
           "css": "http://192.168.0.113:8088/@shqy/components/style.css",
           "version": "",
@@ -17183,6 +17172,17 @@
           "package": "@shqy/components",
           "exportName": "ProgramBuild",
           "script": "http://192.168.0.113:8088/@shqy/components",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
+        "component": "RowDragSorter",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "RowDragSorter",
+          "script": "http://192.168.0.113:8088/@shqy/components",
+          "css": "http://192.168.0.113:8088/@shqy/components/style.css",
           "version": "",
           "destructuring": true
         }

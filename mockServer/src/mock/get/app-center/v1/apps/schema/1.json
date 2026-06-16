@@ -1740,17 +1740,10 @@
         "destructuring": true
       },
       {
-        "componentName": "GridItem",
+        "componentName": "GridDragSorter",
         "package": "@shqy/components",
         "version": "",
-        "exportName": "GridItem",
-        "destructuring": true
-      },
-      {
-        "componentName": "GridLayout",
-        "package": "@shqy/components",
-        "version": "",
-        "exportName": "GridLayout",
+        "exportName": "GridDragSorter",
         "destructuring": true
       },
       {
@@ -1779,6 +1772,13 @@
         "package": "@shqy/components",
         "version": "",
         "exportName": "ProgramBuild",
+        "destructuring": true
+      },
+      {
+        "componentName": "RowDragSorter",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "RowDragSorter",
         "destructuring": true
       },
       {

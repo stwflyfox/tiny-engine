@@ -1,19 +1,19 @@
 {
   "version": "1.2.0",
   "name": {
-    "zh_CN": "拖拽项"
+    "zh_CN": "行拖拽"
   },
-  "component": "GridItem",
+  "component": "RowDragSorter",
   "icon": "formfield",
-  "description": "拖拽项",
+  "description": "行拖拽",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
   "keywords": "",
-  "devMode": "proCode",
-  "npm": {
+  "devMode": "proCode", 
+  "npm": { 
     "package": "@shqy/components",
-    "exportName": "GridItem",
+    "exportName": "RowDragSorter",
     "script": "http://192.168.0.113:8088/@shqy/components",
     "css": "http://192.168.0.113:8088/@shqy/components/style.css",
     "version": "",
@@ -31,30 +31,30 @@
           "zh_CN": "基础信息"
         },
         "content": [
-          {
-            "property": "static",
+         {
+            "property": "modelValue",
             "label": {
               "text": {
-                "zh_CN": "static"
+                "zh_CN": "绑定值"
               }
             },
             "required": true,
             "readOnly": false,
             "disabled": false,
             "widget": {
-              "component": "MetaInput",
+              "component": "MetaField",
               "props": {}
             },
             "description": {
-              "zh_CN": "static"
+              "zh_CN": "双向绑定值"
             },
-            "labelPosition": "left"
+            "labelPosition": "top"
           },
-          {
-            "property": "x",
+            {
+            "property": "item-key-field",
             "label": {
               "text": {
-                "zh_CN": "x"
+                "zh_CN": "key字段名"
               }
             },
             "required": false,
@@ -62,40 +62,19 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaInput",
+              "component": "MetaBindI18n",
               "props": {}
             },
             "description": {
-              "zh_CN": "x"
-            }
-          },
-          {
-            "property": "y",
-            "label": {
-              "text": {
-                "zh_CN": "y"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaInput",
-              "props": {
-                "allowEmpty": true
-              }
-            },
-            "description": {
-              "zh_CN": "y"
+              "zh_CN": "key字段名"
             },
             "labelPosition": "left"
           },
-          {
-            "property": "w",
+           {
+            "property": "drag-handle",
             "label": {
               "text": {
-                "zh_CN": "w"
+                "zh_CN": "绑定拖拽组件的样式名"
               }
             },
             "required": false,
@@ -103,57 +82,11 @@
             "disabled": false,
             "cols": 12,
             "widget": {
-              "component": "MetaInput",
-              "props": {
-                "allowEmpty": true
-              }
+              "component": "MetaBindI18n",
+              "props": {}
             },
             "description": {
-              "zh_CN": "w"
-            },
-            "labelPosition": "left"
-          },
-          {
-            "property": "h",
-            "label": {
-              "text": {
-                "zh_CN": "h"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaInput",
-              "props": {
-                "allowEmpty": true
-              }
-            },
-            "description": {
-              "zh_CN": "h"
-            },
-            "labelPosition": "left"
-          },
-          {
-            "property": "i",
-            "label": {
-              "text": {
-                "zh_CN": "i"
-              }
-            },
-            "required": false,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaInput",
-              "props": {
-                "allowEmpty": true
-              }
-            },
-            "description": {
-              "zh_CN": "i"
+              "zh_CN": "绑定拖拽组件的样式名，不绑定时整行都可以拖拽"
             },
             "labelPosition": "left"
           }
@@ -161,28 +94,40 @@
       }
     ],
     "events": {
-      "onMoved": {
+      "onUpdate:modelValue": {
         "label": {
-          "zh_CN": "moved"
+          "zh_CN": "双向绑定的值改变时触发"
         },
         "description": {
-          "zh_CN": "moved"
+          "zh_CN": "双向绑定的值改变时触发"
         },
         "type": "event",
         "functionInfo": {
           "params": [
             {
-              "name": "event",
-              "type": "Object",
+              "name": "value",
+              "type": "string",
               "defaultValue": "",
               "description": {
-                "zh_CN": "moved"
+                "zh_CN": "双向绑定的值"
               }
             }
           ],
           "returns": {}
         },
         "defaultValue": ""
+      }
+    },
+    "slots": {
+      "default": {
+        "label": {
+          "zh_CN": "默认插槽"
+        },
+        "type": "JSSlot",       
+        "params": [
+          "item",
+          "index"
+        ]
       }
     }
   },
@@ -220,14 +165,17 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "拖拽项"
+        "zh_CN": "行拖拽"
       },
       "icon": "formfield",
       "screenshot": "",
-      "snippetName": "GridItem",
+      "snippetName": "RowDragSorter",
       "schema": {
-        "componentName": "GridItem",
-        "props": {}
+        "componentName": "RowDragSorter",
+        "props": {
+          "item-key-field": "id",
+          "drag-handle": ".drag-handle"
+        }
       },
       "category": "容器组件"
     }
