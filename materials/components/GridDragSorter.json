@@ -1,11 +1,11 @@
 {
   "version": "1.2.0",
   "name": {
-    "zh_CN": "Grid拖拽"
+    "zh_CN": "网格拖拽"
   },
   "component": "GridDragSorter",
   "icon": "formfield",
-  "description": "Grid拖拽",
+  "description": "网格拖拽",
   "docUrl": "",
   "screenshot": "",
   "tags": "",
@@ -50,14 +50,14 @@
             },
             "labelPosition": "top"
           },
-            {
+           {
             "property": "item-key-field",
             "label": {
               "text": {
-                "zh_CN": "key字段名"
+                "zh_CN": "唯一ID字段名"
               }
             },
-            "required": true,
+            "required": false,
             "readOnly": false,
             "disabled": false,
             "cols": 12,
@@ -66,30 +66,10 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "key字段名"
+              "zh_CN": "唯一ID字段名"
             },
             "labelPosition": "left"
-          },
-           {
-            "property": "drag-handle",
-            "label": {
-              "text": {
-                "zh_CN": "绑定拖拽组件的样式名"
-              }
-            },
-            "required": true,
-            "readOnly": false,
-            "disabled": false,
-            "cols": 12,
-            "widget": {
-              "component": "MetaBindI18n",
-              "props": {}
-            },
-            "description": {
-              "zh_CN": "绑定拖拽组件的样式名，不绑定时整行都可以拖拽"
-            },
-            "labelPosition": "left"
-          }
+          },         
         ]
       }
     ],
@@ -121,8 +101,12 @@
     "slots": {
       "default": {
         "label": {
-          "zh_CN": "默认插槽"
-        }
+          "zh_CN": "默认插槽(插槽对象是option)"
+        },
+        "type": "JSSlot",       
+        "params": [
+          "option"
+        ]
       }
     }
   },
@@ -160,7 +144,7 @@
   "snippets": [
     {
       "name": {
-        "zh_CN": "Grid拖拽"
+        "zh_CN": "网格拖拽"
       },
       "icon": "formfield",
       "screenshot": "",

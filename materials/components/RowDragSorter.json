@@ -54,7 +54,7 @@
             "property": "item-key-field",
             "label": {
               "text": {
-                "zh_CN": "key字段名"
+                "zh_CN": "唯一ID字段名"
               }
             },
             "required": false,
@@ -66,7 +66,7 @@
               "props": {}
             },
             "description": {
-              "zh_CN": "key字段名"
+              "zh_CN": "唯一ID字段名"
             },
             "labelPosition": "left"
           },
@@ -121,7 +121,7 @@
     "slots": {
       "default": {
         "label": {
-          "zh_CN": "默认插槽"
+          "zh_CN": "默认插槽(插槽对象是item，index)"
         },
         "type": "JSSlot",       
         "params": [
