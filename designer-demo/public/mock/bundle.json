@@ -211,6 +211,46 @@
                       "zh_CN": "唯一ID字段名"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "parentItem",
+                    "label": {
+                      "text": {
+                        "zh_CN": "父级对象"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "parentItem"
+                    },
+                    "labelPosition": "left"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否禁用拖拽"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否禁用拖拽"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
@@ -232,6 +272,29 @@
                       "defaultValue": "",
                       "description": {
                         "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onChange": {
+                "label": {
+                  "zh_CN": "拖动时触发"
+                },
+                "description": {
+                  "zh_CN": "拖动时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "拖动时触发"
                       }
                     }
                   ],
@@ -1125,6 +1188,26 @@
                       "zh_CN": "绑定拖拽组件的样式名，不绑定时整行都可以拖拽"
                     },
                     "labelPosition": "left"
+                  },
+                  {
+                    "property": "disabled",
+                    "label": {
+                      "text": {
+                        "zh_CN": "是否禁用拖拽"
+                      }
+                    },
+                    "required": true,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaSwitch",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "是否禁用拖拽"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
@@ -1146,6 +1229,29 @@
                       "defaultValue": "",
                       "description": {
                         "zh_CN": "双向绑定的值"
+                      }
+                    }
+                  ],
+                  "returns": {}
+                },
+                "defaultValue": ""
+              },
+              "onChange": {
+                "label": {
+                  "zh_CN": "拖动时触发"
+                },
+                "description": {
+                  "zh_CN": "拖动时触发"
+                },
+                "type": "event",
+                "functionInfo": {
+                  "params": [
+                    {
+                      "name": "value",
+                      "type": "string",
+                      "defaultValue": "",
+                      "description": {
+                        "zh_CN": "拖动时触发"
                       }
                     }
                   ],
