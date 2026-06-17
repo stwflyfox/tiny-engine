@@ -10,8 +10,8 @@
   "screenshot": "",
   "tags": "",
   "keywords": "",
-  "devMode": "proCode", 
-  "npm": { 
+  "devMode": "proCode",
+  "npm": {
     "package": "@shqy/components",
     "exportName": "GridDragSorter",
     "script": "http://192.168.0.113:8088/@shqy/components",
@@ -31,10 +31,10 @@
           "zh_CN": "基础信息"
         },
         "content": [
-         {
+          {
             "property": "modelValue",
             "label": {
-              "text": {
+              "text": {  
                 "zh_CN": "绑定值"
               }
             },
@@ -50,9 +50,9 @@
             },
             "labelPosition": "top"
           },
-           {
+          {
             "property": "item-key-field",
-            "label": {
+            "label": {  
               "text": {
                 "zh_CN": "唯一ID字段名"
               }
@@ -69,7 +69,7 @@
               "zh_CN": "唯一ID字段名"
             },
             "labelPosition": "left"
-          },         
+          }
         ]
       }
     ],
@@ -103,7 +103,7 @@
         "label": {
           "zh_CN": "默认插槽(插槽对象是option)"
         },
-        "type": "JSSlot",       
+        "type": "JSSlot",
         "params": [
           "option"
         ]

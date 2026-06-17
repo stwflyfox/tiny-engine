@@ -191,6 +191,26 @@
                       "zh_CN": "双向绑定值"
                     },
                     "labelPosition": "top"
+                  },
+                  {
+                    "property": "item-key-field",
+                    "label": {
+                      "text": {
+                        "zh_CN": "唯一ID字段名"
+                      }
+                    },
+                    "required": false,
+                    "readOnly": false,
+                    "disabled": false,
+                    "cols": 12,
+                    "widget": {
+                      "component": "MetaBindI18n",
+                      "props": {}
+                    },
+                    "description": {
+                      "zh_CN": "唯一ID字段名"
+                    },
+                    "labelPosition": "left"
                   }
                 ]
               }
@@ -1070,7 +1090,7 @@
                     "property": "item-key-field",
                     "label": {
                       "text": {
-                        "zh_CN": "key字段名"
+                        "zh_CN": "唯一ID字段名"
                       }
                     },
                     "required": false,
@@ -1082,7 +1102,7 @@
                       "props": {}
                     },
                     "description": {
-                      "zh_CN": "key字段名"
+                      "zh_CN": "唯一ID字段名"
                     },
                     "labelPosition": "left"
                   },
