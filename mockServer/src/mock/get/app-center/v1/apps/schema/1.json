@@ -1789,6 +1789,13 @@
         "destructuring": true
       },
       {
+        "componentName": "SelectLocation",
+        "package": "@shqy/components",
+        "version": "",
+        "exportName": "SelectLocation",
+        "destructuring": true
+      },
+      {
         "componentName": "SelectOrganization",
         "package": "@shqy/components",
         "version": "",

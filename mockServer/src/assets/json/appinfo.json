@@ -17199,6 +17199,17 @@
         }
       },
       {
+        "component": "SelectLocation",
+        "npm": {
+          "package": "@shqy/components",
+          "exportName": "SelectLocation",
+          "script": "http://192.168.0.113:8088/@shqy/components",
+          "css": "http://192.168.0.113:8088/@shqy/components/style.css",
+          "version": "",
+          "destructuring": true
+        }
+      },
+      {
         "component": "SelectOrganization",
         "npm": {
           "package": "@shqy/components",
